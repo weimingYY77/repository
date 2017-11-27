@@ -18,4 +18,6 @@ $(function(){
        $(".loginBox").hide();
         $(".lightBox").hide();
     });  
+    $("#header").load('../index/common-html/common-footer.html', function (data, status, xhr) {});
+    
 })
