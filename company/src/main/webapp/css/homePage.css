@@ -36,11 +36,11 @@
 	text-decoration: underline;
 }
 .xny_top span.tel{
-	background: url(../images/tel.png) no-repeat left center;
+	background: url(../images/homepage/tel.png) no-repeat left center;
 	padding-left: 11px;
 }
 .xny_top span.kf{
-	background: url(../images/kf.png) no-repeat left center;
+	background: url(../images/homepage/kf.png) no-repeat left center;
 	padding-left: 15px;
 }
 .nav_list{
@@ -90,7 +90,7 @@
 	position: relative;
     width: 16px;
     height: 16px;
-    background: url(../images/icon.png) 0 -40px;
+    background: url(../images/homepage/icon.png) 0 -40px;
     margin-left: 370px;
 }
 .box_content{
@@ -115,10 +115,10 @@
 	border: 1px solid red;
 }
 .login_input li input.man{
-	background: url(../images/r.png) no-repeat left 10px center;
+	background: url(../images/homepage/r.png) no-repeat left 10px center;
 }
 .login_input li input.suo{
-	background: url(../images/s.png) no-repeat left 10px center;
+	background: url(../images/homepage/s.png) no-repeat left 10px center;
 }
 .logins{
 	width: 320px;
@@ -174,7 +174,7 @@
 .main{
 	position: fixed;
 	z-index: 205;
-	background: url(../images/0.png);
+	background: url(../images/homepage/0.png);
 	width: 150px;
 	height: 200px;
 	right: 5px;
@@ -189,7 +189,7 @@
     background: rgba(255, 255, 255, 0.1);
 }
 .qq{
-	background: url(../images/qq.png);
+	background: url(../images/homepage/qq.png);
 	width: 92px;
     height: 22px;
     margin: 0 auto;
@@ -270,7 +270,7 @@ span.eng{
 }
 .cover a.more{
     color: #888;
-    background: url(../images/icon_small.png) no-repeat 34px -350px;
+    background: url(../images/homepage/icon_small.png) no-repeat 34px -350px;
     width: 44px;
     display: inline-block;
     margin-left: 265px;
@@ -361,7 +361,7 @@ span.eng{
  }
  .pro_more{
  	color: #888;
-    background: url(../images/icon_small.png) no-repeat 34px -357px;
+    background: url(../images/homepage/icon_small.png) no-repeat 34px -357px;
     width: 44px;
     display: inline-block;
     margin-left: 945px;
@@ -445,11 +445,11 @@ span.eng{
     font-size: 16px;
     width: 150px;
     padding-left: 18px;
-    background: url(../images/icon_small.png) no-repeat 0 -160px;
+    background: url(../images/homepage/icon_small.png) no-repeat 0 -160px;
 }
 .xny_news .dynamic>a{
     color: #888;
-    background: url(../images/icon_small.png) no-repeat 34px -349px;
+    background: url(../images/homepage/icon_small.png) no-repeat 34px -349px;
     width: 44px;
     display: inline-block;
     position: absolute;
@@ -499,7 +499,7 @@ span.eng{
 .service_map{
 	width: 408px;
     height: 335px;
-    background: url(../images/map2.png) no-repeat;
+    background: url(../images/homepage/map2.png) no-repeat;
 }
 .partner .client{
 	display: inline-block;
