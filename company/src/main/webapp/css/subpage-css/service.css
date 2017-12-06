@@ -1,9 +1,15 @@
-body{
-	font-size: 100%;
+.container_top{
+	width: 72%;
+	margin: 0 auto;
 }
 .container{
 	width: 72%;
 	margin: 0 auto;
+}
+@media all and (max-width:1300px) {
+	.container{
+	   width:100%;
+}
 }
 /* 顶部 */
 .head_top{
@@ -66,7 +72,7 @@ body{
 	margin-left:-10%;
 }
 .head_text .skill{
-	font-size: 90px;
+	font-size: 68px;
 	color: #fff;
 }
 /* 主体内容 */
@@ -93,7 +99,7 @@ body{
 }
 .work>p{
 	display: inline-block;
-	font-size:137%;
+	font-size:24px;
 	color: #2B2B2B;
 	line-height: 36px;
 	padding-left: 64px;
@@ -109,6 +115,7 @@ body{
 	height: 601px;
 	background: #F3F7FF;
 	position: absolute;
+	z-index: -1;
 }
 .extend_lft{
 	display: inline-block;
@@ -146,7 +153,7 @@ body{
 }
 .introduce{
 	height: 132px;
-	font-size:137%;
+	font-size:24px;
 	margin-top: 67px;
 }
 .space_three{
@@ -202,23 +209,30 @@ body{
 	width: 100%;
 	margin-top: 418px;
 	position: relative;
+
+}
+.us{
+   	height: 500px;
+   	position: relative;
 }
 .project,.contact{
    display: inline-block;
-   width: 700px;
+   width: 50%;
    height: 251px;
+   position: absolute;
 }
 .project{
 	background: #3C39CD;
-	float: left;
 	text-align: left;
 	padding-left: 57px;
+	left: 0;
 }
 .contact{
+	top: 160px;
 	background: #19178D;
-	float: right;
 	text-align: right;
 	padding-right: 57px;
+	right: 0;
 }
 .main_content .xs{
 	font-size: 16px;
@@ -226,7 +240,93 @@ body{
 	padding-top: 40px;
 }
 .main_content .xl{
-	font-size: 50px;
+	font-size: 40px;
 	color: #fff;
 	padding-top: 27px
+}
+.white{
+	background: #F3F7FF;
+	width: 401px;
+	height: 401px;
+	position: absolute;
+	left: 50%;
+	margin-left: -200px;
+	top: 80px;
+	z-index: -2;
+}
+/* 底部 */
+.foot{
+	width: 100%;
+	background: #14134E;
+	margin-top: 200px;
+	padding-bottom: 47px;
+}
+.foot_lft,.foot_rit{
+	display: inline-block;
+}
+.foot_lft{
+	margin-top: 87px;
+	float: left;
+	width: 55%;
+}
+.foot_lft .company_logo{
+    font-size: 40px;
+    color: #fff;
+}
+.foot_lft .company_desc{
+    width: 100%;
+    color: #fff;
+    margin-top: 53px;
+    font-size: 18px;
+}
+.foot_lft .company_name{
+	font-size: 16px;
+	color: #96BAFF;
+	margin-top: 59px;
+}
+.foot_lft .do{
+	display: block;
+	margin-top: 27px;
+	color: #96BAFF;
+}
+.foot_lft .do>a{
+    display: inline-block;
+    color: #96BAFF;
+    font-size: 16px;
+    padding-left: 44px;
+}
+.footlist {
+	margin-top: 64px;
+}
+.footlist li{
+	display: inline-block;
+	padding-right: 50px;
+}
+.footlist li a{
+	color: #fff;
+}
+.foot_rit{
+	float: right;
+	width: 40%;
+	margin-top: 167px;
+}
+.foot_rit>p{
+	color: #96BAFF;
+	font-size: 16px;
+}
+.tel,.qq,.blog{
+	margin-top: 25px;
+}
+.number{
+	font-size: 14px;
+	color: #FFFFFF!important;
+	margin-top: 53px;
+}
+.copy{
+	display: inline-block;
+	width: 100%;
+    font-size: 12px;
+	margin-top: 27px;
+	font-size: 14px;
+	color: #FFFFFF!important;
 }
