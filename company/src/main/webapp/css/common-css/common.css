@@ -84,6 +84,7 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
+  font-family: "Microsoft YaHei", arial, sans-serif";
   font: inherit;
   vertical-align: baseline; }
 
@@ -110,7 +111,4 @@ img{
     -webkit-font-smoothing: antialiased !important;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: geometricPrecision;
-}
-body{
-	font-family: "微软雅黑";
 }
