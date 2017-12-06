@@ -2,19 +2,28 @@
 	width: 72%;
 	margin: 0 auto;
 }
-.container{
-	width: 72%;
+.container_foot{
+	width: 82%;
 	margin: 0 auto;
 }
-@media all and (max-width:1300px) {
-	.container{
-	   width:100%;
-}
+.container{
+	width: 82%;
+	margin: 0 auto;
+	overflow: hidden;
 }
 /* 顶部 */
 .head_top{
 	width: 100%;
 	position: relative;
+}
+.head_nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 120px;
+	width: 100%;
+	background: rgba(255,255,255,0);
 }
 .logo{
 	position: fixed;
@@ -69,10 +78,11 @@
 	height: 2px;
 	background: #008DFF;
 	margin-top: 49px;
+	margin-bottom: 30px;
 	margin-left:-10%;
 }
 .head_text .skill{
-	font-size: 68px;
+	font-size: 90px;
 	color: #fff;
 }
 /* 主体内容 */
@@ -84,10 +94,12 @@
 	line-height: 90px;
 	color:#2B2B2B;
 	margin-top: 321px;
+	padding-left: 90px;
 }
 .work{
 	width: 100%;
 	margin-top: 105px;
+	padding-left: 90px;
 }
 .work .space_two{
 	display: inline-block;
@@ -104,29 +116,66 @@
 	line-height: 36px;
 	padding-left: 64px;
 }
-/* 网络应用程序和自主建站 */
+/* 网络应用程序和自主建站 共用样式 */
 .extend{
    margin-top: 312px;
    width: 100%;
    position: relative;
 }
+/* 网络应用程序和自主建站   最底块的动画及样式 */
 .visibility_one{
-	width: 33%;
+	width: 30%;
 	height: 601px;
 	background: #F3F7FF;
 	position: absolute;
 	z-index: -1;
 }
+.visibility_play1{
+    animation:isvisible_one 1s 1;
+    -webkit-animation:isvisible_one 1s 1;
+    -ms-animation:isvisible_one 1s 1;
+    -o-animation:isvisible_one 1s 1;
+    -moz-animation:isvisible_one 1s 1;
+}
+@keyframes isvisible_one{
+    from{width: 0;}
+    to{width: 30%;}
+    }
 .extend_lft{
 	display: inline-block;
 	float: left;
 }
+/* 网络应用程序和自主建站  中间块的动画及样式 */
 .extend_lft .program{
 	width:501px;
 	height: 601px;
 	background: #2B2996;
 	display: inline-block;
 	margin-top: 80px;
+	position: relative;
+	z-index: -1;
+}
+.program_play{
+	animation:program_ct 1s 1;	
+	-webkit-animation:program_ct 1s 1;
+	-o-animation:program_ct 1s 1;
+	-ms-animation:program_ct 1s 1;
+	-moz-animation:program_ct 1s 1;
+}
+@keyframes program_ct{
+    from{width: 0;}
+    to{width: 501px;}
+    }
+.extend_lft .rotate_top{
+	position: absolute;
+	color: #96BAFF;
+	font-size: 16px;
+	top: 80px;
+	transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg); 	/* IE 9 */
+    -moz-transform:rotate(-90deg); 	/* Firefox */
+    -webkit-transform:rotate(-90deg); /* Safari 和 Chrome */
+    -o-transform:rotate(-90deg); 	/* Opera */
 }
 .extend_lft .blockImg_one{
 	width: 300px;
@@ -135,12 +184,22 @@
 	display: inline-block;
 	margin-left: -150px;
 	margin-bottom: 60px;
+	z-index: 200;
 }
 .extend_rit{
 	display: inline-block;
-	width: 300px;
+	width: 400px;
 	float: right;
 	margin-top: 220px;
+	padding-right: 220px;
+}
+.move_right{
+	width: 100%;
+	margin-left: -75px;
+}
+.move_left{
+	margin-left: -115px;
+	width: 100%;
 }
 .number{
     font-size: 16px;
@@ -155,15 +214,21 @@
 	height: 132px;
 	font-size:24px;
 	margin-top: 67px;
+	width: 421px;
 }
 .space_three{
 	display: inline-block;
-	width: 101px;
 	height: 3px;
 	background: #96BAFF;
 	margin-bottom: 20px;
 }
-/* 网络外包和形象策划 */
+.line_r{
+	width: 101px;
+}
+.line_l{
+	width: 151px;
+}
+/* 网络外包和形象策划 共用样式 */
 .outsource{
 	margin-top: 459px;
 	width: 100%;
@@ -172,19 +237,46 @@
 .outsource_lft{
 	display: inline-block;
 	float: left;
-	margin-top: 220px;
-	width: 300px;
+	margin-top: 160px;
+	width: 360px;
+	padding-left: 125px;
 }
 .outsource_rit{
 	display: inline-block;
 	float: right;
+	padding-right: 50px;
 }
+/* 网络应用程序和自主建站  中间块的动画及样式 */
 .outsource_rit .out_pack{
 	width: 501px;
 	height: 601px;
-	background:#2B2996;
+	background:#3C39CD;
 	display: inline-block; 
 	position: relative;
+}
+.outpack_play{
+	animation:outpack_ct 1s 1;
+	-webkit-animation:outpack_ct 1s 1;
+	-o-animation:outpack_ct 1s 1;
+	-moz-animation:outpack_ct 1s 1;
+	-ms-animation:outpack_ct 1s 1;
+}
+@keyframes outpack_ct{
+    from{width: 0;}
+    to{width: 501px;}
+    }
+.out_pack .rotate_bottom{
+	position: absolute;
+	color: #96BAFF;
+	font-size: 16px;
+	bottom: 80px;
+	right: 30px;
+	transform:rotate(-90deg);
+	transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg); 	/* IE 9 */
+    -moz-transform:rotate(-90deg); 	/* Firefox */
+    -webkit-transform:rotate(-90deg); /* Safari 和 Chrome */
+    -o-transform:rotate(-90deg); 	/* Opera */
 }
 .outsource_rit .blockImg_two{
 	width: 300px;
@@ -192,17 +284,32 @@
 	background: #DCDCDC;
 	display: inline-block;
 	position: absolute;
-	top: 300px;
+	top: 60px;
 	margin-left: -150px;
 }
+/* 网络外包和形象策划   最底块的动画及样式 */
 .visibility_two{
 	position: absolute;
-	width: 301px;
-	height: 301px;
+	width: 460px;
+	height: 497px;
 	background: #F3F7FF;
  	z-index: -1; 
 	right: 5%;
-	top: -50px;
+	top: -130px;
+}
+.visibility_play2{
+	animation:isvisible_two 1s 1;
+	-webkit-animation:isvisible_two 1s 1;
+	-ms-animation:isvisible_two 1s 1;
+	-o-animation:isvisible_two 1s 1;
+	-moz-animation:isvisible_two 1s 1;
+}
+@keyframes isvisible_two{
+    from{width: 0;}
+    to{width: 460px;}
+    }
+.visibility_four{
+	right: 0;
 }
 /* 项目和联系我们 */
 .main_content{
@@ -217,7 +324,7 @@
 }
 .project,.contact{
    display: inline-block;
-   width: 50%;
+   width: 42%;
    height: 251px;
    position: absolute;
 }
@@ -225,14 +332,41 @@
 	background: #3C39CD;
 	text-align: left;
 	padding-left: 57px;
-	left: 0;
+	left: 100px;
+}
+ .project_hover{
+	position: absolute;
+	background:rgba(255, 255, 255, 0.1);
+	left:-100%;
+	width: 42%;
+    height: 251px;
+    display: inline-block;
+    padding-left: 57px;
+    transition:all 1s linear;
+} 
+.project:hover + .project_hover{
+    left: 100px;
 }
 .contact{
-	top: 160px;
+	bottom:60px;
 	background: #19178D;
 	text-align: right;
 	padding-right: 57px;
-	right: 0;
+	right: 100px;
+}
+ .contact_hover{
+	position: absolute;
+	bottom:60px;
+	background:rgba(255, 255, 255, 0.1);
+	right:-100%;
+	width: 42%;
+    height: 251px;
+    display: inline-block;
+    padding-right: 57px;
+    transition:all 1s linear;
+} 
+.contact:hover + .contact_hover{
+    right: 100px;
 }
 .main_content .xs{
 	font-size: 16px;
@@ -240,9 +374,11 @@
 	padding-top: 40px;
 }
 .main_content .xl{
-	font-size: 40px;
-	color: #fff;
 	padding-top: 27px
+}
+.main_content .xl>a{
+    font-size: 60px;
+	color: #fff;
 }
 .white{
 	background: #F3F7FF;
@@ -254,7 +390,7 @@
 	top: 80px;
 	z-index: -2;
 }
-/* 底部 */
+/* 底部样式*/
 .foot{
 	width: 100%;
 	background: #14134E;
@@ -274,8 +410,9 @@
     color: #fff;
 }
 .foot_lft .company_desc{
-    width: 100%;
+    width: 576px;
     color: #fff;
+    height: 75px;
     margin-top: 53px;
     font-size: 18px;
 }
@@ -325,8 +462,17 @@
 .copy{
 	display: inline-block;
 	width: 100%;
-    font-size: 12px;
 	margin-top: 27px;
 	font-size: 14px;
 	color: #FFFFFF!important;
+}
+/* 最大宽度为1366时 */
+@media all and (max-width:1400px) {
+	.container{
+	   width:92%;
+	   overflow: hidden;
+}
+.extend_rit{
+	padding-right: 0px;
+}
 }
