@@ -1,3 +1,6 @@
+.home{
+	overflow: hidden;
+}
 .headerBg{
 	position: fixed;
 	z-index: 10;
@@ -544,3 +547,104 @@ body.home .main > .team > div .container .img .block-revealer__content img {
     top: 50px;
     cursor: pointer;
 }
+
+/*线条滑动*/
+.stars {
+    position: absolute;
+    right: 440px;
+    top: 80%;
+}
+.star {
+    display: block;
+    width: 177px;
+    height: 9px;
+    background: rgb(0, 141, 255);
+    top:25px;
+    left: 400px;
+    position: relative;
+    transform-origin: 100% 0;
+    animation: star-ani 4s infinite ease-out;
+    opacity: 0;
+    z-index: 2;
+    position: absolute;
+}
+    
+.star.pink {
+	  width: 160px;
+    height: 2px;
+    top:55px;
+    left: 445px;
+    background: #FFFFFF;
+    animation-delay:1s;
+    -webkit-animation-delay:1s;
+    -moz-animation-delay: 1s;
+}
+
+.star.blue {
+    width: 145px;
+    height: 9px;
+    background: rgb(60, 57, 205);
+    top: 70px;
+    left: 450px;
+    animation-delay:1s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+}
+.star.yellow {
+    width: 208px;
+    height: 6px;
+    top: 90px;
+    background: rgb(60, 57, 205);
+    animation-delay:1.5s;
+    -webkit-animation-delay:1.5s;
+    -moz-animation-delay:1.5s;
+}
+.star.white{
+    width: 80px;
+    height: 1px;
+    background: rgb(0,141,255);
+    top: 105px;
+    left: 500px;
+}
+/*从右往左*/
+@keyframes star-ani {
+    0% {
+        opacity: 0;
+        transform: scale(0) rotate(0) translate3d(0, 0, 0);
+        -webkit-transform: scale(0) rotate(0) translate3d(0, 0, 0);
+        -moz-transform: scale(0) rotate(0) translate3d(0, 0, 0);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1) rotate(0) translate3d(-200px, 0, 0);
+        -webkit-transform: scale(1) rotate(0) translate3d(-200px, 0, 0);
+        -moz-transform: scale(1) rotate(0) translate3d(-200px, 0, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1) rotate(0) translate3d(-300px, 0, 0);
+        -webkit-transform: scale(1) rotate(0) translate3d(-300px,0, 0);
+        -moz-transform: scale(1) rotate(0) translate3d(-300px, 0px, 0);
+    }
+}
+/*从左往右*/
+/*@keyframes star-ani {
+    0% {
+        opacity: 0;
+        transform: scale(0) rotate(0) translate3d(0, 0, 0);
+        -webkit-transform: scale(0) rotate(0) translate3d(0, 0, 0);
+        -moz-transform: scale(0) rotate(0) translate3d(0, 0, 0);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1) rotate(0) translate3d(-200px, 0, 0);
+        -webkit-transform: scale(1) rotate(0) translate3d(-200px, 0, 0);
+        -moz-transform: scale(1) rotate(0) translate3d(-200px, 0, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1) rotate(0) translate3d(-300px, 0, 0);
+        -webkit-transform: scale(1) rotate(0) translate3d(-300px,0, 0);
+        -moz-transform: scale(1) rotate(0) translate3d(-300px, 0px, 0);
+    }
+}*/

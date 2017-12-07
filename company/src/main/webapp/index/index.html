@@ -29,32 +29,7 @@
 		            <div></div>
 		        </div>
 		     </div>
-		  <!--导航遮罩层-->
-            <div class="zhezhao">
-            	<div class="nav-content">
-            		<div>
-            			<div class="navigation">
-            				<ul>        
-					            <li class="is-current transition">
-					                <a href="javascript:;">home</a>
-						        </li>
-						        <li class=" transition">
-						            <a href="javascript:;">about</a>
-						        </li>
-						            <li class=" transition">
-						            <a href="javascript:;">services</a>
-						        </li>
-						        <li class=" transition">
-						            <a href="javascript:;">contact</a>
-						        </li>
-                            </ul>
-            			</div>
-            		</div>
-            	</div>
-            	<div class="close">
-            		<img src="../images/common/close.png"/>
-            	</div>
-            </div>
+		    
 		  </div>
 		  <!--主要内容 -->
 		  <div class="main">
@@ -66,6 +41,13 @@
 		  	   	<p class="text_1">我们创建的后台程序</p>
 		  	   	<p class="text_2">连接你的用户</p>
 		  	   </div>
+		  	    <div class="stars">
+			        <div class="star"></div>
+			        <div class="star pink"></div>
+			        <div class="star blue"></div>
+			        <div class="star yellow"></div>
+			        <div class="star white"></div>
+			    </div>
 		  	</div>
 		  	<!--白底内容块1-->
 		  	<div class="team">
@@ -283,7 +265,32 @@
 		  	</div>
 		  </div>
        </div>
-       
+       <!--导航遮罩层-->
+            <div class="zhezhao">
+            	<div class="nav-content">
+            		<div>
+            			<div class="navigation">
+            				<ul>        
+					            <li class="is-current transition">
+					                <a href="javascript:;">home</a>
+						        </li>
+						        <li class=" transition">
+						            <a href="javascript:;">about</a>
+						        </li>
+						            <li class=" transition">
+						            <a href="template/service.html">services</a>
+						        </li>
+						        <li class=" transition">
+						            <a href="javascript:;">contact</a>
+						        </li>
+                            </ul>
+            			</div>
+            		</div>
+            	</div>
+            	<div class="close">
+            		<img src="../images/common/close.png"/>
+            	</div>
+            </div>
 	</body>
     <script src="../js/common-js/jquery.js" type="text/javascript" charset="utf-8"></script>
 	<script src="https://cdn.jsdelivr.net/g/jquery@1.11.3,jquery.easing@1.3(jquery.easing.1.3.min.js)"></script>
@@ -311,7 +318,8 @@
 	<script>
 		AOS.init({
 			easing: 'ease-out-back',
-			duration: 1000
+			duration: 1000,
+			once:'true'
 		});
 	</script> 
 	<script type="text/javascript">
