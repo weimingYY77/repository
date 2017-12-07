@@ -17,7 +17,7 @@
 }
 .logo{
 	position: fixed;
-	width: 191px;
+	width: 192px;
 	height: 26px;
 	top: 91px;
 	left: 5%;
@@ -36,7 +36,6 @@
 	top: 89px;
 	right:5%;
 	z-index: 1000;
-
 }
 .control>span{
 	font-size: 20px;
@@ -115,6 +114,7 @@
    margin-top: 312px;
    width: 100%;
    position: relative;
+   overflow: hidden;
 }
 /* 网络应用程序和自主建站   最底块的动画及样式 */
 .visibility_one{
@@ -227,6 +227,7 @@
 	margin-top: 459px;
 	width: 100%;
 	position: relative;
+	overflow: hidden;
 }
 .outsource_lft{
 	display: inline-block;
@@ -383,6 +384,292 @@
 	margin-left: -200px;
 	top: 80px;
 	z-index: -2;
+}
+/* 页面滑块 */
+/*从左往右*/
+.stars_top {
+    position: absolute;
+    left: -440px;
+    bottom: 20px;
+}
+.star_top {
+    display: block;
+    width: 177px;
+    height: 9px;
+    background: rgb(0, 141, 255);
+    top:25px;
+    left: 400px;
+    position: relative;
+    transform-origin: 100% 0;
+    animation: star-ct 2s infinite ease-out;
+    opacity: 0;
+    z-index: 2;
+    position: absolute;
+}
+.star_top.pink {
+    width: 160px;
+    height: 2px;
+    top:32px;
+    left: 300px;
+    background: #FFFFFF;
+    animation-delay:1s;
+    -webkit-animation-delay:1s;
+    -moz-animation-delay: 1s;
+}
+.star_top.blue {
+    width: 145px;
+    height: 9px;
+    background: rgb(60, 57, 205);
+    top: 70px;
+    left: 450px;
+    animation-delay:1s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+}
+.star_top.yellow {
+    width: 208px;
+    height: 8px;
+    top: 0px;
+    background: rgb(60, 57, 205);
+    animation-delay:1.5s;
+    -webkit-animation-delay:1.5s;
+    -moz-animation-delay:1.5s;
+}
+.star_top.white{
+    width: 80px;
+    height: 3px;
+    background: rgb(0,141,255);
+    top: 105px;
+    left: 200px;
+    animation-delay:1s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+}
+.position_left{
+    top: 0; 
+}
+.position_left .star_top {
+    display: block;
+    width: 177px;
+    height: 9px;
+    background: rgb(0, 141, 255);
+    top:25px;
+    left: 400px;
+    position: relative;
+    transform-origin: 100% 0;
+    animation: star-ct 2s infinite ease-out;
+    opacity: 0;
+    z-index: 2;
+    position: absolute;
+}
+.position_left .blue {
+    width: 155px;
+    height: 5px;
+    background: rgb(60, 57, 205);
+    top: 70px;
+    left: 350px;
+    animation-delay:1s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+}
+.position_left .white{
+    width: 160px;
+    height: 3px;
+    background: rgb(0,141,255);
+    top: -6px;
+    left: 300px;
+    animation-delay:1s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+}
+.position_2_left .star_top {
+    display: block;
+    width: 177px;
+    height: 9px;
+    background: rgb(0, 141, 255);
+    top:25px;
+    left: 400px;
+    position: relative;
+    transform-origin: 100% 0;
+    animation: star-ct 2s infinite ease-out;
+    opacity: 0;
+    z-index: 2;
+    position: absolute;
+}
+.position_2_left .pink {
+    width: 160px;
+    height: 2px;
+    top:32px;
+    left: 300px;
+    background: #2B2996;;
+    animation-delay:1.5s;
+    -webkit-animation-delay:1.5s;
+    -moz-animation-delay: 1.5s;
+}
+.position_2_left{
+	top: 0;
+}
+.position_2_left .blue {
+    width: 155px;
+    height: 5px;
+    background: rgb(60, 57, 205);
+    top: 70px;
+    left: 350px;
+    animation-delay:1s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+}
+.position_2_left .white{
+    width: 160px;
+    height: 3px;
+    background: rgb(0,141,255);
+    top: -6px;
+    left: 300px;
+    animation-delay:1s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+}
+.position_2_left .pink{
+    width: 140px;
+    height: 6px;
+    background:#3C39CD;;
+    top: 10px;
+    left: 320px;
+    animation-delay:1s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+}
+ @keyframes star-ct {
+    0% {
+        opacity: 0;
+        transform: scale(0) rotate(0) translate3d(0, 0, 0);
+        -webkit-transform: scale(0) rotate(0) translate3d(0, 0, 0);
+        -moz-transform: scale(0) rotate(0) translate3d(0, 0, 0);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1) rotate(0) translate3d(-200px, 0, 0);
+        -webkit-transform: scale(1) rotate(0) translate3d(200px, 0, 0);
+        -moz-transform: scale(1) rotate(0) translate3d(200px, 0, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1) rotate(0) translate3d(300px, 0, 0);
+        -webkit-transform: scale(1) rotate(0) translate3d(300px,0, 0);
+        -moz-transform: scale(1) rotate(0) translate3d(300px, 0px, 0);
+    }
+}
+/*从右往左*/
+.stars {
+    position: absolute;
+    right: 440px;
+    top: 0;
+}
+.star {
+    display: block;
+    width: 177px;
+    height: 5px;
+    background: rgb(0, 141, 255);
+    top:25px;
+    left: 400px;
+    position: relative;
+    transform-origin: 100% 0;
+    animation: star-ani 2s infinite ease-out;
+    opacity: 0;
+    z-index: 2;
+    position: absolute;
+}
+.star.blue {
+    width: 145px;
+    height: 9px;
+    background: rgb(60, 57, 205);
+    top: 70px;
+    left: 450px;
+    animation-delay:1s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+}
+.star.yellow {
+    width: 208px;
+    height: 3px;
+    top: 90px;
+    background: rgb(60, 57, 205);
+    animation-delay:1.5s;
+    -webkit-animation-delay:1.5s;
+    -moz-animation-delay:1.5s;
+}
+.star.white{
+    width: 80px;
+    height: 1px;
+    background: rgb(0,141,255);
+    top: 105px;
+    left: 500px;
+    animation-delay:1.5s;
+    -webkit-animation-delay:1.5s;
+    -moz-animation-delay:1.5s;
+} 
+.position_2_right .star {
+    display: block;
+    width: 207px;
+    height: 3px;
+    background: rgb(0, 141, 255);
+    top:160px;
+    left: 400px;
+    position: relative;
+    transform-origin: 100% 0;
+    animation: star-ani 2s infinite ease-out;
+    opacity: 0;
+    z-index: 2;
+    position: absolute;
+}
+.position_2_right .star.blue {
+    width: 155px;
+    height: 3px;
+    background: rgb(60, 57, 205);
+    top: 70px;
+    left: 450px;
+    animation-delay:0.6s;
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+}
+.position_2_right .star.yellow {
+    width: 200px;
+    height: 9px;
+    top: 120px;
+    background:#ffffff;
+    animation-delay:1s;
+    -webkit-animation-delay:1s;
+    -moz-animation-delay:1s;
+}
+.position_2_right .star.white{
+    width: 180px;
+    height: 3px;
+    background: rgb(0,141,255);
+    top: 105px;
+    left: 500px;
+    animation-delay:1s;
+    -webkit-animation-delay:1s;
+    -moz-animation-delay:1s;
+}
+@keyframes star-ani {
+    0% {
+        opacity: 0;
+        transform: scale(0) rotate(0) translate3d(0, 0, 0);
+        -webkit-transform: scale(0) rotate(0) translate3d(0, 0, 0);
+        -moz-transform: scale(0) rotate(0) translate3d(0, 0, 0);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1) rotate(0) translate3d(-200px, 0, 0);
+        -webkit-transform: scale(1) rotate(0) translate3d(-200px, 0, 0);
+        -moz-transform: scale(1) rotate(0) translate3d(-200px, 0, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1) rotate(0) translate3d(-300px, 0, 0);
+        -webkit-transform: scale(1) rotate(0) translate3d(-300px,0, 0);
+        -moz-transform: scale(1) rotate(0) translate3d(-300px, 0px, 0);
+    }
 }
 /* 最大宽度为1400时 小于1400*/
 @media all and (max-width:1400px) and (min-width:1240px) {
