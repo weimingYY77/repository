@@ -287,7 +287,7 @@
 			                </div>
 			            </div>
 			        </a>
-			        <a href="http://valudio.com/en/contact?s=1" class="no-visible is-visible">
+			        <a href="template/contact.html" class="no-visible is-visible">
 			            <div>
 			            	<div class="bg-hoverright"></div>
 			                <div>
@@ -321,6 +321,41 @@
                             </ul>
             			</div>
             		</div>
+            		<!-- 登录框 -->
+            		<div class="login_box active">
+            			<p>SumChance</p>
+            			<div>
+	            			<input type="text" name="" value="" placeholder="你的帐号">			
+            			</div>
+            			<div>
+	            			<input type="password" name="" value="" placeholder="你的密码">	
+            			</div>
+            			<div class="the_link">
+            				<a href="" title="" class="forget">忘记密码</a>
+            				<a href="javascript:;" title="" class="reg">注册</a>
+            			</div>
+            			<div>
+            				<button type="submit" class="login_btn"><a href="" title="">登录</a></button>
+            			</div>
+            		</div>
+            		<!-- 注册框 -->
+            		<div class="regist_box">
+            			<p>注册</p>
+            			<div><input type="tel" name="" value="" placeholder="手机号码" class="format"></div>
+            			<div><input type="text" name="" value="" placeholder="验证码" class="format"></div>
+            			<div><input type="password" name="" value="" placeholder="密码" class="format"></div>
+            			<div><input type="password" name="" value="" placeholder="确认密码" class="format"></div>
+            			<div><input type="text" name="" value="" placeholder="邀请码" class="format"></div>
+            			<div class="checktxt">
+            			    <input type="checkbox" name="" value="" placeholder="">
+            			    我已阅读并同意遵守<span>《三千客服务协议》</span>
+            			</div>
+            			<div>
+            				<button type="submit"><a href="" title="">立即注册</a></button>
+            			</div>
+
+
+            		</div>
             	</div>
             	<div class="close">
             		<img src="../images/common/close.png"/>
@@ -331,6 +366,7 @@
 	<script src="https://cdn.jsdelivr.net/g/jquery@1.11.3,jquery.easing@1.3(jquery.easing.1.3.min.js)"></script>
     <script src="../js/common-js/jquery.drawsvg.min.js"></script>
     <script src="../js/common-js/aos.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/validatebox.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
     var $svg = $('svg').drawsvg();
     $svg.drawsvg('animate');
