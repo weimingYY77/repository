@@ -1,5 +1,4 @@
 $(function(){
-	console.log($(".head_top").height())
 	$(window).scroll(function(){
 		// 当滚动条滚动超过顶部时，Logo变成黑色，否则logo为白色
 	if ($(window).scrollTop() >= $(".head_top").height()) {

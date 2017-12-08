@@ -18,6 +18,12 @@
     padding-left: 100px;
     float: left;
 }
+.bg-nav .logo img{
+    position: absolute;
+}
+.logo img.black{
+    display: none;
+}
 .bg-nav {
     width: 100%;
     display: block;
@@ -577,7 +583,7 @@ body.home .main > .team > div .container .img .block-revealer__content img {
    width: 300px;
    height: 60px;
    background:#25237C;
-   color: #8684E3;
+   color: #fff;
    font-size: 20px;
    border: none;
    outline: none;
@@ -587,6 +593,7 @@ body.home .main > .team > div .container .img .block-revealer__content img {
 .login_box .the_link{
     float: right;
     margin-right: 30px;
+    margin-top: 8px;
 }
 .login_box>div>a{
     color: #fff;
@@ -618,10 +625,21 @@ body.home .main > .team > div .container .img .block-revealer__content img {
     z-index: 999;
     display: none;
 }
+.regist_box .return{
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: -300px;
+    color:#8684E3;
+    cursor: pointer;
+    font-size: 14px;
+}
+.regist_box .return:hover{
+    color: #fff;
+}
 .regist_box>p{
     font-size: 30px;
     color: #fff;
-    margin-top: 53px;
+    margin-top: 15px;
     margin-bottom: 12px;
 }
 .regist_box .format{
@@ -634,7 +652,7 @@ body.home .main > .team > div .container .img .block-revealer__content img {
     font-size: 14px;
     padding-left: 21px;
     margin-top: 9px;
-    color: #8684E3; 
+    color: #fff; 
 }
 input::-webkit-input-placeholder{   
     color: #8684E3; 

@@ -1,4 +1,8 @@
 /* 底部样式*/
+.container_foot{
+	width: 82%;
+	margin: 0 auto;
+}
 .foot{
 	width: 100%;
 	background: #14134E;
