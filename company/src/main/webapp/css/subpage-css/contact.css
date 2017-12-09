@@ -137,18 +137,20 @@
 	margin-top: 37px;
 	margin-left: 90px;
 }
-#box_rit>div>input[type="text"]{
+.contact_form>input[type="text"]{
 	height: 60px;
+	display: block;
 }
-#box_rit>div>textarea{
+.contact_form>textarea{
     height: 140px;
     padding-top: 22px;
+    display: block;
 }
 .ht{
 	width: 410px;
 	background: #25237C;
 	border:#4240B6;
-	margin-top: 30px;
+	margin-top: 22px;
 	padding-left: 20px;
 	padding-right: 20px;
 	color: #fff;
@@ -159,19 +161,22 @@ textarea::-webkit-input-placeholder {
     color: #9391F1; 
     font-size: 14px;  
 } 
-#box_rit .check{
+.contact_form>span{
 	margin-top: 26px;
 	color: #FFFFFF;
 	font-size: 14px;
-}
-#box_rit .check>input{
-	vertical-align: middle;
-}
-#box_rit .send_btn{
-	margin-top:25px; 
-}
-#box_rit .send_btn .send{
 	display: inline-block;
+	margin-top: 26px;
+}
+.check_box{
+	margin-top: 2px;
+	vertical-align: middle;
+	margin-left: 120px;
+}
+
+.contact_form .send{
+	display:block;
+	margin-top:75px;
 	background: #3C39CD;
 	width: 100px;
 	height: 60px;
@@ -179,7 +184,7 @@ textarea::-webkit-input-placeholder {
 	float: right;
 	margin-right: 121px;	
 }
-#box_rit .send_btn .send>a{
+.send>a{
 		color: #fff;
 		font-size: 14px;
 }

@@ -557,6 +557,27 @@ body.home .main > .team > div .container .img .block-revealer__content img {
     top: 91px;
     cursor: pointer;
 }
+/* 登录后 */
+.login_after{
+    position: absolute;
+    top: 90px;
+    right: -135px;
+    font-size: 20px;
+    color: #fff;
+    visibility: hidden;
+}
+.after_icon{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: #fff;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.login_after>a{
+  color: #A2D2EA;  
+}
 /* 登录框 */
 .active{
     display: block;
@@ -667,7 +688,48 @@ body.home .main > .team > div .container .img .block-revealer__content img {
     margin-top: 15px;
     margin-bottom: 12px;
 }
-.regist_box .format{
+.reg_form{
+    position: relative;
+}
+.error_tel,.error_code,.error_pwd2,.empty_tel,.empty_code,.empty_pwd1,.empty_yq{
+    position: absolute;
+    color: red;
+    display: none; 
+}
+.error_tel,.empty_tel{
+   right: 60px;
+   top: 10px;
+}
+.error_code,.empty_code{
+   top: 60px;
+   right: 142px;
+}
+.empty_pwd1{
+   right: 60px;
+   top: 110px; 
+}
+.error_pwd2{
+   right: 60px;
+   top: 160px;
+}
+.empty_yq{
+    right: 60px;
+    top: 210px;
+}
+.reg_form .get_code{
+    display: inline-block;
+    position: absolute;
+    width: 81px;
+    height: 29px;
+    background: #3C39CD;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    top: 56px;
+    right: 60px;
+    padding-top: 5px;
+}
+.reg_form .format{
     display:block;
     width: 301px;
     height: 41px;
@@ -676,6 +738,7 @@ body.home .main > .team > div .container .img .block-revealer__content img {
     border: none;
     font-size: 14px;
     padding-left: 21px;
+    padding-right: 130px;
     margin-top: 9px;
     color: #fff; 
     margin-left: 50px;
