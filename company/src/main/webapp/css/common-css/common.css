@@ -177,9 +177,7 @@ img{
 .foot_rit>p{
 	color: #96BAFF;
 	font-size: 16px;
-}
-.tel,.qq,.blog{
-	margin-top: 25px;
+    line-height:40px;
 }
 .number{
 	font-size: 14px;
