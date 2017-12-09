@@ -557,9 +557,7 @@ body.home .main > .team > div .container .img .block-revealer__content img {
     top: 91px;
     cursor: pointer;
 }
-<<<<<<< HEAD
 /*zhezhao结束*/
-=======
 /* 登录后 */
 .login_after{
     position: absolute;
@@ -581,7 +579,6 @@ body.home .main > .team > div .container .img .block-revealer__content img {
 .login_after>a{
   color: #A2D2EA;  
 }
->>>>>>> 1ae340be4fe6a9c5ed3b34ae0fdab5db82645304
 /* 登录框 */
 .active{
     display: block;
