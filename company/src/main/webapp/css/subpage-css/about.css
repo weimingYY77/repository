@@ -229,88 +229,90 @@
     width: 261px;
 }
 /* 关于我们 */
-.main_content{
-	width: 100%;
-	margin-top:367px;
-	position: relative;
+.prefooter {
+    position: relative;
+    padding: 260px 0 0px 0;
+    overflow: hidden;
 }
-.us{
-   	height: 500px;
-   	position: relative;
-   	overflow: hidden;
+.container.maxwidth2 {
+    margin: 0 auto;
+    padding: 0 40px;
+    position: relative;
 }
-.project,.contact{
-   display: inline-block;
-   width: 42%;
-   height: 251px;
-   position: absolute;
+.prefooter > .container > div {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    background: #F3F7FF;
+    -webkit-transition: -webkit-transform 600ms ease-in-out;
+    -moz-transition: -webkit-transform 600ms ease-in-out;
+    -ms-transition: -webkit-transform 600ms ease-in-out;
+    transition: -webkit-transform 600ms ease-in-out;
 }
-.project{
-	background: #3C39CD;
-	text-align: left;
-	padding-left: 57px;
-	left: 100px;
+.prefooter > .container a:nth-of-type(1) {
+    left: 0;
+    top: -10%;
 }
- .project_hover{
-	position: absolute;
-	background:rgba(255, 255, 255, 0.1);
-	left:-100%;
-	width: 42%;
-    height: 251px;
-    display: inline-block;
-    padding-left: 57px;
-    transition:all 1s linear;
+.prefooter > .container a {
+    position: absolute;
+    width: 57%;
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    background: #3C39CD;
+}
+.prefooter > .container a > div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 80px 120px;
+}
+.prefooter > .container a p {
+    margin-bottom:15px;
+    font-size: 16x;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing:1px;
+}
+.title--header4 {
+    font-size:26px;
+    color: #FFFFFF;
+    line-height: 1.1em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+.prefooter > .container a:nth-of-type(2) {
+    right: 0;
+    top: 27%;
+    text-align: right;
+    background:#19178D;
+}
+.prefooter .bg-hover,.prefooter .bg-hoverright{
+	background: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: 0;
+    left:-100%;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: -webkit-transform 400ms ease-in-out;
+    -moz-transition: -webkit-transform 400ms ease-in-out;
+    -ms-transition: -webkit-transform 400ms ease-in-out;
+    transition:  400ms ease-in-out;
+}
+.prefooter .bg-hoverright{
+	left: 100%;
+}
+
+.prefooter > .container a:nth-of-type(1):hover .bg-hover{
+	left: 0;
 } 
-.project:hover + .project_hover{
-    left: 100px;
-}
-.contact{
-	bottom:60px;
-	background: #19178D;
-	text-align: right;
-	padding-right: 57px;
-	right: 100px;
-}
- .contact_hover{
-	position: absolute;
-	bottom:60px;
-	background:rgba(255, 255, 255, 0.1);
-	right:-100%;
-	width: 42%;
-    height: 251px;
-    display: inline-block;
-    padding-right: 57px;
-    transition:all 0.6s linear;
+.prefooter > .container a:nth-of-type(2):hover .bg-hoverright{
+	left: 0;
 } 
-.contact:hover + .contact_hover{
-    right: 100px;
-}
-.main_content .xs{
-	font-size: 16px;
-	color: #fff;
-	padding-top: 40px;
-}
-.main_content .xl{
-	padding-top: 27px
-}
-.main_content .xl>a{
-    font-size: 60px;
-	color: #fff;
-}
-.white{
-	background: #F3F7FF;
-	width: 401px;
-	height: 401px;
-	position: absolute;
-	left: 50%;
-	margin-left: -200px;
-	top: 80px;
-	z-index: -2;
-}
 @media all and (max-width:1400px) and (min-width:1240px) {
 	.container{
-	   width:100%;
-	   overflow: hidden;
+	  width: 1000px;
      }
     
     .big_img_block{
