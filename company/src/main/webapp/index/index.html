@@ -287,9 +287,17 @@
 			                    <h5 class="title--header4 white">让我们一起来谈谈他</h5>
 			                </div>
 			            </div>
+<<<<<<< Updated upstream
 			       </a>
 			     
 			        <a href="javascript:;" class="no-visible is-visible" aos="fade-up" aos-offset="300" aos-easing="ease-in-sine" aos-delay="100">
+=======
+			        </a>
+
+
+			        <a href="javascript:;" class="no-visible is-visible" aos="fade-up" aos-offset="300" aos-easing="ease-in-sine" aos-delay="100">
+
+>>>>>>> Stashed changes
 			            <div>
 			            	<div class="bg-hoverright"></div>
 			                <div>
@@ -326,38 +334,30 @@
             		<!-- 登录框 -->
             		<div class="login_box active">
             			<p>SumChance</p>
-            			<div>
-	            			<input type="text" name="" value="" placeholder="你的帐号">			
-            			</div>
-            			<div>
-	            			<input type="password" name="" value="" placeholder="你的密码">	
-            			</div>
-            			<div class="the_link">
-            				<a href="" title="" class="forget">忘记密码</a>
+            			<form action="index_submit" method="get" class="login_form">
+	            			<input type="text" name="" value="" placeholder="你的帐号" class="count_box">
+	            			<span class="count">帐号不存在！！！</span>	
+	            			<input type="password" name="" value="" placeholder="你的密码" class="pwd_box">
+	            			<span class="pwd">密码错误！！！</span>
             				<a href="javascript:;" title="" class="reg">注册</a>
-            			</div>
-            			<div>
+            				<a href="" title="" class="forget">忘记密码</a>
             				<button type="submit" class="login_btn"><a href="" title="">登录</a></button>
-            			</div>
+            			</form>
             		</div>
             		<!-- 注册框 -->
             		<div class="regist_box">
             		    <span class="return">返回登录</span>
             			<p>注册</p>
-            			<div><input type="tel" name="" value="" placeholder="手机号码" class="format"></div>
-            			<div><input type="text" name="" value="" placeholder="验证码" class="format"></div>
-            			<div><input type="password" name="" value="" placeholder="密码" class="format"></div>
-            			<div><input type="password" name="" value="" placeholder="确认密码" class="format"></div>
-            			<div><input type="text" name="" value="" placeholder="邀请码" class="format"></div>
-            			<div class="checktxt">
-            			    <input type="checkbox" name="" value="" placeholder="">
-            			    我已阅读并同意遵守<span>《三千客服务协议》</span>
-            			</div>
-            			<div>
-            				<button type="submit"><a href="" title="">立即注册</a></button>
-            			</div>
-
-
+            			<form action="index_submit" method="get" class="reg_form">
+	            			<input type="tel" name="" value="" placeholder="手机号码" class="format">
+	            			<input type="text" name="" value="" placeholder="验证码" class="format">
+	            			<input type="password" name="" value="" placeholder="密码" class="format">
+	            			<input type="password" name="" value="" placeholder="确认密码" class="format">
+	            			<input type="text" name="" value="" placeholder="邀请码" class="format">
+            			    <input type="checkbox" name="" value="" placeholder="" class="check_box">
+            			    <span class="agreen">我已阅读并同意遵守<span>《三千客服务协议》</span></span>
+            				<button type="submit" class="reg_btn"><a href="" title="">立即注册</a></button>
+            			</form>
             		</div>
             	</div>
             	<div class="close">

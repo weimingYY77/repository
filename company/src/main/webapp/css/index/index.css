@@ -570,7 +570,7 @@ body.home .main > .team > div .container .img .block-revealer__content img {
     top: 289px;
     text-align: center;
     z-index: 1000;
-/*     display: none; */
+/*      display: none;  */
 }
 .login_box>p{
     font-size: 30px;
@@ -578,8 +578,8 @@ body.home .main > .team > div .container .img .block-revealer__content img {
     margin-top: 55px;
     margin-bottom: 20px;
 }
-.login_box>div>input{
-    display: inline-block;
+.login_form>input{
+   display: block;
    width: 300px;
    height: 60px;
    background:#25237C;
@@ -589,27 +589,52 @@ body.home .main > .team > div .container .img .block-revealer__content img {
    outline: none;
    margin-top: 30px;
    padding-left: 20px;
+   padding-right: 100px;
+   margin-left: 50px;
+}
+
+.login_form>span{
+    position: absolute;
+    color: red;
+    font-size: 14px;
+    right: 50px;
+}
+.login_form .count{
+    display: none; 
+    top: 150px;
+}
+.login_form .pwd{
+     display: none; 
+    top: 235px;
 }
 .login_box .the_link{
     float: right;
     margin-right: 30px;
     margin-top: 8px;
 }
-.login_box>div>a{
+.login_form>a{
+    display: inline-block;
+    margin-top: 8px;
     color: #fff;
     font-size: 12px;
-    margin-right: 20px;
+}
+.login_form>a.forget{
+    margin-right: -220px;
+}
+.login_form>a.reg{
+    margin-right: -100px;
 }
 .login_box .login_btn{
-   display: inline-block;
+   display:block;
    width: 300px;
    height: 60px;
    background: #3C39CD;
    border: none;
    margin-top: 69px;
    cursor: pointer;
+   margin-left: 50px;
 }
-.login_box .login_btn>a{
+.login_form .login_btn>a{
        font-size:30px;
        color: #fff;
 }
@@ -643,7 +668,7 @@ body.home .main > .team > div .container .img .block-revealer__content img {
     margin-bottom: 12px;
 }
 .regist_box .format{
-    display: inline-block;
+    display:block;
     width: 301px;
     height: 41px;
     background: #25237C;
@@ -653,33 +678,37 @@ body.home .main > .team > div .container .img .block-revealer__content img {
     padding-left: 21px;
     margin-top: 9px;
     color: #fff; 
+    margin-left: 50px;
 }
 input::-webkit-input-placeholder{   
     color: #8684E3; 
     font-size: 14px;  
 } 
-.checktxt{
-    color: #8684E3;
-    font-size: 12px;
-    margin-left:-65px;
-    margin-top: 24px;
-}
-.checktxt input[type="checkbox"]{
+input[type="checkbox"]{
     vertical-align: middle;
     background:#25237C;
+    margin-left: -55px;
+    margin-top: 4px;
 }
-.checktxt>span{
+.agreen{
+    color: #8684E3;
+    font-size: 12px;
+    margin-top: 24px;
+    display: inline-block;
+}
+.agreen>span{
     color: #fff;
 }
-.regist_box>div>button{
-    display: inline-block;
+.reg_btn{
+    display:block;
     background: #3C39CD;
     width: 301px;
     height: 41px;
     border: none;
     margin-top: 20px;
+    margin-left: 50px;
 }
-.regist_box>div>button>a{
+.reg_btn>a{
     color:#FFFFFF;
     font-size: 20px;
 }
