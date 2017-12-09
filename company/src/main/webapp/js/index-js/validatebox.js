@@ -36,12 +36,10 @@ $(function(){
 		if ($(".reg_tel").val() == " ") {
 			$(".empty_tel").show();
 			$(".error_tel").hide();
-		}
-		else if (!phoneReg.test($(".reg_tel").val())) {
+		}else if (!phoneReg.test($(".reg_tel").val())) {
 			$(".error_tel").show();
 			$(".empty_tel").hide();
-		} 
-		else{
+		} else{
 		$(".empty_tel").hide();
 		$(".error_tel").hide();
 		}
