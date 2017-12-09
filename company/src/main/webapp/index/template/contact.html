@@ -50,25 +50,16 @@
 	   	 	<div id="box_rit">
 	   	 		<p class="mg_lft send_msg">给我们发信息</p>	
 	   	 		<div class="line_three"></div>
-	   	 		<div>
-	   	 		   <input type="text" name="" value="" placeholder="你的名字" class="mg_lft ht">	
-	   	 		</div>
-	   	 		<div>
-	   	 		   <input type="text" name="" value="" placeholder="你的邮箱" class="mg_lft ht">	
-	   	 		</div>
-	   	 		<div>
-	   	 		   <input type="text" name="" value="" placeholder="你的问题" class="mg_lft ht">	
-	   	 		</div>
-                <div>
-	   	 		   <textarea name="" class="mg_lft ht" placeholder="你的信息"></textarea>   	
-                </div>
-                <div class="check mg_lft">
-                	<input type="checkbox" name="" value="">&nbsp;&nbsp;我接受条款和条件
-                </div>
-                <div class="send_btn">
-                	<button type="submit" class="send"><a href="javascript:;" title="">发送</a></button>
+	   	 		<form action="contact_submit" method="get" class="contact_form">
+	   	 			<input type="text" name="" value="" placeholder="你的名字" class="mg_lft ht">
+	   	 			<input type="text" name="" value="" placeholder="你的邮箱" class="mg_lft ht">
+	   	 			<input type="text" name="" value="" placeholder="你的问题" class="mg_lft ht">
+	   	 			<textarea name="" class="mg_lft ht" placeholder="你的信息"></textarea>
+	   	 			<input type="checkbox" name="" value="" class="check_box">&nbsp;&nbsp;
+	   	 			<span>我接受《隐私条款和条例》</span>
+	   	 			<button type="submit" class="send"><a href="javascript:;" title="">发送</a></button>
                 	<div style="clear: both;"></div>
-                </div>
+	   	 		</form>
 	   	    </div>	
 	   </div>	 	
 	 </div>
