@@ -1,24 +1,20 @@
 // 验证
 $(function(){
     //滚动改变logo颜色
-		console.log($(window).scrollTop());
+	console.log($(window).scrollTop());
 	$(window).scroll(function(){
 		if ($(window).scrollTop() < 820) {
            $(".white").show();
            $(".black").hide();
-           $('.toggle > div > div').css('background','#FFFFFF')
 		}else if ($(window).scrollTop() >= 820 && $(window).scrollTop() < 3600) {
 			$(".black").show();
 			$(".white").hide();
-			 $('.toggle > div > div').css('background','#000000')
 		}else if ($(window).scrollTop() >= 3600 && $(window).scrollTop() <= 4200){
            $(".white").show();
            $(".black").hide();
-            $('.toggle > div > div').css('background','#FFFFFF')
 		}else{
 			$(".black").show();
 			$(".white").hide();
-			 $('.toggle > div > div').css('background','#000000')
 		}
 
 	})
@@ -36,13 +32,19 @@ $(function(){
 	// 注册验证
    // 手机验证
 	$(".reg_tel").blur(function(){
+		var phoneReg = /^1[3|4|5|7|8][0-9]{9}$/; 
 		if ($(".reg_tel").val() == " ") {
 			$(".empty_tel").show();
+			$(".error_tel").hide();
 		}
-		var phoneReg = /^1[3|4|5|7|8][0-9]{9}$/; 
-		if (!phoneReg.test($(".reg_tel").val())) {
+		else if (!phoneReg.test($(".reg_tel").val())) {
 			$(".error_tel").show();
-		}  
+			$(".empty_tel").hide();
+		} 
+		else{
+		$(".empty_tel").hide();
+		$(".error_tel").hide();
+		}
 	})
 	$(".reg_tel").focus(function(){
 		$(".empty_tel").hide();
