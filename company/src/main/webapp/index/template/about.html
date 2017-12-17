@@ -344,5 +344,29 @@
 </body>
 <script type="text/javascript" src="../../js/common-js/jquery.js"></script>
 <script src="../../js/common-js/common.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function(){
+  console.log($(window).scrollTop());
+  $(window).scroll(function(){
+    // 当滚动条滚动超过顶部时，Logo变成黑色，否则logo为白色
+  if ($(window).scrollTop() <= 585) {
+      $(".img_black").hide();
+      $(".img_white").show();
+    }
+    else if ($(window).scrollTop() > 585 && $(window).scrollTop() < 1600){
+      $(".img_black").show();
+      $(".img_white").hide();
+    }
+    else if ($(window).scrollTop() >=1650 && $(window).scrollTop() <=2710){
+      $(".img_black").hide();
+      $(".img_white").show();
+    }
+    else{
+      $(".img_black").show();
+      $(".img_white").hide();
+    }
 
+    })
+})
+</script>
 </html>
