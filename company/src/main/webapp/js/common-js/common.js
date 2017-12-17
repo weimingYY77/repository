@@ -1,13 +1,15 @@
 $(function(){
+       // 加载底部
         $("#test").load("http://www.sumchance.com/src/main/webapp/index/common-html/footer.html");
+        // 加载遮罩层
         $("#nav").load("http://www.sumchance.com/src/main/webapp/index/common-html/nav.html");
          $("#toggle").click(function(){
-	            $(".zhezhao").addClass("is-open");
-	        })
-	         $(".close").click(function(){
-	            $(".zhezhao").removeClass("is-open");
-	        });
-	        $(".reg").click(function(){
+              $(".zhezhao").addClass("is-open");
+          })
+           $(".close").click(function(){
+              $(".zhezhao").removeClass("is-open");
+          });
+        $(".reg").click(function(){
         $(".login_box").removeClass("active");
         $(".login_box").hide();
         $(".regist_box").show();
@@ -17,6 +19,13 @@ $(function(){
         $(".login_box").show();
         $(".regist_box").hide();
        })
+  // 点击显示隐藏服务协议
+  $(".agreenment").click(function(){
+      $(".sum_agreen").removeClass('visi');
+  })
+  $(".iagreen").click(function(){
+      $(".sum_agreen").addClass('visi');
+  })
     // 注册验证
    // 手机验证
   $(".reg_tel").blur(function(){
@@ -76,4 +85,4 @@ $(function(){
       $(".empty_yq").hide();
     }
   })
-});
+    });
