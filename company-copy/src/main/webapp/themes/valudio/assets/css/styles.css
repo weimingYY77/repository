@@ -1545,14 +1545,39 @@ html.smil {
   -moz-transition: right 400ms ease-in-out, top 400ms ease-in-out;
   -ms-transition: right 400ms ease-in-out, top 400ms ease-in-out;
   transition: right 400ms ease-in-out, top 400ms ease-in-out; }
+  .kongzhi {
+       z-index: 101;
+    position: fixed;
+  top: 45px;
+    right: 170px;
+    color: #FFFFFF;
+    margin: 18px 24px 20px 24px;
+    cursor: pointer;
+    -webkit-transition: right 400ms ease-in-out, top 400ms ease-in-out;
+    -moz-transition: right 400ms ease-in-out, top 400ms ease-in-out;
+    -ms-transition: right 400ms ease-in-out, top 400ms ease-in-out;
+    transition: right 400ms ease-in-out, top 400ms ease-in-out;
+    font-size: 20px;
+}
   @media screen and (min-width: 992px) and (max-width: 1279px) {
     .toggle {
       right: 55px;
-      top: 30px; } }
+      top: 30px; }
+       .kongzhi{
+          top: 26px;
+      }
+       }
   @media screen and (min-width: 0) and (max-width: 991px) {
     .toggle {
-      top: 5px;
-      right: 4px; } }
+	    top: 5px;
+	    right: 4px; 
+	    } 
+     .kongzhi{
+        top: 5px;
+	    right: 60px;
+	    font-size: 16px;
+     }
+      }
   .toggle > div {
     height: 14px;
     width: 27px; }
@@ -5578,5 +5603,13 @@ body.contact .footer {
     body.contact .footer .container .bottom > div:nth-child(2) ul li {
       margin-right: 0;
       margin-left: 15px; }
+    @media screen and (min-width: 0) and (max-width: 991px) {
+      .login-left{
+      	display: none;
+      }
+      .nav .nav-content > div {
+    margin-top: 70px;
+}
+      }
 
 /*# sourceMappingURL=styles.css.map */
