@@ -23,9 +23,9 @@
     color: #fff;
 }
 .foot_lft .company_desc{
+    line-height: 30px;
     width: 60%;
     color: #fff;
-    height: 75px;
     margin-top: 53px;
     font-size: 18px;
 }
