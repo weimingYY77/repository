@@ -1546,7 +1546,7 @@ html.smil {
   -ms-transition: right 400ms ease-in-out, top 400ms ease-in-out;
   transition: right 400ms ease-in-out, top 400ms ease-in-out; }
   .kongzhi {
-       z-index: 101;
+       z-index: 100;
     position: fixed;
   top: 45px;
     right: 170px;
@@ -1559,6 +1559,9 @@ html.smil {
     transition: right 400ms ease-in-out, top 400ms ease-in-out;
     font-size: 20px;
 }
+ .kongzhi.black{
+ 	color: #000000;
+ }
   @media screen and (min-width: 992px) and (max-width: 1279px) {
     .toggle {
       right: 55px;
