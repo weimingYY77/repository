@@ -1,27 +1,27 @@
 .container_top{
-	width: 72%;
-	margin: 0 auto;
+    width: 72%;
+    margin: 0 auto;
 }
 .container_foot{
-	width: 82%;
-	margin: 0 auto;
+    width: 82%;
+    margin: 0 auto;
 }
 .container{
-	width: 82%;
-	margin: 0 auto;
+    width: 82%;
+    margin: 0 auto;
 }
 /* 顶部 */
 .head_top{
-	width: 100%;
-	position: relative;
+    width: 100%;
+    position: relative;
 }
 .logo{
-	position: fixed;
-	width: 128px;
-	height: 21px;
-	top: 91px;
-	left: 5%;
-	z-index: 1000;
+    position: fixed;
+    width: 128px;
+    height: 21px;
+    top: 91px;
+    left: 5%;
+    z-index: 1000;
 }
 .logo img{
     width: 128px;
@@ -29,85 +29,95 @@
     position: absolute;
 }
 .logo img.img_black{
-	display: none;
+    display: none;
 }
 .control{
-	position: fixed;
-	top: 89px;
-	right:5%;
-	z-index: 1000;
+    position: fixed;
+    top: 89px;
+    right:3%;
+    z-index: 1000;
 }
 .control>span{
-	font-size: 20px;
+    font-size: 20px;
 }
 .lineGroup{
-	display: inline-block;
-	margin-left: 37px;
+    display: inline-block;
+    margin-left: 37px;
+    margin-right: 10px;
+    cursor: pointer;
 }
 .lineGroup .line{
-   width: 25px;
-   height: 3px;
+   width: 27px;
+   height: 2px;
    background: #2B2B2B;
-   margin-top: 2px;
+   margin-top: 4px;
+   transition-duration: .3s;
+   transition-delay: 0s, 0s, 0s, 0s;
 }
 .lineGroup .line2{
-	margin-left: 5px;
+    transform: translateX(5px);
+}
+.lineGroup:hover .line2{
+    transform: translateX(8px);
+}
+.lineGroup:hover .line:nth-child(3) {
+    transform: translateX(-5px);
 }
 .head_content{
-	width:83%;
-	height: 700px;
-	background: #2B2996;
+    width:83%;
+    height: 700px;
+    background: #2B2996;
 }
 .head_text{
-	padding-top: 282px;
+    padding-top: 282px;
 }
 .head_text .develop{
-	font-size: 16px;
-	color: #fff;
+    font-size: 16px;
+    color: #fff;
 }
 .head_text .space_one{
-	display: inline-block;
-	width: 151px;
-	height: 2px;
-	background: #008DFF;
-	margin-top: 49px;
-	margin-bottom: 30px;
-	margin-left:-10%;
+    display: inline-block;
+    width: 151px;
+    height: 2px;
+    background: #008DFF;
+    margin-top: 49px;
+    margin-bottom: 30px;
+    margin-left:-10%;
 }
 .head_text .skill{
-	font-size: 90px;
-	color: #fff;
+    font-size: 90px;
+    color: #fff;
 }
 /* 主体内容 */
 .main{
-	width: 100%;
+    width: 100%;
 }
 .software{
-	font-size: 60px;
-	line-height: 90px;
-	color:#2B2B2B;
-	margin-top: 321px;
-	padding-left: 90px;
+    font-size: 60px;
+    line-height: 90px;
+    color:#2B2B2B;
+    margin-top: 321px;
+    padding-left: 90px;
 }
 .work{
-	width: 100%;
-	margin-top: 105px;
-	padding-left: 90px;
+    width: 100%;
+    margin-top: 105px;
+    padding-left: 90px;
 }
 .work .space_two{
-	display: inline-block;
-	width: 150px;
-	height: 3px;
-	background: #96BAFF;
-	vertical-align: top;
-	margin-top: 11px;
+    display: inline-block;
+    width: 150px;
+    height: 3px;
+    background: #96BAFF;
+    vertical-align: top;
+    margin-top: 11px;
 }
 .work>p{
-	display: inline-block;
-	font-size:24px;
-	color: #2B2B2B;
-	line-height: 36px;
-	padding-left: 64px;
+    display: inline-block;
+    font-size:24px;
+    color: #2B2B2B;
+    line-height: 36px;
+    padding-left: 64px;
 }
 /* 网络应用程序和自主建站 共用样式 */
 .extend{
@@ -118,11 +128,11 @@
 }
 /* 网络应用程序和自主建站   最底块的动画及样式 */
 .visibility_one{
-	width: 30%;
-	height: 601px;
-	background: #F3F7FF;
-	position: absolute;
-	z-index: -1;
+    width: 30%;
+    height: 601px;
+    background: #F3F7FF;
+    position: absolute;
+    z-index: -1;
 }
 .visibility_play1{
     animation:isvisible_one 1s 1;
@@ -136,64 +146,64 @@
     to{width: 30%;}
     }
 .extend_lft{
-	display: inline-block;
-	float: left;
+    display: inline-block;
+    float: left;
 }
 /* 网络应用程序和自主建站  中间块的动画及样式 */
 .extend_lft .program{
-	width:501px;
-	height: 601px;
-	background: #2B2996;
-	display: inline-block;
-	margin-top: 80px;
-	position: relative;
-	z-index: -1;
+    width:501px;
+    height: 601px;
+    background: #2B2996;
+    display: inline-block;
+    margin-top: 80px;
+    position: relative;
+    z-index: -1;
 }
 .program_play{
-	animation:program_ct 1s 1;	
-	-webkit-animation:program_ct 1s 1;
-	-o-animation:program_ct 1s 1;
-	-ms-animation:program_ct 1s 1;
-	-moz-animation:program_ct 1s 1;
+    animation:program_ct 1s 1;  
+    -webkit-animation:program_ct 1s 1;
+    -o-animation:program_ct 1s 1;
+    -ms-animation:program_ct 1s 1;
+    -moz-animation:program_ct 1s 1;
 }
 @keyframes program_ct{
     from{width: 0;}
     to{width: 501px;}
     }
 .extend_lft .rotate_top{
-	position: absolute;
-	color: #96BAFF;
-	font-size: 16px;
-	top: 80px;
-	transform:rotate(-90deg);
-    -ms-transform:rotate(-90deg); 	/* IE 9 */
-    -moz-transform:rotate(-90deg); 	/* Firefox */
+    position: absolute;
+    color: #96BAFF;
+    font-size: 16px;
+    top: 80px;
+    transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg);   /* IE 9 */
+    -moz-transform:rotate(-90deg);  /* Firefox */
     -webkit-transform:rotate(-90deg); /* Safari 和 Chrome */
-    -o-transform:rotate(-90deg); 	/* Opera */
+    -o-transform:rotate(-90deg);    /* Opera */
 }
 .extend_lft .blockImg_one{
-	width: 300px;
-	height: 201px;
-	background: #DCDCDC;
-	display: inline-block;
-	margin-left: -150px;
-	margin-bottom: 60px;
-	z-index: 200;
+    width: 300px;
+    height: 201px;
+    background: #DCDCDC;
+    display: inline-block;
+    margin-left: -150px;
+    margin-bottom: 60px;
+    z-index: 200;
 }
 .extend_rit{
-	display: inline-block;
-	width: 400px;
-	float: right;
-	margin-top: 220px;
-	padding-right: 220px;
+    display: inline-block;
+    width: 400px;
+    float: right;
+    margin-top: 220px;
+    padding-right: 220px;
 }
 .move_right{
-	width: 100%;
-	margin-left: -75px;
+    width: 100%;
+    margin-left: -75px;
 }
 .move_left{
-	margin-left: -115px;
-	width: 100%;
+    margin-left: -115px;
+    width: 100%;
 }
 .number{
     font-size: 16px;
@@ -201,110 +211,110 @@
     line-height: 36px;
 }
 .size{
-	font-size: 60px;
-	color: #2B2B2B;
+    font-size: 60px;
+    color: #2B2B2B;
 }
 .introduce{
-	height: 132px;
-	font-size:24px;
-	margin-top: 67px;
-	width: 421px;
+    height: 132px;
+    font-size:24px;
+    margin-top: 67px;
+    width: 421px;
 }
 .space_three{
-	display: inline-block;
-	height: 3px;
-	background: #96BAFF;
-	margin-bottom: 20px;
+    display: inline-block;
+    height: 3px;
+    background: #96BAFF;
+    margin-bottom: 20px;
 }
 .line_r{
-	width: 101px;
+    width: 101px;
 }
 .line_l{
-	width: 151px;
+    width: 151px;
 }
 /* 网络外包和形象策划 共用样式 */
 .outsource{
-	margin-top: 459px;
-	width: 100%;
-	position: relative;
-	overflow: hidden;
+    margin-top: 459px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
 }
 .outsource_lft{
-	display: inline-block;
-	float: left;
-	margin-top: 160px;
-	width: 360px;
-	padding-left: 125px;
+    display: inline-block;
+    float: left;
+    margin-top: 160px;
+    width: 360px;
+    padding-left: 125px;
 }
 .outsource_rit{
-	display: inline-block;
-	float: right;
-	padding-right: 50px;
+    display: inline-block;
+    float: right;
+    padding-right: 50px;
 }
 /* 网络应用程序和自主建站  中间块的动画及样式 */
 .outsource_rit .out_pack{
-	width: 501px;
-	height: 601px;
-	background:#3C39CD;
-	display: inline-block; 
-	position: relative;
+    width: 501px;
+    height: 601px;
+    background:#3C39CD;
+    display: inline-block; 
+    position: relative;
 }
 .outpack_play{
-	animation:outpack_ct 1s 1;
-	-webkit-animation:outpack_ct 1s 1;
-	-o-animation:outpack_ct 1s 1;
-	-moz-animation:outpack_ct 1s 1;
-	-ms-animation:outpack_ct 1s 1;
+    animation:outpack_ct 1s 1;
+    -webkit-animation:outpack_ct 1s 1;
+    -o-animation:outpack_ct 1s 1;
+    -moz-animation:outpack_ct 1s 1;
+    -ms-animation:outpack_ct 1s 1;
 }
 @keyframes outpack_ct{
     from{width: 0;}
     to{width: 501px;}
     }
 .out_pack .rotate_bottom{
-	position: absolute;
-	color: #96BAFF;
-	font-size: 16px;
-	bottom: 80px;
-	right: 30px;
-	transform:rotate(-90deg);
-	transform:rotate(-90deg);
-    -ms-transform:rotate(-90deg); 	/* IE 9 */
-    -moz-transform:rotate(-90deg); 	/* Firefox */
+    position: absolute;
+    color: #96BAFF;
+    font-size: 16px;
+    bottom: 80px;
+    right: 30px;
+    transform:rotate(-90deg);
+    transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg);   /* IE 9 */
+    -moz-transform:rotate(-90deg);  /* Firefox */
     -webkit-transform:rotate(-90deg); /* Safari 和 Chrome */
-    -o-transform:rotate(-90deg); 	/* Opera */
+    -o-transform:rotate(-90deg);    /* Opera */
 }
 .outsource_rit .blockImg_two{
-	width: 300px;
-	height: 201px;
-	background: #DCDCDC;
-	display: inline-block;
-	position: absolute;
-	top: 60px;
-	margin-left: -150px;
+    width: 300px;
+    height: 201px;
+    background: #DCDCDC;
+    display: inline-block;
+    position: absolute;
+    top: 60px;
+    margin-left: -150px;
 }
 /* 网络外包和形象策划   最底块的动画及样式 */
 .visibility_two{
-	position: absolute;
-	width: 460px;
-	height: 497px;
-	background: #F3F7FF;
- 	z-index: -1; 
-	right: 5%;
-	top: -130px;
+    position: absolute;
+    width: 460px;
+    height: 497px;
+    background: #F3F7FF;
+    z-index: -1; 
+    right: 5%;
+    top: -130px;
 }
 .visibility_play2{
-	animation:isvisible_two 1s 1;
-	-webkit-animation:isvisible_two 1s 1;
-	-ms-animation:isvisible_two 1s 1;
-	-o-animation:isvisible_two 1s 1;
-	-moz-animation:isvisible_two 1s 1;
+    animation:isvisible_two 1s 1;
+    -webkit-animation:isvisible_two 1s 1;
+    -ms-animation:isvisible_two 1s 1;
+    -o-animation:isvisible_two 1s 1;
+    -moz-animation:isvisible_two 1s 1;
 }
 @keyframes isvisible_two{
     from{width: 0;}
     to{width: 460px;}
     }
 .visibility_four{
-	right: 0;
+    right: 0;
 }
 /* 关于我们 */
 .prefooter {
@@ -367,7 +377,7 @@
     background:#19178D;
 }
 .prefooter .bg-hover,.prefooter .bg-hoverright{
-	background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.1);
     position: absolute;
     top: 0;
     left:-100%;
@@ -379,14 +389,14 @@
     transition:  400ms ease-in-out;
 }
 .prefooter .bg-hoverright{
-	left: 100%;
+    left: 100%;
 }
 
 .prefooter > .container a:nth-of-type(1):hover .bg-hover{
-	left: 0;
+    left: 0;
 } 
 .prefooter > .container a:nth-of-type(2):hover .bg-hoverright{
-	left: 0;
+    left: 0;
 } 
 /* 页面滑块 */
 /*从左往右*/
@@ -510,7 +520,7 @@
     -moz-animation-delay: 1.5s;
 }
 .position_2_left{
-	top: 0;
+    top: 0;
 }
 .position_2_left .blue {
     width: 155px;
@@ -676,15 +686,15 @@
 }
 /* 最大宽度为1400时 小于1400*/
 @media all and (max-width:1400px) and (min-width:1240px) {
-	.container{
-	   width:92%;
-	   overflow: hidden;
+    .container{
+       width:92%;
+       overflow: hidden;
      }
      .head_text .skill{
-	   font-size: 70px;
+       font-size: 70px;
      }
     .extend_rit{
-	   padding-right: 0px;
+       padding-right: 0px;
      }
      .main_content .xl>a{
        font-size: 40px;
@@ -693,47 +703,47 @@
 }
 /* 最大宽度为1240时 小于1240*/
  @media all and (max-width:1240px) {
-	.container{
-	   width:100%;
-	   overflow: hidden;
+    .container{
+       width:100%;
+       overflow: hidden;
      } 
     .head_text .skill{
-	   font-size: 70px;
+       font-size: 70px;
      }
     .extend_rit{
-	   padding-right: 0px;
+       padding-right: 0px;
      }
      .software {
-     	font-size: 40px;
+        font-size: 40px;
      } 
      .work>p {
-     	font-size: 16px;
+        font-size: 16px;
      }
      .extend_lft .program {
-     	width: 445px;
+        width: 445px;
      }
      .extend_lft .program,.outsource_rit .out_pack {
-     	width: 445px;
+        width: 445px;
      }
      .visibility_two {
-     	width: 360px;
-     	right: 0;
+        width: 360px;
+        right: 0;
      }
      .size{
-     	font-size: 30px;
+        font-size: 30px;
      }
      .introduce{
-     	font-size: 16px;
-     	width: 360px;
+        font-size: 16px;
+        width: 360px;
      }
      .line_l {
-     	width: 130px;
+        width: 130px;
      }
     .main_content .xl>a{
        font-size: 30px;
      }
      .foot_lft .company_desc {
-     	width: 450px;
+        width: 450px;
      }
 
 }
