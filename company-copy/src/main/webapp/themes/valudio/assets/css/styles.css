@@ -114,7 +114,7 @@ ul {
 blockquote,
 q {
   quotes: none; }
-
+a{text-decoration: none}
 blockquote:before,
 blockquote:after,
 q:before,
@@ -1247,9 +1247,9 @@ html.smil {
         display: block;
         padding-top: 18%; } }
     .nav .nav-content > div {
-      display: table-cell;
+         margin-top: 200px;
       *zoom: 1;
-      vertical-align: middle; }
+      }
       .nav .nav-content > div:before, .nav .nav-content > div:after {
         display: table;
         clear: both;
@@ -1260,7 +1260,7 @@ html.smil {
           display: block; } }
       .nav .nav-content > div .navigation {
         float: left;
-        width: 70%; }
+        width:60%; }
         @media screen and (min-width: 768px) and (max-width: 991px) {
           .nav .nav-content > div .navigation {
             width: 60%; } }
@@ -1311,7 +1311,8 @@ html.smil {
             text-decoration: none;
             color: #3C39CD;
             font-weight: 100;
-            font-size: 9.2em;
+            font-size:8.2em;
+            line-height: 1.2em;
             text-decoration: none;
             padding: 0.05em 0;
             display: inline-block;
