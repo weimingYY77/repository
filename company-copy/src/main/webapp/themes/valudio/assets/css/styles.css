@@ -4076,7 +4076,6 @@ body.contact #main {
         body.contact #main > .intro .right .form form div.select {
           display: block;
           overflow: hidden;
-          background-image: url(../images/select.svg);
           background-repeat: no-repeat;
           background-position: right 25px center;
           padding: 0; }
