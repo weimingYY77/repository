@@ -4741,7 +4741,8 @@ h3.title--header2{
             display: table;
             clear: both;
             content: "";
-            line-height: 0; } }
+            line-height: 0; }
+             }
       body.case-study-detail #main > .blocks > .block2 > div .images {
         position: absolute;
         top: 15%;
@@ -4755,7 +4756,12 @@ h3.title--header2{
             max-width: none;
             float: right;
             width: calc(100% - 20px);
-            padding-top: 50px; } }
+            padding-top: 50px; }
+            // 底部
+            .foot_lft,.foot_rit{
+             width: 100%;
+             }
+             }
         body.case-study-detail #main > .blocks > .block2 > div .images > div {
           position: relative;
           height: 100%;
