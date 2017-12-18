@@ -5609,12 +5609,29 @@ body.contact .footer {
     body.contact .footer .container .bottom > div:nth-child(2) ul li {
       margin-right: 0;
       margin-left: 15px; }
-    @media screen and (min-width: 0) and (max-width: 991px) {
+    @media all and (min-width: 0) and (max-width: 991px) {
       .login-left{
       	display: none;
       }
       .nav .nav-content > div {
-    margin-top: 70px;
+       margin-top: 70px;
+      }
+      .foot_lft .company_desc {
+       width: 100%;
+      }
+      .foot_lft {
+        width: 100%;
+     }
+     .foot_rit {
+        width: 100%;
+        margin-top: 60px;
+
+     }
+     .foot_lft .do>a {
+        padding-left: 15px;
+     }
+     .footlist li {
+       padding-right: 33px;
 }
       }
 
