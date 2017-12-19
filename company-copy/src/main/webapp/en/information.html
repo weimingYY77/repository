@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>完善资料</title>
+	<link rel="icon" href="../../images/common/icon.png">
+	<link rel="stylesheet" href="../../css/subpage-css/information.css"></head>
+<body>
+	<div class="data">
+		<p>完善资料</p>
+		<form action="information_submit" method="get" class="data_list">
+			<div class="user_group">
+				<label for="head_icon">用户头像&nbsp;&nbsp;:</label>
+				<input type="image" name="" value="" id="head_icon">
+				<span class="change">更改</span>
+			</div>
+			<div class="user_group">
+				<label for="user_name">用户昵称&nbsp;&nbsp;:</label>
+				<input type="text" name="" value="" id="user_name" required="required">
+				<span class="red">* 必填</span>
+			</div>
+			<div class="user_group">
+				<label for="user_company">单位名称&nbsp;&nbsp;:</label>
+				<input type="text" name="" value="" id="user_company" required="required">
+				<span class="red">* 必填</span>
+			</div>
+			<div class="user_group">
+				<label for="company_add">公司地址&nbsp;&nbsp;:</label>
+				<input type="text" name="" value="" id="company_add" required="required">
+				<span class="red">* 必填</span>
+			</div>
+			<div class="user_group">
+				<label for="company_tel">公司电话&nbsp;&nbsp;:</label>
+				<input type="tel" name="" value="" id="company_tel" required="required">
+				<span class="red">* 必填</span>
+			</div>
+			<div class="user_group">
+				<label for="industry">主要行业&nbsp;&nbsp;:</label>
+				<input type="text" name="" value="" id="industry">
+				<span class="green">* 选填</span>
+			</div>
+			<div class="user_group">
+				<label for="business">主营业务&nbsp;&nbsp;:</label>
+				<input type="text" name="" value="" id="business">
+				<span class="green">* 选填</span>
+			</div>
+			<div class="user_group">
+				<label>所属地区&nbsp;&nbsp;:</label>
+				<select name="" class="area" placeholder="">
+					<option value="">省份：</option>
+					<option value="">湖南</option>
+					<option value="">北京</option>
+					<option value="">上海</option>
+				</select>
+				<span class="green">* 选填</span>
+				<select name="" class="area city">
+					<option value="">城市：</option>
+					<option value="">长沙</option>
+					<option value="">株洲</option>
+					<option value="">湘潭</option>
+				</select>
+				<span class="green last">* 选填</span>
+			</div>
+			<div class="user_group">
+				<button type="submit" class="save">
+					<a href="javascript:;" title="">保存资料</a>
+				</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
