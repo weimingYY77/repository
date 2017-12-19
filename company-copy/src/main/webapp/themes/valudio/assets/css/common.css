@@ -38,12 +38,13 @@
     display: block;
     margin-top: 27px;
     color: #96BAFF;
+    font-size: 14px;
 }
 .foot_lft .do>a{
     display: inline-block;
     color: #96BAFF;
-    font-size: 16px;
-    padding-left: 44px;
+    font-size: 14px;
+    padding-left: 26px;
 }
 .footlist {
     margin-top: 64px;
