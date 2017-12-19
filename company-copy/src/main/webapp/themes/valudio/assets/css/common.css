@@ -250,15 +250,15 @@
     position: absolute;
     color: red;
     font-size: 14px;
-    right: 50px;
+    right: 130px;
 }
 .login_form .count{
     display: none; 
-    top: 150px;
+    top: 315px;
 }
 .login_form .pwd{
-     display: none; 
-    top: 235px;
+    display: none; 
+    top: 396px;
 }
 .login_box .the_link{
     float: right;
