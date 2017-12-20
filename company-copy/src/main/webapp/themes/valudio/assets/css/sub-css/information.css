@@ -78,6 +78,18 @@ a{
 	margin-top: 27px;
 	margin-left: 158px;
 }
+.user_group .have{
+	display: inline-block;
+	color: red;
+	font-size: 14px;
+    float: right;
+    margin-right: 135px;
+    margin-top: -25px;
+    display: inline;
+    z-index: 100;
+    position: relative;
+    display: none;
+}
 .user_group>span{
 	font-size: 14px;
 	float: right;
