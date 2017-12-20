@@ -84,7 +84,7 @@
 	margin-left: 19px;
 	cursor: pointer;
 }
-.yz_group>input[type="text"],.xg_group>input[type="text"]{
+.yz_group>input[type="password"],.xg_group>input[type="password"],.yz_group>input[type="text"]{
 	width: 96%;
 	height: 30px;
 	color: #A3A3A3;
@@ -102,4 +102,23 @@
 	cursor: pointer;
 	border: none;
 	outline: none;
+}
+.yz_group>.error_yz{
+	color: red;
+	background: #fff;
+	font-size: 14px;
+	float: right;
+	margin-top: -28px;
+	position: relative;
+	z-index: 10;
+	display: none;
+}
+.xg_group>.error_again{
+	color: red;
+	font-size: 14px;
+	float: right;
+	margin-top: -28px;
+	position: relative;
+	z-index: 10;
+  	display: none;  
 }
