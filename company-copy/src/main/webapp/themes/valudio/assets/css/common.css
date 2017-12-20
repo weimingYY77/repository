@@ -320,12 +320,12 @@
 .reg_form{
     position: relative;
 }
-.error_tel,.error_code,.error_pwd2,.empty_tel,.empty_code,.empty_pwd1,.empty_yq{
+.error_tel,.error_code,.error_pwd2,.empty_tel,.empty_code,.empty_pwd1,.empty_yq,.have_tel{
     position: absolute;
     color: red;
     display: none; 
 }
-.error_tel,.empty_tel{
+.error_tel,.empty_tel,.have_tel{
    right: 60px;
    top: 15px;
 }
