@@ -99,12 +99,13 @@ ul li{
 	width: 100%;
 	margin-top: 60px;
  	overflow: hidden; 
+ 	background:#F5F5F6;
 }
 .main_left{
 	display: inline-block;
 }
 .main_left{
-	width: 300px;
+	width:16%;
 	height:900px;
 	background: #333744;
 	position: fixed;
@@ -176,17 +177,15 @@ ul li{
 /* 折叠菜单结束 */
 /* 右边开始 */
 .main_right{
-  display: inline-block;
-  position: relative;
-  margin-left: 300px;
-  background:#F5F5F6;
-  width: 84.4%;  
+    display: inline-block;
+    position: relative;
+    margin: 56px 40px 26px 40px;
+    width: 84%;
+    margin-left: 16%;
 }
 .main_right .service{
 	display: inline-block;
 	float: left;
-	margin-top: 40px;
-	margin-left: 2.4%;
 	margin-bottom: 32px;
 	background: #fff;
 	border-radius: 4px;
@@ -231,8 +230,6 @@ ul li{
 	display: inline-block;
 	width: 38%;
 	float: right;
-	margin-top: 40px;
-	margin-right: 2.4%;
 	margin-bottom: 32px;
 	background: #fff;
 	border-radius: 4px;
@@ -270,11 +267,8 @@ ul li{
 }
  /* 服务 消费 积分 */
 .mybox{
-  margin-left: 2.4%;
-  margin-right: 2.4%;
   background: #fff;
   padding-left: 37px;
-  padding-top: 56px;
   margin-bottom: 29px;
   border-radius: 4px;
   box-shadow:2px 2px 4px rgba(0,0,0,0.3);
@@ -442,12 +436,9 @@ ul li{
 }
 /* 服务进程 */
 .progress{
-  margin-left: 2.4%;
-  margin-right: 2.4%;
   background: #fff;
   padding-left: 37px;
   padding-top: 56px;
-  margin-bottom: 29px;
   border-radius: 4px;
   box-shadow:2px 2px 4px rgba(0,0,0,0.3);
   position: relative;
