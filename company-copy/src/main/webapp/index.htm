@@ -1,48 +1,46 @@
 <html><!DOCTYPE html>
 <html>
 <head>
-    <title>关于 | 三千客</title>
+    <title>三千客 | 信息技术有限公司</title>
 <meta name="description" content="Valudio">
 <meta name="keywords" content="valudio">
-
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
-
 <meta name="format-detection" content="telephone=no">
-
-<link rel="shortcut icon" href="../themes/valudio/assets/favicon.ico" tppabs="http://valudio.com/themes/valudio/assets/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="themes/valudio/assets/favicon.ico" tppabs="http://valudio.com/themes/valudio/assets/favicon.ico" type="image/x-icon">
 <!-- Twitter Card data -->
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@valudio_it" />
-<meta name="twitter:title" content="About | Valudio" />
+<meta name="twitter:title" content="Home | Valudio" />
 <meta name="twitter:description" content="Valudio" />
 
 <!-- Open Graph data -->
-<meta property="og:title" content="About | Valudio" />
+<meta property="og:title" content="Home | Valudio" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://valudio.com/en/about" />
+<meta property="og:url" content="http://valudio.com/en" />
 <meta property="og:description" content="Valudio" />
-<link rel="stylesheet" type="text/css" href="../themes/valudio/assets/css/common.css"/>
-<link href="../themes/valudio/assets/lib/font-awesome-4.7.0/css/font-awesome.min.css" tppabs="http://valudio.com/themes/valudio/assets/lib/font-awesome-4.7.0/css/font-awesome.min.css"  rel="stylesheet">
-<link href="../themes/valudio/assets/css/styles.css" tppabs="http://valudio.com/themes/valudio/assets/css/styles.css"  rel="stylesheet">
-</head>
+<link href="themes/valudio/assets/lib/font-awesome-4.7.0/css/font-awesome.min.css" tppabs="http://valudio.com/themes/valudio/assets/lib/font-awesome-4.7.0/css/font-awesome.min.css"  rel="stylesheet">
 
-<body class="about">
-    <!--/ header -->   
+<link href="themes/valudio/assets/css/common.css" tppabs="http://valudio.com/themes/valudio/assets/css/styles.css"  rel="stylesheet">
+<link href="themes/valudio/assets/css/styles.css" tppabs="http://valudio.com/themes/valudio/assets/css/styles.css"  rel="stylesheet">
+</head>
+<body class="home">
+    <!--/ header -->  
     <!--/ top -->
     <div class="bg-nav">
         <!--/ logo -->
         <div class="logo">
             <a href="http://www.sumchance.com/" >
-                <img src="../themes/valudio/assets/images/logo_w.png" tppabs="http://valudio.com/themes/valudio/assets/images/logo.svg" class="white">
-                <img src="../themes/valudio/assets/images/logo_b.png" tppabs="http://valudio.com/themes/valudio/assets/images/logo_b.svg" class="black">
+                <img src="themes/valudio/assets/images/logo_w.png" tppabs="http://valudio.com/themes/valudio/assets/images/logo.svg" class="white">
+                <img src="themes/valudio/assets/images/logo_b.png" tppabs="http://valudio.com/themes/valudio/assets/images/logo_b.svg" class="black">
             </a>
         </div>
         <!--/ logo -->
     </div> 
     <!--/ top -->
+
     <!--/ toggle -->
-    <div class="kongzhi black" style="display:none">控制器</div>
+    <div class="kongzhi">控制器</div>
     <div class="toggle" id="toggle">
         <div>
             <div></div>
@@ -51,7 +49,7 @@
         </div>
     </div>
     <!--/ toggle -->
-     <!--/ nav -->
+    <!--/ nav -->
     <div class="nav">
         <div class="nav-content">
             <div>
@@ -61,13 +59,13 @@
 			            <a href="http://www.sumchance.com/" >主页</a>
 				        </li>
 				            <li class=" transition">
-				            <a href="about.htm" >关于</a>
+				            <a href="en/about.htm" tppabs="http://valudio.com/en/about">关于</a>
 				        </li>
 				            <li class=" transition">
-				            <a href="services.htm" >服务</a>
+				            <a href="en/services.htm" tppabs="http://valudio.com/en/services">服务</a>
 				        </li>
 				            <li class=" transition">
-				            <a href="contact.htm" >联系</a>
+				            <a href="en/contact.htm" tppabs="http://valudio.com/en/contact">联系</a>
 				        </li>
 		            </ul>
                 </div>
@@ -77,7 +75,7 @@
             			<div class="login_after" id="login_after">
             			<span class="after_icon"></span>
             			<span class="login_name">用户<span id="userId"></span></span>&nbsp;&nbsp;
-            			<a href="information.html" title="" id="M_infomation">(完善资料)</a>
+            			<a href="en/information.html" title="" id="M_infomation">(完善资料)</a>
             		</div>
             		<!-- 登录框 -->
             		<div class="login_box active" id="login_box active">
@@ -97,10 +95,10 @@
             		    <span class="return">返回登录</span>
             			<p>注册</p>
             			<form action="" id="addUser" method="post" class="reg_form">
-	            			<input type="tel" name="u_phoneNum" value="" placeholder="手机号码" class="format reg_tel">
+	            			<input type="tel" name="u_phoneNum" id="phone" value="" placeholder="手机号码" class="format reg_tel">
 	            			<span class="error_tel">手机号码输入有误</span>
 	            			<span class="empty_tel">手机号码不能为空</span>
-	            			<input type="text" name="" value="" placeholder="验证码" class="format reg_code">
+	            			<input type="text" name="v_code" value="" placeholder="验证码"  class="format reg_code">
 	            			<span class="error_code">验证码错误</span>
 	            			<span class="empty_code">验证码不能为空</span>
 	            			<button type="button" class="btn btn-small get-code" onclick="getCode(this)" id="J_getCode">获取验证码</button>
@@ -124,6 +122,8 @@
            </div>
        </div>   
     </div>
+    <!--/ nav -->   
+    <!--/ header -->
     <div class="sum_agreen visi">
       <div class="agreen_box">
           <h4>用户注册协议</h4>
@@ -205,239 +205,248 @@
     </div>
      <div class="zhezhao-two"></div> 
     <!--/ nav -->
- <!--/ header -->
 
     <!--/ main -->
     <div id="main" >
         <!--/ header -->
-<div class="header" data-nav-color="black" data-logo-color="white">
-    <div class="header-wrap no-visible">
-        <div class="bg"></div>
+<div class="header" data-nav-color="white" data-logo-color="white">
+    <div class="header-wrap">
+        <div id="video-wrap" class="video-wrap demo-css" style="background-image: url(http://valudio.com/themes/valudio/assets/images/home-header.jpg);" >
+            <video id="video" autoplay loop>
+                <source src="themes/valudio/assets/videos/home-header-def.mp4" tppabs="http://valudio.com/themes/valudio/assets/videos/home-header-def.mp4" type="video/mp4">
+            </video>
+        </div>
         <div class="content">
             <div>
-                <h2 class="title--tag white no-visible">我们喜欢挑战</h2>
-                <h1 class="title--header1 white">
-                   我们对我们的工作充满激情             
+                <h2 class="title--tag white no-visible">我们是SUMCHANCE</h2>
+                <h1 class="title--header1 white content__title--right">
+                   <div class="reveal content__title__inner" data-color="#3C39CD" data-delay="0" data-direction=''>我们创建的后台程序</div><br/>
+                   <div class="reveal content__title__inner" data-color="#2B2996" data-delay="250" data-direction=''>连接你的用户</div>
                 </h1>
             </div>
+        </div>
+    </div>
+    <div class="lines-group  lines-group1">
+        <div>
+            <div class="line" data-height="9" data-width="177" data-color="#008DFF" data-duration="900" data-delay="0" data-direction="right" data-start="0" data-top="0" data-mov="170"><div></div></div>
+            <div class="line" data-height="2" data-width="160" data-color="#FFFFFF" data-duration="900" data-delay="300" data-direction="right"  data-start="150" data-top="20" data-mov="250"><div></div></div>
+            <div class="line" data-height="9" data-width="145" data-color="#3C39CD" data-duration="900" data-delay="500" data-direction="right"  data-start="-20" data-top="27" data-mov="100"><div></div></div>
+            <div class="line" data-height="6" data-width="208" data-color="#3C39CD" data-duration="900" data-delay="900" data-direction="right"  data-start="0" data-top="70" data-mov="120"><div></div></div>
+            <div class="line" data-height="1" data-width="80" data-color="#008DFF" data-duration="900" data-delay="900" data-direction="right"  data-start="-45" data-top="90" data-mov="160"><div></div></div>
+        </div>
+    </div>
+    
+    <div class="lines-group lines-group2">
+        <div>
+            <div class="line" data-height="9" data-width="117" data-color="#2B2996" data-duration="900" data-delay="0" data-direction="left" data-top="0" data-start="150"  data-mov="300"><div></div></div>
+            <div class="line" data-height="1" data-width="136" data-color="#FFFFFF" data-duration="900" data-delay="300" data-direction="left" data-top="10" data-start="-200" data-mov="50"><div></div></div>
+            <div class="line" data-height="2" data-width="221" data-color="#008DFF" data-duration="900" data-delay="500" data-direction="left" data-top="27" data-start="150" data-mov="250"><div></div></div>
+            <div class="line" data-height="6" data-width="136" data-color="#008DFF" data-duration="900" data-delay="900" data-direction="left" data-top="27" data-start="-100" data-mov="10"><div></div></div>
+            <div class="line" data-height="2" data-width="180" data-color="#3C39CD" data-duration="900" data-delay="900" data-direction="left" data-top="45" data-start="45" data-mov="40"><div></div></div>
         </div>
     </div>
     
     <div class="lines-group lines-group3">
         <div>
             <div class="line" data-height="9" data-width="177" data-color="#008DFF" data-duration="900" data-delay="0" data-direction="right" data-top="0" data-start="100" data-mov="190"><div></div></div>
-            <div class="line" data-height="1" data-width="200" data-color="#008DFF" data-duration="900" data-delay="300" data-direction="right" data-top="10" data-start="0" data-mov="100"><div></div></div>
-            <div class="line" data-height="9" data-width="145" data-color="#3C39CD" data-duration="900" data-delay="500" data-direction="right" data-top="27" data-start="150" data-mov="250"><div></div></div>
-            <div class="line" data-height="6" data-width="208" data-color="#3C39CD" data-duration="900" data-delay="900" data-direction="right" data-top="27" data-start="-100" data-mov="10"><div></div></div>
+            <div class="line" data-height="1" data-width="200" data-color="#008DFF" data-duration="900" data-delay="300" data-direction="right" data-top="20" data-start="0"  data-mov="100"><div></div></div>
+            <div class="line" data-height="9" data-width="145" data-color="#3C39CD" data-duration="900" data-delay="500" data-direction="right" data-top="50" data-start="150" data-mov="250"><div></div></div>
+            <div class="line" data-height="6" data-width="208" data-color="#3C39CD" data-duration="900" data-delay="900" data-direction="right" data-top="76" data-start="-100" data-mov="10"><div></div></div>
         </div>
     </div>
 </div>
 <!--/ header -->
 
-<!--/ intro -->
-<div class="intro" data-nav-color="black" data-logo-color="black">
-    <div class="container maxwidth2">
-        <h2 class="title--header2">
-            <div class="reveal content__title__inner" data-color="#3C39CD" data-delay="0" data-direction=''>远不止一个团队</div><br/>
-		    <div class="reveal content__title__inner" data-color="#2B2996" data-delay="250" data-direction=''>的开发者</div>
-        </h2>
-        <div class="txt txt--p2 no-visible">
-            <p>我们是一个小团队，专业和承诺。我们对工作的热情激励着我们不断学习和开发符合高质量标 
-              准和行业最佳实践的创新产品。我们力求在信任基础上建立稳固的长期关系。因此，我们非常 
-              重视我们的承诺，在整个过程中承担项目的责任。</p>
-        </div>
-    </div>
-    <div class="lines-group lines-group8">
-        <div>
-            <div class="line" data-height="9" data-width="208" data-color="#008DFF" data-duration="900" data-delay="0" data-direction="right" data-top="0" data-start="-100" data-mov="90"><div></div></div>
-            <div class="line" data-height="1" data-width="136" data-color="#008DFF" data-duration="900" data-delay="300" data-direction="right" data-top="8" data-start="200" data-mov="230"><div></div></div>
-            <div class="line" data-height="2" data-width="221" data-color="#3C39CD" data-duration="900" data-delay="500" data-direction="right" data-top="17" data-start="100" data-mov="200"><div></div></div>
-            <div class="line" data-height="6" data-width="208" data-color="#008DFF" data-duration="900" data-delay="900" data-direction="right" data-top="40" data-start="-200" data-mov="200"><div></div></div>
-        </div>
-    </div>
-</div>
-<!--/ intro -->
-<!--/ values -->
-<div class="values" data-nav-color="white" data-logo-color="white">
-   
-    <div class="container maxwidth">
-        <div class="img scroll-parallax" data-speed="0.1">
-            <div>
-                <img src="../themes/valudio/assets/images/about.jpg" tppabs="http://valudio.com/themes/valudio/assets/images/about.jpg" class="scroll-parallax" data-speed="0.05">
+<!--/ team -->
+<div class="team" data-nav-color="black"  data-logo-color="black">
+    <div>
+        <div class="bg no-visible"></div>
+        <div class="container maxwidth">
+            <div class="img reveal" data-color="#3C39CD" data-delay="0" data-direction=''>
+                <img src="themes/valudio/assets/images/home-team.jpg" tppabs="http://valudio.com/themes/valudio/assets/images/home-team.jpg" class="content__image scroll-parallax" data-speed='0.1'>
+            </div>
+            <div class="txt">
+                <h3 class="title--header2">
+                   <div class="reveal content__title__inner" data-color="#3C39CD" data-delay="0" data-direction='rl' duration="200">我们是</div><br/>
+                   <div class="reveal content__title__inner" data-color="#2B2996" data-delay="150" data-direction='rl' duration="200">有经验的</div><br/>
+                   <div class="reveal content__title__inner" data-color="#3C39CD" data-delay="350" data-direction='rl' duration="300">团队</div>
+                </h3>
+                <div class="txt--p1 no-visible">
+                    <p>我们是一只非常有创造力和效率的小团队，我们专注于帮助客户减少人工成本，为客户省钱省事是我们的第一要点。</p>
+                    <div class="button">
+                        <a href="en/about.htm" tppabs="http://valudio.com/en/about" class="readMore">LEARN more</a>
+                    </div>
+                </div>
+
             </div>
         </div>
-        <div class="content no-visible">
-            <h3 class="title--tag white">我们的价值</h3>
-            <ul>
-                <li>
-                    <div class="img">
-                        <svg width="96px" height="78px" viewBox="0 0 96 78" class="icon">
-                            <g class="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                <g class="About" transform="translate(-175.000000, -240.000000)">
-                                    <g class="i10_optimizacion" transform="translate(175.000000, 240.000000)">
-                                        <rect class="Rectangle" fill="#2B2996" x="0" y="0" width="96" height="78"></rect>
-                                        <g class="redondas" transform="translate(38.000000, 28.000000)" fill="#96BAFF">
-                                            <ellipse class="Oval-3" cx="12.2724415" cy="1.35548643" rx="1" ry="1"></ellipse>
-                                            <ellipse class="Oval-3-Copy" cx="23.5947036" cy="11.3948515" rx="1" ry="1"></ellipse>
-                                            <ellipse class="Oval-3-Copy-2" cx="12.6996967" cy="22.6891372" rx="1" ry="1"></ellipse>
-                                            <ellipse class="Oval-3-Copy-3" cx="1.16380702" cy="12.0223118" rx="1" ry="1"></ellipse>
-                                        </g>
-                                        <path d="M36.6389518,40.1268885a13.5266759,13.2224339 0 1,0 27.0533518,0a13.5266759,13.2224339 0 1,0 -27.0533518,0" class="i10_redonda_reloj2" stroke="#96BAFF" stroke-width="2"></path>
-                                        <path d="M47.10670355,40.1268885a3.05892415,2.97391534 0 1,0 6.1178483,0a3.05892415,2.97391534 0 1,0 -6.1178483,0" class="i10_redonda_reloj1" stroke="#96BAFF" stroke-width="2"></path>
-                                        <path d="M57.299182,33.3512681 L52.8359726,37.3033171" class="i10_reloj3" stroke="#96BAFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M49.8841819,22.9164968 L49.8841819,26.2377259" class="i10_reloj2" stroke="#96BAFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M52.6423041,22.18546 L47.3884691,22.18546" class="i10_reloj1" stroke="#96BAFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M91.4020787,70.0358303 L68.8574058,70.0358303" class="i10_flecha_dcha" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path class="i10_dcha" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M89.125 73.36813 93.347 70.12613 93.223 69.95813 89 66.50013"></path>
-                                        <path d="M52.7150223,5 L49,8.63721612" class="i10_izq2" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M52.7150223,12.6372161 L49,9" class="i10_izq1" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M50.931,9.0002 C51.275,9.0002 53.687,9.0862 54.028,9.0982 C70.121,9.6492 83,23.0862 83,39.5812 C83,56.4252 69.209,70.1472 52.641,70.1472 L7,70.1472" class="i10_redonda2" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M41,11 C28.3622983,14.2251419 19,25.9093837 19,39.8293407 C19,49.7919729 23.7957318,58.6093853 31.1556567,64" class="i10_redonda1" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                    </g>
-                                </g>
-                            </g>
-                        </svg>
-                    </div>
-                    <div class="txt txt--p1 white">
-                        <h4 class="title--header3 white">透明度和优化</h4>
-                        <p>我们希望我们的客户信任我们。我们基于敏捷宣言原则开 
-                        展工作，这些原则有助于我们灵活变通，并通过定期的临 时交 
-                        付和实时更新与客户保持有效的沟通。</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="img">
-                        <svg width="97px" height="78px" viewBox="0 0 97 78" class="icon">
-                            <g class="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                <g class="About" transform="translate(-174.000000, -532.000000)">
-                                    <g class="i11_tecno" transform="translate(175.000000, 532.000000)">
-                                        <rect class="Rectangle-Copy" fill="#2B2996" x="0" y="0" width="96" height="78"></rect>
-                                        <path d="M81.9841305,61.7076753 C81.9841305,63.0939953 80.8527216,64.226902 79.4698098,64.226902 L16.5019818,64.226902 C15.11907,64.226902 13.9876612,63.0939953 13.9876612,61.7076753 L13.9876612,15.5183039 C13.9876612,14.1334036 15.11907,12.999787 16.5019818,12.999787 L79.4698098,12.999787 C80.8527216,12.999787 81.9841305,14.1334036 81.9841305,15.5183039 L81.9841305,61.7076753 Z" class="i11_cuadro" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"></path>
-                                        <path d="M0,25.7771429 L60.7306466,25.7771429" class="i11_linea" stroke="#96BAFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M69.9396206,64.0181377 L69.9396206,59.0343421 L63.0236447,59.0343421 C62.6658729,57.5202507 62.0906043,56.09205 61.3254687,54.7838126 L66.5340586,49.5671891 L61.5054172,44.5244767 L56.4158484,49.6246862 C54.9457962,48.6649808 53.30288,47.9459116 51.5437765,47.532784 L51.5437765,40.6033135 L44.4294321,40.6033135 L44.4294321,47.532784 C42.9168723,47.8898342 41.4921615,48.467645 40.1871801,49.2349834 L35.4893891,44.5273161 L30.4579139,49.5671891 L35.0352669,54.1541834 C34.0774305,55.6256843 33.3647208,57.2725161 32.9488555,59.0343421 L26.0321711,59.0343421 L26.0321711,64.0181377" class="i11_rueda2" stroke="#96BAFF" stroke-width="2" stroke-linejoin="round"></path>
-                                        <path d="M42.1602382,62.599094 C42.1602382,59.3749949 44.7687839,56.7620692 47.9866043,56.7620692 C51.2037162,56.7620692 53.810845,59.3749949 53.810845,62.599094" class="i11_rueda1" stroke="#96BAFF" stroke-width="2" stroke-linejoin="round"></path>
-                                        <path d="M23.8787394,19.4346401 C23.8787394,20.2041081 23.256004,20.8287684 22.4866176,20.8287684 C21.7172313,20.8287684 21.093079,20.2041081 21.093079,19.4346401 C21.093079,18.6630427 21.7172313,18.0383823 22.4866176,18.0383823 C23.256004,18.0383823 23.8787394,18.6630427 23.8787394,19.4346401" class="Fill-5" fill="#FFFFFF"></path>
-                                        <path d="M29.6072673,19.4346401 C29.6072673,20.2041081 28.9845319,20.8287684 28.2151455,20.8287684 C27.4457592,20.8287684 26.8223153,20.2041081 26.8223153,19.4346401 C26.8223153,18.6630427 27.4457592,18.0383823 28.2151455,18.0383823 C28.9845319,18.0383823 29.6072673,18.6630427 29.6072673,19.4346401" class="Fill-7" fill="#FFFFFF"></path>
-                                    </g>
-                                </g>
-                            </g>
-                        </svg>
-                    </div>
-                    <div class="txt txt--p1 white">
-                        <h4 class="title--header3 white">技术和创新</h4>
-                        <p>我们是真正的完美主义者，这意味着我们永远不会停止学 
-                           习。我们总是寻求找到最合适的解决方案和最可靠，最灵 
-                           活的流程。</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="img">
-                        <svg width="96px" height="78px" viewBox="0 0 96 78" class="icon">
-                            <g class="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                <g class="About" transform="translate(-175.000000, -776.000000)">
-                                    <g class="i12_personas" transform="translate(175.000000, 776.000000)">
-                                        <rect class="Rectangle-Copy-2" fill="#2B2996" x="0" y="0" width="96" height="78"></rect>
-                                        <path d="M65.3663366,16.1566777 L89,16.1566777" class="i12_linea" stroke="#96BAFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M60.3380799,72.8339264 L60.3380799,72.8385764 C60.3380799,74.0739197 59.3234946,75.0744393 58.0717538,75.0744393 L14.2678966,75.0744393 C13.0169412,75.0744393 12.0015706,74.0739197 12.0015706,72.8385764 C12.0015706,72.8370264 12.0023558,72.8347014 12.0023558,72.8347014 L12,72.8339264 C12,72.8339264 12,64.6840705 18.0325421,61.7220365 C21.8513721,59.8473217 20.3805375,61.3701884 25.067105,59.4512988 C29.7544578,57.5362842 29.9083732,56.8666878 29.9083732,56.8666878 L29.9531343,52.4507617 C29.9531343,52.4507617 28.1964568,50.181574 27.6514706,46.0283715 C26.55286,46.3422448 25.4895871,39.7237806 26.8300648,39.9996791 C26.5552158,37.9660901 26.3588951,37.074845 26.4546996,36.1030002 C26.7908007,32.6914687 31.0768739,29.128038 36.2063409,28.8676394 C42.2365271,29.126488 45.5841875,32.6899187 45.9179327,36.1006752 C46.0168783,37.07252 45.8017108,37.9653151 45.5268619,39.9934792 C46.8673395,39.7222306 45.7891463,46.3306199 44.6952474,46.0167466 C44.1463348,50.1722741 42.3904426,52.4313868 42.3904426,52.4313868 L42.4328478,56.8232881 C42.4328478,56.8232881 42.5851927,57.4487097 47.2709749,59.3644993 C51.9591129,61.2826139 50.4882783,59.8480967 54.306323,61.7220365 C60.3380799,64.6840705 60.3380799,72.8339264 60.3380799,72.8339264 Z" class="i12_pers2" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"></path>
-                                        <path d="M60.3659736,60.3035825 C62.6178772,59.2593782 62.1495818,59.4276977 62.1495818,59.4276977 L62.1857254,55.7332408 C62.1857254,55.7332408 60.7250524,53.8357503 60.2716859,50.3610438 C59.3563099,50.6236533 58.472363,45.0885916 59.5881004,45.3200309 C59.3586671,43.6189131 59.1952351,42.8739435 59.2745939,42.0611786 C59.5550997,39.2083191 63.1231019,36.2268822 67.3888328,36.0086903 C72.4096508,36.2253237 75.1958512,39.2059813 75.4739998,42.0596201 C75.55493,42.872385 75.3773549,43.6181339 75.1471359,45.3161346 C76.2628732,45.0878124 75.3663547,50.6143023 74.455693,50.3532512 C73.9999693,53.8287369 72.5385106,55.7168764 72.5385106,55.7168764 L72.572297,59.3910727 C72.572297,59.3910727 72.6995853,59.913954 76.5999516,61.5161062 C80.5011035,63.1205961 79.2769354,61.9197613 82.4544296,63.4876261 C87.4752475,65.9648838 87.4752475,72.7818231 87.4752475,72.7818231 L87.4736761,72.7818231 L87.4752475,72.7849402 C87.4752475,73.8182348 86.6305872,74.6543774 85.5894943,74.6543774 L66.1010205,74.6543774" class="i12_pers1" stroke="#96BAFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M67.600535,11.8286165 C67.600535,10.895212 67.4571058,9.99562355 67.1912928,9.15111287 C66.9631325,8.42622794 66.6448042,7.74192231 66.2496171,7.11164192 C64.7002866,4.64062858 61.9696116,3 58.8595851,3 C54.0322772,3 50.1188119,6.95297339 50.1188119,11.8286165 C50.1188119,15.1599342 51.9461438,18.0589122 54.6428011,19.5623768 L54.6428011,24.4100062 L63.0761925,24.4100062 L63.0761925,19.5623768" class="i12_bombi3" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"></path>
-                                        <path d="M60.7783991,29.5484076 C60.7783991,30.7306475 60.014962,31.6894083 59.0727758,31.6894083 C58.1309471,31.6894083 57.3673312,30.7306475 57.3673312,29.5484076" class="i12_bombi2" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
-                                        <path d="M63.0700045,24.4100062 L63.0700045,26.4421455 L63.0700045,27.5162684 C63.0700045,28.633679 62.1895608,29.5484076 61.1133844,29.5484076 L56.5869782,29.5484076 C55.5108019,29.5484076 54.6300049,28.633679 54.6300049,27.5162684 L54.6300049,26.4421455 L54.6300049,24.4100062" class="i12_bombi1" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"></path>
-                                    </g>
-                                </g>
-                            </g>
-                        </svg>
-                    </div>
-                    <div class="txt txt--p1 white ">
-                        <h4 class="title--header3 white ">由人组成的团队</h4>
-                        <p>我们喜欢我们所做的工作，就像我们喜欢我们的客户一 样。 
-                           展工作，这些原则有助于我们灵活变通，并通过定期的临时交 
-                           付和实时更新与客户保持有效的沟通。</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="lines-group lines-group9">
-        <div>
-            <div class="line" data-height="9" data-width="208" data-color="#008DFF" data-duration="900" data-delay="0" data-direction="left" data-top="0" data-start="50" data-mov="190"><div></div></div>
-            <div class="line" data-height="2" data-width="221" data-color="#fff" data-duration="900" data-delay="300" data-direction="left" data-top="25" data-start="-30" data-mov="50"><div></div></div>
-            <div class="line" data-height="6" data-width="208" data-color="#008DFF" data-duration="900" data-delay="500" data-direction="left" data-top="41" data-start="-200" data-mov="200"><div></div></div>
-            <div class="line" data-height="6" data-width="208" data-color="#008DFF" data-duration="900" data-delay="900" data-direction="left" data-top="60" data-start="100" data-mov="300"><div></div></div>
+        <div class="lines-group lines-group4">
+            <div>
+                <div class="line" data-height="9" data-width="208" data-color="#3C39CD" data-duration="900" data-delay="0" data-direction="left" data-top="0" data-start="40" data-mov="250"><div></div></div>
+                <div class="line" data-height="1" data-width="80" data-color="#008DFF" data-duration="900" data-delay="300" data-direction="left" data-top="0" data-start="-300" data-mov="40"><div></div></div>
+                <div class="line" data-height="2" data-width="180" data-color="#3C39CD" data-duration="900" data-delay="500" data-direction="left" data-top="15" data-start="-20" data-mov="100"><div></div></div>
+                <div class="line" data-height="6" data-width="136" data-color="#008DFF" data-duration="900" data-delay="900" data-direction="left" data-top="40" data-start="0" data-mov="150"><div></div></div>
+            </div>
         </div>
     </div>
 </div>
-<!--/ values -->
-
 <!--/ team -->
-<div class="team" data-nav-color="black" data-logo-color="black">
-    
-    <div class="bg no-visible"></div>
-    <div class="container maxwidth2">
-        <h2 class="title--header2">
-            <div class="reveal content__title__inner" data-color="#3C39CD" data-delay="0" data-direction=''>团队</div>
-        </h2>
-        <div class="line"></div>
-        <div class="list">
-            <ul>
-                <li class="no-visible">
-                    <div>
-                        <div class="cover"></div>
-                        <div class="content">
-                            <div class="bg"></div>
-                            <div class="info">
-                                <h3 class="white title--header3">Victor Fabregat</h3>
-                                <p class="white title--button">SOFTWARE ENGINEER</p>
-                            </div>
 
-                            <img src="../themes/valudio/assets/images/team4.jpg" tppabs="http://valudio.com/themes/valudio/assets/images/team4.jpg">
-                        </div>
-                    </div>
-                </li>
-                <li class="no-visible">
-                    <div>
-                        <div class="cover"></div>
-                        <div class="content">
-                            <div class="bg"></div>
-                            <div class="info">
-                                <h3 class="white title--header3">Marc Fuentes</h3>
-                                <p class="white title--button">SOFTWARE ENGINEER</p>
-                            </div>
-                            <img src="../themes/valudio/assets/images/team3.jpg" tppabs="http://valudio.com/themes/valudio/assets/images/team3.jpg">
-                        </div>
-                    </div>
-                </li>
-                <li class="no-visible">
-                    <div>
-                        <div class="cover"></div>
-                        <div class="content">
-                            <div class="bg"></div>
-                            <div class="info">
-                                <h3 class="white title--header3">Roberto Huertas</h3>
-                                <p class="white title--button">SOFTWARE ENGINEER</p>
-                            </div>
-                            <img src="../themes/valudio/assets/images/team2.jpg" tppabs="http://valudio.com/themes/valudio/assets/images/team2.jpg">
-                        </div>
-                    </div>
-                </li>
-                
-                
-                <li class="no-visible">
-                    <div>
-                        <div class="cover"></div>
-                        <div class="content">
-                            <div class="bg"></div>
-                            <div class="info">
-                                <h3 class="white title--header3">Mischa Herbrand</h3>
-                                <p class="white title--button">CO-Founder <br>& SOFTWARE ENGINEER</p>
-                            </div>
-                            <img src="../themes/valudio/assets/images/team1.jpg" tppabs="http://valudio.com/themes/valudio/assets/images/team1.jpg">
-                        </div>
-                    </div>
-                </li>
-            </ul>
+<!--/ solutions -->
+<div class="solutions"  data-nav-color="black"  data-logo-color="black">
+    <div class="bg no-visible"></div>
+    <div class="left">
+        <div class="txt">
+            <h3 class="title--header2">
+               <div class="reveal content__title__inner" data-color="#3C39CD" data-delay="0" data-direction='' duration="200">私人订制</div><br/>
+               <div class="reveal content__title__inner" data-color="#2B2996" data-delay="150" data-direction='' duration="200">解决方案</div>
+            </h3>
+            <div class="txt--p1 no-visible">
+                <p>sumchance是一个专业的互联网推广与建站的公司，拥有独立自主的推广手段与科技，并能够结合每一位   客户自身的特点，为客户量身打造解决方案。</p>
+                <div class="button">
+                    <a href="en/services.htm" tppabs="http://valudio.com/en/services" class="readMore">LEARN more</a>
+                </div>
+            </div>
         </div>
     </div>
+    <div class="right no-visible">      
+        <ul>
+            <li>
+                <div class="img">
+                    <svg width="104px" height="76px" viewBox="0 0 104 76" class="icon">
+					    <g class="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+					        <g class="Artboard" transform="translate(-311.000000, -163.000000)">
+					            <g class="desarrollo_de_software" transform="translate(311.000000, 163.000000)">
+					                <rect class="Rectangle-2" fill="#2B2996" x="0" y="0" width="104" height="76"></rect>
+					                <path d="M90.5806534,61.2866876 C90.5806534,62.6609994 89.4561633,63.7833892 88.0817084,63.7833892 L25.4989449,63.7833892 C24.12449,63.7833892 23,62.6609994 23,61.2866876 L23,15.4974053 C23,14.1237972 24.12449,13 25.4989449,13 L88.0817084,13 C89.4561633,13 90.5806534,14.1237972 90.5806534,15.4974053 L90.5806534,61.2866876 Z" class="i1_cuadro" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill-rule="nonzero"></path>
+					                <path d="M32.8121037,19.6600256 C32.8121037,20.4228284 32.1931765,21.042078 31.4284951,21.042078 C30.6638137,21.042078 30.0434783,20.4228284 30.0434783,19.6600256 C30.0434783,18.8944079 30.6638137,18.2758621 31.4284951,18.2758621 C32.1931765,18.2758621 32.8121037,18.8944079 32.8121037,19.6600256" class="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+					                <path d="M38.0940082,19.6600256 C38.0940082,20.4228284 37.475081,21.042078 36.7103997,21.042078 C35.9457183,21.042078 35.326087,20.4228284 35.326087,19.6600256 C35.326087,18.8944079 35.9457183,18.2758621 36.7103997,18.2758621 C37.475081,18.2758621 38.0940082,18.8944079 38.0940082,19.6600256" class="Shape" fill="#96BAFF" fill-rule="nonzero"></path>
+					                <path class="i1_izq" stroke="#96BAFF" stroke-width="2" stroke-linecap="round" fill-rule="nonzero" d="M45.0467894 36.5072929 37.6555735 43.8953623 45.0136954 51.2496545"></path>
+					                <path class="i1_dcha" stroke="#96BAFF" stroke-width="2" stroke-linecap="round" fill-rule="nonzero" d="M68.6936037 36.5072929 76.0848196 43.8953623 68.7266976 51.2496545"></path>
+					                <path d="M58.6838842,36.4206897 L54.1141032,51.5648597" class="i1_barra" stroke="#96BAFF" stroke-width="2" fill="#000000" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></path>
+					                <path d="M54.7217821,25.1889536 L103.422364,25.1889536" class="i1_linea" stroke="#96BAFF" stroke-width="2" fill="#000000" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></path>
+					            </g>
+					        </g>
+					    </g>
+					</svg>                
+				</div>
+                <div class="txt">
+                    <p class="title--header3 white">云推广</p>
+                </div>
+            </li>
+            <li>
+                <div class="img">
+                    <svg width="104" height="76" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-427 243 104 76" style="enable-background:new -427 243 104 76;" xml:space="preserve" class="icon">
+					   <g id="Page-1">
+					        <g id="Artboard" transform="translate(-311.000000, -614.000000)">
+					            <g id="Group-18" transform="translate(311.000000, 614.000000)">
+					                <rect id="Rectangle-2-Copy-3" x="-427" y="243" class="st0" width="104" height="76"/>
+					            </g>
+					        </g>
+					    </g>
+					    <path class="i2_mob_home" d="M-381.8,302.1c0,1.8-1.4,3.2-3.2,3.2s-3.2-1.5-3.2-3.2c0-1.7,1.4-3.2,3.2-3.2
+					        S-381.8,300.4-381.8,302.1z"/>
+					    <path class="i2_mob_ver_2" d="M-375.6,253h2.4c3.1,0,5.7,2.6,5.7,5.7v45.4c0,3.2-2.6,5.7-5.7,5.7h-2.4h-21
+					        c-3.1,0-5.7-2.6-5.7-5.7v-45.4c0-3.2,2.6-5.7,5.7-5.7H-375.6z"/>
+					    <path class="i2_mob_hor_linea" d="M-343.2,275.2v30.5"/>
+					    <path class="i2_mob_horizontal" d="M-361.7,275.2h23.8c3.2,0,5.7,2.6,5.7,5.7v19.5c0,3.1-2.6,5.7-5.7,5.7h-23.8"/>
+					    <path class="i2_camara" d="M-335.5,281.7c0,0.8-0.6,1.4-1.4,1.4c-0.8,0-1.4-0.6-1.4-1.4c0-0.8,0.6-1.4,1.4-1.4
+					        C-336.2,280.3-335.5,280.9-335.5,281.7"/>
+					    <path class="i2_linea" d="M-416.9,264.7h38.4"/>
+					</svg>
+                </div>
+                <div class="txt">
+                    <p class="title--header3 white">网络外包</p>
+                </div>
+            </li>
+            <li>
+                <div class="img">
+                    <svg width="104px" height="76px" viewBox="0 0 104 76" class="icon">
+    <g id="HOME" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="1680_Home" transform="translate(-500.000000, -1506.000000)" stroke-width="2">
+            <g id="aplicaciones_desktop" transform="translate(501.000000, 1507.000000)">
+                <rect id="Rectangle-2-Copy-2" fill="#2B2996" x="0" y="0" width="104" height="76"></rect>
+                <path d="M69.6722572,0 L81.8636002,0 C82.8006527,0 83.5667564,0.777239755 83.5667564,1.72648633 L83.5667564,44.1486301 C83.5667564,45.0998021 82.8006527,45.8751164 81.8636002,45.8751164 L69.9255147,45.8751164" class="i3_estructura_2" stroke="#FFFFFF"></path>
+                <path class="i3_base" stroke="#96BAFF" d="M61.2732009 52.7849768 64.7206678 61.8795163 41.9806827 61.8795163 45.4275164 52.7849768"></path>
+                <path d="M56.7303063,35.84375 L83.5172414,35.84375" class="i3_linea_derecha" stroke="#96BAFF"></path>
+                <path d="M23.0255906,35.84375 L50.1646573,35.84375" class="i3_linea_izquierda" stroke="#96BAFF"></path>
+                <path d="M55.768073,36.3888535 C55.768073,37.7240878 54.7001436,38.8075976 53.3820135,38.8075976 C52.0648223,38.8075976 50.9968929,37.7240878 50.9968929,36.3888535 C50.9968929,35.0521917 52.0648223,33.9710612 53.3820135,33.9710612 C54.7001436,33.9710612 55.768073,35.0521917 55.768073,36.3888535 Z" class="i3_circulo" stroke="#96BAFF"></path>
+                <path d="M70.0046309,45.8751164 L24.6464143,45.8751164 C23.7093618,45.8751164 22.9432581,45.0998021 22.9432581,44.1486301 L22.9432581,1.72648633 C22.9432581,0.777239755 23.7093618,0 24.6464143,0 L70.0046309,0" class="i3_estructura_1" stroke="#FFFFFF"></path>
+                <path d="M0.0725803948,11.9332386 L52.2638977,11.9332386" class="i3_linea" stroke="#96BAFF" stroke-linejoin="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>
+                </div>
+                <div class="txt">
+                    <p class="title--header3 white">自主建站</p>
+                </div>
+            </li>
+            <li>
+                <div class="img">
+                    <svg width="104" height="76" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-427 243 104 76" style="enable-background:new -427 243 104 76;" xml:space="preserve" class="icon">
+    
+    <g id="Page-1">
+        <g id="Artboard" transform="translate(-311.000000, -614.000000)">
+            <g id="Group-18" transform="translate(311.000000, 614.000000)">
+                <rect id="Rectangle-2-Copy-3" x="-427" y="243" class="st0" width="104" height="76"/>
+            </g>
+        </g>
+    </g>
+    <path class="i4_enchufe_1" d="M-372,291.3c0,2.8,2.3,5,5.1,5c2.8,0,4.9-2.2,4.9-5V281v-0.1c0-2.7,2.2-4.8,4.9-4.8
+        h0.2h26.5"/>
+    <path class="i4_enchufe-base" d="M-366.7,280.7v6.4c0,2-1.6,3.5-3.6,3.5h-3.6c-2,0-3.6-1.6-3.6-3.5v-6.4H-366.7z"/>
+    <path class="i4_enchufe" d="M-375.1,280.7v-4.3"/>
+    <path class="i4_enchufe_2_1_"  d="M-369.8,280.7v-4.3"/>
+    <path class="i4_estructura"  d="M-400.4,306c-1.3,0-2.4-1.1-2.4-2.4v-43.3c0-1.3,1.1-2.4,2.4-2.4h61.5
+        c1.3,0,2.4,1.1,2.4,2.4v43.3l0,0c0,1.3-1.1,2.4-2.4,2.4H-400.4z"/>
+    <path class="i4_Shape_5_" d="M-387.6,263.6c0,0.7-0.6,1.3-1.3,1.3c-0.7,0-1.3-0.6-1.3-1.3c0-0.7,0.6-1.3,1.3-1.3
+        C-388.2,262.3-387.6,262.9-387.6,263.6"/>
+    <path class="i4_Shape_6_" d="M-393,263.6c0,0.7-0.6,1.3-1.3,1.3c-0.7,0-1.3-0.6-1.3-1.3c0-0.7,0.6-1.3,1.3-1.3
+        C-393.6,262.3-393,262.9-393,263.6"/>
+    <path class="i4_linea" d="M-415,269.4h49.2"/>
+</svg>
+                </div>
+                <div class="txt">
+                    <p class="title--header3 white">形象推广</p>
+                </div>
+            </li>
+            <li>
+                <div class="img">
+                    <svg width="104" height="76" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="-427 243 104 76" style="enable-background:new -427 243 104 76;" xml:space="preserve" class="icon">
+    
+    <g id="Page-1">
+        <g id="Artboard" transform="translate(-311.000000, -614.000000)">
+            <g id="Group-18" transform="translate(311.000000, 614.000000)">
+                <rect id="Rectangle-2-Copy-3" x="-427" y="243" class="st0" width="104" height="76" fill="#2B2996";/>
+            </g>
+        </g>
+    </g>
+    <path class="nube_2" d="M-347.4,297c6.3,0,11.4-5,11.4-11.2v-22.4c0-1.3-1.1-2.3-2.4-2.3h-45.3c-1.3,0-2.3,1-2.3,2.3
+        c0,4.2,0,46.7,0,46.7l15.6-13L-347.4,297z"/>
+    <path class="nube_1" d="M-373,253.4c0-1.3-1.1-2.4-2.4-2.4h-27.3c-1.3,0-2.4,1.1-2.4,2.4V281l9.5-6.2h15.6
+        c3.8,0,6.8-3.1,6.8-6.8V253.4z"/>
+    <path class="plus" d="M-377,267.5h-5"/>
+    <path class="plus" d="M-379.5,265v5"/>
+    <path class="linea" d="M-373,285.1h48.9"/>
+</svg>
+                </div>
+                <div class="txt">
+                    <p class="title--header3 white">咨询服务</p>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <div class="lines-group lines-group5">
+        <div>
+            <div class="line" data-height="6" data-width="136" data-color="#008DFF" data-duration="900" data-delay="0" data-direction="left" data-top="0" data-start="-100" data-mov="190"><div></div></div>
+            <div class="line" data-height="2" data-width="160" data-color="#fff" data-duration="900" data-delay="300" data-direction="left" data-top="50" data-start="0" data-mov="100"><div></div></div>
+            <div class="line" data-height="9" data-width="177" data-color="#008DFF" data-duration="900" data-delay="500" data-direction="left" data-top="67" data-start="-200" data-mov="200"><div></div></div>
+            <div class="line" data-height="1" data-width="80" data-color="#008DFF" data-duration="900" data-delay="900" data-direction="left" data-top="77" data-start="150" data-mov="250"><div></div></div>
+        </div>
+    </div>
+    
     <div class="lines-group lines-group6">
         <div>
             <div class="line" data-height="9" data-width="145" data-color="#3C39CD" data-duration="900" data-delay="0" data-direction="right" data-top="0" data-start="-200" data-mov="190"><div></div></div>
@@ -447,12 +456,84 @@
         </div>
     </div>
 </div>
-<!--/ tean -->
+<!--/ solutions -->
+
+<!--/ method -->
+<div class="method"  data-nav-color="black"  data-logo-color="black">
+    <div>
+        <div class="bg no-visible"></div>
+        <div class="container maxwidth">
+            <div class="bg no-visible">
+                <div></div>
+                <!--<p>WE ARE AGILE</p>-->
+                
+                <svg width="383px" height="234px" viewBox="0 0 383 234" class="icon">
+                    <g class="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g class="Home" transform="translate(-387.000000, -579.000000)">
+                            <g class="i5_agile" transform="translate(387.000000, 579.000000)">
+                                <rect class="blue" fill="#2B2996" x="0" y="0" width="316" height="234"></rect>
+                                <rect class="white" fill="#FFFFFF" x="316" y="0" width="67" height="234"></rect>
+                                <g class="redondas" transform="translate(117.000000, 79.000000)" fill="#FFFFFF">
+                                    <ellipse class="Oval-3" cx="40.4495179" cy="2.21052935" rx="2.06538101" ry="2.0212766"></ellipse>
+                                    <ellipse class="Oval-3-Copy" cx="78.9924196" cy="41.6382979" rx="2.06538101" ry="2.0212766"></ellipse>
+                                    <ellipse class="Oval-3-Copy-2" cx="40.3015189" cy="78.8149873" rx="2.06538101" ry="2.0212766"></ellipse>
+                                    <ellipse class="Oval-3-Copy-3" cx="2.22882259" cy="41.321269" rx="2.06538101" ry="2.0212766"></ellipse>
+                                </g>
+                                <path d="M160.7575,14.5005 C161.9415,14.5005 163.1195,14.5205 164.2935,14.5605 C219.6625,16.4555 263.9765,62.6665 263.9765,119.3955 C263.9765,177.3275 217.7635,224.2905 160.7575,224.2905 L159.9485,224.3095 L2.9995,224.3095" class="i5_curva" stroke="#96BAFF" stroke-width="3"></path>
+                                <path d="M109.10826780000001,119.560242a48.4809092,47.4136103 0 1,0 96.9618184,0a48.4809092,47.4136103 0 1,0 -96.9618184,0" class="i5_redonda" stroke="#FFFFFF" stroke-width="3"></path>
+
+                                <path d="M145.12392300000002,119.560242a12.465254,12.1670382 0 1,0 24.930508,0a12.465254,12.1670382 0 1,0 -24.930508,0" class="i5_lupa2" stroke="#96BAFF" stroke-width="3"></path>
+
+                                <path d="M182.133094,96.2576161 L166.776844,109.849452" class="i5_lupa1" stroke="#96BAFF" stroke-width="3" stroke-linecap="round"></path>
+                                <path d="M378.649924,218.468085 L322.155579,218.468085" class="i5_linea4" stroke="#3C39CD" stroke-width="3" stroke-linecap="round"></path>
+                                <path d="M157.521459,60.370486 L157.521459,71.7928142" class="i5_linea3" stroke="#FFFFFF" stroke-width="3"></path>
+                                <path d="M166.919516,59.1914894 L148.843016,59.1914894" class="i5_linea2" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"></path>
+                                <path d="M126.053648,19.3874246 C82.5719992,30.4792908 50.3597997,70.663584 50.3597997,118.53692 C50.3597997,152.800275 66.8601359,183.125006 92.1829103,201.664338" class="i5_red1" stroke="#96BAFF" stroke-width="3" stroke-linecap="round"></path>
+                                <path d="M219.006438,218.300659 L308.402361,218.300659" class="i5_linea1" stroke="#96BAFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path class="i5_dcha" stroke="#3C39CD" stroke-width="3" stroke-linecap="round" d="M367.88618 206.744681 379.623839 218.475053 367.864807 230.226785"></path>
+                                <path class="i5_izq" stroke="#96BAFF" stroke-width="3" stroke-linecap="round" transform="translate(165.019001, 14.741052) scale(-1, 1) translate(-165.019001, -14.741052) " d="M159.160858 3 170.898517 14.7303721 159.139485 26.4821044"></path>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div class="txt">
+                <h3 class="title--header2">
+                   <div class="reveal content__title__inner" data-color="#3C39CD" data-delay="0" data-direction='rl' duration="200">优化方法</div><br/>
+                   <div class="reveal content__title__inner" data-color="#2B2996" data-delay="150" data-direction='rl' duration="200">快速和</div><br/>
+                   <div class="reveal content__title__inner" data-color="#3C39CD" data-delay="350" data-direction='rl' duration="200">透明化</div>
+                </h3>
+                <div class="txt--p1 no-visible">
+                    <p>我们是一只非常有创造力和效率的小团队，我们专注于帮助客户减少人工成本，为客户省钱省事是我们的第一要点。</p>
+                    <div class="button">
+                        <a href="en/services.htm" tppabs="http://valudio.com/en/services" class="readMore">查看更多</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ method -->
+
+<!--/ case-study -->
+<div class="case-study" style="background-image:url(http://valudio.com/themes/valudio/assets/images/home-labs.jpg);"  data-nav-color="white"  data-logo-color="white">
+    <div class="container maxwidth2">
+        <h5 class="title--tag white">案例研究</h5>
+        <h3 class="title--header1 white">xiao de</h3>
+        <h4  class="title--header3 white">该项目，一步步</h4>
+        <div class="button">
+            <a href="en/case-study/phonio.htm" tppabs="http://valudio.com/en/case-study/phonio" class="readMore white">学习更多</a>
+        </div>
+    </div>
+</div>
+<!--/ case-study -->
+
 <!--/ prefooter -->
 <div class="prefooter "  data-nav-color="black" data-logo-color="black">
     <div class="container maxwidth2">
         <div class="no-visible"></div>
-        <a href="contact.htm" tppabs="http://valudio.com/en/contact?s=1" class="no-visible">
+        <a href="en/contact-s=1.htm" tppabs="http://valudio.com/en/contact?s=1" class="no-visible">
             <div>
                 <div class="bg"></div>
                 <div class="bg-hover"></div>
@@ -462,7 +543,7 @@
                 </div>
             </div>
         </a>
-        <a href="contact.htm" tppabs="http://valudio.com/en/contact?s=2" class="no-visible">
+        <a href="en/contact-s=2.htm" tppabs="http://valudio.com/en/contact?s=2" class="no-visible">
             <div>
                 <div class="bg"></div>
                 <div class="bg-hover"></div>
@@ -525,27 +606,26 @@
 </div>
 <div class="cover-2"></div>    <!--/ footer -->
 
-<script src="../themes/valudio/assets/lib/jquery/1.12.2/jquery-1.12.2.js" tppabs="http://valudio.com/themes/valudio/assets/lib/jquery/1.12.2/jquery-1.12.2.js"></script>
-<script src="../themes/valudio/assets/lib/jquery-mobile-events/jquery-mobile-events.js" tppabs="http://valudio.com/themes/valudio/assets/lib/jquery-mobile-events/jquery-mobile-events.js"></script>
-<script src="../themes/valudio/assets/lib/jquery-ui-1.12.1/jquery-ui.min.js" tppabs="http://valudio.com/themes/valudio/assets/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
-<script src="../themes/valudio/assets/lib/jquery.svgInject/jquery.svgInject.js" tppabs="http://valudio.com/themes/valudio/assets/lib/jquery.svgInject/jquery.svgInject.js"></script>
-<script src="../themes/valudio/assets/lib/jquery.transit/jquery.transit.js" tppabs="http://valudio.com/themes/valudio/assets/lib/jquery.transit/jquery.transit.js"></script>
-<script src="../themes/valudio/assets/lib/backgroundVideo/backgroundVideo.min.js" tppabs="http://valudio.com/themes/valudio/assets/lib/backgroundVideo/backgroundVideo.min.js"></script>
-<script src="../themes/valudio/assets/lib/blockReveal/anime.min.js" tppabs="http://valudio.com/themes/valudio/assets/lib/blockReveal/anime.min.js"></script>
-<script src="../themes/valudio/assets/lib/blockReveal/scrollMonitor.js" tppabs="http://valudio.com/themes/valudio/assets/lib/blockReveal/scrollMonitor.js"></script>
-<script src="../themes/valudio/assets/lib/blockReveal/main.js" tppabs="http://valudio.com/themes/valudio/assets/lib/blockReveal/main.js"></script>
-<script src="../themes/valudio/assets/lib/isMobile/isMobile.min.js" tppabs="http://valudio.com/themes/valudio/assets/lib/isMobile/isMobile.min.js"></script>
-<script src="../themes/valudio/assets/lib/masonry/imagesloaded.pkgd.min.js" tppabs="http://valudio.com/themes/valudio/assets/lib/masonry/imagesloaded.pkgd.min.js"></script>
-<script src="../themes/valudio/assets/lib/jquery-validation-1.15.0/dist/jquery.validate.min.js" tppabs="http://valudio.com/themes/valudio/assets/lib/jquery-validation-1.15.0/dist/jquery.validate.min.js"></script>
-<script src="../themes/valudio/assets/lib/parallax.js-1.4.2/parallax.min.js" tppabs="http://valudio.com/themes/valudio/assets/lib/parallax.js-1.4.2/parallax.min.js"></script>
-<script src="../themes/valudio/assets/lib/velocity/velocity.min.js" tppabs="http://valudio.com/themes/valudio/assets/lib/velocity/velocity.min.js"></script>
-<script src="../themes/valudio/assets/lib/modernizr-custom.js" tppabs="http://valudio.com/themes/valudio/assets/lib/modernizr-custom.js"></script>
-<script src="../themes/valudio/assets/js/main.js" tppabs="http://valudio.com/themes/valudio/assets/js/main.js"></script>
-<script src="../modules/system/assets/js/framework.js" tppabs="http://valudio.com/modules/system/assets/js/framework.js"></script>
-<script src="../modules/system/assets/js/framework.extras.js" tppabs="http://valudio.com/modules/system/assets/js/framework.extras.js"></script>
-<script src="../themes/valudio/assets/js/common.js" type="text/javascript" charset="utf-8"></script>
-<link rel="stylesheet" property="stylesheet" href="../modules/system/assets/css/framework.extras.css" tppabs="http://valudio.com/modules/system/assets/css/framework.extras.css">
-    <!-- SCRIPTS -->
+<script src="themes/valudio/assets/lib/jquery/1.12.2/jquery-1.12.2.js" tppabs="http://valudio.com/themes/valudio/assets/lib/jquery/1.12.2/jquery-1.12.2.js"></script>
+<script src="themes/valudio/assets/lib/jquery-mobile-events/jquery-mobile-events.js" tppabs="http://valudio.com/themes/valudio/assets/lib/jquery-mobile-events/jquery-mobile-events.js"></script>
+<script src="themes/valudio/assets/lib/jquery-ui-1.12.1/jquery-ui.min.js" tppabs="http://valudio.com/themes/valudio/assets/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+<script src="themes/valudio/assets/lib/jquery.svgInject/jquery.svgInject.js" tppabs="http://valudio.com/themes/valudio/assets/lib/jquery.svgInject/jquery.svgInject.js"></script>
+<script src="themes/valudio/assets/lib/jquery.transit/jquery.transit.js" tppabs="http://valudio.com/themes/valudio/assets/lib/jquery.transit/jquery.transit.js"></script>
+<script src="themes/valudio/assets/lib/backgroundVideo/backgroundVideo.min.js" tppabs="http://valudio.com/themes/valudio/assets/lib/backgroundVideo/backgroundVideo.min.js"></script>
+<script src="themes/valudio/assets/lib/blockReveal/anime.min.js" tppabs="http://valudio.com/themes/valudio/assets/lib/blockReveal/anime.min.js"></script>
+<script src="themes/valudio/assets/lib/blockReveal/scrollMonitor.js" tppabs="http://valudio.com/themes/valudio/assets/lib/blockReveal/scrollMonitor.js"></script>
+<script src="themes/valudio/assets/lib/blockReveal/main.js" tppabs="http://valudio.com/themes/valudio/assets/lib/blockReveal/main.js"></script>
+<script src="themes/valudio/assets/lib/isMobile/isMobile.min.js" tppabs="http://valudio.com/themes/valudio/assets/lib/isMobile/isMobile.min.js"></script>
+<script src="themes/valudio/assets/lib/masonry/imagesloaded.pkgd.min.js" tppabs="http://valudio.com/themes/valudio/assets/lib/masonry/imagesloaded.pkgd.min.js"></script>
+<script src="themes/valudio/assets/lib/jquery-validation-1.15.0/dist/jquery.validate.min.js" tppabs="http://valudio.com/themes/valudio/assets/lib/jquery-validation-1.15.0/dist/jquery.validate.min.js"></script>
+<script src="themes/valudio/assets/lib/parallax.js-1.4.2/parallax.min.js" tppabs="http://valudio.com/themes/valudio/assets/lib/parallax.js-1.4.2/parallax.min.js"></script>
+<script src="themes/valudio/assets/lib/velocity/velocity.min.js" tppabs="http://valudio.com/themes/valudio/assets/lib/velocity/velocity.min.js"></script>
+<script src="themes/valudio/assets/lib/modernizr-custom.js" tppabs="http://valudio.com/themes/valudio/assets/lib/modernizr-custom.js"></script>
+<script src="themes/valudio/assets/js/main.js" tppabs="http://valudio.com/themes/valudio/assets/js/main.js"></script>
+<script src="themes/valudio/assets/js/common.js" tppabs="http://valudio.com/themes/valudio/assets/js/main.js"></script>
+<script src="modules/system/assets/js/framework.js" tppabs="http://valudio.com/modules/system/assets/js/framework.js"></script>
+<script src="modules/system/assets/js/framework.extras.js" tppabs="http://valudio.com/modules/system/assets/js/framework.extras.js"></script>
+<link rel="stylesheet" property="stylesheet" href="modules/system/assets/css/framework.extras.css" tppabs="http://valudio.com/modules/system/assets/css/framework.extras.css">
 </body>
 <script type="text/javascript">
 var isPhone = 1;
@@ -576,7 +656,7 @@ function checkPhone(){
 	}else{
 		$.ajax({
 			cache : false,
-			url : "../UserController/addCode.do",
+			url : "UserController/addCode.do",
 			type : "post",
 			data : $("#addUser").serialize(),
 			dataType : "json",
@@ -619,7 +699,7 @@ function resetCode(){
 		//页面加载
 		$(function(){
 	       var userName = window.sessionStorage.getItem("userName");
-	       if(userName!=null){//判断是否有用户昵称
+	       if(userName!=null){//判断用户是否已登录
 	    	   document.getElementById("login_after").style.visibility="visible";
 	    	   document.getElementById("login_box active").style.display="none";
 	    	   document.getElementById("regist_box").style.display="none";
@@ -650,7 +730,7 @@ function resetCode(){
 		         $("#loginSubmit").click(function() {
 						$.ajax({
 							cache : false,
-							url : "../UserController/login.do",
+							url : "UserController/login.do",
 							type : "post",
 							data : $("#login").serialize(),
 							dataType : "json",
@@ -701,7 +781,7 @@ function resetCode(){
 					$("#addSubmit").click(function() {
 						$.ajax({
 							cache : false,
-							url : "../UserController/insert.do",
+							url : "UserController/insert.do",
 							type : "post",
 							data : $("#addUser").serialize(),
 							dataType : "json",
