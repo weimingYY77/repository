@@ -37,8 +37,9 @@ ul li{
    margin-left: 37px;
 }
 .search_box{
-	margin-left: 375px;
- 	float: left;
+	    position: absolute;
+    left: -460px;
+    top: 2px;
     display: none;  
 }
 .search_box>input{
@@ -75,9 +76,11 @@ ul li{
 .nav_rit{
 	display: inline-block;
 	float: right;
+	position: relative;
 }
 .function_list{
 	display: inline-block;
+	position: relative;
 }
 .function_list>li{
    display: inline-block;
@@ -91,10 +94,13 @@ ul li{
 	display: inline-block;
 	vertical-align: middle;
 }
-.function_list li .search{
+.function_list .search{
     height: 26px;
     width: 26px;
     background: url(../images/soushuo.png) no-repeat;
+    position: absolute;
+    left: -37px;
+    top: 2px;
 }
 .function_list li .msg{
 	width: 25px;

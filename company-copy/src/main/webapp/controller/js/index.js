@@ -1,16 +1,16 @@
 $(function(){
   // 导航栏搜索框
- $(".first_search").click(function(){
+ $(".search").click(function(){
     $(".search_box").fadeIn(500);
     $(".search").fadeOut(500);
  })
    $(".search_txt").change(function(){
       if ($(".search_txt").val()!=" ") {
          console.log(123);
-        $(".close").show();
+        $(".close").fadeIn();
       }else{
          console.log(456);
-         $(".close").hide();
+         $(".close").fadeOut();
       }
    })
    /* 导航下拉列表*/
