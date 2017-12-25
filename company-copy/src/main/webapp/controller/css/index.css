@@ -36,6 +36,42 @@ ul li{
    font-size: 20px;
    margin-left: 37px;
 }
+.search_box{
+	margin-left: 375px;
+ 	float: left;
+    display: none;  
+}
+.search_box>input{
+    width: 300px;
+    height: 25px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #797979;
+    padding-bottom: 3px;
+    background: #373D41;
+    color: #fff;
+    padding-left: 3px;
+    padding-right: 20px;
+}
+.search_box>span.close{
+	display:block;
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	margin-left: -23px;
+	top: 20px;
+	background: url(../images/close.png);
+  	display: none;  
+}
+.search_box>span.find{
+	display: inline-block;
+	vertical-align: middle;
+	width: 26px;
+	height: 26px;
+	margin-left: 20px;
+	background: url(../images/soushuo.png);
+	cursor: pointer;
+}
 .nav_rit{
 	display: inline-block;
 	float: right;
@@ -43,11 +79,12 @@ ul li{
 .function_list{
 	display: inline-block;
 }
-.function_list li{
+.function_list>li{
    display: inline-block;
-   padding-left: 30px;
+   padding-left: 10px;
    padding-right: 30px;
    cursor: pointer;
+   position: relative;
 }
 .function_list li>span{
 	margin-right: 18px;
@@ -78,20 +115,135 @@ ul li{
     background: url(../images/feiyong.png) no-repeat;
 
 }
-.function_list li .user_img{
-	width: 31px;
-	height: 31px;
-	border-radius: 50px;
-	background: #fff;
-	vertical-align: middle;
-}
-.function_list li>a,.user>a{
+.function_list>li>a,.user>a{
     font-size: 20px;
     color: #fff;
 }
 .user{
 	display: inline-block;
 	font-size: 20px;
+}
+/* 导航下拉 */
+.function_list>li .station_msg{
+	position: absolute;
+	top: 46px;
+	left: -50px;
+	width: 238px;
+	background: #fff;
+	border: 1px solid #999;
+	border-top: none;
+  	display: none;  
+}
+.station_msg>.u123{
+	display: block;
+	width: 14px;
+	height: 13px;
+	position: absolute;
+	background: url(../images/u123.png);
+	top: -13px;
+    left: 50%;
+}
+.station_msg>p{
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+}
+.station_msg>p.msg_tit{
+	background: #eaedf1;
+	padding-left: 15px;
+}
+.station_msg>p>span:first-child{
+	color: #333;
+}
+.station_msg>p>span:last-child{
+	color: #00CDFF;
+	padding-left: 20px;
+}
+.station_msg>p:last-child{
+	text-align: center;
+}
+.station_msg>p:last-child a{
+	color:#00CDFF; 
+}
+.station_msg ul li{
+	font-size: 12px;
+	color: #00CDFF;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #eaedf1;
+	padding-left: 15px;
+}
+.station_msg ul li:hover{
+	background: #f9f9f9;
+}
+.station_msg ul li>span{
+   	color:#797979; 
+}
+.function_list>li .my_order{
+	position: absolute;
+	width: 198px;
+	border: 1px solid #999;
+	border-top: none;
+	background: #fff;
+ 	top: 46px;
+ 	left: -40%;
+  	display: none;  
+}
+.my_order ul li{
+	font-size: 14px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px; 
+}
+.my_order ul li:hover{
+	background: #f9f9f9;
+}
+.my_order ul li>a{
+    color: #333;
+}
+.my_order ul li:last-child{
+    border-top: 1px solid #999;
+}
+.my_order>.u123{
+	display: block;
+	width: 14px;
+	height: 13px;
+	position: absolute;
+	background: url(../images/u123.png);
+	top: -13px;
+    left: 50%;
+}
+.function_list>li .my_cost{
+	position: absolute;
+	width: 118px;
+	border: 1px solid #999;
+	border-top: none;
+	background: #fff;
+ 	top: 46px;
+ 	left: 0;
+  	display: none;  
+}
+.my_cost ul li{
+	font-size: 14px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	color:#333; 
+}
+.my_cost ul li:hover{
+	background: #f9f9f9;
+}
+.my_cost ul li:last-child{
+    border-top: 1px solid #999;
+}
+.my_cost>.u123{
+	display: block;
+	width: 14px;
+	height: 13px;
+	position: absolute;
+	background: url(../images/u123.png);
+	top: -13px;
+    left: 50%;
 }
 /* 主体 */
 .main{
@@ -126,7 +278,7 @@ ul li{
 	background:#fff;
 }
 /* 折叠菜单栏 */
-.list a:link,.list a:visited{
+.list ul li >a:link,.list ul li >a:visited{
 	text-decoration: none;
 	color: #fff;
 }
@@ -273,6 +425,9 @@ ul li{
   border-radius: 4px;
   box-shadow:2px 2px 4px rgba(0,0,0,0.3);
   position: relative;
+}
+.mybox .box_list{
+	padding-top: 55px;
 }
 .mybox .box_list li{
   display: inline-block;
