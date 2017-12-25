@@ -20,11 +20,14 @@
 		<div class="yz_box">
 		   <p>请选择验证方式：</p>
 		   <form action="find_submit" method="get" class="yzlist">
-		    <div class="yz_group">
+		   	<div class="yz_group">
 			   <select name="">
 			   	<option value="">手机验证</option>
 			   	<option value="">邮箱验证</option>
 			   </select>
+		    </div>
+		    <div class="yz_group">
+			   <input type="tel" name="" value="" placeholder="请输入绑定手机号码">
 		       <button type="button" class="get_yz">获取验证码</button>
 		    </div>
 		    <div class="yz_group">
@@ -59,7 +62,7 @@
 	</div>
 </body>
 <script src="../themes/valudio/assets/lib/jquery/1.12.2/jquery-1.12.2.js" type="text/javascript"></script>
-<!-- <script type="text/javascript">
+<script type="text/javascript">
    $(function(){
    	 $(".next").click(function(){
    	 	$(".xg_box").show();
@@ -75,9 +78,9 @@
    	 	$(".bc").addClass('bg');
    	 });
    })
-</script> -->
+</script>
 <script type="text/javascript">
-$(function(){
+/*$(function(){
 	  // 确认验证码验证
     $(".yz_code").click(function(){
        $(".error_yz").hide();
@@ -96,6 +99,6 @@ $(function(){
     $(".new_again").click(function(){
        $(".error_again").hide();
     })
-})
+})*/
 </script>
 </html>
