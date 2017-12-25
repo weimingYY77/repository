@@ -1,0 +1,127 @@
+/* 框阴影 */
+.box_show{
+	background: #fff;
+	border-radius: 4px;
+	box-shadow:2px 2px 4px rgba(0,0,0,0.3);
+}
+/* 右边 */
+.main_right{
+    display: inline-block;
+    position: relative;
+    margin: 56px 40px 26px 40px;
+    width: 84%;
+    margin-left: 16%;
+}
+/* 云推广 */
+.main_right .cloud_promotion{
+	width: 100%;
+	height: 120px;
+	line-height: 120px;
+	margin-bottom: 35px;
+}
+.cloud_promotion>p{
+	display: inline-block;
+}
+.cloud_promotion>p:first-child{
+	padding-left: 38px;
+	font-size: 36px;
+	color: #333;
+	float: left;
+}
+.cloud_promotion>p.ad{
+	font-size: 16px;
+	color: #646464;
+	float: right;
+	margin-right: 22%;
+}
+.cloud_promotion .ad>span:last-child{
+	display: inline-block;
+	margin-left: 145px;
+}
+.cloud_promotion .ad>span>span{
+	color: #00C1DE;
+}
+.block_two,.data_table{
+	width: 100%;
+	margin-bottom: 35px;
+}
+/* 热门应用 */
+.block_two .application{
+	display: inline-block;
+	height: 300px;
+	width: 39%;
+	float: left;
+}
+.application>p{
+	padding-top: 53px;
+	color: #333;
+	font-size: 20px;
+	padding-left: 27px;
+}
+.application ul{
+	margin-top: 30px;
+	padding-left: 27px;
+	padding-right: 27px;
+}
+.application ul li{
+	width: 48%;
+	display: inline-block;
+	float: left;
+	background: #F5F5F6;
+	text-align: center;
+	padding-bottom: 12px;
+	padding-top: 12px;
+	margin-top: 10px;
+	cursor: pointer;
+	border: 1px solid #fff;
+}
+.application ul li:hover{
+	border: 1px solid #00C1DE;
+	background: #fff;
+}
+.application ul li:nth-child(2n){
+	margin-left: 15px;
+}
+.application ul li>a{
+	font-size: 16px;
+	color: #646464;
+}
+/* 服务进度 */
+.block_two .service_progress{
+  display:inline-block;
+  height: 300px;
+  width: 58.4%;
+  float: left;
+  margin-left: 2.6%;
+}
+ .service_progress>p{
+ 	color: #333333;
+ 	font-size: 20px;
+ 	padding-top: 52px;
+ 	padding-left: 36px;
+ }
+ /* seo数据  竞价表 */
+ .data_table .seo_data{
+    display:inline-block;
+    height: 300px;
+    width: 58.4%;
+    float: left;
+ }
+ .data_table .price_list{
+ 	display: inline-block;
+	height: 300px;
+	width: 39%;
+	float: left;
+	margin-left: 2.6%;
+ }
+ .seo_data>p,.price_list>p{
+ 	padding-top: 33px;
+ 	padding-left: 36px;
+ 	color: #333;
+ 	font-size: 20px;
+ }
+ /* 我的推广 */
+ .my_promotion{
+ 	width: 100%;
+ 	height: 300px;
+ }
