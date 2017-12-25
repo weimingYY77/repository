@@ -8,48 +8,53 @@
 <body>
 	<div class="data">
 		<p>完善资料</p>
+<<<<<<< HEAD
+		<form action="" id="updateUser" method="post" class="data_list">
+			<input type="hidden" name="u_id" id="u_id" value="" />
+=======
 		<form action="information_submit" method="get" class="data_list">
+>>>>>>> 20b0368df1b8fe7194f29e79099570d685c93a1e
 			<div class="user_group">
 				<label for="user_name">用户昵称&nbsp;&nbsp;:</label>
-				<input type="text" name="" value="" id="user_name" required="required">
+				<input type="text" name="u_name" value="" id="user_name" required="required">
 				<span class="red">* 必填</span>
 				<p class="have">该用户昵称已存在!!!</p>
 			</div>
 			<div class="user_group">
 				<label for="user_company">单位名称&nbsp;&nbsp;:</label>
-				<input type="text" name="" value="" id="user_company" required="required">
+				<input type="text" name="u_unit" value="" id="user_company" required="required">
 				<span class="red">* 必填</span>
 			</div>
 			<div class="user_group">
 				<label for="company_add">公司地址&nbsp;&nbsp;:</label>
-				<input type="text" name="" value="" id="company_add" required="required">
+				<input type="text" name="u_address" value="" id="company_add" required="required">
 				<span class="red">* 必填</span>
 			</div>
 			<div class="user_group">
 				<label for="company_tel">公司电话&nbsp;&nbsp;:</label>
-				<input type="tel" name="" value="" id="company_tel" required="required">
+				<input type="tel" name="u_tel" value="" id="company_tel" required="required">
 				<span class="red">* 必填</span>
 			</div>
 			<div class="user_group">
 				<label for="industry">主要行业&nbsp;&nbsp;:</label>
-				<input type="text" name="" value="" id="industry">
+				<input type="text" name="u_industry" value="" id="industry">
 				<span class="green">* 选填</span>
 			</div>
 			<div class="user_group">
 				<label for="business">主营业务&nbsp;&nbsp;:</label>
-				<input type="text" name="" value="" id="business">
+				<input type="text" name="u_business" value="" id="business">
 				<span class="green">* 选填</span>
 			</div>
 			<div class="user_group">
 				<label>所属地区&nbsp;&nbsp;:</label>
-				<select name="" class="area" placeholder="">
+				<select name="u_area" id="u_area" class="area" placeholder="">
 					<option value="">省份：</option>
 					<option value="">湖南</option>
 					<option value="">北京</option>
 					<option value="">上海</option>
 				</select>
 				<span class="green">* 选填</span>
-				<select name="" class="area city">
+				<select  class="area city">
 					<option value="">城市：</option>
 					<option value="">长沙</option>
 					<option value="">株洲</option>
@@ -58,11 +63,56 @@
 				<span class="green last">* 选填</span>
 			</div>
 			<div class="user_group">
-				<button type="submit" class="save">
+				<button type="button" id="userSubmit" class="save">
 					<a href="javascript:;" title="">保存资料</a>
+				</button>
+			</div>
+			<div class="user_group">
+				<button type="button" id="return"  onclick="returnMain()" class="save">
+					<a href="javascript:;" title="">返回</a>
 				</button>
 			</div>
 		</form>
 	</div>
 </body>
+<script src="../themes/valudio/assets/lib/jquery/1.12.2/jquery-1.12.2.js" tppabs="http://valudio.com/themes/valudio/assets/lib/jquery/1.12.2/jquery-1.12.2.js"></script>
+<script type="text/javascript">
+		function returnMain(){
+			if(confirm("是否返回？若返回数据不会保存！"))
+			 {
+				 window.location.href="../index.htm";
+			 }
+			
+		}
+		
+		$(function(){
+			 var userId = window.sessionStorage.getItem("userId");
+			 var u_id = parseInt(userId);
+			 //修改
+			 $("#userSubmit").click(function() {
+				 	$("#u_id").val(u_id);
+					$.ajax({
+						cache : false,
+						url : "../UserController/updateUser.do",
+						type : "post",
+						data : $("#updateUser").serialize(),
+						dataType : "json",
+						async : false,
+						success : function(data) {
+							if (data.code==0020) { //修改失败
+								alert(data.msg);
+							}else if(data.code==0000){ //更新成功
+								alert(data.msg);
+								window.sessionStorage.setItem("userName", data.data.u_name);
+								history.go(-1);
+							}
+						},
+						error : function(request) {
+							alert("Connection error");
+						},
+					});
+					
+				});
+		});
+</script>
 </html>
