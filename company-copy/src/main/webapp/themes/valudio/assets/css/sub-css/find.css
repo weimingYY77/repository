@@ -69,10 +69,11 @@
 	width: 302px;
 	margin-top: 40px;
 }
-.yz_group>select{
-	width: 178px;
-	height: 30px;
+.yz_group>input[type="tel"]{
+	width: 164px;
+	height: 25px;
 	outline: none;
+	padding-left: 3px;
 }
 .get_yz{
 	width: 100px;
@@ -84,10 +85,10 @@
 	margin-left: 19px;
 	cursor: pointer;
 }
-.yz_group>input[type="password"],.xg_group>input[type="password"],.yz_group>input[type="text"]{
+.yz_group>input[type="password"],.xg_group>input[type="password"],.yz_group>input[type="text"],.yz_group>select{
 	width: 96%;
 	height: 30px;
-	color: #A3A3A3;
+/* 	color: #A3A3A3; */
 	font-size: 16px;
 	padding-left: 9px;
 	display: inline-block;
