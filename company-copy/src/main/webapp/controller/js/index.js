@@ -13,13 +13,13 @@ $(function(){
          $(".close").hide();
       }
    })
- // 导航下拉列表
-  $(".drop-down").mouseenter(function() {
-      $(this).children("div").stop().slideDown("slow");
-  });
+   /* 导航下拉列表*/
+$(".drop-down").mouseenter(function() {
+      $(this).children("div").stop().fadeIn("slow");
+});
    $(".drop-down").mouseleave(function() {
-      $(this).children("div").stop().slideUp("slow");
-  });
+      $(this).children("div").stop().fadeOut("slow");
+});
   // 折叠菜单栏
 	 $('.inactive').click(function(){
        if($(this).children('ul').css('display') == 'none'){
