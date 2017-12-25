@@ -4,7 +4,7 @@ $(function(){
     $(".search_box").fadeIn(500);
     $(".search").fadeOut(500);
  })
-   $(".search_txt").change(function(){
+   $(".search_txt").focus(function(){
       if ($(".search_txt").val()!=" ") {
          console.log(123);
         $(".close").fadeIn();
@@ -13,6 +13,10 @@ $(function(){
          $(".close").fadeOut();
       }
    })
+   $(".close").click(function() {
+    console.log(123);
+     $(".search_txt").val() = "";
+   });
    /* 导航下拉列表*/
 $(".drop-down").mouseenter(function() {
       $(this).children("div").stop().fadeIn("slow");

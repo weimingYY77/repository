@@ -140,7 +140,7 @@ ul li{
 	border-top: none;
   	display: none;  
 }
-.station_msg>.u123{
+/* .station_msg>.u123{
 	display: block;
 	width: 14px;
 	height: 13px;
@@ -148,7 +148,7 @@ ul li{
 	background: url(../images/u123.png);
 	top: -13px;
     left: 50%;
-}
+} */
 .station_msg>p{
 	height: 40px;
 	line-height: 40px;
@@ -210,15 +210,6 @@ ul li{
 .my_order ul li:last-child{
     border-top: 1px solid #999;
 }
-.my_order>.u123{
-	display: block;
-	width: 14px;
-	height: 13px;
-	position: absolute;
-	background: url(../images/u123.png);
-	top: -13px;
-    left: 50%;
-}
 .function_list>li .my_cost{
 	position: absolute;
 	width: 118px;
@@ -242,8 +233,8 @@ ul li{
 .my_cost ul li:last-child{
     border-top: 1px solid #999;
 }
-.function_list>li .station_msg:after{
-	 content: "";
+.function_list>li .station_msg:after,.function_list>li .my_order:after,.function_list>li .my_cost:after{
+	content: "";
 	display: block;
 	width: 14px;
 	height: 13px;
@@ -252,7 +243,15 @@ ul li{
 	top: -13px;
     left: 50%;
 }
-
+/* .function_list>li .my_order:after{
+	display: block;
+	width: 14px;
+	height: 13px;
+	position: absolute;
+	background: url(../images/u123.png);
+	top: -13px;
+    left: 50%;
+} */
 /* 主体 */
 .main{
 	position: relative;
