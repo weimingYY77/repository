@@ -92,7 +92,7 @@ ul li{
 .function_list li>span{
 	margin-right: 18px;
 	display: inline-block;
-	vertical-align: middle;
+	vertical-align: bottom;
 }
 .function_list .search{
     height: 26px;
