@@ -124,6 +124,7 @@
 .progress_bar .circular>span:first-child{
 	position: absolute;
 	top:-40px;
+	left: 4px;
 }
 .progress_bar .circular>span:last-child{
 	position: absolute;
@@ -270,7 +271,7 @@
 /* 响应式小于1366 大于1024*/
 @media screen and (max-width: 1366px) and (min-width: 1024px){
 .cloud_promotion>p.ad {
-    margin-right: 10%;
+    margin-right:5%;
 }
 .cloud_promotion .ad>span:last-child {
     margin-left: 40px;
