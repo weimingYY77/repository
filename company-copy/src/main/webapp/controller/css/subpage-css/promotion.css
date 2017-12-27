@@ -98,19 +98,16 @@
  	padding-left: 36px;
  }
 .progress_bar,.progress_date,.progress_desc{
-    padding-top: 20px;
-    width: 93%;
-    padding-left: 7%;
+    padding-top: 60px;
+    width: 90%;
+    padding-left: 10%;
  }
 .progress_date>span,.progress_desc>span{
 	font-size: 16px;
 	color: #646464;
-}
-.progress_date>span + span{
-	padding-left: 15%;
-}
-.progress_desc>span + span{
-	padding-left: 14%;
+	display: inline-block;
+	width: 18%;
+	text-align: center;
 }
 .progress_bar .circular{
     display: inline-block;
@@ -119,6 +116,19 @@
     border-radius: 50px;
     position: relative;
     z-index: 1;
+}
+.progress_bar .circular>span{
+	color: #646464;
+	font-size: 16px;
+}
+.progress_bar .circular>span:first-child{
+	position: absolute;
+	top:-40px;
+}
+.progress_bar .circular>span:last-child{
+	position: absolute;
+	bottom: -40px;
+	width: 130%;
 }
 .progress_bar .line{
 	display: inline-block;
@@ -256,9 +266,27 @@
 	color: #00C1DE;
 	text-decoration: underline;
 	font-size: 14px;
-<<<<<<< Updated upstream
+}
+/* 响应式小于1366 大于1024*/
+@media screen and (max-width: 1366px) and (min-width: 1024px){
+.cloud_promotion>p.ad {
+    margin-right: 10%;
+}
+.cloud_promotion .ad>span:last-child {
+    margin-left: 40px;
+}
+.progress_bar .circular {
+    width: 35px;
+    height: 35px;
+}
+.progress_bar .line {
+    margin-top: 13px;
+}
+.progress_bar .circular>span:last-child {
+    width: 150%;
+}
+.progress_bar .circular>span {
+    font-size: 12px;
+}
 }
 
-=======
-}
->>>>>>> Stashed changes
