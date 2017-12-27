@@ -345,10 +345,10 @@
     right: 60px;
     top: 210px;
 }
-.reg_form .get_code{
+.reg_form .get-code{
     display: inline-block;
     position: absolute;
-    width: 81px;
+    width: 82px;
     height: 29px;
     background: #3C39CD;
     color: #fff;
@@ -357,6 +357,8 @@
     top: 56px;
     right: 60px;
     line-height: 29px;
+    border:none;
+    outline: none;
 }
 .reg_form .format{
     display:block;
