@@ -41,12 +41,12 @@ ul li{
 }
 .search_box{
     position: absolute;
-    left: -460px;
+    left: -370px;
     top: 2px;
     display: none;   
 }
 .search_box>input{
-    width: 300px;
+    width: 255px;
     height: 25px;
     border: none;
     outline: none;
@@ -330,3 +330,28 @@ ul li{
 	display: block;
 }
 /* 折叠菜单结束 */
+/* 响应式小于1366 大于1024*/
+@media screen and (max-width: 1366px){
+.nav_head {
+    padding: 14px 10px;
+}
+.search_box {
+    left: -60%;
+  }
+.search_box>input {
+    width: 65%;
+  }
+.function_list>li {
+    padding-right: 10px;
+}
+.function_list>li>a, .user>a {
+    font-size: 16px;
+}
+.list>.yiji>li>a {
+    padding-left: 10px;
+    font-size: 16px;
+}
+.list>.yiji>li>ul>li {
+    padding-left: 65px;
+}
+}
