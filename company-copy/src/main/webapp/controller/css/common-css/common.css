@@ -322,7 +322,7 @@ ul li{
 }
 /* 折叠菜单结束 */
 /* 响应式小于1366 大于1024*/
-@media screen and (max-width: 1366px){
+@media screen and (max-width: 1366px) and (min-width: 1024px){
 .nav_head {
     padding: 14px 10px;
 }
