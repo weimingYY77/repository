@@ -192,24 +192,11 @@
 }
 /* 响应式小于1366 大于1024*/
 @media screen and (max-width: 1366px) and (min-width: 1024px){
-.cloud_promotion>p.ad {
+.station>p.ad {
     margin-right:5%;
 }
-.cloud_promotion .ad>span:last-child {
+.station .ad>span:last-child {
     margin-left: 40px;
-}
-.progress_bar .circular {
-    width: 35px;
-    height: 35px;
-}
-.progress_bar .line {
-    margin-top: 13px;
-}
-.progress_bar .circular>span:last-child {
-    width: 150%;
-}
-.progress_bar .circular>span {
-    font-size: 12px;
 }
 }
 
