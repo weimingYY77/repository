@@ -1,9 +1,3 @@
-/* 框阴影 */
-.box_show{
-	background: #fff;
-	border-radius: 4px;
-	box-shadow:2px 2px 4px rgba(0,0,0,0.3);
-}
 /* 右边 */
 .main_right{
     display: inline-block;
@@ -97,18 +91,11 @@
  	padding-top: 52px;
  	padding-left: 36px;
  }
-.progress_bar,.progress_date,.progress_desc{
+.progress_bar{
     padding-top: 60px;
     width: 90%;
     padding-left: 10%;
  }
-.progress_date>span,.progress_desc>span{
-	font-size: 16px;
-	color: #646464;
-	display: inline-block;
-	width: 18%;
-	text-align: center;
-}
 .progress_bar .circular{
     display: inline-block;
     width: 50px;
@@ -267,6 +254,7 @@
 	color: #00C1DE;
 	text-decoration: underline;
 	font-size: 14px;
+<<<<<<< Updated upstream
 }
 /* 响应式小于1366 大于1024*/
 @media screen and (max-width: 1366px) and (min-width: 1024px){
@@ -291,3 +279,6 @@
 }
 }
 
+=======
+}
+>>>>>>> Stashed changes
