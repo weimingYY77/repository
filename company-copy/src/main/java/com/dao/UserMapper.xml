@@ -22,6 +22,7 @@
 		<result property="v_code" column="v_code" />
 		<result property="v_startTime" column="v_startTime" />
 		<result property="v_endTime" column="v_endTime" />
+		<result property="v_statu" column="v_statu" />
 	</resultMap>
 	
 	<select id="findUserPhone" resultMap="userResultMap" parameterType="com.entity.UserInfo">
@@ -85,7 +86,7 @@
 
 	<update id="updatePw" parameterType="com.entity.UserInfo">
 		update UserInfo set u_passWord=#{u_passWord}
-				  where u_id=#{u_id}
+				  where u_phoneNum=#{u_phoneNum}
 	</update>
 	
 	<insert id="addCode" parameterType="com.entity.Validate">
@@ -94,12 +95,14 @@
 				   u_phoneNum,
 				   v_code,
 				   v_startTime,
-				   v_endTime)
+				   v_endTime,
+				   v_statu)
 				values
 				  (#{u_phoneNum,jdbcType=VARCHAR},
 				   #{v_code,jdbcType=INTEGER},
 				   #{v_startTime},
-				   #{v_endTime})
+				   #{v_endTime},
+				   0)
 	</insert>
 	
 	<select id="findCode" resultMap="validateResultMap" parameterType="com.entity.Validate">
@@ -109,5 +112,10 @@
 				where u_phoneNum=#{u_phoneNum}
 			 	order by v_startTime desc limit 1
 	</select>
+	
+	<update id="updateCodeStatu" parameterType="com.entity.Validate">
+	 update Validate set v_statu= 1
+				  where v_id=#{v_id} 
+	</update>
 	
 </mapper>

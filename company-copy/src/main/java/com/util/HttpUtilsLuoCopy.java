@@ -108,7 +108,7 @@ import com.alibaba.fastjson.JSONObject;
 		            body.put("method","overview/getTimeTrendRpt");
 		            SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
 		            String tody = sdf.format(new Date());
-		            body.put("start_date","20171226");
+		            body.put("start_date","20171227");
 		            body.put("end_date",tody);
 		            body.put("metrics","pv_count,visitor_count,ip_count,bounce_ratio,avg_visit_time");
 		            String urlStr = "https://api.baidu.com/json/tongji/v1/ReportService/getData";

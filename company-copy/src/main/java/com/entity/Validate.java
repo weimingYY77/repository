@@ -11,6 +11,7 @@ public class Validate {
 	private Integer v_code;//验证码
 	private String v_startTime;//开始时间
 	private String v_endTime;//结束时间
+	private Integer v_statu;// 验证码状态
 	public Integer getV_id() {
 		return v_id;
 	}
@@ -40,5 +41,11 @@ public class Validate {
 	}
 	public void setV_endTime(String v_endTime) {
 		this.v_endTime = v_endTime;
+	}
+	public Integer getV_statu() {
+		return v_statu;
+	}
+	public void setV_statu(Integer v_statu) {
+		this.v_statu = v_statu;
 	}
 }

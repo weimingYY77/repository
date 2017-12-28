@@ -69,4 +69,11 @@ public interface UserService {
 	 */
 	public Validate findCode(Validate validate);
 	
+	/**
+	 * 更改验证码状态
+	 * @param validate
+	 * @return
+	 */
+	public int updateCodeStatu(Validate validate);
+	
 }

@@ -118,7 +118,7 @@ public class StatisticsController {
 	}	
 	
 	/**
-	 * 收录
+	 * 百度统计
 	 * @param sysuser
 	 * @return
 	 */

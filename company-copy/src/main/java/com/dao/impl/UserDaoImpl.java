@@ -99,4 +99,15 @@ public class UserDaoImpl implements UserDao {
 		return sqlSessionTemplate.selectOne("com.dao.UserDao.findCode",validate);
 	}
 
+	/**
+	 * 更改验证码状态
+	 * @param validate
+	 * @return
+	 */
+	@Override
+	public int updateCodeStatu(Validate validate) {
+		// TODO Auto-generated method stub
+		return sqlSessionTemplate.update("com.dao.UserDao.updateCodeStatu",validate);
+	}
+
 }

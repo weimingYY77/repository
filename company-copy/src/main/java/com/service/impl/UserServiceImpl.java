@@ -117,4 +117,11 @@ public class UserServiceImpl implements UserService {
 		return userDao.findCode(validate);
 	}
 
+	
+	@Override
+	public int updateCodeStatu(Validate validate) {
+		// TODO Auto-generated method stub
+		return userDao.updateCodeStatu(validate);
+	}
+
 }

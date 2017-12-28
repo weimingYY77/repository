@@ -81,20 +81,22 @@ public class UserController {
 		
 		UserInfo inspect = userService.inspect(userInfo); //判断用户是否存在
 		Map maps=new HashMap();
-		Integer noseCode =  validate.getV_code();//页面输入的验证码
-		Validate resultV = userService.findCode(validate);
-		Integer code = resultV.getV_code();//后台验证码
-		
-		Date date=new Date();
-		DateFormat format=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-		String time=format.format(date.getTime());//系统时间
-		String endTime = resultV.getV_endTime();
-		
 		if(inspect!=null){
 			maps.put("code", 0010);
 		    maps.put("msg","用户已存在");
 		    return maps; 
 		}else{
+			String noseCode =  validate.getV_code().toString();//页面输入的验证码
+			Validate resultV = userService.findCode(validate);
+			String code = "";
+			Date date=new Date();
+			DateFormat format=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+			String time=format.format(date.getTime());//系统时间
+			String endTime = "";
+			if(resultV!=null){
+				code = resultV.getV_code().toString();//后台验证码
+				endTime = resultV.getV_endTime();
+			}
 			if(noseCode.equals(code)){
 					if(format.parse(time).getTime()<=format.parse(endTime).getTime()){
 						int addUser = userService.insert(userInfo); //注册
@@ -111,7 +113,7 @@ public class UserController {
 						}
 					}else{
 						maps.put("code", 0030);
-					    maps.put("msg","验证码失效！");
+					    maps.put("msg","验证码失效，请重新获取！");
 					    return maps; 
 					}
 			}else{
@@ -185,12 +187,17 @@ public class UserController {
 	 */
 	@RequestMapping(value="/updatePw.do")
 	@ResponseBody
-	public int updatePw(UserInfo userInfo) throws Exception{
+	public Map<String, Object> updatePw(UserInfo userInfo) throws Exception{
 		int update = userService.updatePw(userInfo);
+		Map maps=new HashMap();
 		if(update<=0){
-			return 1;
+			 maps.put("code", 0010);
+			 maps.put("msg","修改失败！");
+		     return maps;
 		}else{
-			return 2;
+			 maps.put("code", 0000);//成功
+			 maps.put("msg","修改成功！");
+		     return maps;
 		}
 	}
 	
@@ -205,7 +212,7 @@ public class UserController {
 		Integer code = (int)((Math.random()*9+1)*100000);
 		UserInfo inspect = userService.inspect(userInfo); //判断用户是否存在
 		if(inspect== null){
-			String sms = userService.sendSms(validate.getU_phoneNum(), code);
+			String sms = "ok";
 			if("ok".equals(sms)){
 				Date date=new Date();
 				DateFormat format=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
@@ -229,6 +236,104 @@ public class UserController {
 			 maps.put("code", 0030);//用户不存在
 			 maps.put("msg","用户已存在！");
 		     return maps;
+		}
+	}
+	
+	/*
+	 * 忘记密码验证码
+	 * 发送短信，以及添加验证码
+	 */
+	@RequestMapping(value="/sfpCode.do")
+	@ResponseBody
+	public Map<String, Object> sfpCode(Validate validate,UserInfo userInfo) throws Exception{
+		Map maps=new HashMap();
+		Integer update = -1;
+		Integer code = (int)((Math.random()*9+1)*100000);
+		UserInfo inspect = userService.inspect(userInfo); //判断用户是否存在
+		if(inspect!= null){
+			String sms = userService.sendSms(validate.getU_phoneNum(), code);//发送短信
+			if("ok".equals(sms)){
+				Date date=new Date();
+				DateFormat format=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+				String startTime=format.format(date.getTime());
+				validate.setV_startTime(startTime);
+				String endTime = format.format(date.getTime()+5*60*1000);
+				validate.setV_endTime(endTime);
+				validate.setV_code(code);
+				update = userService.addCode(validate);
+			}
+			if(update<=0){
+				maps.put("code", 0020);
+				maps.put("msg","短信发送失败！");
+			    return maps;
+			}else{
+				maps.put("code", 0000);
+				maps.put("msg","短信发送成功！");
+			    return maps;
+			}
+		}else{
+			 maps.put("code", 0030);//用户不存在
+			 maps.put("msg","用户不存在！");
+		     return maps;
+		}
+	}
+	
+	/*
+	 * 忘记密码验证是否成功
+	 */
+	@RequestMapping(value="/verification.do")
+	@ResponseBody
+	public Map<String, Object> verification(UserInfo userInfo,Validate validate) throws Exception{
+		
+		UserInfo inspect = userService.inspect(userInfo); //判断用户是否存在
+		Map maps=new HashMap();
+		if(inspect==null){
+			maps.put("code", 0010);
+		    maps.put("msg","用户不存在");
+		    return maps; 
+		}else{
+			String noseCode =  validate.getV_code().toString();//页面输入的验证码
+			Validate resultV = userService.findCode(validate);
+			String code = "";
+			Date date=new Date();
+			DateFormat format=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+			String time=format.format(date.getTime());//系统时间
+			String endTime = "";
+			Integer codeStatu = -1;
+			if(resultV!=null){
+				code = resultV.getV_code().toString();//后台验证码
+				endTime = resultV.getV_endTime();
+				codeStatu = resultV.getV_statu();//验证码状态
+			}
+			if(codeStatu==0){
+				if(noseCode.equals(code)){
+						if(format.parse(time).getTime()<=format.parse(endTime).getTime()){
+							int updateCodeStatu = userService.updateCodeStatu(resultV); //修改验证码状态
+							if(updateCodeStatu>0){
+								maps.put("code", 0000);
+								maps.put("msg","操作成功！");
+								maps.put("data", inspect);
+								return maps; 
+							}else{
+								maps.put("code", 0020);
+								maps.put("msg","验证码状态修改失败！");
+								return maps; 
+							}
+						}else{
+							maps.put("code", 0030);
+						    maps.put("msg","验证码失效，请重新获取！");
+						    return maps; 
+						}
+				}else{
+					maps.put("code", 0040);
+				    maps.put("msg","验证码错误！");
+				    return maps; 
+				}
+			}else{
+				maps.put("code", 0050);
+			    maps.put("msg","验证码已被使用，请重新获取！");
+			    return maps;
+			}
 		}
 	}
 	
