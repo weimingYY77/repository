@@ -100,15 +100,15 @@
     width: 100%;
     text-align: center;
 }
-.layen .layout1 .item-a{
+.layen .layout1 .item-a0{
 	float: left;
 	
 }
-.layen .layout1 .item-c{
+.layen .layout1 .item-a1{
 	float: right;	
 	width: 15%;
 }
-.layen .layout1 .item-b{
+.layen .layout1 .item-a2{
 	float: right;
 	width: 20%;
 }
