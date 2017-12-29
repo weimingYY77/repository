@@ -1,0 +1,175 @@
+.flow{
+	padding-top: 40px;
+	padding-bottom: 35px;
+	margin-bottom: 35px;
+}
+.flow ul{
+	width: 100%;
+	display: inline-block;
+}
+.flow li{
+	width: 14%;
+	float: left;
+}
+.flow span{
+	width: 100%;
+	display: block;
+	color: #;
+}
+.flow .left{
+	padding-left: 4%;
+	width: 10%;
+}
+.flow .center{
+	text-align: center;
+}
+.flow .left .Bigtit{
+	font-size:18px;
+}
+.flow .black{
+	color: #2b2b2b;
+	font-weight: bold;
+	font-size: 16px;
+}
+.flow span{
+	color: #646464;
+    font-size: 14px;
+    line-height: 45px;
+}
+.Day{
+	width: 100%;
+	display: inline-block;
+	background: #FFFFFF;
+	margin-bottom: 40px;
+}
+.Day li{
+	width:140px;
+	height: 40px;
+	float: left;
+	line-height: 40px;
+	text-align: center;
+	border-right: 1px solid #e6e6e6;
+}
+.Day .bule{
+	background: #00c1de;
+	color: #FFFFFF;
+}
+.box_main .layen{
+	width:48%;
+	height: 400px;
+	margin-bottom: 40px;
+}
+.box_main .layen.left{
+	float: left;
+}
+.box_main .layen.right{
+	float: right;
+	}
+.box_main .layen.left.one .earch{
+	width: 100%;
+	height: 100%;
+	padding-top: 10px;
+}
+.layen .layout1{
+	padding:20px;
+}
+.layen.two .layout1 .title-item1{
+	font-size: 18px;
+	color: #2b2b2b;
+}
+.layen .layout1 .main-item2{
+    display: inline-block;
+    width: 100%;
+    line-height:20px;
+    font-size: 14px;
+    color: #646464;
+    height: 315px;
+    overflow: auto;
+}
+.layen .layout1 .main-item3.title{
+    display: inline-block;
+    width: 100%;
+    line-height:25px;
+    font-size: 14px;
+    color: #646464;
+    padding-top:15px;
+}
+.layen .layout1 .main-item3{
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.layen .layout1 .item-a{
+	float: left;
+	
+}
+.layen .layout1 .item-c{
+	float: right;	
+	width: 15%;
+}
+.layen .layout1 .item-b{
+	float: right;
+	width: 20%;
+}
+.layen.six .layout2 ul{
+	display: inline-block;
+	width: 100%;
+	padding-top:20px;
+}
+.layen.six .layout2 li{
+	width: 33.2%;
+    float: left;
+     display: grid;
+    text-align: center;
+}
+.layen.six .layout2 img{
+    width: 95%;
+    display: block;
+    padding-top: 15px;
+}
+.layen.six .layout2 span {
+	display: block;
+	margin: 0 auto;
+}
+.layen.six .layout2 p {
+     width: 100%;
+    display: inline-block;
+    line-height: 35px;
+}
+.layen.six .layout2 .item-1{
+	color: #646464;
+	font-size: 18px;
+}
+
+.layen.six .layout2 .item-2{
+	color: #5ec543;
+	font-size:24px;
+}
+.layen.six .layout2 .item-2.bule{
+	color: #309cc4;
+}
+.layen.six .layout2.Tab{
+    text-align: center;
+    color: #646464;
+    font-size: 14px;
+    border: 1px solid #cac8c8;
+    margin-top:30px;
+}
+.layen.six .layout2.Tab ul{
+	padding-top: 0px;
+    margin-bottom: -5px;
+}
+.layen.six .layout2.Tab li{
+	border-right:1px solid #cac8c8 ;
+}
+.layen.six .layout2.Tab li.noborder{
+	border-right:none ;
+}
+.layen.six .layout2.Tab p{
+	border-bottom:1px solid #cac8c8 ;
+	line-height: 40px;
+}
+.layen.six .layout2.Tab p.noborder{
+	border-bottom:none ;
+}
