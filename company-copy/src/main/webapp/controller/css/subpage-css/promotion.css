@@ -254,7 +254,6 @@
 	color: #00C1DE;
 	text-decoration: underline;
 	font-size: 14px;
-<<<<<<< Updated upstream
 }
 /* 响应式小于1366 大于1024*/
 @media screen and (max-width: 1366px) and (min-width: 1024px){
