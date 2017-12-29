@@ -120,7 +120,7 @@
 .layen.six .layout2 li{
 	width: 33.2%;
     float: left;
-     display: grid;
+    display: inline-block;
     text-align: center;
 }
 .layen.six .layout2 img{
@@ -130,7 +130,8 @@
 }
 .layen.six .layout2 span {
 	display: block;
-	margin: 0 auto;
+    margin: 0 auto;
+    width: 20%;
 }
 .layen.six .layout2 p {
      width: 100%;
