@@ -99,7 +99,7 @@
             		    <span class="return">返回登录</span>
             			<p>注册</p>
             			<form action="" id="addUser" method="post" class="reg_form">
-	            			<input type="tel" name="u_phoneNum" value="" placeholder="手机号码" class="format reg_tel">
+	            			<input type="tel" name="u_phoneNum" id="phone" value="" placeholder="手机号码" class="format reg_tel">
 	            			<span class="error_tel">手机号码输入有误</span>
 	            			<span class="empty_tel">手机号码不能为空</span>
                             <span class="have_tel">手机用户已存在</span>
@@ -526,49 +526,65 @@ function resetCode(){
 		         
 		       //注册功能
 					$("#addSubmit").click(function() {
-						$.ajax({
-							cache : false,
-							url : "../UserController/insert.do",
-							type : "post",
-							data : $("#addUser").serialize(),
-							dataType : "json",
-							async : false,
-							success : function(data) {
-								if (data.code==0010) {   //用户已存在
-									alert(data.msg);
-									$(".error_tel").show();
-								}else if(data.code==0020){  //注册失败
-									alert(data.msg);
-								}else if(data.code==0030){
-									alert(data.msg);
-								}else if(data.code==0040){
-									alert(data.msg);
-								}else if(data.code==0000){ //注册成功
-									alert(data.msg);
-									document.getElementById("login_after").style.visibility="visible";
-									document.getElementById("regist_box").style.display="none";
-									var object = data.data.u_id;
-									var code = object.toString();
-									window.sessionStorage.setItem("userId",code);
-									var leng= code.length;  //定义长度
-									if(leng==1){
-									code="00000"+code;
-									}else if(leng==2){
-									code="0000"+code;
-									}else if(leng==3){
-									code="000"+code;
-									}else if(leng==4){
-									code="00"+code;
-									}else if(leng==5){
-									code="0"+code;
-									}
-									$("#userId").html(code);
-								} 
-							},
-							error : function(request) {
-								alert("Connection error");
-							},
-						});
+						var phone = $('#phone').val();
+						var pattern = /^1[0-9]{10}$/;
+						if(phone == '') {
+							alert('请输入手机号码');
+						}else if(!pattern.test(phone)){
+							alert('请输入正确格式的手机号码');
+						}else if($(".reg_code").val() == ""){
+							alert('验证码不能为空！');
+						}else if($(".reg_pwd1").val() == ""){
+							alert('密码不能为空！');
+						}else if($(".reg_pwd2").val() != $(".reg_pwd1").val()){
+							alert('两次密码不相同！');
+						}else if($(".reg_yq").val() == ""){
+							alert('邀请码不能为空！');
+						}else{
+							$.ajax({
+								cache : false,
+								url : "../UserController/insert.do",
+								type : "post",
+								data : $("#addUser").serialize(),
+								dataType : "json",
+								async : false,
+								success : function(data) {
+									if (data.code==0010) {   //用户已存在
+										alert(data.msg);
+										$(".error_tel").show();
+									}else if(data.code==0020){  //注册失败
+										alert(data.msg);
+									}else if(data.code==0030){
+										alert(data.msg);
+									}else if(data.code==0040){
+										alert(data.msg);
+									}else if(data.code==0000){ //注册成功
+										alert(data.msg);
+										document.getElementById("login_after").style.visibility="visible";
+										document.getElementById("regist_box").style.display="none";
+										var object = data.data.u_id;
+										var code = object.toString();
+										window.sessionStorage.setItem("userId",code);
+										var leng= code.length;  //定义长度
+										if(leng==1){
+										code="00000"+code;
+										}else if(leng==2){
+										code="0000"+code;
+										}else if(leng==3){
+										code="000"+code;
+										}else if(leng==4){
+										code="00"+code;
+										}else if(leng==5){
+										code="0"+code;
+										}
+										$("#userId").html(code);
+									} 
+								},
+								error : function(request) {
+									alert("Connection error");
+								},
+							});
+						}
 					});
 		    	}
 	       }

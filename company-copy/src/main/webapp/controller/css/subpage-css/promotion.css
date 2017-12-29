@@ -91,18 +91,11 @@
  	padding-top: 52px;
  	padding-left: 36px;
  }
-.progress_bar,.progress_date,.progress_desc{
+.progress_bar{
     padding-top: 60px;
     width: 90%;
     padding-left: 10%;
  }
-.progress_date>span,.progress_desc>span{
-	font-size: 16px;
-	color: #646464;
-	display: inline-block;
-	width: 18%;
-	text-align: center;
-}
 .progress_bar .circular{
     display: inline-block;
     width: 50px;
@@ -285,3 +278,6 @@
 }
 }
 
+=======
+}
+>>>>>>> Stashed changes

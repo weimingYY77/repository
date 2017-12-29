@@ -1,0 +1,98 @@
+/* 右边 */
+.main_right{
+    display: inline-block;
+    position: relative;
+    margin: 56px 40px 26px 40px;
+    width: 82%;
+    margin-left: 16%;
+}
+/* 网站列表 */
+.main_right .weblist{
+	width: 100%;
+	margin-bottom: 35px;
+	position: relative;
+}
+.weblist>p:first-child{
+	padding-left: 38px;
+	font-size:20px;
+	color: #333;
+	padding-top: 40px;
+}
+.weblist .website{
+	padding-left: 3%;
+	padding-top: 22px;
+}
+.weblist .website li{
+    display: inline-block;
+    color: #454444;
+    border: 1px solid #E1E3E4;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    padding-left: 33px;
+    padding-right: 33px;
+    float: left;
+    cursor: pointer;
+}
+.weblist .website>li:last-child{
+	border-left: none;
+}
+.bg{
+	background: #00C1DE!important;
+	color: #fff!important;
+	border:1px solid #fff!important;
+}
+/* 自有网站  汇总网站 */
+.weblist .self_total{
+	display: none;
+	position: relative;
+}
+.weblist .active{
+	display: inline-block;
+    width: 100%;
+}
+.self_web,.total_web{
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-top: -1px;
+	border: 1px solid #E1E3E4;
+	position: relative;
+	z-index: 10;
+    height: 541px;
+    overflow: auto;
+}
+.list_top{
+	height: 50px;
+	background: #E1E3E4;
+	line-height: 50px;
+	margin-left: 3%;
+	margin-right: 3%;
+	color: #979494;
+	margin-top: -1px;
+}
+.list_desc{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #E1E3E4;
+	color: #2B2B2B;
+}
+.self_web>div>span,.total_web>div>span,.list_top>span{
+	display: inline-block;
+	width: 24%;
+	text-align: center; 
+}
+.self_web .list_desc>span>a,.total_web .list_desc>span>a{
+	color: #00C1DE;
+}
+.self_web .list_desc .domain,.self_web .list_desc .del,.total_web .list_desc .del{
+  	padding-left: 20px;
+}
+.weblist .careful{
+	padding-left: 38px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color:#979494;
+}
+
+
