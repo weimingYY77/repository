@@ -1,0 +1,204 @@
+.main{
+	background: #ebeef2;
+}
+.main_conter{
+    padding-left: 3%;
+    padding-right: 5%;
+    background: #FFFFFF;
+    display: inline-block;
+    padding-top: 20px;
+    float: left;
+    width: 5%;
+    height: 870px;
+    position: fixed;
+    top: 60px;
+    left: 14%;
+    bottom: 0;
+}
+.main_conter .title{
+	font-size: 20px;
+	color: #003333;
+}
+.main_conter li a{
+    line-height: 40px;
+    font-size: 16px;
+    color: #a3a3a3;
+    display: inline-block;
+    width: 100%;
+}
+.main_conter li a:hover{
+	color: #00c1de;
+}
+.main_conter li a.active{
+    color: #00c1de;
+}
+.main_right,.main_btn{
+    margin-left:29%;
+    width:67%;
+    display: inline-block;
+    background: #ffffff;
+    float: left;
+    margin-top: 2%;
+    padding-left: 30px;
+    padding-right: 30px;
+/*     padding: 35px 30px 65px 30px; */
+}
+.main_right{
+    height: 370px;
+}
+.main_right>p{
+    padding-top: 27px;
+    color: #2B2B2B;
+}
+.main_right>p>span{
+    padding-left: 20px;
+    font-size: 14px;
+    color: #646464;
+}
+.main_right>p>span>span{
+    color: #F05757;
+}
+.main_right .date,.main_right .charts{
+    display: inline-block;
+    float: left;
+    text-align: center;
+}
+.main_right .date{
+    width: 25%;
+    padding-top: 80px;
+}
+.date .number{
+    font-size: 44px;
+    color: #2b2b2b;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.main_right .charts{
+    width: 75%;
+}
+/* 明细数据 */
+.main_btn{
+    height: 657px;
+    margin-bottom: 40px;
+}
+.main_btn select{
+    height: 23px;
+    line-height: 23px;
+    outline: none;
+    color: #646464;
+    font-size: 12px;
+}
+.main_btn>p{
+    padding-top: 28px;
+    color: #2B2B2B;
+}
+.drop1,.drop2{
+    padding-top: 15px;
+}
+.drop1>span,.drop2>span{
+    color: #646464;
+    padding-left: 2%;
+}
+.drop1 .all,.drop2 .visitor{
+    display: inline-block;
+}
+.drop1 .all li,.drop2 .visitor li{
+    display: inline-block;
+    width: 63px;
+    border: 1px solid #AAA;
+    font-size: 12px;
+    color: #646464;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    margin-left: -6px;
+    cursor: pointer;
+}
+.drop1 .all li:nth-child(2),.drop2 .visitor li:nth-child(2){
+    border-left: none;
+}
+.drop1 .active,.drop2 .active{
+    background: #69B5FA;
+    color: #fff!important;
+    boder:1px solid #69B5FA!important;
+}
+.drop3{
+    margin-top: 24px;
+    width:100%;
+    background: #F4F4F4;
+    border: 1px solid #E1E3E4;
+    border-left: none;
+    border-right: none;
+    height: 40px;
+    line-height: 40px; 
+    margin-left: -30px;
+    padding-left:30px;
+    padding-right: 30px;
+}
+.drop3 .sea_list>label{
+    font-size: 14px;
+    color: #646464;
+    padding-left: 2%;
+}
+.drop3 .sea_list>input{
+    font-size: 14px;
+    color: #646464;
+    outline: none;
+    border:1px solid #E1E3E4;
+    padding-left: 10px;
+    width: 10%;
+    height: 24px;
+    line-height: 24px;
+}
+.drop3 .query{
+    border:1px solid #E1E3E4;
+    width: 60px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    color: #646464;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+    margin-left: 18px;
+}
+.visit .visit_top,.visit .visit_con{
+    width:100%;
+    border-bottom: 1px solid #E1E3E4;
+    height: 40px;
+    line-height: 40px; 
+    margin-left: -30px;
+    padding-left:30px;
+    padding-right: 30px;
+}
+.visit .visit_top{
+    background: #F4F4F4;
+}
+.visit>div>span{
+    display: inline-block;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    color: #646464;
+}
+.visit>div>span.access{
+    width: 25%;
+}
+.visit>div>span.access>span{
+    margin-right: 35px;
+}
+.visit>div>span.source{
+   width: 10%;
+}
+.visit>div>span.enter{
+   width: 49%;
+}
+.visit>div>span.word{
+   width: 8%;
+}
+.visit>div>span.duration{
+  width: 8%;
+}
+.visit>div>span.link_color{
+    color: #69B5FA;
+}
