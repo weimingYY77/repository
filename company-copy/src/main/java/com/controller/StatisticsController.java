@@ -124,7 +124,7 @@ public class StatisticsController {
 	 */
 	@RequestMapping(value="/networkOverview.do")
 	@ResponseBody
-	public Map<String, Object> networkOverview(String url) throws Exception{
+	public Map<String, Object> networkOverview(String url,String siteId,String method,String start_date,String end_date,String metrics) throws Exception{
 		 Map maps=new HashMap();
 		 JSONObject header = new JSONObject();
          header.put("username", "乐清南田");//用户名
@@ -133,13 +133,13 @@ public class StatisticsController {
          header.put("account_type", "1");
          
          JSONObject body = new JSONObject();
-         body.put("siteId","10574764");
-         body.put("method","overview/getTimeTrendRpt");
+         body.put("siteId",siteId);
+         body.put("method",method);
          SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
          String tody = sdf.format(new Date());
-         body.put("start_date","20171226");
-         body.put("end_date",tody);
-         body.put("metrics","pv_count,visitor_count,ip_count,bounce_ratio,avg_visit_time");
+         body.put("start_date",start_date);
+         body.put("end_date",end_date);
+         body.put("metrics",metrics);
          String urlStr = "https://api.baidu.com/json/tongji/v1/ReportService/getData";
          JSONObject params = new JSONObject();
          params.put("header", header);
