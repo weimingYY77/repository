@@ -114,12 +114,14 @@ border-bottom-left-radius:2px;  */
 }
 .browse_list li>p{
     color: #646464;
+    text-align: center;
 }
 .browse_list li>span{
     display: block;
     font-size: 24px;
     padding-top: 24px;
     color: #2b2b2b;
+    text-align: center;
 }
 #trend_charts{
     width: 100%;
