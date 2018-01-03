@@ -114,6 +114,14 @@
     margin-left: -6px;
     cursor: pointer;
 }
+/* .drop1 .all li:first-child(),.drop2 .visitor li:first-child(){
+    border-top-left-radius:2px;
+    border-bottom-left-radius:2px; 
+}
+.drop1 .all li:last-child(),.drop2 .visitor li:last-child(){
+    border-top-right-radius:2px;
+    border-bottom-right-radius:2px; 
+} */
 .drop1 .all li:nth-child(2),.drop2 .visitor li:nth-child(2){
     border-left: none;
 }
