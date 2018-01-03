@@ -1,6 +1,5 @@
 window.onload = function(){
         // 获取到这个DOM节点，然后初始化
-
     var myChart = echarts.init(document.getElementById("charts_box"));
 
     // option 里面的内容基本涵盖你要画的图表的所有内容
