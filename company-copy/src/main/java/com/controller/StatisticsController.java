@@ -124,7 +124,7 @@ public class StatisticsController {
 	 */
 	@RequestMapping(value="/networkOverview.do")
 	@ResponseBody
-	public Map<String, Object> networkOverview(String url,String siteId,String method,String start_date,String end_date,String metrics) throws Exception{
+	public Map<String, Object> networkOverview(String url,String siteId,String method,String start_date,String end_date,String metrics,String visitor) throws Exception{
 		 Map maps=new HashMap();
 		 JSONObject header = new JSONObject();
          header.put("username", "乐清南田");//用户名
@@ -140,6 +140,7 @@ public class StatisticsController {
          body.put("start_date",start_date);
          body.put("end_date",end_date);
          body.put("metrics",metrics);
+         body.put("visitor", visitor);
          String urlStr = "https://api.baidu.com/json/tongji/v1/ReportService/getData";
          JSONObject params = new JSONObject();
          params.put("header", header);
