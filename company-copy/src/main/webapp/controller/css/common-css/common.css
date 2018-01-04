@@ -400,12 +400,15 @@ body{
 .main_right {
     margin-left: 27%;
     width: 67%;
-    height: 670px;
+    height: 100%;
     display: inline-block;
-    background: #ffffff;
     float: left;
     margin-top: 2%;
     padding: 35px 30px 65px 30px;
+}
+.main_right.net {
+    margin-left: 14.5%;
+    width: 82%;
 }
 .main_conter .title{
 	font-size: 20px;
