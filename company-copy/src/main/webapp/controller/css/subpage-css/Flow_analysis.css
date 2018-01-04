@@ -234,6 +234,16 @@
     padding-top: 15px;
     padding-left: 30px;
     padding-right: 30px;
+    display: inline-block;
+    width: 100%;
+}
+.main_right2 .drop1 .layout{
+	float: left;
+	width: 33.3%;
+}
+.main_right2 .drop1 .layout span {
+    float: left;
+    line-height: 25px;
 }
 .main_right2 .drop1>span,.main_right2 .drop2>span{
     color: #646464;
@@ -253,6 +263,7 @@
     text-align: center;
     margin-left: -6px;
     cursor: pointer;
+    float: left;
 /*     border-top-left-radius:2px;
 border-bottom-left-radius:2px;  */
 }
