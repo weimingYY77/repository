@@ -8,6 +8,9 @@ a{
 ul li{
 	list-style: none;
 }
+body{
+	background: #ebeef2;
+}
 /* 框阴影 */
 .box_show{
 	background: #fff;
@@ -249,7 +252,6 @@ ul li{
 	width: 100%;
 	margin-top: 60px;
  	overflow: hidden; 
- 	background:#F5F5F6;
 }
 .main_left{
 	display: inline-block;
@@ -404,4 +406,23 @@ ul li{
     float: left;
     margin-top: 2%;
     padding: 35px 30px 65px 30px;
+}
+.main_conter .title{
+	font-size: 20px;
+	color: #003333;
+}
+.main_conter li a{
+    line-height: 40px;
+    font-size: 16px;
+    color: #a3a3a3;
+    display: inline-block;
+    width: 100%;
+}
+.main_conter li a:hover{
+	color: #00c1de;
+}
+
+.main-center{
+	border: 1px solid #CCCCCC;
+	height: 100%;
 }
