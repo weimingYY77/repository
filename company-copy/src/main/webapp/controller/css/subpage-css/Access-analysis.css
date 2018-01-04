@@ -16,16 +16,7 @@
 .main_conter li a:hover{
 	color: #00c1de;
 }
-.main_right{
-    margin-left:2%;
-    width:65%;
-    height: 670px;
-    display: inline-block;
-    background: #ffffff;
-    float: left;
-    margin-top: 2%;
-    padding: 35px 30px 65px 30px;
-}
+
 .main-center{
 	border: 1px solid #CCCCCC;
 	height: 100%;

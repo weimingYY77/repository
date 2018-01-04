@@ -1,20 +1,7 @@
 .main{
 	background: #ebeef2;
 }
-.main_conter{
-    padding-left: 3%;
-    padding-right: 5%;
-    background: #FFFFFF;
-    display: inline-block;
-    padding-top: 20px;
-    float: left;
-    width: 5%;
-    height: 870px;
-    position: fixed;
-    top: 60px;
-    left: 14%;
-    bottom: 0;
-}
+
 .main_conter .title{
 	font-size: 20px;
 	color: #003333;
