@@ -382,3 +382,14 @@ ul li{
     margin-right:5px;
 }
 }
+.main_conter {
+    margin-left: 14%;
+    background: #FFFFFF;
+    display: inline-block;
+    padding-top: 20px;
+    float: left;
+    width: 8%;
+    height: 870px;
+    text-align: left;
+    padding-left: 2%;
+}
