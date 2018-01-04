@@ -105,12 +105,13 @@ import com.alibaba.fastjson.JSONObject;
 		            
 		            JSONObject body = new JSONObject();
 		            body.put("siteId","10537683");
-		            body.put("method","overview/getTimeTrendRpt");
+		            body.put("method","source/all/a");
 		            SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
 		            String tody = sdf.format(new Date());
-		            body.put("start_date","20171227");
-		            body.put("end_date",tody);
-		            body.put("metrics","pv_count,visitor_count,ip_count,bounce_ratio,avg_visit_time");
+		            body.put("start_date","20180103");
+		            body.put("end_date","20180103");
+		            body.put("visitor","new");
+		            body.put("metrics","pv_count,pv_ratio,visit_count,visitor_count,new_visitor_count,new_visitor_ratio,ip_count,bounce_ratio,avg_visit_time,avg_visit_pages,trans_count,trans_ratio");
 		            String urlStr = "https://api.baidu.com/json/tongji/v1/ReportService/getData";
 		            String charset = "utf-8";
 		            JSONObject params = new JSONObject();

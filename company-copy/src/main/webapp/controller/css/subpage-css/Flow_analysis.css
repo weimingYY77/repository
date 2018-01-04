@@ -32,7 +32,8 @@
 .main_conter li a.active{
     color: #00c1de;
 }
-.main_right,.main_btn{
+/* 实时访客 */
+.main_right1,.main_btn{
     margin-left:29%;
     width:67%;
     display: inline-block;
@@ -43,27 +44,27 @@
     padding-right: 30px;
 /*     padding: 35px 30px 65px 30px; */
 }
-.main_right{
+.main_right1{
     height: 370px;
 }
-.main_right>p{
+.main_right1>p{
     padding-top: 27px;
     color: #2B2B2B;
 }
-.main_right>p>span{
+.main_right1>p>span{
     padding-left: 20px;
     font-size: 14px;
     color: #646464;
 }
-.main_right>p>span>span{
+.main_right1>p>span>span{
     color: #F05757;
 }
-.main_right .date,.main_right .charts{
+.main_right1 .date,.main_right1 .charts{
     display: inline-block;
     float: left;
     text-align: center;
 }
-.main_right .date{
+.main_right1 .date{
     width: 25%;
     padding-top: 80px;
 }
@@ -73,7 +74,7 @@
     padding-top: 50px;
     padding-bottom: 30px;
 }
-.main_right .charts{
+.main_right1 .charts{
     width: 75%;
 }
 /* 明细数据 */
@@ -92,17 +93,17 @@
     padding-top: 28px;
     color: #2B2B2B;
 }
-.drop1,.drop2{
+.main_btn .drop1,.main_btn .drop2{
     padding-top: 15px;
 }
-.drop1>span,.drop2>span{
+.main_btn .drop1>span,.main_btn .drop2>span{
     color: #646464;
     padding-left: 2%;
 }
-.drop1 .all,.drop2 .visitor{
+.main_btn .drop1 .all,.main_btn .drop2 .visitor{
     display: inline-block;
 }
-.drop1 .all li,.drop2 .visitor li{
+.main_btn .drop1 .all li,.main_btn .drop2 .visitor li{
     display: inline-block;
     width: 63px;
     border: 1px solid #AAA;
@@ -122,10 +123,11 @@
     border-top-right-radius:2px;
     border-bottom-right-radius:2px; 
 } */
-.drop1 .all li:nth-child(2),.drop2 .visitor li:nth-child(2){
+.main_btn .drop1 .all li:nth-child(2),.main_btn .drop2 .visitor li:nth-child(2){
     border-left: none;
+    border-right: none;
 }
-.drop1 .active,.drop2 .active{
+.main_btn .drop1 .active,.main_btn .drop2 .active{
     background: #69B5FA;
     color: #fff!important;
     boder:1px solid #69B5FA!important;
@@ -170,7 +172,7 @@
     cursor: pointer;
     margin-left: 18px;
 }
-.visit .visit_top,.visit .visit_con{
+.main_btn .visit .visit_top,.main_btn .visit .visit_con{
     width:100%;
     border-bottom: 1px solid #E1E3E4;
     height: 40px;
@@ -179,34 +181,172 @@
     padding-left:30px;
     padding-right: 30px;
 }
-.visit .visit_top{
+.main_btn .visit .visit_top{
     background: #F4F4F4;
 }
-.visit>div>span{
+.main_btn .visit>div>span{
     display: inline-block;
     float: left;
     text-align: center;
     font-size: 14px;
     color: #646464;
 }
-.visit>div>span.access{
+.main_btn .visit>div>span.access{
     width: 25%;
 }
-.visit>div>span.access>span{
+.main_btn .visit>div>span.access>span{
     margin-right: 35px;
 }
-.visit>div>span.source{
+.main_btn .visit>div>span.source{
    width: 10%;
 }
-.visit>div>span.enter{
+.main_btn .visit>div>span.enter{
    width: 49%;
 }
-.visit>div>span.word{
+.main_btn .visit>div>span.word{
    width: 8%;
 }
-.visit>div>span.duration{
+.main_btn .visit>div>span.duration{
   width: 8%;
 }
-.visit>div>span.link_color{
+.main_btn .visit>div>span.link_color{
     color: #69B5FA;
 }
+/* 实时访客 */
+/* 趋势分析 */
+.main_right2{
+    margin-left:29%;
+    width:67%;
+    height: 1028px;
+    display: inline-block;
+    background: #ffffff;
+    float: left;
+    margin-top: 2%;
+    margin-bottom: 80px;
+}
+.main_right2>p{
+    padding-top: 27px;
+    color: #2B2B2B;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.main_right2 .drop1,.main_right2 .drop2{
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.main_right2 .drop1>span,.main_right2 .drop2>span{
+    color: #646464;
+    padding-left: 2%;
+}
+.main_right2>.drop1 ul{
+    display: inline-block;
+}
+.main_right2>.drop1 ul li{
+    display: inline-block;
+    width: 63px;
+    border: 1px solid #AAA;
+    font-size: 12px;
+    color: #646464;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    margin-left: -6px;
+    cursor: pointer;
+/*     border-top-left-radius:2px;
+border-bottom-left-radius:2px;  */
+}
+/* .drop1 ul li:first-child(){
+    border-top-left-radius:2px;
+    border-bottom-left-radius:2px; 
+}
+.drop1 ul li:last-child(){
+    border-top-right-radius:2px;
+    border-bottom-right-radius:2px; 
+} */
+.main_right2 .drop1>ul>li:nth-child(2){
+   border-left: none;
+}  
+.main_right2 .drop1 .equip>li:nth-child(2){
+   border-right: none;
+} 
+.main_right2 .drop1 .active{
+    background: #69B5FA;
+    color: #fff!important;
+    boder:1px solid #69B5FA!important;
+}
+.main_right2 .drop2>select{
+    height: 23px;
+    line-height: 23px;
+    outline: none;
+    color: #646464;
+    font-size: 12px;
+}
+.browse_list{
+    padding-left: 4%;
+    padding-top: 30px;
+}
+.browse_list li{
+    display: inline-block;
+    width: 19.5%;
+}
+.browse_list li.cen{
+    text-align: center;
+}
+.browse_list li>p{
+    color: #646464;
+}
+.browse_list li>span{
+    display: block;
+    font-size: 24px;
+    padding-top: 24px;
+    color: #2b2b2b;
+}
+/* 访客趋势表 */
+.trend_table{
+    margin-top: 20px;
+    width: 100%;
+    border:1px solid #d7d7d8;
+    color: #646464;
+    border-right: none;
+    border-left: none; 
+}
+.trend_table th{
+   background: #F4F4F4;
+   font-weight: normal;
+   border-left:1px solid #DEDEDE; 
+   border-bottom:1px solid #DEDEDE;
+   height: 47px;
+   width: 16%;
+}
+.trend_table td{
+    border:1px solid #d7d7d8;
+    text-align: center;
+    border-bottom: none;
+    width: 16%; 
+    height: 37px;
+    border-right: none;
+}
+.trend_table td:first-child{
+    border-left: none;
+}
+.trend_table th:first-child{
+    border-left: none;
+}
+.trend_table tbody>tr:first-child td{
+    border-top: none;
+}
+.chart1{
+    width: 100%;
+    height: 300px;
+}
+.charts2{
+    width: 100%;
+    height: 500px;
+}
+.tab{
+    display: none; 
+}
+.show_tab{
+   display: block;
+} 

@@ -1,9 +1,22 @@
-window.onload = function(){
-        // 获取到这个DOM节点，然后初始化
-
-    var myChart = echarts.init(document.getElementById("charts_box"));
-
-    // option 里面的内容基本涵盖你要画的图表的所有内容
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+   <style type="text/css" media="screen">
+        #charts_box{
+            width: 100%;
+            height:300px;
+        }
+    </style>
+</head>
+<body>
+	<div id="charts_box"></div>	
+</body>
+<script type="text/javascript" src='../../js/common-js/jquery.js'></script>
+<script type="text/javascript" src='../../js/echarts.common.min.js'></script>
+<script type="text/javascript">
+var myChart1 = echarts.init(document.getElementById("charts_box"));
 option = {
     tooltip : {
         trigger: 'axis'
@@ -48,18 +61,18 @@ option = {
         {
             // name:'成交',
             type:'line',
-            symbol:'star',
+            symbol:'circle',/*折点样式*/
             symbolSize: 5,
             // xAxisIndex:1,
             itemStyle: {normal: {areaStyle: {type: 'default'}}},
-            data:[ , , , , , , ,0,2,1,1,3,0],
+            data:[0,0,0,0,0,0,0,0,2,1,1,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
             color: ['#c7e9a8']
 
         },
         {
             // name:'预购',
             type:'line',
-            symbol:'star',/*折点样式*/
+            symbol:'circle',/*折点样式*/
             symbolSize: 5,
             itemStyle: {
                 normal: {
@@ -68,10 +81,11 @@ option = {
                     }
                 }
             },
-            data:[,,,,,,,,,,,,,,,,,0,1,2,3,4,0],
+            data:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,3,4,0,0,0,0,0,0,0,0],
             color: ['#4fa8f9']
         }
     ]
 }; 
-    myChart.setOption(option);
-}
+myChart1.setOption(option);
+</script>
+</html>

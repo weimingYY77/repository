@@ -1,6 +1,6 @@
 $(function(){
 
-
+// 获取时间
   function showDT() {  
   var currentDT = new Date();  
   var y,m,date,day,hs,ms,ss,theDateStr;  
@@ -25,10 +25,18 @@ $(function(){
 }
 showDT();
 
+// 选项卡
+  $(".main_conter ul li").click(function(event) {
+    var index = $(".main_conter ul li").index(this);
+    $(this).children("a").addClass("active").parent().siblings().children("a").removeClass("active");
+    $(".tab").eq(index).addClass("show_tab").siblings().removeClass("show_tab");
+
+ }) 
+
+// 小切换按钮
   $(".dianji li").click(function(){
     $(this).addClass("active").siblings().removeClass("active");
   })
 })
-
 
 

@@ -1,5 +1,22 @@
-window.onload = function(){
-	var myChart = echarts.init(document.getElementById("trend_charts"));
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css" media="screen">
+		#earch2{
+			width: 1000px;
+			height:400px;
+		}
+	</style>
+</head>
+<body>
+	<div id="earch2"></div>	
+</body>
+<script type="text/javascript" src='../../js/common-js/jquery.js'></script>
+<script type="text/javascript" src='../../js/echarts.common.min.js'></script>
+<script type="text/javascript">
+    var myChart = echarts.init(document.getElementById('earch2'));
     // option 里面的内容基本涵盖你要画的图表的所有内容
     var option = {
     tooltip : {
@@ -11,8 +28,10 @@ window.onload = function(){
                 interval: 0
             },
             axisLine: {
+
                 lineStyle: {
                     color: '#4FA8F9'
+                    
                 }
             },
             type: 'category',
@@ -39,11 +58,12 @@ window.onload = function(){
         series: [{
 /*            name: ' ',*/
             type: 'line',
-             symbol:'star',
-             symbolSize: 5,
+            symbol:'circle',/*折点样式*/
+            symbolSize: 5,
              color: ['#4FA8F9'],
             data: [0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
         }]
     };  
     myChart.setOption(option);
-}
+</script>
+</html>
