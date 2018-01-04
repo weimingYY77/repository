@@ -253,7 +253,9 @@
 	</div>
 	<div class="charts">
 		<p>最近30分钟访问情况</p>
-		<div id="charts_box" style="width: 100%; height:300px;"></div>
+		<div class="chart1">
+			<iframe src="fangke.html" frameborder="0"  scrolling="no" style="width: 100%;height:100%;"></iframe>
+		</div>
 	</div>
 	<div style="clear:both"></div>
   </div>
@@ -378,7 +380,10 @@
     	<li class="cen"><p>跳出率</p><span>100%</span></li>
     	<li class="cen"><p>平均访问时长</p><span>00:01:40</span></li>
     </ul>
-    <div id="trend_charts" style="width:100%;height: 300px;"></div>
+    <div class="charts2">
+        <iframe src="qushi.html" frameborder="0" scrolling="no" style="width: 100%;height:400px"></iframe> 	
+    </div>
+    
     <!-- 访客趋势表 -->
     <div class="trend_tab">
     	<table cellspacing="0" cellpadding="0" class="trend_table">
@@ -469,9 +474,7 @@
 </div>
 </body>
 <script type="text/javascript" src="../../js/common-js/jquery.js"></script>
-<script type="text/javascript" src="../../js/common-js/echarts.js"></script>
 <script type="text/javascript" src="../../js/common-js/common.js"></script>	
-<script type="text/javascript" src="../../js/subpage-js/Flow_analysis_charts.js"></script>
-<script type="text/javascript" src="../../js/subpage-js/trend_analysis_charts.js"></script>
+<script type="text/javascript" src="../../js/echarts.common.min.js"></script>
 <script type="text/javascript" src="../../js/subpage-js/Flow_analysis.js"></script>
 </html>

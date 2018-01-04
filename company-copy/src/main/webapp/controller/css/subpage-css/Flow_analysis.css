@@ -125,6 +125,7 @@
 } */
 .main_btn .drop1 .all li:nth-child(2),.main_btn .drop2 .visitor li:nth-child(2){
     border-left: none;
+    border-right: none;
 }
 .main_btn .drop1 .active,.main_btn .drop2 .active{
     background: #69B5FA;
@@ -335,9 +336,17 @@ border-bottom-left-radius:2px;  */
 .trend_table tbody>tr:first-child td{
     border-top: none;
 }
+.chart1{
+    width: 100%;
+    height: 300px;
+}
+.charts2{
+    width: 100%;
+    height: 500px;
+}
 .tab{
-     display: none; 
+    display: none; 
 }
 .show_tab{
-    display: block;
-}
+   display: block;
+} 
