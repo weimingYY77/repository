@@ -262,44 +262,54 @@
   <!-- 访问明细 -->
 <div class="main_btn box_show">
        <p>访问明细</p>
-       <div class="drop1">
-       	  <span>来源：</span>
-       	  <select name="">
-       	  	<option value="">全部</option>
-       	  	<option value="">直接访问</option>
-       	  	<option value="">搜索引擎</option>
-       	  	<option value="">外部链接</option>
-       	  </select>
-       	  <span>地域：</span>
-       	  <select name="">
-       	  	<option value="">全部</option>
-       	  	<option value="">全国</option>
-       	  	<option value="">省自治区</option>
-       	  </select>
-       	  <span>设备：</span>
-          <ul class="all dianji">
-          	<li class="active ">全部</li>
-          	<li>计算机</li>
-          	<li>移动设备</li>
-          </ul>
+	       <div class="drop1">
+	         <div class="layout">
+	       	  <span>来源：</span>
+	       	  <select name="">
+	       	  	<option value="">全部</option>
+	       	  	<option value="">直接访问</option>
+	       	  	<option value="">搜索引擎</option>
+	       	  	<option value="">外部链接</option>
+	       	  </select>
+	       	  </div>
+	       	  <div class="layout">
+		       	  <span>地域：</span>
+		       	  <select name="">
+		       	  	<option value="">全部</option>
+		       	  	<option value="">全国</option>
+		       	  	<option value="">省自治区</option>
+		       	  </select>      	  	
+	       	  </div>
+	       	  <div class="layout">
+	       	    <span>设备：</span>
+	            <ul class="all dianji">
+	          	  <li class="active ">全部</li>
+	          	  <li>计算机</li>
+	          	  <li>移动设备</li>
+	            </ul>  	 	
+	       	  </div>
        </div>
-       <div class="drop2">
-       	  <span>访客：</span>
-          <ul class="visitor dianji">
-          	<li class="active">全部</li>
-          	<li>新访客</li>
-          	<li>老访客</li>
-          	<div style="clear:both">
-          		
-          	</div>
-          </ul>
+	  <div class="drop2">
+       <div class="layout">
+	       	  <span>访客：</span>
+	          <ul class="visitor dianji">
+	          	<li class="active">全部</li>
+	          	<li>新访客</li>
+	          	<li class="old">老访客</li>
+	          	<div style="clear:both">
+	          		
+	          	</div>
+	          </ul>
+	    </div>
+	    <div class="layout">
           <span>日期：</span>
        	  <select name="">
        	  	<option value="">时间(全部)</option>
        	  	<option value="">昨天</option>
        	  	<option value="">今天</option>
        	  	<option value="">明天</option>
-       	  </select>
+       	  </select>           	
+	    </div>       
        </div>
        <div class="drop3">
        	  <form action="Flow_analysis_submit" method="get" class="sea_list">
@@ -365,19 +375,23 @@
     	</div>
     </div>
     <div class="drop2">
+      <div class="layout four">
         <span>地域：</span>
     	<select name="">
     		<option value="1">全部</option>
     		<option value="2">全国</option>
     		<option value="3">省自治区</option>
-    	</select>
+    	</select>     	
+      </div>
+      <div class="layout five">
     	<span>来源：</span>
     	<select name="">
     		<option value="1">全部</option>
     		<option value="2">直接访问</option>
     		<option value="3">外部链接</option>
     		<option value="4">搜索引擎</option>
-    	</select>
+    	</select>    	
+      </div>
     </div>
     <ul class="browse_list">
     	<li><p>浏览量（PV）</p><span>16</span></li>
