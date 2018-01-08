@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css" media="screen">
+		#earch2{
+			width: 500px;
+			height:300px;
+		}
+	</style>
+</head>
+<body>
+	<div id="earch2"></div>	
+</body>
+<script type="text/javascript" src='../../js/common-js/jquery.js'></script>
+<script type="text/javascript" src='../../js/echarts.common.min.js'></script>
+<script type="text/javascript">
+    var myChart = echarts.init(document.getElementById('earch2'));
+    // option 里面的内容基本涵盖你要画的图表的所有内容
+option = {
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    series: [
+        {
+            name:'',
+            type:'pie',
+            selectedMode: 'single',
+            radius: [0, '30%'],
+
+            label: {
+                normal: {
+                    position: 'inner'
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+        },
+        {
+            name:'',
+            type:'pie',
+            radius: ['40%', '55%'],
+            label: {
+                normal: {
+                    formatter: '{a|{a}}{abg|}\n{hr|}\n  {b|{b}：}{c}  {per|{d}%}',
+                    // backgroundColor: '#eee',
+                    // borderColor: '#aaa',
+                    // borderWidth: 2,
+                    // borderRadius: 4,
+                    // shadowBlur:3,
+                    // shadowOffsetX: 2,
+                    // shadowOffsetY: 2,
+                    // shadowColor: '#999',
+                    // padding: [0, 7],
+                    rich: {
+                        a: {
+                            color: '#999',
+                            lineHeight: 22,
+                            align: 'center'
+                        },
+                        // abg: {
+                        //     backgroundColor: '#333',
+                        //     width: '100%',
+                        //     align: 'right',
+                        //     height: 22,
+                        //     borderRadius: [4, 4, 0, 0]
+                        // },
+                        b: {
+                            fontSize: 12,
+                            lineHeight: 33
+                        },
+                        per: {
+                            color: '#eee',
+                            backgroundColor: '#334455',
+                            padding: [2, 4],
+                            borderRadius: 2
+                        }
+                    }
+                }
+            },
+            data:[
+                {value:700, name:'百度',fontSize:12},
+                {value:200, name:'baidu.com',fontSize:12},
+                {value:100, name:'直接访问',fontSize:12},
+                {value:100, name:'360',fontSize:12},
+                {value:100, name:'搜狗',fontSize:12}
+            ],
+            color:['#4fa8f9','#6ec71e','#f56e6a','#fc8b40','#818af8']
+        }
+    ]
+};
+    myChart.setOption(option);
+</script>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css" media="screen">
+		#echart_2{
+            width: 700px;
+            height:300px;
+		}
+	</style>
+</head>
+<body>
+	<div id="echart_2"></div>	
+</body>
+<script type="text/javascript" src='../../js/common-js/jquery.js'></script>
+<script type="text/javascript" src='../../js/echarts.common.min.js'></script>
+<script type="text/javascript">
+    var myChart = echarts.init(document.getElementById('echart_2'));
+    // option 里面的内容基本涵盖你要画的图表的所有内容
+    var option = {
+    tooltip : {
+        trigger: 'axis'
+    },
+     legend: {
+       x: 'center',
+       y:'bottom',
+       data:["百度","baidu.com","直接访问","360","搜狗"]
+   },
+    calculable : true,
+    xAxis: [{
+            axisLabel: {
+                interval: 0
+            },
+            axisLine: {
+
+                lineStyle: {
+                    color: '#646464'                
+                }
+            },
+            axisTick:{
+               show:false
+             },
+            type: 'category',
+            boundaryGap: false,
+            data:[0,'','',3,'','',6,'','',9,'','',12,'','',15,'','',18,'','',21,'',''],
+            axisLabel:{
+                 //X轴刻度配置
+                 interval:0 //0：表示全部显示不间隔；auto:表示自动根据刻度个数和宽度自动设置间隔个数
+            }
+        }],
+        yAxis: [{
+            min:0,
+            max:2.0,
+            type: 'value',
+            axisLine: {
+                lineStyle: {
+                    width: 0
+                }
+            },
+            axisTick:{
+               show:false
+             }
+        }],
+        series: [
+        {
+            name: '百度',
+            type: 'line',
+            symbol:'circle',/*折点样式*/
+            symbolSize: 5,
+             color: ['#4fa8f9'],
+            data: [0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+        },
+        {
+            name: 'baidu.com',
+            type: 'line',
+            symbol:'circle',/*折点样式*/
+            symbolSize: 5,
+            color: ['#6ec71e'],
+            data: [0,0,0,0,0,0,0,0,0,0,0,0.5,1,1.5,0.5,0,0,0,0,0,0,0,0,0]
+        },
+        {
+            name: '直接访问',
+            type: 'line',
+            symbol:'circle',/*折点样式*/
+            symbolSize: 5,
+            color: ['#f56e6a'],
+            data: [0,0,0,0,0,0,0,0,0,1.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+            
+        },
+        {
+            name: '360',
+            type: 'line',
+            symbol:'circle',/*折点样式*/
+            symbolSize: 5,
+            color: ['#fc8b40'],
+            data: [0,0,0,0,0,0,0,0,0,0,1,2,1,0,0,0,0,0,0,0,0,0,0,0]
+            
+        },
+        {
+            name: '搜狗',
+            type: 'line',
+            symbol:'circle',/*折点样式*/
+            symbolSize: 5,
+            color: ['#818af8'],
+            data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.5,1.5,1,0,0,0,0,0,0,0]
+            
+        }
+      ]
+    };  
+    myChart.setOption(option);
+</script>
+</html>
