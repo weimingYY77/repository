@@ -32,11 +32,6 @@ showDT();
     $(".tab").eq(index).addClass("show_tab").siblings().removeClass("show_tab");
 
  }) 
-
-// 小切换按钮
-  $(".dianji li").click(function(){
-    $(this).addClass("active").siblings().removeClass("active");
-  })
 })
 
 

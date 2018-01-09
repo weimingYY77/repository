@@ -273,6 +273,19 @@
     padding-top: 24px;
     color: #2b2b2b;
 }
+.than{
+    text-align: center;
+    font-size: 12px;
+    color: #646464;
+    margin-top: 10px;
+}
+.than>span{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.than>span>input{
+    vertical-align: middle;
+}
 /* 访客趋势表 */
 .trend_table{
     margin-top: 20px;

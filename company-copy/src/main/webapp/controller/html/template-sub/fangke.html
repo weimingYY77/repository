@@ -21,6 +21,11 @@ option = {
     tooltip : {
         trigger: 'axis'
     },
+    legend: {
+       x: 'center',
+       y:'bottom',
+       data:["浏览量(PV)","访客数(UV)"]
+   },
     calculable : true,
     xAxis : [
         {
@@ -59,7 +64,7 @@ option = {
     ],
     series : [
         {
-            // name:'成交',
+            name:'浏览量(PV)',
             type:'line',
             symbol:'circle',/*折点样式*/
             symbolSize: 5,
@@ -70,7 +75,7 @@ option = {
 
         },
         {
-            // name:'预购',
+            name:'访客数(UV)',
             type:'line',
             symbol:'circle',/*折点样式*/
             symbolSize: 5,

@@ -19,7 +19,7 @@ $(".drop-down").mouseenter(function() {
       $(this).children("div").stop().fadeOut("slow");
 });
   // 折叠菜单栏
-	 $('.inactive').click(function(){
+	 $('.main_left .list>ul>li').click(function(){
        if($(this).children('ul').css('display') == 'none'){
            $(this).children('ul').slideDown(600);
            $(this).children("a").children("span").removeClass("rjt").addClass("bjt");
@@ -29,3 +29,7 @@ $(".drop-down").mouseenter(function() {
        }
      })
 })
+// 小切换按钮
+  $(".dianji li").click(function(){
+    $(this).addClass("active").siblings().removeClass("active");
+  })
