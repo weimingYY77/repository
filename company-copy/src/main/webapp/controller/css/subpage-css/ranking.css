@@ -1,7 +1,8 @@
 
 /* 实时访客 */
 .main_right1,.main_btn{
-     width: 100%;
+    margin-left: 2.5%;
+    width: 95%;
     display: inline-block;
     background: #ffffff;
     float: left;
@@ -17,15 +18,147 @@
 }
 
 
-/*  */
+/* 网站基本信息 */
 .main_btn{
-    height: 657px;
     margin-bottom: 40px;
 }
-
-
-
+/* 表1 */
+.main_btn .table_one{
+    border: 1px solid #dedede;
+    width: 100%;
+    border-top: none;
+    color: #646464;
+}
+.main_btn .table_one td{
+    border: 1px solid #dedede;
+    border-bottom: none;
+    border-left: none;
+    height: 40px;
+     border-right: none; 
+}
+.main_btn .table_one tr td:first-child{
+    width: 10%;
+    text-align: center;
+    border-right:1px solid #dedede; 
+}
+.main_btn .table_one tr:first-child td{
+    color: #2b2b2b;
+    text-align: left;
+    border-right: none;
+    padding-left: 2%;
+}
+.table_one td>span{
+    padding-left: 2%;
+}
+/* 表2 */
+.main_btn .table_two{
+    border: 1px solid #dedede;
+    width: 100%;
+    border-top: none;
+    color: #646464;
+    margin-top: 48px;
+}
+.main_btn .table_two td{
+    border: 1px solid #dedede;
+    border-bottom: none;
+    border-left: none;
+    height: 40px;
+    width: 12.5%;
+    text-align: center;
+}
+.main_btn .table_two tr:first-child td{
+    background: #F1F1F1;
+}
+.main_btn .table_two tr td:last-child{
+    border-right: none;
+}
+/* 表3 */
+.main_btn .table_three{
+    border: 1px solid #dedede;
+    width: 100%;
+    border-top: none;
+    color: #646464;
+    margin-top: 48px;
+    border-right: none;
+}
+.main_btn .table_three td{
+    border: 1px solid #dedede;
+    border-bottom: none;
+    border-left: none;
+    height: 40px;
+    width: 25%;
+    text-align: center;
+}
+.main_btn .table_two tr td:last-child{
+    border-right: none;
+}
+.main_btn .table_three tr:first-child td{
+    color: #2b2b2b;
+    text-align: left;
+    padding-left: 2%;
+}
+.main_btn .table_three tr:first-child td>a{
+    color: #0392A7;
+}
+/* 表4 */
+.main_btn .table_four{
+    border: 1px solid #dedede;
+    width: 100%;
+    border-top: none;
+    color: #646464;
+    margin-top: 48px;
+}
+.main_btn .table_four td{
+    border: 1px solid #dedede;
+    border-bottom: none;
+    border-left: none;
+    height: 40px;
+    width: 12.5%;
+    text-align: center;
+}
+.main_btn .table_four tr td:last-child{
+    border-right: none;
+}
+.main_btn .table_four tr:first-child td{
+    color: #2b2b2b;
+    text-align: left;
+    padding-left: 2%;
+}
+.addword{
+    display: inline-block;
+    padding-left: 85%;
+    color: #E55352;
+}
+.table_four .rank1,.table_four .rank2{
+    display: inline-block;
+    width: 10px;
+    height: 13px;
+    margin-right: 5px;
+}
+.table_four .rank1{
+    background: url(../../images/up.png) no-repeat;
+}
+.table_four .rank2{
+    background: url(../../images/down.png) no-repeat;
+}
+/* 表公共样式 */
+.main_btn .bluebg{
+    background: rgba(0,193,222,0.3);
+}
+.main_btn .graybg{
+    background:#F1F1F1;
+}
+.main_btn .bluetxt{
+    color: rgba(0,193,222,0.7);
+}
+.main_btn .redtxt{
+    color: #E55352;
+}
+.main_btn .greentxt{
+    color: #40A214;
+}
+/* 调整页面的两边对齐 */
  .main_right.BGcolor{
-   padding:0; 
-   background:#ebeef2;
-} 
+  padding:0; 
+  background:#ebeef2;
+}  
