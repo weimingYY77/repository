@@ -13,7 +13,7 @@
 	<div class="nav_head">
 		<div class="nav_lft">
 			<div class="logo">
-				<a href="../../../../../../index.htm">SumChance</a>
+				<a href="../../../index.htm">SumChance</a>
 			</div>
 			<div class="logo_txt">
 				<a href="../index.html">管理控制台</a>
@@ -93,7 +93,7 @@
 		</div>
 	</li>
 	<li>
-		<a href="javascript:;" title="">用户xxx</a>
+		<a href="javascript:;" title="">用户<span id="userId"></span></a>
 	</li>
 	<span class="search"></span>
 </ul>
@@ -353,24 +353,24 @@
     	<div class="layout one">
     		<span>时间：</span>
 	    	<ul class="time dianji">
-	    		<li class="active">今天</li>
-	    		<li>昨天</li>
+	    		<li class="active" id="today">今天</li>
+	    		<li id="yesterday">昨天</li>
 	    	</ul>
     	</div>
     	<div class="layout two">
     	<span>设备：</span>
     	<ul class="equip dianji">
-    		<li class="active">全部</li>
-    		<li>计算机</li>
-    		<li>移动设备</li>
+    		<li class="active" id="device">全部</li>
+    		<li id="computer">计算机</li>
+    		<li  id="Mobile">移动设备</li>
     	</ul>
     	</div>
     	<div class="layout three">
     	<span>访客：</span>
     	<ul class="visit dianji">
-    		<li class="active">全部</li>
-    		<li>新访客</li>
-    		<li>老访客</li>
+    		<li class="active" id="visitor">全部</li>
+    		<li id="newV">新访客</li>
+    		<li id="oldV">老访客</li>
     	</ul>
     	</div>
     </div>
@@ -385,20 +385,20 @@
       </div>
       <div class="layout five">
     	<span>来源：</span>
-    	<select name="">
-    		<option value="1">全部</option>
-    		<option value="2">直接访问</option>
+    	<select name="" id="source">
+    		<option value="0">全部</option>
+    		<option value="1">直接访问</option>
+    		<option value="2">搜索引擎</option>
     		<option value="3">外部链接</option>
-    		<option value="4">搜索引擎</option>
     	</select>    	
       </div>
     </div>
-    <ul class="browse_list">
-    	<li><p>浏览量（PV）</p><span>16</span></li>
-    	<li><p>访客数（UV）</p><span>16</span></li>
-    	<li class="cen"><p>IP数</p><span>6</span></li>
-    	<li class="cen"><p>跳出率</p><span>100%</span></li>
-    	<li class="cen"><p>平均访问时长</p><span>00:01:40</span></li>
+    <ul class="browse_list" id="flow">
+    	<li><p>浏览量（PV）</p><span id="a">--</span></li>
+    	<li><p>访客数（UV）</p><span id="b">--</span></li>
+    	<li class="cen"><p>IP数</p><span id="c">--</span></li>
+    	<li class="cen"><p>跳出率</p><span id="d">--</span></li>
+    	<li class="cen"><p>平均访问时长</p><span id="e">--</span></li>
     </ul>
     <div class="charts2">
         <iframe src="../template-sub/qushi.html" frameborder="0" scrolling="no" style="width: 100%;height:400px"></iframe> 	
@@ -421,80 +421,48 @@
     				<th>平均访问时长</th>
     			</tr>
     		</thead>
-    		<tbody>
-    			<tr>
-    				<td>1 &nbsp;&nbsp;13:00~13:59</td>
-    				<td>0</td>
-    				<td>0</td>
-    				<td>1</td>
-    				<td>20%</td>
-    				<td>00:00:14</td>
-    			</tr>
-    			<tr>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-    			</tr>
-    			<tr>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-    			</tr>
-    			<tr>
-     				<td></td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-    			</tr>
-    			<tr>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-    			</tr>
-    			<tr>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-    			</tr>
-    			<tr>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-    			</tr>
-    			<tr>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-    			</tr>
+    		<tbody id="trend">
+    			
     		</tbody>
     	</table>
     </div>
     </div>
 </div>
 </div>
+<input type="hidden" id="zero" />
+<input type="hidden" id="one" />
+<input type="hidden" id="two" />
+<input type="hidden" id="three" />
+<input type="hidden" id="four" />
+<input type="hidden" id="five" />
+<input type="hidden" id="six" />
+<input type="hidden" id="seven" />
+<input type="hidden" id="eight" />
+<input type="hidden" id="nine" />
+<input type="hidden" id="ten" />
+<input type="hidden" id="eleven" />
+<input type="hidden" id="twelve" />
+<input type="hidden" id="thirteen" />
+<input type="hidden" id="fourteen" />
+<input type="hidden" id="fifteen" />
+<input type="hidden" id="sixteen" />
+<input type="hidden" id="seventeen" />
+<input type="hidden" id="eighteen" />
+<input type="hidden" id="nineteen" />
+<input type="hidden" id="twenty" />
+<input type="hidden" id="twenty-one" />
+<input type="hidden" id="twenty-two" />
+<input type="hidden" id="twenty-three" />
+
+<input type="hidden" id="temp1" value="0" />
+<input type="hidden" id="temp2" value="0" />
+<input type="hidden" id="temp3" value="0" />
+<input type="hidden" id="temp4" value="0" />
+
 </body>
 <script type="text/javascript" src="../../js/common-js/jquery.js"></script>
 <script type="text/javascript" src="../../js/common-js/common.js"></script>	
 <script type="text/javascript" src="../../js/echarts.common.min.js"></script>
 <script type="text/javascript" src="../../js/subpage-js/Flow_analysis.js"></script>
+
 </html>
