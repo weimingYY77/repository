@@ -122,14 +122,14 @@
 			产品与服务
 		</a>
 		<ul>
-			<li >
-				<a href="#">云推广</a>
+			<li>
+				<a href="template/promotion.html">云推广</a>
 			</li>
 			<li>
-				<a href="#">网络外包</a>
+				<a href="network.html">网络外包</a>
 			</li>
 			<li>
-				<a href="#">自主建站</a>
+				<a href="station.html">自主建站</a>
 			</li>
 			<li>
 				<a href="#">形象策划</a>
@@ -144,7 +144,7 @@
 		</a>
 		<ul>
 			<li>
-				<a href="#" class="inactive">账户总览</a>
+				<a href="account_overview.html" class="inactive">账户总览</a>
 			</li>
 			<li>
 				<a href="#" class="inactive">我的订单</a>
@@ -191,35 +191,35 @@
 			</li>
 		</ul>
 	</li>
-	<li  class="inactive">
-		<a href="#">
-			<span class="bjt"></span>
-			统计
-		</a>
-		    <ul class="active">
-				<li >
-					<a href="#" class="inactive">网站列表</a>
-				</li>
-				<li>
-					<a href="#" class="inactive">网站概况</a>
-				</li>
-				<li class="active">
-					<a href="Flow_analysis.html" class="inactive">流量分析</a>
-				</li>
-				<li>
-					<a href="#" class="inactive">来源分析</a>
-				</li>
-				<li>
-					<a href="#">访问分析</a>
-				</li>
-				<li>
-					<a href="#" class="inactive">访客分析</a>
-				</li>
-				<li>
-					<a href="#" class="inactive">搜索排名</a>
-				</li>
-			</ul>
-	</li>
+		 <li  class="inactive">
+				<a href="#">
+					<span class="bjt"></span>
+					统计
+				</a>
+				<ul  class="active">
+					<li>
+						<a href="Website_list.html" class="inactive">网站列表</a>
+					</li>
+					<li> 
+						<a href="Websiteprofile.html" class="inactive">网站概况</a>
+					</li>
+					<li   class="active">
+						<a href="Flow_analysis.html" class="inactive">流量分析</a>
+					</li>
+					<li>
+						<a href="Source_analysis.html" class="inactive">来源分析</a>
+					</li>
+					<li>
+						<a href="Access-analysis.html">访问分析</a>
+					</li>
+					<li>
+						<a href="Guest.html" class="inactive">访客分析</a>
+					</li>
+					<li>
+						<a href="#" class="inactive">搜索排名</a>
+					</li>
+			    </ul>
+		</li>
 </ul>
 </div>
 </div>
@@ -237,57 +237,110 @@
 		</li>
 	</ul>
 </div>
-<div class="tab show_tab">
-	<div class="main_right1 box_show">
-	<p>
-		当前在线
-		<span>
-			<span>60</span>
-			秒后更新数据
-		</span>
-	</p>
-	<div class="date">
-		<p id="Specific_date"></p>
-		<p class="number">18</p>
-		<p>在线访客数</p>
-	</div>
-	<div class="charts">
-		<p>最近30分钟访问情况</p>
-		<div class="chart1">
-			<iframe src="../template-sub/fangke.html" frameborder="0"  scrolling="no" style="width: 100%;height:100%;"></iframe>
+<div class="main_right BGcolor">
+	<div class="tab show_tab">
+		<div class="main_right1 box_show">
+		<p>
+			当前在线
+			<span>
+				<span>60</span>
+				秒后更新数据
+			</span>
+		</p>
+		<div class="date">
+			<p id="Specific_date"></p>
+			<p class="number">18</p>
+			<p>在线访客数</p>
 		</div>
-	</div>
-	<div style="clear:both"></div>
-  </div>
-  <!-- 访问明细 -->
-<div class="main_btn box_show">
-       <p>访问明细</p>
-	       <div class="drop1">
-	         <div class="layout">
-	       	  <span>来源：</span>
-	       	  <select name="">
-	       	  	<option value="">全部</option>
-	       	  	<option value="">直接访问</option>
-	       	  	<option value="">搜索引擎</option>
-	       	  	<option value="">外部链接</option>
-	       	  </select>
-	       	  </div>
-	       	  <div class="layout">
-		       	  <span>地域：</span>
+		<div class="charts">
+			<p>最近30分钟访问情况</p>
+			<div class="chart1">
+				<iframe src="../template-sub/fangke.html" frameborder="0"  scrolling="no" style="width: 100%;height:310px;"></iframe>
+			</div>
+		</div>
+		<div style="clear:both"></div>
+	  </div>
+	  <!-- 访问明细 -->
+	<div class="main_btn box_show">
+	       <p>访问明细</p>
+		       <div class="drop1">
+		         <div class="layout">
+		       	  <span>来源：</span>
 		       	  <select name="">
 		       	  	<option value="">全部</option>
-		       	  	<option value="">全国</option>
-		       	  	<option value="">省自治区</option>
-		       	  </select>      	  	
+		       	  	<option value="">直接访问</option>
+		       	  	<option value="">搜索引擎</option>
+		       	  	<option value="">外部链接</option>
+		       	  </select>
+		       	  </div>
+		       	  <div class="layout">
+			       	  <span>地域：</span>
+			       	  <select name="">
+			       	  	<option value="">全部</option>
+			       	  	<option value="">全国</option>
+			       	  	<option value="">省自治区</option>
+			       	  </select>      	  	
+		       	  </div>
+		       	  <div class="layout">
+		       	    <span>设备：</span>
+		            <ul class="all dianji">
+		          	  <li class="active ">全部</li>
+		          	  <li>计算机</li>
+		          	  <li>移动设备</li>
+		            </ul>  	 	
+		       	  </div>
+	       </div>
+		  <div class="drop2">
+	       <div class="layout">
+		       	  <span>访客：</span>
+		          <ul class="visitor dianji">
+		          	<li class="active">全部</li>
+		          	<li>新访客</li>
+		          	<li class="old">老访客</li>
+		          	<div style="clear:both">
+		          		
+		          	</div>
+		          </ul>
+		    </div>
+		    <div class="layout">
+	          <span>日期：</span>
+	       	  <select name="">
+	       	  	<option value="">时间(全部)</option>
+	       	  	<option value="">昨天</option>
+	       	  	<option value="">今天</option>
+	       	  	<option value="">明天</option>
+	       	  </select>           	
+		    </div>       
+	       </div>
+	       <div class="drop3">
+	       	  <form action="Flow_analysis_submit" method="get" class="sea_list">
+	            <label for="">关键字/搜索词</label>
+	            <input type="text" name="" value="" placeholder="请输入……">
+	            <label for="">入口页面</label>
+	            <input type="text" name="" value="" placeholder="请输入……">
+	            <label for="">访客标识码</label>
+	            <input type="text" name="" value="" placeholder="请输入……">
+	            <label for="">IP</label>
+	            <input type="text" name="" value="" placeholder="请输入……">
+	            <button type="button" class="query">查询</button>
+	       	  </form>
+	       </div>
+	       <div class="visit">
+	       	  <div class="visit_top">
+	       	  	<span class="access">访问时间</span>
+	       	  	<span class="source">来源</span>
+	       	  	<span class="enter">入口页面</span>
+	       	  	<span class="word">搜索词</span>
+	       	  	<span class="duration">访问时长</span>
 	       	  </div>
-	       	  <div class="layout">
-	       	    <span>设备：</span>
-	            <ul class="all dianji">
-	          	  <li class="active ">全部</li>
-	          	  <li>计算机</li>
-	          	  <li>移动设备</li>
-	            </ul>  	 	
+	       	  <div class="visit_con">
+	       	  	<span class="access"><span>1</span>2017/12/28 13:02:32</span>
+	       	  	<span class="source link_color">百度</span>
+	       	  	<span class="enter link_color">www.niasi.com</span>
+	       	  	<span class="word">三千客</span>
+	       	  	<span class="duration">2’6”</span>
 	       	  </div>
+<<<<<<< HEAD
        </div>
 	  <div class="drop2">
        <div class="layout">
@@ -427,6 +480,108 @@
     	</table>
     </div>
     </div>
+=======
+	       </div>
+	       <div class="visit_con">
+	       	
+	       </div>
+	</div>
+	</div>
+	<!-- 趋势分析 -->
+	<div class="tab">
+		<div class="main_right2 box_show">
+		<p>趋势分析</p>
+	    <div class="drop1">
+	    	<div class="layout one">
+	    		<span>时间：</span>
+		    	<ul class="time dianji">
+		    		<li class="active">今天</li>
+		    		<li>昨天</li>
+		    	</ul>
+	    	</div>
+	    	<div class="layout two">
+	    	<span>设备：</span>
+	    	<ul class="equip dianji">
+	    		<li class="active">全部</li>
+	    		<li>计算机</li>
+	    		<li>移动设备</li>
+	    	</ul>
+	    	</div>
+	    	<div class="layout three">
+	    	<span>访客：</span>
+	    	<ul class="visit dianji">
+	    		<li class="active">全部</li>
+	    		<li>新访客</li>
+	    		<li>老访客</li>
+	    	</ul>
+	    	</div>
+	    </div>
+	    <div class="drop2">
+	      <div class="layout four">
+	        <span>地域：</span>
+	    	<select name="">
+	    		<option value="1">全部</option>
+	    		<option value="2">全国</option>
+	    		<option value="3">省自治区</option>
+	    	</select>     	
+	      </div>
+	      <div class="layout five">
+	    	<span>来源：</span>
+	    	<select name="">
+	    		<option value="1">全部</option>
+	    		<option value="2">直接访问</option>
+	    		<option value="3">外部链接</option>
+	    		<option value="4">搜索引擎</option>
+	    	</select>    	
+	      </div>
+	    </div>
+	    <ul class="browse_list">
+	    	<li><p>浏览量（PV）</p><span>16</span></li>
+	    	<li><p>访客数（UV）</p><span>16</span></li>
+	    	<li class="cen"><p>IP数</p><span>6</span></li>
+	    	<li class="cen"><p>跳出率</p><span>100%</span></li>
+	    	<li class="cen"><p>平均访问时长</p><span>00:01:40</span></li>
+	    </ul>
+	    <div class="charts2">
+	        <iframe src="../template-sub/qushi.html" frameborder="0" scrolling="no" style="width: 100%;height:305px"></iframe> 	
+	    </div>
+	    <p class="than">对比:
+	        <span><input type="checkbox" name="" value="">前一日</span>
+	        <span><input type="checkbox" name="" value="">上周同期</span>
+	        
+	    </p>
+	    <!-- 访客趋势表 -->
+	    <div class="trend_tab">
+	    	<table cellspacing="0" cellpadding="0" class="trend_table">
+	    		<thead>
+	    			<tr>
+	    				<th rowspan="2" >日期</th>
+	    				<th colspan="3">网站基础指标</th>
+	    				<th colspan="2">流量质量指标</th>
+	    			</tr>
+	    			<tr>
+	    				<th style="border-left: 1px solid #DEDEDE;">浏览量（PV）</th>
+	    				<th>访客数（UV）</th>
+	    				<th>IP数</th>
+	    				<th>跳出率</th>
+	    				<th>平均访问时长</th>
+	    			</tr>
+	    		</thead>
+	    		<tbody>
+	    			<tr>
+	    				<td>1 &nbsp;&nbsp;13:00~13:59</td>
+	    				<td>0</td>
+	    				<td>0</td>
+	    				<td>1</td>
+	    				<td>20%</td>
+	    				<td>00:00:14</td>
+	    			</tr>
+	    		</tbody>
+	    	</table>
+	    </div>
+	    </div>
+	</div>	
+>>>>>>> 3a715798872ebc5bd998753760db4a7396e36ce7
 </div>
 </div>
 <input type="hidden" id="zero" />

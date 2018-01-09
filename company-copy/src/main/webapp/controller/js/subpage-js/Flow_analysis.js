@@ -87,6 +87,7 @@ showDT();
     $(".tab").eq(index).addClass("show_tab").siblings().removeClass("show_tab");
 
  }) 
+<<<<<<< HEAD
 
 // 小切换按钮
   $(".dianji li").click(function(){
@@ -9366,6 +9367,8 @@ function first(){
 	        }
 		});
 	 
+=======
+>>>>>>> 3a715798872ebc5bd998753760db4a7396e36ce7
 })
 
 

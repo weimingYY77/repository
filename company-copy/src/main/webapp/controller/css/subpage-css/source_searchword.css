@@ -1,0 +1,203 @@
+
+/* 关键词 */
+.main_right{
+    padding: 0;
+    padding-top: 35px;
+    padding-bottom: 65px;
+}
+.main_right1>p{
+    color: #2B2B2B;
+}
+.main_right1 .plft{
+    padding-left: 30px;
+}
+.main_right1 .drop1{
+    padding-top: 15px;
+    display: inline-block;
+    width: 100%;
+}
+.main_right1 .drop1 .layout{
+    float: left;
+    padding-right: 20px;
+}
+.main_right1 .drop1 .layout span{
+    float: left;
+    line-height: 25px;
+    color: #646464;
+}
+.main_right1>.drop1 ul{
+    display: inline-block;
+    border: 1px solid #AAA; 
+    border-radius: 2px;
+}
+.main_right1>.drop1 ul li{
+    display: inline-block;
+    width: 63px;
+    font-size: 12px;
+    color: #646464;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    cursor: pointer;
+    float: left;
+}
+.main_right1>.drop1 .one ul li:first-child{
+    border-right: none;
+}
+.main_right1>.drop1 ul li:first-child{
+    border-right: 1px solid #AAA;
+}
+.main_right1>.drop1 ul li:last-child{
+    border-left: 1px solid #AAA;
+} 
+.main_right1 .drop1 .active{
+    background: #69B5FA;
+    color: #fff!important;
+    boder:1px solid #69B5FA!important;
+}
+/* 全部来源  来源类型选项卡*/
+.main_right1 .tab_list{
+    margin-top: 35px;
+    width: 100%;
+    height: 45px;
+    background: #F4F4F4;
+    border-top: 1px solid #DEDEDE;
+    border-bottom: 1px solid #DEDEDE;
+    color: #2B2B2B;
+}
+.main_right1 .tab_list li{
+    width: 90px;
+    text-align: center;
+    height: 100%;
+    display: inline-block;
+    float: left;
+    cursor: pointer;
+    font-size: 14px;
+    padding-top: 15px;
+}
+ .main_right1 .tab_list li.active{
+    background: #fff;
+    border-top: 4px solid #4FA8F9;
+    padding-top: 12px;
+} 
+.tab_list span{
+    float: left;
+    width: 1px;
+    height: 45px;
+    background: #DEDEDE;
+}
+.main_right1 .browse_list1{
+    padding-top: 60px;
+}
+.browse_list1 li{
+    display: inline-block;
+    width: 15%;
+    padding-left: 4%;
+}
+.browse_list1 li.cen{
+    text-align: center;
+}
+.browse_list1 li>p{
+    color: #646464;
+}
+.browse_list1 li>span{
+    display: block;
+    font-size: 24px;
+    padding-top: 24px;
+    color: #2b2b2b;
+}
+/* 两张数据表 */
+.tab_charts{
+    margin-top: 30px;
+}
+.tab_charts .chart1,.tab_charts .chart2{
+    display: inline-block;
+    float: left;
+    height: 350px;
+}
+.tab_charts .chart1{
+    width: 42%;
+}
+.tab_charts .chart2{
+    width: 58%;
+}
+/* 来源表 */
+.source_tab{
+    margin-top: 80px;
+}
+.search_block{
+    width: 98%;
+    background: #F4F4F4;
+    height: 55px;
+    line-height: 55px;
+    border-top: 1px solid #dedede;
+    padding-left: 2%;
+    position: relative;
+    overflow: hidden;
+}
+.search_block>input{
+    width: 250px;
+    height: 31px;
+    padding-left: 7px;
+    padding-right: 30px;
+    color: #a3a3a3;
+}
+.search_block .magnifier{
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    background: url(../../images/fdj.png) no-repeat;
+    position: absolute;
+    top: 20px;
+    left: 285px;
+    cursor: pointer;
+}
+.source_table{
+    width: 100%;
+    border:1px solid #d7d7d8;
+    color: #646464;
+    border-right: none;
+    border-left: none; 
+    padding-bottom: 70px;
+}
+.source_table th{
+   background: #F4F4F4;
+   font-weight: normal;
+   border-left:1px solid #DEDEDE; 
+   border-bottom:1px solid #DEDEDE;
+   height: 47px;
+   width: 14%;
+}
+.source_table td{
+    border:1px solid #d7d7d8;
+    text-align: center; 
+    height: 37px;
+    border-right: none;
+    border-top: none;
+    width: 14%;
+}
+.source_table td:first-child{
+    border-left: none;
+    width: 30%;
+}
+.source_table th:first-child{
+    border-left: none;
+}
+.source_table tbody>tr:first-child td{
+    border-top: none;
+}
+
+/* 大选项卡 */
+.tab{
+    display: none; 
+}
+/* 小选项卡 */
+.tab_content{
+    display: none;
+}
+.show_tab{
+   display: block;
+} 
+.wid{
+    width: 70%;
+}

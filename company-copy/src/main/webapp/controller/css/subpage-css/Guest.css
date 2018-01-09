@@ -1,17 +1,37 @@
+.main{
+	background: #ebeef2;
+}
 
+.main_conter .title{
+	font-size: 20px;
+	color: #003333;
+}
+.main_conter li a{
+    line-height: 40px;
+    font-size: 16px;
+    color: #a3a3a3;
+    display: inline-block;
+    width: 100%;
+}
+.main_conter li a:hover{
+	color: #00c1de;
+}
+.main_conter li a.active{
+    color: #00c1de;
+}
 /* 实时访客 */
 .main_right1,.main_btn{
-     width: 100%;
+    width: 100%;
     display: inline-block;
     background: #ffffff;
     float: left;
-    padding: 35px 30px 65px 30px;
+    margin-top: 2%;
 }
 .main_right1{
     height: 370px;
-    margin-bottom: 30px;
 }
 .main_right1>p{
+    padding-top: 27px;
     color: #2B2B2B;
 }
 .main_right1>p>span{
@@ -53,6 +73,7 @@
     font-size: 12px;
 }
 .main_btn>p{
+    padding-top: 28px;
     color: #2B2B2B;
 }
 .main_btn .drop1,.main_btn .drop2{
@@ -184,24 +205,16 @@
 }
 /* 实时访客 */
 /* 趋势分析 */
-.trend_tab{
-    margin-left:-30px; 
-    margin-right: -30px;
-}
-.main_right2{
-    width:100%;
-    display: inline-block;
-    background: #ffffff;
-    float: left;
-    margin-top: 2%;
-    margin-bottom: 80px;
-    padding: 35px 30px 65px 30px;
-}
 .main_right2>p{
+    padding-top: 27px;
     color: #2B2B2B;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .main_right2 .drop1,.main_right2 .drop2{
     padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
     display: inline-block;
     width: 100%;
 }
@@ -273,19 +286,6 @@
     padding-top: 24px;
     color: #2b2b2b;
 }
-.than{
-    text-align: center;
-    font-size: 12px;
-    color: #646464;
-    margin-top: 10px;
-}
-.than>span{
-    padding-left: 15px;
-    padding-right: 15px;
-}
-.than>span>input{
-    vertical-align: middle;
-}
 /* 访客趋势表 */
 .trend_table{
     margin-top: 20px;
@@ -335,7 +335,3 @@
 .show_tab{
    display: block;
 } 
-.main_right.BGcolor{
-   padding:0; 
-   background:#ebeef2;
-}

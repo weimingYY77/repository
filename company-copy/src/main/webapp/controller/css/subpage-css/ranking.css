@@ -1,0 +1,31 @@
+
+/* 实时访客 */
+.main_right1,.main_btn{
+     width: 100%;
+    display: inline-block;
+    background: #ffffff;
+    float: left;
+    padding: 35px 30px 65px 30px;
+}
+.main_right1{
+    height: 200px;
+    margin-bottom: 30px;
+}
+.main_right1>p{
+    color: #2B2B2B;
+    font-size: 20px;
+}
+
+
+/*  */
+.main_btn{
+    height: 657px;
+    margin-bottom: 40px;
+}
+
+
+
+ .main_right.BGcolor{
+   padding:0; 
+   background:#ebeef2;
+} 
