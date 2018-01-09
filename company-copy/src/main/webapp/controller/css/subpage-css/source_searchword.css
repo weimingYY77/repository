@@ -1,5 +1,5 @@
 
-/* 全部来源 */
+/* 关键词 */
 .main_right{
     padding: 0;
     padding-top: 35px;
@@ -64,7 +64,6 @@
     border-top: 1px solid #DEDEDE;
     border-bottom: 1px solid #DEDEDE;
     color: #2B2B2B;
-    font-size: 14px;
 }
 .main_right1 .tab_list li{
     width: 90px;
@@ -123,8 +122,37 @@
     width: 58%;
 }
 /* 来源表 */
+.source_tab{
+    margin-top: 80px;
+}
+.search_block{
+    width: 98%;
+    background: #F4F4F4;
+    height: 55px;
+    line-height: 55px;
+    border-top: 1px solid #dedede;
+    padding-left: 2%;
+    position: relative;
+    overflow: hidden;
+}
+.search_block>input{
+    width: 250px;
+    height: 31px;
+    padding-left: 7px;
+    padding-right: 30px;
+    color: #a3a3a3;
+}
+.search_block .magnifier{
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    background: url(../../images/fdj.png) no-repeat;
+    position: absolute;
+    top: 20px;
+    left: 285px;
+    cursor: pointer;
+}
 .source_table{
-    margin-top: 20px;
     width: 100%;
     border:1px solid #d7d7d8;
     color: #646464;

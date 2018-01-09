@@ -421,7 +421,7 @@ body{
     display: inline-block;
     width: 100%;
 }
-.main_conter li a:hover{
+.main_conter li a:hover,.main_conter li a.active{
 	color: #00c1de;
 }
 

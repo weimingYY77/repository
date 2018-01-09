@@ -1,8 +1,25 @@
-Access-analysis.html - 统计- 访问分析
-account_overview.html- 费用- 账户总览
-Flow_analysis.html 统计- 流量分析
-Guest.html 统计- 访客分析
+1、
 promotion.html -产品与服务统计- 云推广
 station.html -产品与服务统计- 自主建站
+network.html -产品与服务统计- 网络外包
+
+
+
+2、
+account_overview.html- 费用- 账户总览
+
+
+5、
 Website_list.html 统计- 网站列表
+
 Websiteprofile.html 统计- 网站概况
+
+Flow_analysis.html 统计- 流量分析（包含实时访客和趋势分析子页面）
+
+Source_analysis.html  统计- 来源分析-全部来源
+source_Engines.html   统计- 来源分析-搜索引擎
+source_searchword.html   统计- 来源分析-搜索词
+
+Access-analysis.html - 统计- 访问分析
+
+Guest.html 统计- 访客分析

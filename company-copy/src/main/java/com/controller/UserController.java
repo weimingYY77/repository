@@ -212,7 +212,7 @@ public class UserController {
 		Integer code = (int)((Math.random()*9+1)*100000);
 		UserInfo inspect = userService.inspect(userInfo); //判断用户是否存在
 		if(inspect== null){
-			String sms = "ok";
+			String sms = userService.sendSms(validate.getU_phoneNum(), code);
 			if("ok".equals(sms)){
 				Date date=new Date();
 				DateFormat format=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");

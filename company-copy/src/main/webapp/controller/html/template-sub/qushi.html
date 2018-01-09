@@ -5,7 +5,7 @@
 	<title>Document</title>
 	<style type="text/css" media="screen">
 		#earch2{
-			width: 1000px;
+			width: 1275px;
 			height:300px;
 		}
 	</style>
@@ -16,12 +16,44 @@
 <script type="text/javascript" src='../../js/common-js/jquery.js'></script>
 <script type="text/javascript" src='../../js/echarts.common.min.js'></script>
 <script type="text/javascript">
+$(function(){
+	
+	var a = window.parent.$("#zero").val();
+	var b = window.parent.$("#one").val();
+	var c = window.parent.$("#two").val();
+	var d = window.parent.$("#three").val();
+	var e = window.parent.$("#four").val();
+	var f = window.parent.$("#five").val();
+	var g = window.parent.$("#six").val();
+	var h = window.parent.$("#seven").val();
+	var i = window.parent.$("#eight").val();
+	var j = window.parent.$("#nine").val();
+	var k = window.parent.$("#ten").val();
+	var l = window.parent.$("#eleven").val();
+	var m = window.parent.$("#twelve").val();
+	var n = window.parent.$("#thirteen").val();
+	var o = window.parent.$("#fourteen").val();
+	var p = window.parent.$("#fifteen").val();
+	var q = window.parent.$("#sixteen").val();
+	var r = window.parent.$("#seventeen").val();
+	var s = window.parent.$("#eighteen").val();
+	var t = window.parent.$("#nineteen").val();
+	var u = window.parent.$("#twenty").val();
+	var v = window.parent.$("#twenty-one").val();
+	var w = window.parent.$("#twenty-two").val();
+	var x = window.parent.$("#twenty-three").val();
+	
     var myChart = echarts.init(document.getElementById('earch2'));
     // option 里面的内容基本涵盖你要画的图表的所有内容
     var option = {
     tooltip : {
         trigger: 'axis'
     },
+    legend: {
+       x: 'center',
+       y:'bottom',
+       data:["访问次数"]
+   },
     calculable : true,
         xAxis: [{
             axisLabel: {
@@ -36,7 +68,7 @@
             },
             type: 'category',
             boundaryGap: false,
-            data:[0,'',2,4,'',6,'',8,'',10,'',12,'',14,'',16,'',18,'',20,'',22],
+            data:[0,'',2,'',4,'',6,'',8,'',10,'',12,'',14,'',16,'',18,'',20,'',22,'',],
             axisLabel:{
                  //X轴刻度配置
                  interval:0 //0：表示全部显示不间隔；auto:表示自动根据刻度个数和宽度自动设置间隔个数
@@ -44,7 +76,7 @@
         }],
         yAxis: [{
             min:0,
-            max:2.0,
+            max:4,
             type: 'value',
             axisLine: {
                 lineStyle: {
@@ -56,14 +88,15 @@
              }
         }],
         series: [{
-/*            name: ' ',*/
+            name: '访问次数',
             type: 'line',
             symbol:'circle',/*折点样式*/
             symbolSize: 5,
              color: ['#4FA8F9'],
-            data: [0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+            data: [a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x]
         }]
     };  
     myChart.setOption(option);
+});
 </script>
 </html>
