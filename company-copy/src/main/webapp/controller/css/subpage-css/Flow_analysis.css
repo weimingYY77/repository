@@ -1,9 +1,11 @@
-
+.pad{
+    margin-left: 26%;
+}
 /* 实时访客 */
 .main_right1,.main_btn{
      width: 100%;
     display: inline-block;
-    background: #ffffff;
+    background: #fff;
     float: left;
     padding: 35px 30px 65px 30px;
 }
@@ -85,19 +87,9 @@
     cursor: pointer;
     float: left;
 }
-.main_btn .drop1 .all li:first-child,.main_btn .drop2 .visitor li:first-child{
-    border-right:1px solid #AAA; 
-}
-.main_btn .drop1 .all li:last-child,.main_btn .drop2 .visitor li:last-child{
-    border-left:1px solid #AAA; 
-}
-.main_btn .drop2 .visitor li.old{
-    border-left:1px solid #AAA; 
-}
 .main_btn .drop1 .active,.main_btn .drop2 .active{
     background: #69B5FA;
     color: #fff!important;
-    boder:1px solid #69B5FA!important;
 }
 .main_btn .drop1 .layout select,.main_btn .drop2 .layout select{
     width: 115px;
@@ -229,19 +221,9 @@
     cursor: pointer;
     float: left;
 }
-.main_right2>.drop1 .one ul li:first-child{
-    border-right: none;
-}
-.main_right2>.drop1 ul li:first-child{
-    border-right: 1px solid #AAA;
-}
-.main_right2>.drop1 ul li:last-child{
-    border-left: 1px solid #AAA;
-} 
 .main_right2 .drop1 .active{
     background: #69B5FA;
     color: #fff!important;
-    boder:1px solid #69B5FA!important;
 }
 .main_right2 .drop2 select{
     height: 23px;
