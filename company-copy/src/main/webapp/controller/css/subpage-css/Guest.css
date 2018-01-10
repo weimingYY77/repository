@@ -264,19 +264,9 @@
     cursor: pointer;
     float: left;
 }
-.main_right2>.drop1 .one ul li:first-child{
-    border-right: none;
-}
-.main_right2>.drop1 ul li:first-child{
-    border-right: 1px solid #AAA;
-}
-.main_right2>.drop1 ul li:last-child{
-    border-left: 1px solid #AAA;
-} 
 .main_right2 .drop1 .active{
     background: #69B5FA;
     color: #fff!important;
-    boder:1px solid #69B5FA!important;
 }
 .main_right2 .drop2 select{
     height: 23px;

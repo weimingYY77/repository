@@ -429,3 +429,9 @@ body{
 	border: 1px solid #CCCCCC;
 	height: 100%;
 }
+.border_line{
+	float: left;
+	height: 23px;
+	width: 1px;
+	background: #aaa;
+}
