@@ -546,8 +546,9 @@
     width: 14%;
 }
 .source_table td:first-child{
-    border-left: none;
-    width: 30%;
+border-left: none;
+width: 30%;
+
 }
 .source_table th:first-child{
     border-left: none;
