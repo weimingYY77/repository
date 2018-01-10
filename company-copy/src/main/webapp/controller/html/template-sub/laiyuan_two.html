@@ -16,9 +16,24 @@
 <script type="text/javascript" src='../../js/common-js/jquery.js'></script>
 <script type="text/javascript" src='../../js/echarts.common.min.js'></script>
 <script type="text/javascript">
-    var myChart = echarts.init(document.getElementById('echart_2'));
+   // 路径配置
+    require.config({
+        paths: {
+            echarts: 'http://echarts.baidu.com/build/dist'
+        }
+    });
+    // 使用
+    require(
+            [
+                'echarts',
+                'echarts/chart/bar', // 使用柱状图就加载bar模块，按需加载
+                'echarts/chart/map', // 使用柱状图就加载bar模块，按需加载
+                'echarts/chart/pie'
+            ],
+            function (ec) {
+   var myChart2 = echarts.init(document.getElementById('echart_2'));
     // option 里面的内容基本涵盖你要画的图表的所有内容
-    var option = {
+    var option_two = {
     tooltip : {
         trigger: 'axis'
     },
@@ -90,6 +105,8 @@
         }
       ]
     };  
-    myChart.setOption(option);
+    myChart2.setOption(option_two);
+                    }
+    );
 </script>
 </html>
