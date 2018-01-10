@@ -9,15 +9,38 @@
     padding: 35px 30px 65px 30px;
 }
 .main_right1{
-    height: 200px;
+    height: 140px;
     margin-bottom: 30px;
+    position: relative;
 }
 .main_right1>p{
     color: #2B2B2B;
     font-size: 20px;
 }
-
-
+.main_right1>.sou{
+    margin-top: 50px;
+    margin-left: 25%;
+}
+.main_right1>.sou .search_bar{
+    width: 45%;
+    height:40px;
+    float: left;
+    outline: none;
+    padding-left: 5px;
+}
+.main_right1>div .view_analysis{
+    display: inline-block;
+    width:140px;
+    height:44px;
+    background: #00C1DE;
+    color: #fff;
+    float: left;
+    line-height: 44px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
 /* 网站基本信息 */
 .main_btn{
     margin-bottom: 40px;
@@ -162,3 +185,102 @@
   padding:0; 
   background:#ebeef2;
 }  
+/* 遮罩层 */
+.mask{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    z-index: 1000;
+    background:rgba(0,0,0,0.4);
+    display: none;
+}
+.mask_box{
+    width: 580px;
+    height: 380px;
+    background: #fff;
+/*     border: 4px solid #212121; */
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.6);
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -290px;
+    margin-top:-190px; 
+}
+.mask_box>p:first-child{
+    height: 52px;
+    line-height: 52px;
+    background:#00c1de;
+    color: #fff;
+    padding-left: 20px;
+}
+.mask_box>p.con3{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #999797;
+    padding-left: 106px;
+}
+.mask_box .con1,.mask_box .con2{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.mask_box .mask_con .red{
+    color:#dd4040;
+}
+.mask_box .mask_con .con1>span,.mask_box .mask_con .con2>span{
+    font-size: 18px;
+    color: #2b2b2b;
+    float: left;
+    color: #2b2b2b;
+}
+.mask_box .con1>div,.mask_box .con2>div{
+    display: inline-block;
+    margin-left: 30px;
+    color: #646464;
+}
+.mask_box .con2>div{
+    width: 380px;
+    height: 150px;
+    border: 1px solid #d1d1d1;
+}
+.mask_box .con2>div>textarea{
+    width: 98%;
+    height: 100%;
+    outline: none;
+    resize:none;
+    border:none; 
+    padding-left: 2%;
+    font-size: 14px;
+}
+.btn_group{
+    text-align: center;
+    border-top: 1px solid #d1d1d1;
+    padding-top: 15px;
+    margin-top: 10px;
+}
+.btn_group .btn{
+    display: inline-block;
+    width: 150px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.btn_group .ensure{
+    background: #00c1de;
+    float: left;
+    margin-left: 106px;
+}
+.btn_group .cancel{
+    background:#a3a3a3;
+    float: right;
+    margin-right: 90px;
+}

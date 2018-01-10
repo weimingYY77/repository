@@ -226,9 +226,10 @@
 <div class="main_right net BGcolor">
 	<div class="main_right1 box_show">
 		<p>搜索排名</p>
-        <div>
-        	<input type="text" name="" value="" placeholder="请输入网址……">
-        	<span>查看分析</span>
+        <div class="sou">
+        	<input type="text" name="" value="" placeholder="请输入网址……" class="search_bar">
+        	<button class="view_analysis">查看分析</button>
+        	<div style="clear:both"></div>
         </div>
 	</div>
 	  <!-- 访问明细 -->
@@ -365,9 +366,29 @@
 	</div>
 </div>
 </div>
+<div class="mask">
+	<div class="mask_box">
+		<p>添加关键词</p>
+		<div class="mask_con">
+			<div class="con1"> 
+				<span>说明</span>
+				<div>该站点还可以添加<span class="red">18</span>个，每个站上限为<span class="red">20</span>个</div>
+			</div>
+			<div class="con2">
+				<span>说明</span>
+				<div><textarea name=""></textarea></div>
+			</div>
+		</div>
+		<p class="con3">多个关键词请用逗号或换行隔开</p>
+		<div class="btn_group">
+           <button  type="button" class="ensure btn">确定</button>
+           <button  type="button" class="cancel btn">取消</button>
+		</div>
+	</div>
+</div>
 </body>
 <script type="text/javascript" src="../../js/common-js/jquery.js"></script>
 <script type="text/javascript" src="../../js/common-js/common.js"></script>	
 <script type="text/javascript" src="../../js/echarts.common.min.js"></script>
-<script type="text/javascript" src="../../js/subpage-js/Flow_analysis.js"></script>
+<script type="text/javascript" src="../../js/subpage-js/ranking.js"></script>
 </html>
