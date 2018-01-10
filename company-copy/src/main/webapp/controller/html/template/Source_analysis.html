@@ -287,10 +287,10 @@
 		    </ul>
 		    <div class="tab_charts">
 		    	<div class="chart1">
-		    		<iframe src="../template-sub/laiyuan_one.html" frameborder="0"  scrolling="no" style="width: 100%;height:100%;"></iframe>
+		    		<div id="earch2"></div>	
 		    	</div>
 		    	<div class="chart2">
-		    		<iframe src="../template-sub/laiyuan_two.html" frameborder="0"  scrolling="no" style="width: 100%;height:100%;"></iframe>
+		    		<div id="echart_2"></div>	
 		    	</div>
 		    	<div style="clear:both"></div>
 		    </div>
@@ -335,10 +335,10 @@
 		    </ul>
 		    <div class="tab_charts">
 		    	<div class="chart1">
-		    		<iframe src="../template-sub/laiyuan_three.html" frameborder="0"  scrolling="no" style="width: 100%;height:100%;"></iframe>
+		    		<div id="earch3"></div>	
 		    	</div>
 		    	<div class="chart2">
-		    		<iframe src="../template-sub/laiyuan_four.html" frameborder="0"  scrolling="no" style="width: 100%;height:100%;"></iframe>
+		    		<div id="echart_4"></div>	
 		    	</div>
 		    	<div style="clear:both"></div>
 		    </div>
@@ -378,7 +378,412 @@
 </div>
 </body>
 <script type="text/javascript" src="../../js/common-js/jquery.js"></script>
+<script type="text/javascript" src="../../js/subpage-js/Source_analysis.js"></script>
 <script type="text/javascript" src="../../js/common-js/common.js"></script>	
 <script type="text/javascript" src="../../js/echarts.common.min.js"></script>
-<script type="text/javascript" src="../../js/subpage-js/Source_analysis.js"></script>
+<script type="text/javascript" src="../../js/echarts.js"></script>
+<!--全部来源来源类型饼状图-->
+<script type="text/javascript">
+  // 路径配置
+    require.config({
+        paths: {
+            echarts: 'http://echarts.baidu.com/build/dist'
+        }
+    });
+    // 使用
+    require(
+            [
+                'echarts',
+                'echarts/chart/bar', // 使用柱状图就加载bar模块，按需加载
+                'echarts/chart/map', // 使用柱状图就加载bar模块，按需加载
+                'echarts/chart/pie'
+            ],
+            function (ec) {
+   var myChart1 = echarts.init(document.getElementById('earch2'));
+    // option 里面的内容基本涵盖你要画的图表的所有内容
+		option_one = {
+		    tooltip: {
+		        trigger: 'item',
+		        formatter: "{a} <br/>{b}: {c} ({d}%)"
+		    },
+		    series: [
+		        {
+		            name:'',
+		            type:'pie',
+		            selectedMode: 'single',
+		            radius: [0, '30%'],
+		
+		            label: {
+		                normal: {
+		                    position: 'inner'
+		                }
+		            },
+		            labelLine: {
+		                normal: {
+		                    show: false
+		                }
+		            },
+		        },
+		        {
+		            name:'',
+		            type:'pie',
+		            radius: ['40%', '55%'],
+		            label: {
+		                normal: {
+		                    formatter: '{a|{a}}{abg|}\n{hr|}\n  {b|{b}：}{c}  {per|{d}%}  ',
+		                    // backgroundColor: '#eee',
+		                    // borderColor: '#aaa',
+		                    // borderWidth: 2,
+		                    // borderRadius: 4,
+		                    // shadowBlur:3,
+		                    // shadowOffsetX: 2,
+		                    // shadowOffsetY: 2,
+		                    // shadowColor: '#999',
+		                    // padding: [0, 7],
+		                    rich: {
+		                        a: {
+		                            color: '#999',
+		                            lineHeight: 22,
+		                            align: 'center'
+		                        },
+		                        // abg: {
+		                        //     backgroundColor: '#333',
+		                        //     width: '100%',
+		                        //     align: 'right',
+		                        //     height: 22,
+		                        //     borderRadius: [4, 4, 0, 0]
+		                        // },
+		                        b: {
+		                            fontSize: 12,
+		                            lineHeight: 33
+		                        },
+		                        per: {
+		                            color: '#eee',
+		                            backgroundColor: '#334455',
+		                            padding: [2, 4],
+		                            borderRadius: 2
+		                        }
+		                    }
+		                }
+		            },
+		            data:[
+		                {value:935, name:'搜索引擎',fontSize:12},
+		                {value:310, name:'外部链接',fontSize:12},
+		                {value:234, name:'直接访问',fontSize:12}
+		            ],
+		            color:['#4fa8f9','#6ec71e','#f56e6a']
+		        }
+		    ]
+		};
+    myChart1.setOption(option_one);
+                }
+    );
+</script>
+<!--全部来源来源类型折线图-->
+<script type="text/javascript">
+	  // 路径配置
+    require.config({
+        paths: {
+            echarts: 'http://echarts.baidu.com/build/dist'
+        }
+    });
+    // 使用
+    require(
+            [
+                'echarts',
+                'echarts/chart/bar', // 使用柱状图就加载bar模块，按需加载
+                'echarts/chart/map', // 使用柱状图就加载bar模块，按需加载
+                'echarts/chart/pie'
+            ],
+            function (ec) {
+   var myChart2 = echarts.init(document.getElementById('echart_2'));
+    // option 里面的内容基本涵盖你要画的图表的所有内容
+    var option_two = {
+    tooltip : {
+        trigger: 'axis'
+    },
+     legend: {
+       x: 'center',
+       y:'bottom',
+       data:["搜索引擎","外部链接","直接访问"]
+   },
+    calculable : true,
+    xAxis: [{
+            axisLabel: {
+                interval: 0
+            },
+            axisLine: {
+
+                lineStyle: {
+                    color: '#646464'                
+                }
+            },
+            axisTick:{
+               show:false
+             },
+            type: 'category',
+            boundaryGap: false,
+            data:[0,'','',3,'','',6,'','',9,'','',12,'','',15,'','',18,'','',21,'',''],
+            axisLabel:{
+                 //X轴刻度配置
+                 interval:0 //0：表示全部显示不间隔；auto:表示自动根据刻度个数和宽度自动设置间隔个数
+            }
+        }],
+        yAxis: [{
+            min:0,
+            max:2.0,
+            type: 'value',
+            axisLine: {
+                lineStyle: {
+                    width: 0
+                }
+            },
+            axisTick:{
+               show:false
+             }
+        }],
+        series: [
+        {
+            name: '搜索引擎',
+            type: 'line',
+            symbol:'circle',/*折点样式*/
+            symbolSize: 5,
+             color: ['#4fa8f9'],
+            data: [0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+        },
+        {
+            name: '外部链接',
+            type: 'line',
+            symbol:'circle',/*折点样式*/
+            symbolSize: 5,
+            color: ['#6ec71e'],
+            data: [0,0,0,0,0,0,0,0,0,0,0,0.5,1,1.5,0.5,0,0,0,0,0,0,0,0,0]
+        },
+        {
+            name: '直接访问',
+            type: 'line',
+            symbol:'circle',/*折点样式*/
+            symbolSize: 5,
+            color: ['#f56e6a'],
+            data: [0,0,0,0,0,0,0,0,0,1.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+            
+        }
+      ]
+    };  
+    myChart2.setOption(option_two);
+                    }
+    );
+</script>
+<!--全部来源来源网站饼状图-->
+<script type="text/javascript">
+		// 路径配置
+    require.config({
+        paths: {
+            echarts: 'http://echarts.baidu.com/build/dist'
+        }
+    });
+    // 使用
+    require(
+            [
+                'echarts',
+                'echarts/chart/bar', // 使用柱状图就加载bar模块，按需加载
+                'echarts/chart/map', // 使用柱状图就加载bar模块，按需加载
+                'echarts/chart/pie'
+            ],
+            function (ec) {
+    var myChart3 = echarts.init(document.getElementById('earch3'));
+    // option 里面的内容基本涵盖你要画的图表的所有内容
+option_three = {
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    series: [
+        {
+            name:'',
+            type:'pie',
+            selectedMode: 'single',
+            radius: [0, '30%'],
+
+            label: {
+                normal: {
+                    position: 'inner'
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+        },
+        {
+            name:'',
+            type:'pie',
+            radius: ['40%', '55%'],
+            label: {
+                normal: {
+                    formatter: '{a|{a}}{abg|}\n{hr|}\n  {b|{b}：}{c}  {per|{d}%}',
+                    // backgroundColor: '#eee',
+                    // borderColor: '#aaa',
+                    // borderWidth: 2,
+                    // borderRadius: 4,
+                    // shadowBlur:3,
+                    // shadowOffsetX: 2,
+                    // shadowOffsetY: 2,
+                    // shadowColor: '#999',
+                    // padding: [0, 7],
+                    rich: {
+                        a: {
+                            color: '#999',
+                            lineHeight: 22,
+                            align: 'center'
+                        },
+                        // abg: {
+                        //     backgroundColor: '#333',
+                        //     width: '100%',
+                        //     align: 'right',
+                        //     height: 22,
+                        //     borderRadius: [4, 4, 0, 0]
+                        // },
+                        b: {
+                            fontSize: 12,
+                            lineHeight: 33
+                        },
+                        per: {
+                            color: '#eee',
+                            backgroundColor: '#334455',
+                            padding: [2, 4],
+                            borderRadius: 2
+                        }
+                    }
+                }
+            },
+            data:[
+                {value:700, name:'百度',fontSize:12},
+                {value:200, name:'baidu.com',fontSize:12},
+                {value:100, name:'直接访问',fontSize:12},
+                {value:100, name:'360',fontSize:12},
+                {value:100, name:'搜狗',fontSize:12}
+            ],
+            color:['#4fa8f9','#6ec71e','#f56e6a','#fc8b40','#818af8']
+        }
+    ]
+};
+    myChart3.setOption(option_three);
+                    }
+    );
+</script>
+<!--全部来源来源网站折线图-->
+<script type="text/javascript">
+	  // 路径配置
+    require.config({
+        paths: {
+            echarts: 'http://echarts.baidu.com/build/dist'
+        }
+    });
+    // 使用
+    require(
+            [
+                'echarts',
+                'echarts/chart/bar', // 使用柱状图就加载bar模块，按需加载
+                'echarts/chart/map', // 使用柱状图就加载bar模块，按需加载
+                'echarts/chart/pie'
+            ],
+            function (ec) {
+    var myChart4 = echarts.init(document.getElementById('echart_4'));
+    // option 里面的内容基本涵盖你要画的图表的所有内容
+    var option_four = {
+    tooltip : {
+        trigger: 'axis'
+    },
+     legend: {
+       x: 'center',
+       y:'bottom',
+       data:["百度","baidu.com","直接访问","360","搜狗"]
+   },
+    calculable : true,
+    xAxis: [{
+            axisLabel: {
+                interval: 0
+            },
+            axisLine: {
+
+                lineStyle: {
+                    color: '#646464'                
+                }
+            },
+            axisTick:{
+               show:false
+             },
+            type: 'category',
+            boundaryGap: false,
+            data:[0,'','',3,'','',6,'','',9,'','',12,'','',15,'','',18,'','',21,'',''],
+            axisLabel:{
+                 //X轴刻度配置
+                 interval:0 //0：表示全部显示不间隔；auto:表示自动根据刻度个数和宽度自动设置间隔个数
+            }
+        }],
+        yAxis: [{
+            min:0,
+            max:2.0,
+            type: 'value',
+            axisLine: {
+                lineStyle: {
+                    width: 0
+                }
+            },
+            axisTick:{
+               show:false
+             }
+        }],
+        series: [
+        {
+            name: '百度',
+            type: 'line',
+            symbol:'circle',/*折点样式*/
+            symbolSize: 5,
+             color: ['#4fa8f9'],
+            data: [0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+        },
+        {
+            name: 'baidu.com',
+            type: 'line',
+            symbol:'circle',/*折点样式*/
+            symbolSize: 5,
+            color: ['#6ec71e'],
+            data: [0,0,0,0,0,0,0,0,0,0,0,0.5,1,1.5,0.5,0,0,0,0,0,0,0,0,0]
+        },
+        {
+            name: '直接访问',
+            type: 'line',
+            symbol:'circle',/*折点样式*/
+            symbolSize: 5,
+            color: ['#f56e6a'],
+            data: [0,0,0,0,0,0,0,0,0,1.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+            
+        },
+        {
+            name: '360',
+            type: 'line',
+            symbol:'circle',/*折点样式*/
+            symbolSize: 5,
+            color: ['#fc8b40'],
+            data: [0,0,0,0,0,0,0,0,0,0,1,2,1,0,0,0,0,0,0,0,0,0,0,0]
+            
+        },
+        {
+            name: '搜狗',
+            type: 'line',
+            symbol:'circle',/*折点样式*/
+            symbolSize: 5,
+            color: ['#818af8'],
+            data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.5,1.5,1,0,0,0,0,0,0,0]
+            
+        }
+      ]
+    };  
+    myChart4.setOption(option_four);
+                    }
+    );
+</script>
 </html>
