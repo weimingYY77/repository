@@ -85,9 +85,7 @@ showDT();
     var index = $(".main_conter ul li").index(this);
     $(this).children("a").addClass("active").parent().siblings().children("a").removeClass("active");
     $(".tab").eq(index).addClass("show_tab").siblings().removeClass("show_tab");
-
  }) 
-<<<<<<< HEAD
 
 // 小切换按钮
   $(".dianji li").click(function(){

@@ -240,12 +240,12 @@
 		</li>
 	</ul>
 </div>
-<div class="main_right box_show">
+<div class="main_right box_show  pad">
 	<div class="tab show_tab">
   <!-- 地域分布 -->
 <div class="main_btn">
-       <p>地域分布</p>
-	        <div class="drop1">
+       <p class="pad-lft">地域分布</p>
+	        <div class="drop1 pad-lft">
 		         <div class="layout">
 		       	  <span>来源：</span>
 		          <ul class="all dianji">
@@ -300,19 +300,65 @@
        	 <div class="left-map">
        	 	<div id="main_map" style="width: 100%;height: 400px;"></div>
        	 </div>
-       	 <div class="left-list"></div>
+       	 <div class="left-list">
+		    	<table cellspacing="0" cellpadding="0" class="map_list">
+		    		<thead>
+		    			<tr>
+		    				<th>省份</th>
+		    				<th>浏览量(PV)</th>
+		    				<th>占比</th>
+		    			</tr>
+		    		</thead>
+		    		<tbody>
+		    			<tr>
+		    				<td>百度</td>
+		    				<td>0</td>
+		    				<td>0</td>
+		    			</tr>
+		    		</tbody>
+		    	</table>
+       	 </div>
+       	 <div style="clear: both"> </div>
        </div>
+       <div class="source_tab">
+		    	<table cellspacing="0" cellpadding="0" class="source_table">
+		    		<thead>
+		    			<tr>
+		    				<th rowspan="2">地域</th>
+		    				<th colspan="3">网站基础指标</th>
+		    				<th colspan="2">流量质量指标</th>
+		    			</tr>
+		    			<tr>
+		    				<th style="border-left: 1px solid #DEDEDE;">浏览量（PV）</th>
+		    				<th>访客数（UV）</th>
+		    				<th>IP数</th>
+		    				<th>跳出率</th>
+		    				<th>平均访问时长</th>
+		    			</tr>
+		    		</thead>
+		    		<tbody>
+		    			<tr>
+		    				<td>百度</td>
+		    				<td>0</td>
+		    				<td>0</td>
+		    				<td>1</td>
+		    				<td>20%</td>
+		    				<td>00:00:14</td>
+		    			</tr>
+		    		</tbody>
+		    	</table>
+		    </div>
 </div>
 </div>
 	<div class="tab">
   <!-- 地域分布 -->
 <div class="main_btn">
-       <p>地域分布</p>
-	        <div class="drop1">
+       <p class="pad-lft">地域分布</p>
+	        <div class="drop1 pad-lft">
 		         <div class="layout">
 		       	  <span>来源：</span>
 		          <ul class="all dianji">
-		          	  <li class="active ">今天</li>
+		          	  <li class="active">今天</li>
 		          	  <li>昨天</li>
 		          </ul>  	 	
 		       	  </div>
@@ -333,6 +379,14 @@
 		            </ul>  	 	
 		       	  </div>
             </div>
+           <ul class="tab_list">
+	    	   <li class="active">浏览器</li>
+	    	   <span></span>
+	    	   <li>网络设备</li>
+	    	<span></span>
+	    </ul>
+	<!-- 浏览器选项卡 -->	
+	<div class="tab_content show_tab">
        <div class="drop2">
        	    <ul>
        	    	<li>
@@ -362,6 +416,97 @@
        <div class="Guest-bin">
        	 	<div id="main_map2" style="width:1000px;height: 400px;"></div>
        </div>
+       <!-- 地域表 -->
+       <div class="source_tab">
+		    	<table cellspacing="0" cellpadding="0" class="source_table">
+		    		<thead>
+		    			<tr>
+		    				<th rowspan="2" >浏览器</th>
+		    				<th colspan="3">网站基础指标</th>
+		    				<th colspan="2">流量质量指标</th>
+		    			</tr>
+		    			<tr>
+		    				<th style="border-left: 1px solid #DEDEDE;">浏览量（PV）</th>
+		    				<th>访客数（UV）</th>
+		    				<th>IP数</th>
+		    				<th>跳出率</th>
+		    				<th>平均访问时长</th>
+		    			</tr>
+		    		</thead>
+		    		<tbody>
+		    			<tr>
+		    				<td>百度</td>
+		    				<td>0</td>
+		    				<td>0</td>
+		    				<td>1</td>
+		    				<td>20%</td>
+		    				<td>00:00:14</td>
+		    			</tr>
+		    		</tbody>
+		    	</table>
+		    </div>
+		 </div>
+    <!--网络设备选项卡  -->
+	<div class="tab_content">
+       <div class="drop2">
+       	    <ul>
+       	    	<li>
+       	    		<p>浏览量（PV）</p>
+       	    		<span>2</span>
+       	    	</li>
+       	    	<li>
+       	    		<p>访客数（UV）</p>
+       	    		<span>3</span>
+       	    	</li>
+       	    	<li>
+       	    		<p>IP数</p>
+       	    		<span>16</span>
+       	    	</li>
+       	    	<li>
+       	    		<p>跳出率</p>
+       	    		<span>100%</span>
+       	    	</li>
+       	    	<li>
+       	    		<p>平均访问时长</p>
+       	    		<span>00:00:00</span>
+       	    	</li>
+       	    </ul>
+       	    <div class="line"></div>
+       </div>
+       <!--地图分析-->
+       <div class="Guest-bin">
+       	 	<div id="main_map3" style="width:1000px;height: 400px;"></div>
+       </div>
+       <!-- 地域表 -->
+       <div class="source_tab">
+		    	<table cellspacing="0" cellpadding="0" class="source_table">
+		    		<thead>
+		    			<tr>
+		    				<th rowspan="2" >浏览器</th>
+		    				<th colspan="3">网站基础指标</th>
+		    				<th colspan="2">流量质量指标</th>
+		    			</tr>
+		    			<tr>
+		    				<th style="border-left: 1px solid #DEDEDE;">浏览量（PV）</th>
+		    				<th>访客数（UV）</th>
+		    				<th>IP数</th>
+		    				<th>跳出率</th>
+		    				<th>平均访问时长</th>
+		    			</tr>
+		    		</thead>
+		    		<tbody>
+		    			<tr>
+		    				<td>百度</td>
+		    				<td>0</td>
+		    				<td>0</td>
+		    				<td>1</td>
+		    				<td>20%</td>
+		    				<td>00:00:14</td>
+		    			</tr>
+		    		</tbody>
+		    	</table>
+		    </div>
+        </div>
 </div>
 </div>
 </div>
@@ -371,7 +516,6 @@
 <script type="text/javascript" src="../../js/common-js/common.js"></script>	
 <script type="text/javascript" src="../../js/echarts.js"></script>
 <script type="text/javascript" src="../../js/echarts.common.min.js"></script>
-<script type="text/javascript" src="../../js/subpage-js/Flow_analysis.js"></script>
 <script type="text/javascript">
 	    // 路径配置
     require.config({
@@ -516,7 +660,7 @@
 				    xAxis : [
 				        {
 				            type : 'category',
-				            data : ['计算机终端', '移动端浏览器'],
+				            data : ['计算机端浏览器', '移动端浏览器'],
 				            axisTick: {
 				                alignWithLabel: true
 				            },
@@ -551,6 +695,88 @@
 
                 // 为echarts对象加载数据
                 myChart_map2.setOption(option_bin);
+            });
+</script>
+<script type="text/javascript">
+		    // 路径配置
+    require.config({
+        paths: {
+            echarts: 'http://echarts.baidu.com/build/dist'
+        }
+    });
+    // 使用
+    require(
+            [
+                'echarts',
+                'echarts/chart/bar', // 使用柱状图就加载bar模块，按需加载
+                'echarts/chart/map', // 使用柱状图就加载bar模块，按需加载
+                'echarts/chart/pie'
+            ],
+            function (ec) {
+                // 基于准备好的dom，初始化echarts图表
+                var myChart_map3 = ec.init(document.getElementById('main_map3'));
+
+                var itemStyle = {
+                    normal:{label:{
+                        show:true,
+                        formatter:'{b}',
+                        textStyle: {fontSize: 10,fontWeight : 'bold'}
+                    }},
+                    emphasis:{label:{show:true}}
+                };
+                var option_bin = {
+				    color: ['#3398DB'],
+				    tooltip : {
+				        trigger: 'axis',
+				        axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+				            type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+				        }
+				    },
+				    grid: {
+				        left: '3%',
+				        right: '4%',
+				        bottom: '3%',
+				        containLabel: true
+				    },
+				    xAxis : [
+				        {
+				            type : 'category',
+				            data : ['计算机', '移动设备'],
+				            axisTick: {
+				                alignWithLabel: true
+				            },
+				             axisLine:{  
+                                lineStyle:{  
+                                    color:'#cccccc',  
+                                    width:0.1,//这里是为了突出显示加上的  
+                                }  
+                            }  
+				        }
+				    ],
+				    yAxis : [
+				        {
+				            type : 'value',
+				            axisLine:{  
+                                lineStyle:{  
+                                    color:'#cccccc',  
+                                    width:1,//这里是为了突出显示加上的  
+                                }  
+                            }  
+				        }
+				        
+				    ],
+				    series : [
+				        {
+				            name:'直接访问',
+				            type:'bar',
+				            barWidth: '10',
+				            data:[10, 52]
+				        }
+				    ]
+				};
+
+                // 为echarts对象加载数据
+                myChart_map3.setOption(option_bin);
             });
 </script>
 </html>
