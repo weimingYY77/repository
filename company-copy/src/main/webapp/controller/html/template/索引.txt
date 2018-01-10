@@ -23,3 +23,5 @@ source_searchword.html   统计- 来源分析-搜索词
 Access-analysis.html - 统计- 访问分析
 
 Guest.html 统计- 访客分析
+
+ranking.html 统计-搜索排名
