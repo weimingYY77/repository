@@ -467,11 +467,96 @@
 .old_new .person i{
 	font-style: normal;	
 }
+/* 访问来源网站 */
 .Source-website{
-	padding: 35px 60px;
+	padding: 35px 5%;
+    width: 90%;
+}
+.Source-website p{
+    font-size: 18px;
+    padding-left: 10%;
+}
+.Source-website .blue{
+    color: #00AEEF;
+}
+.Source-website .gray{
+    color: #8F8D8D;
+}
+.website_one,.website_two{
+    display: inline-block;
+    width: 50%;
+}
+.website_one{
+    float: left;
+}
+.website_two{
+    float: right;
+}
+.Source-website .web{
+    width: 93%;
+    padding-left: 7%;
+    margin-top: 15px;
+    text-align: center;
+}
+.Source-website .web td{
+   border-bottom: 1px solid #e1e1e1;
+   height: 35px;
+}
+.Source-website .web tr td:last-child,.Source-website .web tr td:first-child{
+    width: 20%;
+}
+.Source-website .web tr td:nth-child(2){
+   text-align: left;
+}
+.Source-website .web tr.blue_bg{
+   background: rgba(0,174,239,0.3);
+   color: #A3A3A3;
+}
+.Source-website .web tr.gray_bg{
+   background: rgba(143,141,141,0.3);
+   color: #A3A3A3;
+}
+.Source-website .web tr.btm_line td{
+    border-bottom: 2px solid #e1e1e1;
+}
+/* 访客表 */
+.source_table{
+    margin-top: 20px;
+    width: 100%;
+    border:1px solid #d7d7d8;
+    color: #646464;
+    border-right: none;
+    border-left: none; 
+    padding-bottom: 70px;
+}
+.source_table th{
+   background: #F4F4F4;
+   font-weight: normal;
+   border-left:1px solid #DEDEDE; 
+   border-bottom:1px solid #DEDEDE;
+   height: 47px;
+   width: 14%;
+}
+.source_table td{
+    border:1px solid #d7d7d8;
+    text-align: center; 
+    height: 37px;
+    border-right: none;
+    border-top: none;
+    width: 14%;
+}
+.source_table td:first-child{
+    border-left: none;
+    width: 30%;
+}
+.source_table th:first-child{
+    border-left: none;
+}
+.source_table tbody>tr:first-child td{
+    border-top: none;
 }
 
-
+/* 响应式 */
 @media screen and (max-width: 1600px) {
 	#main_map2,#main_map3{
 		width: 1100px;
