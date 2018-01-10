@@ -339,3 +339,14 @@
    padding:0; 
    background:#ebeef2;
 }
+/* 图表响应式 */
+@media screen and (max-width: 1600px) {
+    #earch2{
+            width: 1100px;
+        }
+}
+@media screen and (max-width: 1366px) {
+    #earch2{
+            width: 900px;
+        }
+}
