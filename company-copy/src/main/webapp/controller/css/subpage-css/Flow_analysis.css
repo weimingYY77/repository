@@ -1,5 +1,6 @@
 .pad{
     margin-left: 26%;
+    margin-top: 0;
 }
 /* 实时访客 */
 .main_right1,.main_btn{
@@ -157,19 +158,19 @@
     width: 25%;
 }
 .main_btn .visit>div>span.access>span{
-    margin-right: 35px;
+    margin-right: 20px;
 }
 .main_btn .visit>div>span.source{
    width: 10%;
 }
 .main_btn .visit>div>span.enter{
-   width: 49%;
+   width: 44%;
 }
 .main_btn .visit>div>span.word{
    width: 8%;
 }
 .main_btn .visit>div>span.duration{
-  width: 8%;
+  width: 13%;
 }
 .main_btn .visit>div>span.link_color{
     color: #69B5FA;
@@ -329,5 +330,8 @@
 @media screen and (max-width: 1366px) {
     #earch2{
             width: 900px;
+        }
+    .drop3 .sea_list>label {
+    padding-left: 0%;
         }
 }

@@ -132,6 +132,8 @@
     padding-left: 7px;
     padding-right: 30px;
     color: #a3a3a3;
+    outline: none;
+    border:1px solid #dedede; 
 }
 .search_block .magnifier{
     display: inline-block;
