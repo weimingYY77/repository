@@ -26,6 +26,8 @@ $(function(){
 	hour[22] = 0;
 	hour[23] = 0;
 	
+	var max = 2;
+	
 	var myDate = new Date();
 	var y = myDate.getFullYear();
 	var m = myDate.getMonth()+1;
@@ -297,124 +299,211 @@ function first(){
 					var myDate = new Date();
 					var HH = parseInt(myDate.getHours());
 					var ss = parseInt(myDate.getHours());
+					if($("#temp1").val()==1){
+						var HH = 23;
+						var ss = 23;
+					}
+					if(HH==24){
+						var HH = 23;
+						var ss = 23;
+						for(var a = 0; a <= HH; a++){
+							hour[a] = data.data.body.data[0].result.items[1][ss][0];
+							if(max<hour[a]){
+								max=hour[a];
+							}
+							ss--;
+						}
+					}
 					if(HH==0){
 						for(var a = 0; a <= HH; a++){
-							hour[a] = data.data.body.data[0].result.items[1][ss];
+							hour[a] = data.data.body.data[0].result.items[1][ss][0];
+							if(max<hour[a]){
+								max=hour[a];
+							}
 							ss--;
 						}
 					}else if(HH==1){
 						for(var a = 0; a <= HH; a++){
-							hour[a] = data.data.body.data[0].result.items[1][ss];
+							hour[a] = data.data.body.data[0].result.items[1][ss][0];
+							if(max<hour[a]){
+								max=hour[a];
+							}
 							ss--;
 						}
 					}else if(HH==2){
 						for(var a = 0; a <= HH; a++){
-							hour[a] = data.data.body.data[0].result.items[1][ss];
+							hour[a] = data.data.body.data[0].result.items[1][ss][0];
+							if(max<hour[a]){
+								max=hour[a];
+							}
 							ss--;
 						}
 					}else if(HH==3){
 						for(var a = 0; a <= HH; a++){
-							hour[a] = data.data.body.data[0].result.items[1][ss];
+							hour[a] = data.data.body.data[0].result.items[1][ss][0];
+							if(max<hour[a]){
+								max=hour[a];
+							}
 							ss--;
 						}
 					}else if(HH==4){
 						for(var a = 0; a <= HH; a++){
-							hour[a] = data.data.body.data[0].result.items[1][ss];
+							hour[a] = data.data.body.data[0].result.items[1][ss][0];
+							if(max<hour[a]){
+								max=hour[a];
+							}
 							ss--;
 						}
 					}else if(HH==5){
 						for(var a = 0; a <= HH; a++){
-							hour[a] = data.data.body.data[0].result.items[1][ss];
+							hour[a] = data.data.body.data[0].result.items[1][ss][0];
+							if(max<hour[a]){
+								max=hour[a];
+							}
 							ss--;
 						}
 					}else if(HH==6){
 						for(var a = 0; a <= HH; a++){
-							hour[a] = data.data.body.data[0].result.items[1][ss];
+							hour[a] = data.data.body.data[0].result.items[1][ss][0];
+							if(max<hour[a]){
+								max=hour[a];
+							}
 							ss--;
 						}
 					}else if(HH==7){
 						for(var a = 0; a <= HH; a++){
-							hour[a] = data.data.body.data[0].result.items[1][ss];
+							hour[a] = data.data.body.data[0].result.items[1][ss][0];
+							if(max<hour[a]){
+								max=hour[a];
+							}
 							ss--;
 						}
 					}else if(HH==8){
 						for(var a = 0; a <= HH; a++){
-							hour[a] = data.data.body.data[0].result.items[1][ss];
+							hour[a] = data.data.body.data[0].result.items[1][ss][0];
+							if(max<hour[a]){
+								max=hour[a];
+							}
 							ss--;
 						}
 					}else if(HH==9){
 						for(var a = 0; a <= HH; a++){
-							hour[a] = data.data.body.data[0].result.items[1][ss];
+							hour[a] = data.data.body.data[0].result.items[1][ss][0];
+							if(max<hour[a]){
+								max=hour[a];
+							}
 							ss--;
 						}
 					}else if(HH==10){
 						for(var a = 0; a <= HH; a++){
-							hour[a] = data.data.body.data[0].result.items[1][ss];
+							hour[a] = data.data.body.data[0].result.items[1][ss][0];
+							if(max<hour[a]){
+								max=hour[a];
+							}
 							ss--;
 						}
 					}else if(HH==11){
 						for(var a = 0; a <= HH; a++){
-							hour[a] = data.data.body.data[0].result.items[1][ss];
+							hour[a] = data.data.body.data[0].result.items[1][ss][0];
+							if(max<hour[a]){
+								max=hour[a];
+							}
 							ss--;
 						}
 					}else if(HH==12){
 						for(var a = 0; a <= HH; a++){
-							hour[a] = data.data.body.data[0].result.items[1][ss];
+							hour[a] = data.data.body.data[0].result.items[1][ss][0];
+							if(max<hour[a]){
+								max=hour[a];
+							}
 							ss--;
 						}
 					}else if(HH==13){
 						for(var a = 0; a <= HH; a++){
-							hour[a] = data.data.body.data[0].result.items[1][ss];
+							hour[a] = data.data.body.data[0].result.items[1][ss][0];
+							if(max<hour[a]){
+								max=hour[a];
+							}
 							ss--;
 						}
 					}else if(HH==14){
 						for(var a = 0; a <= HH; a++){
-							hour[a] = data.data.body.data[0].result.items[1][ss];
+							hour[a] = data.data.body.data[0].result.items[1][ss][0];
+							if(max<hour[a]){
+								max=hour[a];
+							}
 							ss--;
 						}
 					}else if(HH==15){
 						for(var a = 0; a <= HH; a++){
-							hour[a] = data.data.body.data[0].result.items[1][ss];
+							hour[a] = data.data.body.data[0].result.items[1][ss][0];
+							if(max<hour[a]){
+								max=hour[a];
+							}
 							ss--;
 						}
 					}else if(HH==16){
 						for(var a = 0; a <= HH; a++){
-							hour[a] = data.data.body.data[0].result.items[1][ss];
+							hour[a] = data.data.body.data[0].result.items[1][ss][0];
+							if(max<hour[a]){
+								max=hour[a];
+							}
 							ss--;
 						}
 					}else if(HH==17){
 						for(var a = 0; a <= HH; a++){
-							hour[a] = data.data.body.data[0].result.items[1][ss];
+							hour[a] = data.data.body.data[0].result.items[1][ss][0];
+							if(max<hour[a]){
+								max=hour[a];
+							}
 							ss--;
 						}
 					}else if(HH==18){
 						for(var a = 0; a <= HH; a++){
-							hour[a] = data.data.body.data[0].result.items[1][ss];
+							hour[a] = data.data.body.data[0].result.items[1][ss][0];
+							if(max<hour[a]){
+								max=hour[a];
+							}
 							ss--;
 						}
 					}else if(HH==19){
 						for(var a = 0; a <= HH; a++){
-							hour[a] = data.data.body.data[0].result.items[1][ss];
+							hour[a] = data.data.body.data[0].result.items[1][ss][0];
+							if(max<hour[a]){
+								max=hour[a];
+							}
 							ss--;
 						}
 					}else if(HH==20){
 						for(var a = 0; a <= HH; a++){
-							hour[a] = data.data.body.data[0].result.items[1][ss];
+							hour[a] = data.data.body.data[0].result.items[1][ss][0];
+							if(max<hour[a]){
+								max=hour[a];
+							}
 							ss--;
 						}
 					}else if(HH==21){
 						for(var a = 0; a <= HH; a++){
-							hour[a] = data.data.body.data[0].result.items[1][ss];
+							hour[a] = data.data.body.data[0].result.items[1][ss][0];
+							if(max<hour[a]){
+								max=hour[a];
+							}
 							ss--;
 						}
 					}else if(HH==22){
 						for(var a = 0; a <= HH; a++){
-							hour[a] = data.data.body.data[0].result.items[1][ss];
+							hour[a] = data.data.body.data[0].result.items[1][ss][0];
+							if(max<hour[a]){
+								max=hour[a];
+							}
 							ss--;
 						}
 					}else if(HH==23){
 						for(var a = 0; a <= HH; a++){
-							hour[a] = data.data.body.data[0].result.items[1][ss];
+							hour[a] = data.data.body.data[0].result.items[1][ss][0];
+							if(max<hour[a]){
+								max=hour[a];
+							}
 							ss--;
 						}
 					}
@@ -491,36 +580,86 @@ function first(){
 					if(hour[23]=='--'){
 						hour[23] = 0;
 					}
-					$("#zero").val(hour[0]);
-					$("#one").val(hour[1]);
-					$("#two").val(hour[2]);
-					$("#three").val(hour[3]);
-					$("#four").val(hour[4]);
-					$("#five").val(hour[5]);
-					$("#six").val(hour[6]);
-					$("#seven").val(hour[7]);
-					$("#eight").val(hour[8]);
-					$("#nine").val(hour[9]);
-					$("#ten").val(hour[10]);
-					$("#eleven").val(hour[11]);
-					$("#twelve").val(hour[12]);
-					$("#thirteen").val(hour[13]);
-					$("#fourteen").val(hour[14]);
-					$("#fifteen").val(hour[15]);
-					$("#sixteen").val(hour[16]);
-					$("#seventeen").val(hour[17]);
-					$("#eighteen").val(hour[18]);
-					$("#nineteen").val(hour[19]);
-					$("#twenty").val(hour[20]);
-					$("#twenty-one").val(hour[21]);
-					$("#twenty-two").val(hour[22]);
-					$("#twenty-three").val(hour[23]);
+				
 				}
 			},
 			error : function(request) {
 				alert("Connection error");
 			},
 		});
+		
+		require.config({
+	        paths: {
+	            echarts: 'http://echarts.baidu.com/build/dist'
+	        }
+	    });
+	    // 使用
+	    require(
+	            [
+	                'echarts',
+	                'echarts/chart/bar', // 使用柱状图就加载bar模块，按需加载
+	                'echarts/chart/map', // 使用柱状图就加载bar模块，按需加载
+	                'echarts/chart/pie'
+	            ],
+	            function (ec) {
+	                // 基于准备好的dom，初始化echarts图表
+						    var myChart2 = echarts.init(document.getElementById('earch2'));
+						    // option 里面的内容基本涵盖你要画的图表的所有内容
+						    var option_qushi = {
+						    tooltip : {
+						        trigger: 'axis'
+						    },
+						    legend: {
+						       x: 'center',
+						       y:'bottom',
+						       data:["访问次数"]
+						   },
+						    calculable : true,
+						        xAxis: [{
+						            axisLabel: {
+						                interval: 0
+						            },
+						            axisLine: {
+						
+						                lineStyle: {
+						                    color: '#4FA8F9'
+						                    
+						                }
+						            },
+						            type: 'category',
+						            boundaryGap: false,
+						            data:[0,'',2,'',4,'',6,'',8,'',10,'',12,'',14,'',16,'',18,'',20,'',22,'',],
+						            axisLabel:{
+						                 //X轴刻度配置
+						                 interval:0 //0：表示全部显示不间隔；auto:表示自动根据刻度个数和宽度自动设置间隔个数
+						            }
+						        }],
+						        yAxis: [{
+						            min:0,
+						            max:max,
+						            type: 'value',
+						            axisLine: {
+						                lineStyle: {
+						                    width: 0
+						                }
+						            },
+						            axisTick:{
+						               show:false
+						             }
+						        }],
+						        series: [{
+						            name: '访问次数',
+						            type: 'line',
+						            symbol:'circle',/*折点样式*/
+						            symbolSize: 5,
+						             color: ['#4FA8F9'],
+						            data: [hour[0],hour[1],hour[2],hour[3],hour[4],hour[5],hour[6],hour[7],hour[8],hour[9],hour[10],hour[11],hour[12],hour[13],hour[14],hour[15],hour[16],hour[17],hour[18],hour[19],hour[20],hour[21],hour[22],hour[23]]
+						        }]
+						    };  
+	    			                // 为echarts对象加载数据
+				        myChart2.setOption(option_qushi);
+				            }
+				    );
 }
 	//用户
 	 var userName = window.sessionStorage.getItem("userName");
@@ -551,6 +690,32 @@ function first(){
 	 
 	 //今天
 	 $("#today").click(function(){
+		 var hour=new Array();
+			hour[0] = 0;
+			hour[1] = 0;
+			hour[2] = 0;
+			hour[3] = 0;
+			hour[4] = 0;
+			hour[5] = 0;
+			hour[6] = 0;
+			hour[7] = 0;
+			hour[8] = 0;
+			hour[9] = 0;
+			hour[10] = 0;
+			hour[11] = 0;
+			hour[12] = 0;
+			hour[13] = 0;
+			hour[14] = 0;
+			hour[15] = 0;
+			hour[16] = 0;
+			hour[17] = 0;
+			hour[18] = 0;
+			hour[19] = 0;
+			hour[20] = 0;
+			hour[21] = 0;
+			hour[22] = 0;
+			hour[23] = 0;
+			var max = 2;
 		 $("#trend").empty();
 		 $("#temp1").val(0);
 		 if($("#temp2").val()==0&&$("#temp3").val()==0&&$("#temp4").val()==0){
@@ -869,124 +1034,211 @@ function first(){
 						var myDate = new Date();
 						var HH = parseInt(myDate.getHours());
 						var ss = parseInt(myDate.getHours());
+						if($("#temp1").val()==1){
+							var HH = 23;
+							var ss = 23;
+						}
+						if(HH==24){
+							var HH = 23;
+							var ss = 23;
+							for(var a = 0; a <= HH; a++){
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
+								ss--;
+							}
+						}
 						if(HH==0){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==1){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==2){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==3){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==4){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==5){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==6){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==7){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==8){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==9){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==10){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==11){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==12){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==13){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==14){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==15){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==16){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==17){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==18){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==19){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==20){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==21){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==22){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==23){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}
@@ -1063,40 +1315,115 @@ function first(){
 						if(hour[23]=='--'){
 							hour[23] = 0;
 						}
-						$("#zero").val(hour[0]);
-						$("#one").val(hour[1]);
-						$("#two").val(hour[2]);
-						$("#three").val(hour[3]);
-						$("#four").val(hour[4]);
-						$("#five").val(hour[5]);
-						$("#six").val(hour[6]);
-						$("#seven").val(hour[7]);
-						$("#eight").val(hour[8]);
-						$("#nine").val(hour[9]);
-						$("#ten").val(hour[10]);
-						$("#eleven").val(hour[11]);
-						$("#twelve").val(hour[12]);
-						$("#thirteen").val(hour[13]);
-						$("#fourteen").val(hour[14]);
-						$("#fifteen").val(hour[15]);
-						$("#sixteen").val(hour[16]);
-						$("#seventeen").val(hour[17]);
-						$("#eighteen").val(hour[18]);
-						$("#nineteen").val(hour[19]);
-						$("#twenty").val(hour[20]);
-						$("#twenty-one").val(hour[21]);
-						$("#twenty-two").val(hour[22]);
-						$("#twenty-three").val(hour[23]);
 					}
 				},
 				error : function(request) {
 					alert("Connection error");
 				},
 			});
+			
+			require.config({
+		        paths: {
+		            echarts: 'http://echarts.baidu.com/build/dist'
+		        }
+		    });
+		    // 使用
+		    require(
+		            [
+		                'echarts',
+		                'echarts/chart/bar', // 使用柱状图就加载bar模块，按需加载
+		                'echarts/chart/map', // 使用柱状图就加载bar模块，按需加载
+		                'echarts/chart/pie'
+		            ],
+		            function (ec) {
+		                // 基于准备好的dom，初始化echarts图表
+							    var myChart2 = echarts.init(document.getElementById('earch2'));
+							    // option 里面的内容基本涵盖你要画的图表的所有内容
+							    var option_qushi = {
+							    tooltip : {
+							        trigger: 'axis'
+							    },
+							    legend: {
+							       x: 'center',
+							       y:'bottom',
+							       data:["访问次数"]
+							   },
+							    calculable : true,
+							        xAxis: [{
+							            axisLabel: {
+							                interval: 0
+							            },
+							            axisLine: {
+							
+							                lineStyle: {
+							                    color: '#4FA8F9'
+							                    
+							                }
+							            },
+							            type: 'category',
+							            boundaryGap: false,
+							            data:[0,'',2,'',4,'',6,'',8,'',10,'',12,'',14,'',16,'',18,'',20,'',22,'',],
+							            axisLabel:{
+							                 //X轴刻度配置
+							                 interval:0 //0：表示全部显示不间隔；auto:表示自动根据刻度个数和宽度自动设置间隔个数
+							            }
+							        }],
+							        yAxis: [{
+							            min:0,
+							            max:max,
+							            type: 'value',
+							            axisLine: {
+							                lineStyle: {
+							                    width: 0
+							                }
+							            },
+							            axisTick:{
+							               show:false
+							             }
+							        }],
+							        series: [{
+							            name: '访问次数',
+							            type: 'line',
+							            symbol:'circle',/*折点样式*/
+							            symbolSize: 5,
+							             color: ['#4FA8F9'],
+							            data: [hour[0],hour[1],hour[2],hour[3],hour[4],hour[5],hour[6],hour[7],hour[8],hour[9],hour[10],hour[11],hour[12],hour[13],hour[14],hour[15],hour[16],hour[17],hour[18],hour[19],hour[20],hour[21],hour[22],hour[23]]
+							        }]
+							    };  
+		    			                // 为echarts对象加载数据
+					        myChart2.setOption(option_qushi);
+					            }
+					    );
 	 });
 	 
 	 //昨天
 	 $("#yesterday").click(function(){
+		 var hour=new Array();
+			hour[0] = 0;
+			hour[1] = 0;
+			hour[2] = 0;
+			hour[3] = 0;
+			hour[4] = 0;
+			hour[5] = 0;
+			hour[6] = 0;
+			hour[7] = 0;
+			hour[8] = 0;
+			hour[9] = 0;
+			hour[10] = 0;
+			hour[11] = 0;
+			hour[12] = 0;
+			hour[13] = 0;
+			hour[14] = 0;
+			hour[15] = 0;
+			hour[16] = 0;
+			hour[17] = 0;
+			hour[18] = 0;
+			hour[19] = 0;
+			hour[20] = 0;
+			hour[21] = 0;
+			hour[22] = 0;
+			hour[23] = 0;
+			var max = 2;
 		 $("#trend").empty();
 		 $("#temp1").val(1);
 		 if($("#temp2").val()==0&&$("#temp3").val()==0&&$("#temp4").val()==0){
@@ -1439,11 +1766,216 @@ function first(){
 					if (data.code==0010) {
 						alert(data.msg);
 					}else if(data.code==0000){
-						var HH = 23;
-						var ss = 23;
-						for(var a = 0; a <= HH; a++){
-							hour[a] = data.data.body.data[0].result.items[1][ss];
-							ss--;
+						var myDate = new Date();
+						var HH = parseInt(myDate.getHours());
+						var ss = parseInt(myDate.getHours());
+						if($("#temp1").val()==1){
+							var HH = 23;
+							var ss = 23;
+						}
+						if(HH==24){
+							var HH = 23;
+							var ss = 23;
+							for(var a = 0; a <= HH; a++){
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
+								ss--;
+							}
+						}
+						if(HH==0){
+							for(var a = 0; a <= HH; a++){
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
+								ss--;
+							}
+						}else if(HH==1){
+							for(var a = 0; a <= HH; a++){
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
+								ss--;
+							}
+						}else if(HH==2){
+							for(var a = 0; a <= HH; a++){
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
+								ss--;
+							}
+						}else if(HH==3){
+							for(var a = 0; a <= HH; a++){
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
+								ss--;
+							}
+						}else if(HH==4){
+							for(var a = 0; a <= HH; a++){
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
+								ss--;
+							}
+						}else if(HH==5){
+							for(var a = 0; a <= HH; a++){
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
+								ss--;
+							}
+						}else if(HH==6){
+							for(var a = 0; a <= HH; a++){
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
+								ss--;
+							}
+						}else if(HH==7){
+							for(var a = 0; a <= HH; a++){
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
+								ss--;
+							}
+						}else if(HH==8){
+							for(var a = 0; a <= HH; a++){
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
+								ss--;
+							}
+						}else if(HH==9){
+							for(var a = 0; a <= HH; a++){
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
+								ss--;
+							}
+						}else if(HH==10){
+							for(var a = 0; a <= HH; a++){
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
+								ss--;
+							}
+						}else if(HH==11){
+							for(var a = 0; a <= HH; a++){
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
+								ss--;
+							}
+						}else if(HH==12){
+							for(var a = 0; a <= HH; a++){
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
+								ss--;
+							}
+						}else if(HH==13){
+							for(var a = 0; a <= HH; a++){
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
+								ss--;
+							}
+						}else if(HH==14){
+							for(var a = 0; a <= HH; a++){
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
+								ss--;
+							}
+						}else if(HH==15){
+							for(var a = 0; a <= HH; a++){
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
+								ss--;
+							}
+						}else if(HH==16){
+							for(var a = 0; a <= HH; a++){
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
+								ss--;
+							}
+						}else if(HH==17){
+							for(var a = 0; a <= HH; a++){
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
+								ss--;
+							}
+						}else if(HH==18){
+							for(var a = 0; a <= HH; a++){
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
+								ss--;
+							}
+						}else if(HH==19){
+							for(var a = 0; a <= HH; a++){
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
+								ss--;
+							}
+						}else if(HH==20){
+							for(var a = 0; a <= HH; a++){
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
+								ss--;
+							}
+						}else if(HH==21){
+							for(var a = 0; a <= HH; a++){
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
+								ss--;
+							}
+						}else if(HH==22){
+							for(var a = 0; a <= HH; a++){
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
+								ss--;
+							}
+						}else if(HH==23){
+							for(var a = 0; a <= HH; a++){
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
+								ss--;
+							}
 						}
 						
 						if(hour[0]=='--'){
@@ -1518,40 +2050,115 @@ function first(){
 						if(hour[23]=='--'){
 							hour[23] = 0;
 						}
-						$("#zero").val(hour[0]);
-						$("#one").val(hour[1]);
-						$("#two").val(hour[2]);
-						$("#three").val(hour[3]);
-						$("#four").val(hour[4]);
-						$("#five").val(hour[5]);
-						$("#six").val(hour[6]);
-						$("#seven").val(hour[7]);
-						$("#eight").val(hour[8]);
-						$("#nine").val(hour[9]);
-						$("#ten").val(hour[10]);
-						$("#eleven").val(hour[11]);
-						$("#twelve").val(hour[12]);
-						$("#thirteen").val(hour[13]);
-						$("#fourteen").val(hour[14]);
-						$("#fifteen").val(hour[15]);
-						$("#sixteen").val(hour[16]);
-						$("#seventeen").val(hour[17]);
-						$("#eighteen").val(hour[18]);
-						$("#nineteen").val(hour[19]);
-						$("#twenty").val(hour[20]);
-						$("#twenty-one").val(hour[21]);
-						$("#twenty-two").val(hour[22]);
-						$("#twenty-three").val(hour[23]);
 					}
 				},
 				error : function(request) {
 					alert("Connection error");
 				},
 			});
+			
+			require.config({
+		        paths: {
+		            echarts: 'http://echarts.baidu.com/build/dist'
+		        }
+		    });
+		    // 使用
+		    require(
+		            [
+		                'echarts',
+		                'echarts/chart/bar', // 使用柱状图就加载bar模块，按需加载
+		                'echarts/chart/map', // 使用柱状图就加载bar模块，按需加载
+		                'echarts/chart/pie'
+		            ],
+		            function (ec) {
+		                // 基于准备好的dom，初始化echarts图表
+							    var myChart2 = echarts.init(document.getElementById('earch2'));
+							    // option 里面的内容基本涵盖你要画的图表的所有内容
+							    var option_qushi = {
+							    tooltip : {
+							        trigger: 'axis'
+							    },
+							    legend: {
+							       x: 'center',
+							       y:'bottom',
+							       data:["访问次数"]
+							   },
+							    calculable : true,
+							        xAxis: [{
+							            axisLabel: {
+							                interval: 0
+							            },
+							            axisLine: {
+							
+							                lineStyle: {
+							                    color: '#4FA8F9'
+							                    
+							                }
+							            },
+							            type: 'category',
+							            boundaryGap: false,
+							            data:[0,'',2,'',4,'',6,'',8,'',10,'',12,'',14,'',16,'',18,'',20,'',22,'',],
+							            axisLabel:{
+							                 //X轴刻度配置
+							                 interval:0 //0：表示全部显示不间隔；auto:表示自动根据刻度个数和宽度自动设置间隔个数
+							            }
+							        }],
+							        yAxis: [{
+							            min:0,
+							            max:max,
+							            type: 'value',
+							            axisLine: {
+							                lineStyle: {
+							                    width: 0
+							                }
+							            },
+							            axisTick:{
+							               show:false
+							             }
+							        }],
+							        series: [{
+							            name: '访问次数',
+							            type: 'line',
+							            symbol:'circle',/*折点样式*/
+							            symbolSize: 5,
+							             color: ['#4FA8F9'],
+							            data: [hour[0],hour[1],hour[2],hour[3],hour[4],hour[5],hour[6],hour[7],hour[8],hour[9],hour[10],hour[11],hour[12],hour[13],hour[14],hour[15],hour[16],hour[17],hour[18],hour[19],hour[20],hour[21],hour[22],hour[23]]
+							        }]
+							    };  
+		    			                // 为echarts对象加载数据
+					        myChart2.setOption(option_qushi);
+					            }
+					    );
 	 });
 	 
 	 //设备
 	 $("#device").click(function(){
+		 var hour=new Array();
+			hour[0] = 0;
+			hour[1] = 0;
+			hour[2] = 0;
+			hour[3] = 0;
+			hour[4] = 0;
+			hour[5] = 0;
+			hour[6] = 0;
+			hour[7] = 0;
+			hour[8] = 0;
+			hour[9] = 0;
+			hour[10] = 0;
+			hour[11] = 0;
+			hour[12] = 0;
+			hour[13] = 0;
+			hour[14] = 0;
+			hour[15] = 0;
+			hour[16] = 0;
+			hour[17] = 0;
+			hour[18] = 0;
+			hour[19] = 0;
+			hour[20] = 0;
+			hour[21] = 0;
+			hour[22] = 0;
+			hour[23] = 0;
+			var max = 2;
 		 $("#trend").empty();
 		 $("#temp2").val(0);
 		 if($("#temp1").val()==0&&$("#temp3").val()==0&&$("#temp4").val()==0){
@@ -2129,124 +2736,211 @@ function first(){
 						var myDate = new Date();
 						var HH = parseInt(myDate.getHours());
 						var ss = parseInt(myDate.getHours());
+						if($("#temp1").val()==1){
+							var HH = 23;
+							var ss = 23;
+						}
+						if(HH==24){
+							var HH = 23;
+							var ss = 23;
+							for(var a = 0; a <= HH; a++){
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
+								ss--;
+							}
+						}
 						if(HH==0){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==1){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==2){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==3){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==4){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==5){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==6){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==7){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==8){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==9){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==10){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==11){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==12){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==13){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==14){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==15){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==16){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==17){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==18){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==19){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==20){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==21){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==22){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==23){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}
@@ -2323,40 +3017,115 @@ function first(){
 						if(hour[23]=='--'){
 							hour[23] = 0;
 						}
-						$("#zero").val(hour[0]);
-						$("#one").val(hour[1]);
-						$("#two").val(hour[2]);
-						$("#three").val(hour[3]);
-						$("#four").val(hour[4]);
-						$("#five").val(hour[5]);
-						$("#six").val(hour[6]);
-						$("#seven").val(hour[7]);
-						$("#eight").val(hour[8]);
-						$("#nine").val(hour[9]);
-						$("#ten").val(hour[10]);
-						$("#eleven").val(hour[11]);
-						$("#twelve").val(hour[12]);
-						$("#thirteen").val(hour[13]);
-						$("#fourteen").val(hour[14]);
-						$("#fifteen").val(hour[15]);
-						$("#sixteen").val(hour[16]);
-						$("#seventeen").val(hour[17]);
-						$("#eighteen").val(hour[18]);
-						$("#nineteen").val(hour[19]);
-						$("#twenty").val(hour[20]);
-						$("#twenty-one").val(hour[21]);
-						$("#twenty-two").val(hour[22]);
-						$("#twenty-three").val(hour[23]);
 					}
 				},
 				error : function(request) {
 					alert("Connection error");
 				},
 			});
+			
+			require.config({
+		        paths: {
+		            echarts: 'http://echarts.baidu.com/build/dist'
+		        }
+		    });
+		    // 使用
+		    require(
+		            [
+		                'echarts',
+		                'echarts/chart/bar', // 使用柱状图就加载bar模块，按需加载
+		                'echarts/chart/map', // 使用柱状图就加载bar模块，按需加载
+		                'echarts/chart/pie'
+		            ],
+		            function (ec) {
+		                // 基于准备好的dom，初始化echarts图表
+							    var myChart2 = echarts.init(document.getElementById('earch2'));
+							    // option 里面的内容基本涵盖你要画的图表的所有内容
+							    var option_qushi = {
+							    tooltip : {
+							        trigger: 'axis'
+							    },
+							    legend: {
+							       x: 'center',
+							       y:'bottom',
+							       data:["访问次数"]
+							   },
+							    calculable : true,
+							        xAxis: [{
+							            axisLabel: {
+							                interval: 0
+							            },
+							            axisLine: {
+							
+							                lineStyle: {
+							                    color: '#4FA8F9'
+							                    
+							                }
+							            },
+							            type: 'category',
+							            boundaryGap: false,
+							            data:[0,'',2,'',4,'',6,'',8,'',10,'',12,'',14,'',16,'',18,'',20,'',22,'',],
+							            axisLabel:{
+							                 //X轴刻度配置
+							                 interval:0 //0：表示全部显示不间隔；auto:表示自动根据刻度个数和宽度自动设置间隔个数
+							            }
+							        }],
+							        yAxis: [{
+							            min:0,
+							            max:max,
+							            type: 'value',
+							            axisLine: {
+							                lineStyle: {
+							                    width: 0
+							                }
+							            },
+							            axisTick:{
+							               show:false
+							             }
+							        }],
+							        series: [{
+							            name: '访问次数',
+							            type: 'line',
+							            symbol:'circle',/*折点样式*/
+							            symbolSize: 5,
+							             color: ['#4FA8F9'],
+							            data: [hour[0],hour[1],hour[2],hour[3],hour[4],hour[5],hour[6],hour[7],hour[8],hour[9],hour[10],hour[11],hour[12],hour[13],hour[14],hour[15],hour[16],hour[17],hour[18],hour[19],hour[20],hour[21],hour[22],hour[23]]
+							        }]
+							    };  
+		    			                // 为echarts对象加载数据
+					        myChart2.setOption(option_qushi);
+					            }
+					    );
 	 });
 	 
 	 //计算机
 	 $("#computer").click(function(){
+		 var hour=new Array();
+			hour[0] = 0;
+			hour[1] = 0;
+			hour[2] = 0;
+			hour[3] = 0;
+			hour[4] = 0;
+			hour[5] = 0;
+			hour[6] = 0;
+			hour[7] = 0;
+			hour[8] = 0;
+			hour[9] = 0;
+			hour[10] = 0;
+			hour[11] = 0;
+			hour[12] = 0;
+			hour[13] = 0;
+			hour[14] = 0;
+			hour[15] = 0;
+			hour[16] = 0;
+			hour[17] = 0;
+			hour[18] = 0;
+			hour[19] = 0;
+			hour[20] = 0;
+			hour[21] = 0;
+			hour[22] = 0;
+			hour[23] = 0;
+			var max = 2;
 		 $("#trend").empty();
 		 $("#temp2").val(1);
 		 if($("#temp1").val()==0&&$("#temp3").val()==0&&$("#temp4").val()==0){
@@ -2957,124 +3726,211 @@ function first(){
 						var myDate = new Date();
 						var HH = parseInt(myDate.getHours());
 						var ss = parseInt(myDate.getHours());
+						if($("#temp1").val()==1){
+							var HH = 23;
+							var ss = 23;
+						}
+						if(HH==24){
+							var HH = 23;
+							var ss = 23;
+							for(var a = 0; a <= HH; a++){
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
+								ss--;
+							}
+						}
 						if(HH==0){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==1){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==2){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==3){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==4){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==5){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==6){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==7){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==8){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==9){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==10){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==11){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==12){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==13){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==14){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==15){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==16){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==17){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==18){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==19){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==20){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==21){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==22){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==23){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}
@@ -3151,40 +4007,115 @@ function first(){
 						if(hour[23]=='--'){
 							hour[23] = 0;
 						}
-						$("#zero").val(hour[0]);
-						$("#one").val(hour[1]);
-						$("#two").val(hour[2]);
-						$("#three").val(hour[3]);
-						$("#four").val(hour[4]);
-						$("#five").val(hour[5]);
-						$("#six").val(hour[6]);
-						$("#seven").val(hour[7]);
-						$("#eight").val(hour[8]);
-						$("#nine").val(hour[9]);
-						$("#ten").val(hour[10]);
-						$("#eleven").val(hour[11]);
-						$("#twelve").val(hour[12]);
-						$("#thirteen").val(hour[13]);
-						$("#fourteen").val(hour[14]);
-						$("#fifteen").val(hour[15]);
-						$("#sixteen").val(hour[16]);
-						$("#seventeen").val(hour[17]);
-						$("#eighteen").val(hour[18]);
-						$("#nineteen").val(hour[19]);
-						$("#twenty").val(hour[20]);
-						$("#twenty-one").val(hour[21]);
-						$("#twenty-two").val(hour[22]);
-						$("#twenty-three").val(hour[23]);
 					}
 				},
 				error : function(request) {
 					alert("Connection error");
 				},
 			});
+			
+			require.config({
+		        paths: {
+		            echarts: 'http://echarts.baidu.com/build/dist'
+		        }
+		    });
+		    // 使用
+		    require(
+		            [
+		                'echarts',
+		                'echarts/chart/bar', // 使用柱状图就加载bar模块，按需加载
+		                'echarts/chart/map', // 使用柱状图就加载bar模块，按需加载
+		                'echarts/chart/pie'
+		            ],
+		            function (ec) {
+		                // 基于准备好的dom，初始化echarts图表
+							    var myChart2 = echarts.init(document.getElementById('earch2'));
+							    // option 里面的内容基本涵盖你要画的图表的所有内容
+							    var option_qushi = {
+							    tooltip : {
+							        trigger: 'axis'
+							    },
+							    legend: {
+							       x: 'center',
+							       y:'bottom',
+							       data:["访问次数"]
+							   },
+							    calculable : true,
+							        xAxis: [{
+							            axisLabel: {
+							                interval: 0
+							            },
+							            axisLine: {
+							
+							                lineStyle: {
+							                    color: '#4FA8F9'
+							                    
+							                }
+							            },
+							            type: 'category',
+							            boundaryGap: false,
+							            data:[0,'',2,'',4,'',6,'',8,'',10,'',12,'',14,'',16,'',18,'',20,'',22,'',],
+							            axisLabel:{
+							                 //X轴刻度配置
+							                 interval:0 //0：表示全部显示不间隔；auto:表示自动根据刻度个数和宽度自动设置间隔个数
+							            }
+							        }],
+							        yAxis: [{
+							            min:0,
+							            max:max,
+							            type: 'value',
+							            axisLine: {
+							                lineStyle: {
+							                    width: 0
+							                }
+							            },
+							            axisTick:{
+							               show:false
+							             }
+							        }],
+							        series: [{
+							            name: '访问次数',
+							            type: 'line',
+							            symbol:'circle',/*折点样式*/
+							            symbolSize: 5,
+							             color: ['#4FA8F9'],
+							            data: [hour[0],hour[1],hour[2],hour[3],hour[4],hour[5],hour[6],hour[7],hour[8],hour[9],hour[10],hour[11],hour[12],hour[13],hour[14],hour[15],hour[16],hour[17],hour[18],hour[19],hour[20],hour[21],hour[22],hour[23]]
+							        }]
+							    };  
+		    			                // 为echarts对象加载数据
+					        myChart2.setOption(option_qushi);
+					            }
+					    );
 	 });
 	 
 	 //移动设备
 	 $("#Mobile").click(function(){
+		 var hour=new Array();
+			hour[0] = 0;
+			hour[1] = 0;
+			hour[2] = 0;
+			hour[3] = 0;
+			hour[4] = 0;
+			hour[5] = 0;
+			hour[6] = 0;
+			hour[7] = 0;
+			hour[8] = 0;
+			hour[9] = 0;
+			hour[10] = 0;
+			hour[11] = 0;
+			hour[12] = 0;
+			hour[13] = 0;
+			hour[14] = 0;
+			hour[15] = 0;
+			hour[16] = 0;
+			hour[17] = 0;
+			hour[18] = 0;
+			hour[19] = 0;
+			hour[20] = 0;
+			hour[21] = 0;
+			hour[22] = 0;
+			hour[23] = 0;
+			var max = 2;
 		 $("#trend").empty();
 		 $("#temp2").val(2);
 		 if($("#temp1").val()==0&&$("#temp3").val()==0&&$("#temp4").val()==0){
@@ -3785,124 +4716,211 @@ function first(){
 						var myDate = new Date();
 						var HH = parseInt(myDate.getHours());
 						var ss = parseInt(myDate.getHours());
+						if($("#temp1").val()==1){
+							var HH = 23;
+							var ss = 23;
+						}
+						if(HH==24){
+							var HH = 23;
+							var ss = 23;
+							for(var a = 0; a <= HH; a++){
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
+								ss--;
+							}
+						}
 						if(HH==0){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==1){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==2){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==3){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==4){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==5){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==6){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==7){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==8){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==9){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==10){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==11){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==12){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==13){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==14){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==15){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==16){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==17){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==18){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==19){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==20){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==21){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==22){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==23){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}
@@ -3979,40 +4997,115 @@ function first(){
 						if(hour[23]=='--'){
 							hour[23] = 0;
 						}
-						$("#zero").val(hour[0]);
-						$("#one").val(hour[1]);
-						$("#two").val(hour[2]);
-						$("#three").val(hour[3]);
-						$("#four").val(hour[4]);
-						$("#five").val(hour[5]);
-						$("#six").val(hour[6]);
-						$("#seven").val(hour[7]);
-						$("#eight").val(hour[8]);
-						$("#nine").val(hour[9]);
-						$("#ten").val(hour[10]);
-						$("#eleven").val(hour[11]);
-						$("#twelve").val(hour[12]);
-						$("#thirteen").val(hour[13]);
-						$("#fourteen").val(hour[14]);
-						$("#fifteen").val(hour[15]);
-						$("#sixteen").val(hour[16]);
-						$("#seventeen").val(hour[17]);
-						$("#eighteen").val(hour[18]);
-						$("#nineteen").val(hour[19]);
-						$("#twenty").val(hour[20]);
-						$("#twenty-one").val(hour[21]);
-						$("#twenty-two").val(hour[22]);
-						$("#twenty-three").val(hour[23]);
 					}
 				},
 				error : function(request) {
 					alert("Connection error");
 				},
 			});
+			
+			require.config({
+		        paths: {
+		            echarts: 'http://echarts.baidu.com/build/dist'
+		        }
+		    });
+		    // 使用
+		    require(
+		            [
+		                'echarts',
+		                'echarts/chart/bar', // 使用柱状图就加载bar模块，按需加载
+		                'echarts/chart/map', // 使用柱状图就加载bar模块，按需加载
+		                'echarts/chart/pie'
+		            ],
+		            function (ec) {
+		                // 基于准备好的dom，初始化echarts图表
+							    var myChart2 = echarts.init(document.getElementById('earch2'));
+							    // option 里面的内容基本涵盖你要画的图表的所有内容
+							    var option_qushi = {
+							    tooltip : {
+							        trigger: 'axis'
+							    },
+							    legend: {
+							       x: 'center',
+							       y:'bottom',
+							       data:["访问次数"]
+							   },
+							    calculable : true,
+							        xAxis: [{
+							            axisLabel: {
+							                interval: 0
+							            },
+							            axisLine: {
+							
+							                lineStyle: {
+							                    color: '#4FA8F9'
+							                    
+							                }
+							            },
+							            type: 'category',
+							            boundaryGap: false,
+							            data:[0,'',2,'',4,'',6,'',8,'',10,'',12,'',14,'',16,'',18,'',20,'',22,'',],
+							            axisLabel:{
+							                 //X轴刻度配置
+							                 interval:0 //0：表示全部显示不间隔；auto:表示自动根据刻度个数和宽度自动设置间隔个数
+							            }
+							        }],
+							        yAxis: [{
+							            min:0,
+							            max:max,
+							            type: 'value',
+							            axisLine: {
+							                lineStyle: {
+							                    width: 0
+							                }
+							            },
+							            axisTick:{
+							               show:false
+							             }
+							        }],
+							        series: [{
+							            name: '访问次数',
+							            type: 'line',
+							            symbol:'circle',/*折点样式*/
+							            symbolSize: 5,
+							             color: ['#4FA8F9'],
+							            data: [hour[0],hour[1],hour[2],hour[3],hour[4],hour[5],hour[6],hour[7],hour[8],hour[9],hour[10],hour[11],hour[12],hour[13],hour[14],hour[15],hour[16],hour[17],hour[18],hour[19],hour[20],hour[21],hour[22],hour[23]]
+							        }]
+							    };  
+		    			                // 为echarts对象加载数据
+					        myChart2.setOption(option_qushi);
+					            }
+					    );
 	 });
 	 
 	 //访客
 	 $("#visitor").click(function(){
+		 var hour=new Array();
+			hour[0] = 0;
+			hour[1] = 0;
+			hour[2] = 0;
+			hour[3] = 0;
+			hour[4] = 0;
+			hour[5] = 0;
+			hour[6] = 0;
+			hour[7] = 0;
+			hour[8] = 0;
+			hour[9] = 0;
+			hour[10] = 0;
+			hour[11] = 0;
+			hour[12] = 0;
+			hour[13] = 0;
+			hour[14] = 0;
+			hour[15] = 0;
+			hour[16] = 0;
+			hour[17] = 0;
+			hour[18] = 0;
+			hour[19] = 0;
+			hour[20] = 0;
+			hour[21] = 0;
+			hour[22] = 0;
+			hour[23] = 0;
+			var max = 2;
 		 $("#trend").empty();
 		 $("#temp3").val(0);
 		 if($("#temp1").val()==0&&$("#temp2").val()==0&&$("#temp4").val()==0){
@@ -4590,124 +5683,211 @@ function first(){
 						var myDate = new Date();
 						var HH = parseInt(myDate.getHours());
 						var ss = parseInt(myDate.getHours());
+						if($("#temp1").val()==1){
+							var HH = 23;
+							var ss = 23;
+						}
+						if(HH==24){
+							var HH = 23;
+							var ss = 23;
+							for(var a = 0; a <= HH; a++){
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
+								ss--;
+							}
+						}
 						if(HH==0){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==1){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==2){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==3){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==4){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==5){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==6){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==7){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==8){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==9){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==10){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==11){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==12){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==13){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==14){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==15){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==16){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==17){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==18){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==19){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==20){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==21){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==22){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==23){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}
@@ -4784,40 +5964,115 @@ function first(){
 						if(hour[23]=='--'){
 							hour[23] = 0;
 						}
-						$("#zero").val(hour[0]);
-						$("#one").val(hour[1]);
-						$("#two").val(hour[2]);
-						$("#three").val(hour[3]);
-						$("#four").val(hour[4]);
-						$("#five").val(hour[5]);
-						$("#six").val(hour[6]);
-						$("#seven").val(hour[7]);
-						$("#eight").val(hour[8]);
-						$("#nine").val(hour[9]);
-						$("#ten").val(hour[10]);
-						$("#eleven").val(hour[11]);
-						$("#twelve").val(hour[12]);
-						$("#thirteen").val(hour[13]);
-						$("#fourteen").val(hour[14]);
-						$("#fifteen").val(hour[15]);
-						$("#sixteen").val(hour[16]);
-						$("#seventeen").val(hour[17]);
-						$("#eighteen").val(hour[18]);
-						$("#nineteen").val(hour[19]);
-						$("#twenty").val(hour[20]);
-						$("#twenty-one").val(hour[21]);
-						$("#twenty-two").val(hour[22]);
-						$("#twenty-three").val(hour[23]);
 					}
 				},
 				error : function(request) {
 					alert("Connection error");
 				},
 			});
+			
+			require.config({
+		        paths: {
+		            echarts: 'http://echarts.baidu.com/build/dist'
+		        }
+		    });
+		    // 使用
+		    require(
+		            [
+		                'echarts',
+		                'echarts/chart/bar', // 使用柱状图就加载bar模块，按需加载
+		                'echarts/chart/map', // 使用柱状图就加载bar模块，按需加载
+		                'echarts/chart/pie'
+		            ],
+		            function (ec) {
+		                // 基于准备好的dom，初始化echarts图表
+							    var myChart2 = echarts.init(document.getElementById('earch2'));
+							    // option 里面的内容基本涵盖你要画的图表的所有内容
+							    var option_qushi = {
+							    tooltip : {
+							        trigger: 'axis'
+							    },
+							    legend: {
+							       x: 'center',
+							       y:'bottom',
+							       data:["访问次数"]
+							   },
+							    calculable : true,
+							        xAxis: [{
+							            axisLabel: {
+							                interval: 0
+							            },
+							            axisLine: {
+							
+							                lineStyle: {
+							                    color: '#4FA8F9'
+							                    
+							                }
+							            },
+							            type: 'category',
+							            boundaryGap: false,
+							            data:[0,'',2,'',4,'',6,'',8,'',10,'',12,'',14,'',16,'',18,'',20,'',22,'',],
+							            axisLabel:{
+							                 //X轴刻度配置
+							                 interval:0 //0：表示全部显示不间隔；auto:表示自动根据刻度个数和宽度自动设置间隔个数
+							            }
+							        }],
+							        yAxis: [{
+							            min:0,
+							            max:max,
+							            type: 'value',
+							            axisLine: {
+							                lineStyle: {
+							                    width: 0
+							                }
+							            },
+							            axisTick:{
+							               show:false
+							             }
+							        }],
+							        series: [{
+							            name: '访问次数',
+							            type: 'line',
+							            symbol:'circle',/*折点样式*/
+							            symbolSize: 5,
+							             color: ['#4FA8F9'],
+							            data: [hour[0],hour[1],hour[2],hour[3],hour[4],hour[5],hour[6],hour[7],hour[8],hour[9],hour[10],hour[11],hour[12],hour[13],hour[14],hour[15],hour[16],hour[17],hour[18],hour[19],hour[20],hour[21],hour[22],hour[23]]
+							        }]
+							    };  
+		    			                // 为echarts对象加载数据
+					        myChart2.setOption(option_qushi);
+					            }
+					    );
 	 });
 	 
 	 //新访客
 	 $("#newV").click(function(){
+		 var hour=new Array();
+			hour[0] = 0;
+			hour[1] = 0;
+			hour[2] = 0;
+			hour[3] = 0;
+			hour[4] = 0;
+			hour[5] = 0;
+			hour[6] = 0;
+			hour[7] = 0;
+			hour[8] = 0;
+			hour[9] = 0;
+			hour[10] = 0;
+			hour[11] = 0;
+			hour[12] = 0;
+			hour[13] = 0;
+			hour[14] = 0;
+			hour[15] = 0;
+			hour[16] = 0;
+			hour[17] = 0;
+			hour[18] = 0;
+			hour[19] = 0;
+			hour[20] = 0;
+			hour[21] = 0;
+			hour[22] = 0;
+			hour[23] = 0;
+			var max = 2;
 		 $("#trend").empty();
 		 $("#temp3").val(1);
 		 if($("#temp1").val()==0&&$("#temp2").val()==0&&$("#temp4").val()==0){
@@ -5418,124 +6673,211 @@ function first(){
 						var myDate = new Date();
 						var HH = parseInt(myDate.getHours());
 						var ss = parseInt(myDate.getHours());
+						if($("#temp1").val()==1){
+							var HH = 23;
+							var ss = 23;
+						}
+						if(HH==24){
+							var HH = 23;
+							var ss = 23;
+							for(var a = 0; a <= HH; a++){
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
+								ss--;
+							}
+						}
 						if(HH==0){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==1){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==2){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==3){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==4){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==5){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==6){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==7){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==8){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==9){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==10){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==11){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==12){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==13){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==14){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==15){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==16){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==17){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==18){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==19){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==20){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==21){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==22){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==23){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}
@@ -5612,40 +6954,115 @@ function first(){
 						if(hour[23]=='--'){
 							hour[23] = 0;
 						}
-						$("#zero").val(hour[0]);
-						$("#one").val(hour[1]);
-						$("#two").val(hour[2]);
-						$("#three").val(hour[3]);
-						$("#four").val(hour[4]);
-						$("#five").val(hour[5]);
-						$("#six").val(hour[6]);
-						$("#seven").val(hour[7]);
-						$("#eight").val(hour[8]);
-						$("#nine").val(hour[9]);
-						$("#ten").val(hour[10]);
-						$("#eleven").val(hour[11]);
-						$("#twelve").val(hour[12]);
-						$("#thirteen").val(hour[13]);
-						$("#fourteen").val(hour[14]);
-						$("#fifteen").val(hour[15]);
-						$("#sixteen").val(hour[16]);
-						$("#seventeen").val(hour[17]);
-						$("#eighteen").val(hour[18]);
-						$("#nineteen").val(hour[19]);
-						$("#twenty").val(hour[20]);
-						$("#twenty-one").val(hour[21]);
-						$("#twenty-two").val(hour[22]);
-						$("#twenty-three").val(hour[23]);
 					}
 				},
 				error : function(request) {
 					alert("Connection error");
 				},
 			});
+			
+			require.config({
+		        paths: {
+		            echarts: 'http://echarts.baidu.com/build/dist'
+		        }
+		    });
+		    // 使用
+		    require(
+		            [
+		                'echarts',
+		                'echarts/chart/bar', // 使用柱状图就加载bar模块，按需加载
+		                'echarts/chart/map', // 使用柱状图就加载bar模块，按需加载
+		                'echarts/chart/pie'
+		            ],
+		            function (ec) {
+		                // 基于准备好的dom，初始化echarts图表
+							    var myChart2 = echarts.init(document.getElementById('earch2'));
+							    // option 里面的内容基本涵盖你要画的图表的所有内容
+							    var option_qushi = {
+							    tooltip : {
+							        trigger: 'axis'
+							    },
+							    legend: {
+							       x: 'center',
+							       y:'bottom',
+							       data:["访问次数"]
+							   },
+							    calculable : true,
+							        xAxis: [{
+							            axisLabel: {
+							                interval: 0
+							            },
+							            axisLine: {
+							
+							                lineStyle: {
+							                    color: '#4FA8F9'
+							                    
+							                }
+							            },
+							            type: 'category',
+							            boundaryGap: false,
+							            data:[0,'',2,'',4,'',6,'',8,'',10,'',12,'',14,'',16,'',18,'',20,'',22,'',],
+							            axisLabel:{
+							                 //X轴刻度配置
+							                 interval:0 //0：表示全部显示不间隔；auto:表示自动根据刻度个数和宽度自动设置间隔个数
+							            }
+							        }],
+							        yAxis: [{
+							            min:0,
+							            max:max,
+							            type: 'value',
+							            axisLine: {
+							                lineStyle: {
+							                    width: 0
+							                }
+							            },
+							            axisTick:{
+							               show:false
+							             }
+							        }],
+							        series: [{
+							            name: '访问次数',
+							            type: 'line',
+							            symbol:'circle',/*折点样式*/
+							            symbolSize: 5,
+							             color: ['#4FA8F9'],
+							            data: [hour[0],hour[1],hour[2],hour[3],hour[4],hour[5],hour[6],hour[7],hour[8],hour[9],hour[10],hour[11],hour[12],hour[13],hour[14],hour[15],hour[16],hour[17],hour[18],hour[19],hour[20],hour[21],hour[22],hour[23]]
+							        }]
+							    };  
+		    			                // 为echarts对象加载数据
+					        myChart2.setOption(option_qushi);
+					            }
+					    );
 	 });
 	 
 	 //老访客
 	 $("#oldV").click(function(){
+		 var hour=new Array();
+			hour[0] = 0;
+			hour[1] = 0;
+			hour[2] = 0;
+			hour[3] = 0;
+			hour[4] = 0;
+			hour[5] = 0;
+			hour[6] = 0;
+			hour[7] = 0;
+			hour[8] = 0;
+			hour[9] = 0;
+			hour[10] = 0;
+			hour[11] = 0;
+			hour[12] = 0;
+			hour[13] = 0;
+			hour[14] = 0;
+			hour[15] = 0;
+			hour[16] = 0;
+			hour[17] = 0;
+			hour[18] = 0;
+			hour[19] = 0;
+			hour[20] = 0;
+			hour[21] = 0;
+			hour[22] = 0;
+			hour[23] = 0;
+			var max = 2;
 		 $("#trend").empty();
 		 $("#temp3").val(2);
 		 if($("#temp1").val()==0&&$("#temp2").val()==0&&$("#temp4").val()==0){
@@ -6246,124 +7663,211 @@ function first(){
 						var myDate = new Date();
 						var HH = parseInt(myDate.getHours());
 						var ss = parseInt(myDate.getHours());
+						if($("#temp1").val()==1){
+							var HH = 23;
+							var ss = 23;
+						}
+						if(HH==24){
+							var HH = 23;
+							var ss = 23;
+							for(var a = 0; a <= HH; a++){
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
+								ss--;
+							}
+						}
 						if(HH==0){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==1){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==2){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==3){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==4){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==5){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==6){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==7){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==8){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==9){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==10){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==11){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==12){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==13){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==14){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==15){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==16){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==17){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==18){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==19){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==20){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==21){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==22){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}else if(HH==23){
 							for(var a = 0; a <= HH; a++){
-								hour[a] = data.data.body.data[0].result.items[1][ss];
+								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+								if(max<hour[a]){
+									max=hour[a];
+								}
 								ss--;
 							}
 						}
@@ -6440,36 +7944,85 @@ function first(){
 						if(hour[23]=='--'){
 							hour[23] = 0;
 						}
-						$("#zero").val(hour[0]);
-						$("#one").val(hour[1]);
-						$("#two").val(hour[2]);
-						$("#three").val(hour[3]);
-						$("#four").val(hour[4]);
-						$("#five").val(hour[5]);
-						$("#six").val(hour[6]);
-						$("#seven").val(hour[7]);
-						$("#eight").val(hour[8]);
-						$("#nine").val(hour[9]);
-						$("#ten").val(hour[10]);
-						$("#eleven").val(hour[11]);
-						$("#twelve").val(hour[12]);
-						$("#thirteen").val(hour[13]);
-						$("#fourteen").val(hour[14]);
-						$("#fifteen").val(hour[15]);
-						$("#sixteen").val(hour[16]);
-						$("#seventeen").val(hour[17]);
-						$("#eighteen").val(hour[18]);
-						$("#nineteen").val(hour[19]);
-						$("#twenty").val(hour[20]);
-						$("#twenty-one").val(hour[21]);
-						$("#twenty-two").val(hour[22]);
-						$("#twenty-three").val(hour[23]);
 					}
 				},
 				error : function(request) {
 					alert("Connection error");
 				},
 			});
+			
+			require.config({
+		        paths: {
+		            echarts: 'http://echarts.baidu.com/build/dist'
+		        }
+		    });
+		    // 使用
+		    require(
+		            [
+		                'echarts',
+		                'echarts/chart/bar', // 使用柱状图就加载bar模块，按需加载
+		                'echarts/chart/map', // 使用柱状图就加载bar模块，按需加载
+		                'echarts/chart/pie'
+		            ],
+		            function (ec) {
+		                // 基于准备好的dom，初始化echarts图表
+							    var myChart2 = echarts.init(document.getElementById('earch2'));
+							    // option 里面的内容基本涵盖你要画的图表的所有内容
+							    var option_qushi = {
+							    tooltip : {
+							        trigger: 'axis'
+							    },
+							    legend: {
+							       x: 'center',
+							       y:'bottom',
+							       data:["访问次数"]
+							   },
+							    calculable : true,
+							        xAxis: [{
+							            axisLabel: {
+							                interval: 0
+							            },
+							            axisLine: {
+							
+							                lineStyle: {
+							                    color: '#4FA8F9'
+							                    
+							                }
+							            },
+							            type: 'category',
+							            boundaryGap: false,
+							            data:[0,'',2,'',4,'',6,'',8,'',10,'',12,'',14,'',16,'',18,'',20,'',22,'',],
+							            axisLabel:{
+							                 //X轴刻度配置
+							                 interval:0 //0：表示全部显示不间隔；auto:表示自动根据刻度个数和宽度自动设置间隔个数
+							            }
+							        }],
+							        yAxis: [{
+							            min:0,
+							            max:max,
+							            type: 'value',
+							            axisLine: {
+							                lineStyle: {
+							                    width: 0
+							                }
+							            },
+							            axisTick:{
+							               show:false
+							             }
+							        }],
+							        series: [{
+							            name: '访问次数',
+							            type: 'line',
+							            symbol:'circle',/*折点样式*/
+							            symbolSize: 5,
+							             color: ['#4FA8F9'],
+							            data: [hour[0],hour[1],hour[2],hour[3],hour[4],hour[5],hour[6],hour[7],hour[8],hour[9],hour[10],hour[11],hour[12],hour[13],hour[14],hour[15],hour[16],hour[17],hour[18],hour[19],hour[20],hour[21],hour[22],hour[23]]
+							        }]
+							    };  
+		    			                // 为echarts对象加载数据
+					        myChart2.setOption(option_qushi);
+					            }
+					    );
 	 });
 	 
 	 //来源
@@ -6477,6 +8030,32 @@ function first(){
 		    var opt= $("#source").val();
 		    //全部
 		    if(opt==0){
+		    	var hour=new Array();
+		    	hour[0] = 0;
+		    	hour[1] = 0;
+		    	hour[2] = 0;
+		    	hour[3] = 0;
+		    	hour[4] = 0;
+		    	hour[5] = 0;
+		    	hour[6] = 0;
+		    	hour[7] = 0;
+		    	hour[8] = 0;
+		    	hour[9] = 0;
+		    	hour[10] = 0;
+		    	hour[11] = 0;
+		    	hour[12] = 0;
+		    	hour[13] = 0;
+		    	hour[14] = 0;
+		    	hour[15] = 0;
+		    	hour[16] = 0;
+		    	hour[17] = 0;
+		    	hour[18] = 0;
+		    	hour[19] = 0;
+		    	hour[20] = 0;
+		    	hour[21] = 0;
+		    	hour[22] = 0;
+		    	hour[23] = 0;
+		    	var max = 2;
 	        	 $("#trend").empty();
 	    		 $("#temp4").val(0);
 	    		 if($("#temp1").val()==0&&$("#temp2").val()==0&&$("#temp3").val()==0){
@@ -6960,127 +8539,214 @@ function first(){
 	 						var myDate = new Date();
 	 						var HH = parseInt(myDate.getHours());
 	 						var ss = parseInt(myDate.getHours());
-	 						if(HH==0){
+	 						if($("#temp1").val()==1){
+	 							var HH = 23;
+	 							var ss = 23;
+	 						}
+	 						if(HH==24){
+	 							var HH = 23;
+	 							var ss = 23;
 	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==1){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==2){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==3){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==4){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==5){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==6){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==7){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==8){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==9){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==10){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==11){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==12){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==13){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==14){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==15){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==16){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==17){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==18){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==19){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==20){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==21){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==22){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==23){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
+	 								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+	 								if(max<hour[a]){
+	 									max=hour[a];
+	 								}
 	 								ss--;
 	 							}
 	 						}
+	 						if(HH==0){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==1){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==2){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==3){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==4){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==5){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==6){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==7){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==8){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==9){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==10){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==11){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==12){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==13){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==14){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==15){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==16){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==17){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==18){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==19){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==20){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==21){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==22){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==23){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}
 	 						
 	 						if(hour[0]=='--'){
 	 							hour[0] = 0;
@@ -7154,38 +8820,113 @@ function first(){
 	 						if(hour[23]=='--'){
 	 							hour[23] = 0;
 	 						}
-	 						$("#zero").val(hour[0]);
-	 						$("#one").val(hour[1]);
-	 						$("#two").val(hour[2]);
-	 						$("#three").val(hour[3]);
-	 						$("#four").val(hour[4]);
-	 						$("#five").val(hour[5]);
-	 						$("#six").val(hour[6]);
-	 						$("#seven").val(hour[7]);
-	 						$("#eight").val(hour[8]);
-	 						$("#nine").val(hour[9]);
-	 						$("#ten").val(hour[10]);
-	 						$("#eleven").val(hour[11]);
-	 						$("#twelve").val(hour[12]);
-	 						$("#thirteen").val(hour[13]);
-	 						$("#fourteen").val(hour[14]);
-	 						$("#fifteen").val(hour[15]);
-	 						$("#sixteen").val(hour[16]);
-	 						$("#seventeen").val(hour[17]);
-	 						$("#eighteen").val(hour[18]);
-	 						$("#nineteen").val(hour[19]);
-	 						$("#twenty").val(hour[20]);
-	 						$("#twenty-one").val(hour[21]);
-	 						$("#twenty-two").val(hour[22]);
-	 						$("#twenty-three").val(hour[23]);
 	 					}
 	 				},
 	 				error : function(request) {
 	 					alert("Connection error");
 	 				},
 	 			}); 
+	 			
+				require.config({
+			        paths: {
+			            echarts: 'http://echarts.baidu.com/build/dist'
+			        }
+			    });
+			    // 使用
+			    require(
+			            [
+			                'echarts',
+			                'echarts/chart/bar', // 使用柱状图就加载bar模块，按需加载
+			                'echarts/chart/map', // 使用柱状图就加载bar模块，按需加载
+			                'echarts/chart/pie'
+			            ],
+			            function (ec) {
+			                // 基于准备好的dom，初始化echarts图表
+								    var myChart2 = echarts.init(document.getElementById('earch2'));
+								    // option 里面的内容基本涵盖你要画的图表的所有内容
+								    var option_qushi = {
+								    tooltip : {
+								        trigger: 'axis'
+								    },
+								    legend: {
+								       x: 'center',
+								       y:'bottom',
+								       data:["访问次数"]
+								   },
+								    calculable : true,
+								        xAxis: [{
+								            axisLabel: {
+								                interval: 0
+								            },
+								            axisLine: {
+								
+								                lineStyle: {
+								                    color: '#4FA8F9'
+								                    
+								                }
+								            },
+								            type: 'category',
+								            boundaryGap: false,
+								            data:[0,'',2,'',4,'',6,'',8,'',10,'',12,'',14,'',16,'',18,'',20,'',22,'',],
+								            axisLabel:{
+								                 //X轴刻度配置
+								                 interval:0 //0：表示全部显示不间隔；auto:表示自动根据刻度个数和宽度自动设置间隔个数
+								            }
+								        }],
+								        yAxis: [{
+								            min:0,
+								            max:max,
+								            type: 'value',
+								            axisLine: {
+								                lineStyle: {
+								                    width: 0
+								                }
+								            },
+								            axisTick:{
+								               show:false
+								             }
+								        }],
+								        series: [{
+								            name: '访问次数',
+								            type: 'line',
+								            symbol:'circle',/*折点样式*/
+								            symbolSize: 5,
+								             color: ['#4FA8F9'],
+								            data: [hour[0],hour[1],hour[2],hour[3],hour[4],hour[5],hour[6],hour[7],hour[8],hour[9],hour[10],hour[11],hour[12],hour[13],hour[14],hour[15],hour[16],hour[17],hour[18],hour[19],hour[20],hour[21],hour[22],hour[23]]
+								        }]
+								    };  
+			    			                // 为echarts对象加载数据
+						        myChart2.setOption(option_qushi);
+						            }
+						    );
 	 		//直接访问
 	        }else if(opt==1){
+	        	var hour=new Array();
+	        	hour[0] = 0;
+	        	hour[1] = 0;
+	        	hour[2] = 0;
+	        	hour[3] = 0;
+	        	hour[4] = 0;
+	        	hour[5] = 0;
+	        	hour[6] = 0;
+	        	hour[7] = 0;
+	        	hour[8] = 0;
+	        	hour[9] = 0;
+	        	hour[10] = 0;
+	        	hour[11] = 0;
+	        	hour[12] = 0;
+	        	hour[13] = 0;
+	        	hour[14] = 0;
+	        	hour[15] = 0;
+	        	hour[16] = 0;
+	        	hour[17] = 0;
+	        	hour[18] = 0;
+	        	hour[19] = 0;
+	        	hour[20] = 0;
+	        	hour[21] = 0;
+	        	hour[22] = 0;
+	        	hour[23] = 0;
+	        	var max = 2;
 	        	 $("#trend").empty();
 	    		 $("#temp4").val(1);
 	    		 if($("#temp1").val()==0&&$("#temp2").val()==0&&$("#temp3").val()==0){
@@ -7686,127 +9427,214 @@ function first(){
 	 						var myDate = new Date();
 	 						var HH = parseInt(myDate.getHours());
 	 						var ss = parseInt(myDate.getHours());
-	 						if(HH==0){
+	 						if($("#temp1").val()==1){
+	 							var HH = 23;
+	 							var ss = 23;
+	 						}
+	 						if(HH==24){
+	 							var HH = 23;
+	 							var ss = 23;
 	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==1){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==2){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==3){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==4){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==5){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==6){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==7){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==8){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==9){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==10){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==11){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==12){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==13){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==14){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==15){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==16){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==17){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==18){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==19){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==20){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==21){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==22){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==23){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
+	 								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+	 								if(max<hour[a]){
+	 									max=hour[a];
+	 								}
 	 								ss--;
 	 							}
 	 						}
+	 						if(HH==0){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==1){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==2){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==3){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==4){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==5){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==6){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==7){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==8){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==9){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==10){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==11){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==12){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==13){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==14){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==15){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==16){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==17){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==18){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==19){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==20){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==21){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==22){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==23){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}
 	 						
 	 						if(hour[0]=='--'){
 	 							hour[0] = 0;
@@ -7880,38 +9708,113 @@ function first(){
 	 						if(hour[23]=='--'){
 	 							hour[23] = 0;
 	 						}
-	 						$("#zero").val(hour[0]);
-	 						$("#one").val(hour[1]);
-	 						$("#two").val(hour[2]);
-	 						$("#three").val(hour[3]);
-	 						$("#four").val(hour[4]);
-	 						$("#five").val(hour[5]);
-	 						$("#six").val(hour[6]);
-	 						$("#seven").val(hour[7]);
-	 						$("#eight").val(hour[8]);
-	 						$("#nine").val(hour[9]);
-	 						$("#ten").val(hour[10]);
-	 						$("#eleven").val(hour[11]);
-	 						$("#twelve").val(hour[12]);
-	 						$("#thirteen").val(hour[13]);
-	 						$("#fourteen").val(hour[14]);
-	 						$("#fifteen").val(hour[15]);
-	 						$("#sixteen").val(hour[16]);
-	 						$("#seventeen").val(hour[17]);
-	 						$("#eighteen").val(hour[18]);
-	 						$("#nineteen").val(hour[19]);
-	 						$("#twenty").val(hour[20]);
-	 						$("#twenty-one").val(hour[21]);
-	 						$("#twenty-two").val(hour[22]);
-	 						$("#twenty-three").val(hour[23]);
 	 					}
 	 				},
 	 				error : function(request) {
 	 					alert("Connection error");
 	 				},
 	 			}); 
+	 			
+				require.config({
+			        paths: {
+			            echarts: 'http://echarts.baidu.com/build/dist'
+			        }
+			    });
+			    // 使用
+			    require(
+			            [
+			                'echarts',
+			                'echarts/chart/bar', // 使用柱状图就加载bar模块，按需加载
+			                'echarts/chart/map', // 使用柱状图就加载bar模块，按需加载
+			                'echarts/chart/pie'
+			            ],
+			            function (ec) {
+			                // 基于准备好的dom，初始化echarts图表
+								    var myChart2 = echarts.init(document.getElementById('earch2'));
+								    // option 里面的内容基本涵盖你要画的图表的所有内容
+								    var option_qushi = {
+								    tooltip : {
+								        trigger: 'axis'
+								    },
+								    legend: {
+								       x: 'center',
+								       y:'bottom',
+								       data:["访问次数"]
+								   },
+								    calculable : true,
+								        xAxis: [{
+								            axisLabel: {
+								                interval: 0
+								            },
+								            axisLine: {
+								
+								                lineStyle: {
+								                    color: '#4FA8F9'
+								                    
+								                }
+								            },
+								            type: 'category',
+								            boundaryGap: false,
+								            data:[0,'',2,'',4,'',6,'',8,'',10,'',12,'',14,'',16,'',18,'',20,'',22,'',],
+								            axisLabel:{
+								                 //X轴刻度配置
+								                 interval:0 //0：表示全部显示不间隔；auto:表示自动根据刻度个数和宽度自动设置间隔个数
+								            }
+								        }],
+								        yAxis: [{
+								            min:0,
+								            max:max,
+								            type: 'value',
+								            axisLine: {
+								                lineStyle: {
+								                    width: 0
+								                }
+								            },
+								            axisTick:{
+								               show:false
+								             }
+								        }],
+								        series: [{
+								            name: '访问次数',
+								            type: 'line',
+								            symbol:'circle',/*折点样式*/
+								            symbolSize: 5,
+								             color: ['#4FA8F9'],
+								            data: [hour[0],hour[1],hour[2],hour[3],hour[4],hour[5],hour[6],hour[7],hour[8],hour[9],hour[10],hour[11],hour[12],hour[13],hour[14],hour[15],hour[16],hour[17],hour[18],hour[19],hour[20],hour[21],hour[22],hour[23]]
+								        }]
+								    };  
+			    			                // 为echarts对象加载数据
+						        myChart2.setOption(option_qushi);
+						            }
+						    );
 	 		//搜索引擎
 	        }else if(opt==2){
+	        	var hour=new Array();
+	        	hour[0] = 0;
+	        	hour[1] = 0;
+	        	hour[2] = 0;
+	        	hour[3] = 0;
+	        	hour[4] = 0;
+	        	hour[5] = 0;
+	        	hour[6] = 0;
+	        	hour[7] = 0;
+	        	hour[8] = 0;
+	        	hour[9] = 0;
+	        	hour[10] = 0;
+	        	hour[11] = 0;
+	        	hour[12] = 0;
+	        	hour[13] = 0;
+	        	hour[14] = 0;
+	        	hour[15] = 0;
+	        	hour[16] = 0;
+	        	hour[17] = 0;
+	        	hour[18] = 0;
+	        	hour[19] = 0;
+	        	hour[20] = 0;
+	        	hour[21] = 0;
+	        	hour[22] = 0;
+	        	hour[23] = 0;
+	        	var max = 2;
 	        	 $("#trend").empty();
 	    		 $("#temp4").val(2);
 	    		 if($("#temp1").val()==0&&$("#temp2").val()==0&&$("#temp3").val()==0){
@@ -8412,127 +10315,214 @@ function first(){
 	 						var myDate = new Date();
 	 						var HH = parseInt(myDate.getHours());
 	 						var ss = parseInt(myDate.getHours());
-	 						if(HH==0){
+	 						if($("#temp1").val()==1){
+	 							var HH = 23;
+	 							var ss = 23;
+	 						}
+	 						if(HH==24){
+	 							var HH = 23;
+	 							var ss = 23;
 	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==1){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==2){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==3){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==4){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==5){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==6){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==7){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==8){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==9){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==10){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==11){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==12){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==13){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==14){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==15){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==16){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==17){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==18){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==19){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==20){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==21){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==22){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==23){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
+	 								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+	 								if(max<hour[a]){
+	 									max=hour[a];
+	 								}
 	 								ss--;
 	 							}
 	 						}
+	 						if(HH==0){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==1){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==2){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==3){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==4){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==5){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==6){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==7){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==8){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==9){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==10){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==11){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==12){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==13){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==14){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==15){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==16){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==17){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==18){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==19){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==20){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==21){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==22){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==23){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}
 	 						
 	 						if(hour[0]=='--'){
 	 							hour[0] = 0;
@@ -8606,38 +10596,113 @@ function first(){
 	 						if(hour[23]=='--'){
 	 							hour[23] = 0;
 	 						}
-	 						$("#zero").val(hour[0]);
-	 						$("#one").val(hour[1]);
-	 						$("#two").val(hour[2]);
-	 						$("#three").val(hour[3]);
-	 						$("#four").val(hour[4]);
-	 						$("#five").val(hour[5]);
-	 						$("#six").val(hour[6]);
-	 						$("#seven").val(hour[7]);
-	 						$("#eight").val(hour[8]);
-	 						$("#nine").val(hour[9]);
-	 						$("#ten").val(hour[10]);
-	 						$("#eleven").val(hour[11]);
-	 						$("#twelve").val(hour[12]);
-	 						$("#thirteen").val(hour[13]);
-	 						$("#fourteen").val(hour[14]);
-	 						$("#fifteen").val(hour[15]);
-	 						$("#sixteen").val(hour[16]);
-	 						$("#seventeen").val(hour[17]);
-	 						$("#eighteen").val(hour[18]);
-	 						$("#nineteen").val(hour[19]);
-	 						$("#twenty").val(hour[20]);
-	 						$("#twenty-one").val(hour[21]);
-	 						$("#twenty-two").val(hour[22]);
-	 						$("#twenty-three").val(hour[23]);
 	 					}
 	 				},
 	 				error : function(request) {
 	 					alert("Connection error");
 	 				},
 	 			}); 
+	 			
+				require.config({
+			        paths: {
+			            echarts: 'http://echarts.baidu.com/build/dist'
+			        }
+			    });
+			    // 使用
+			    require(
+			            [
+			                'echarts',
+			                'echarts/chart/bar', // 使用柱状图就加载bar模块，按需加载
+			                'echarts/chart/map', // 使用柱状图就加载bar模块，按需加载
+			                'echarts/chart/pie'
+			            ],
+			            function (ec) {
+			                // 基于准备好的dom，初始化echarts图表
+								    var myChart2 = echarts.init(document.getElementById('earch2'));
+								    // option 里面的内容基本涵盖你要画的图表的所有内容
+								    var option_qushi = {
+								    tooltip : {
+								        trigger: 'axis'
+								    },
+								    legend: {
+								       x: 'center',
+								       y:'bottom',
+								       data:["访问次数"]
+								   },
+								    calculable : true,
+								        xAxis: [{
+								            axisLabel: {
+								                interval: 0
+								            },
+								            axisLine: {
+								
+								                lineStyle: {
+								                    color: '#4FA8F9'
+								                    
+								                }
+								            },
+								            type: 'category',
+								            boundaryGap: false,
+								            data:[0,'',2,'',4,'',6,'',8,'',10,'',12,'',14,'',16,'',18,'',20,'',22,'',],
+								            axisLabel:{
+								                 //X轴刻度配置
+								                 interval:0 //0：表示全部显示不间隔；auto:表示自动根据刻度个数和宽度自动设置间隔个数
+								            }
+								        }],
+								        yAxis: [{
+								            min:0,
+								            max:max,
+								            type: 'value',
+								            axisLine: {
+								                lineStyle: {
+								                    width: 0
+								                }
+								            },
+								            axisTick:{
+								               show:false
+								             }
+								        }],
+								        series: [{
+								            name: '访问次数',
+								            type: 'line',
+								            symbol:'circle',/*折点样式*/
+								            symbolSize: 5,
+								             color: ['#4FA8F9'],
+								            data: [hour[0],hour[1],hour[2],hour[3],hour[4],hour[5],hour[6],hour[7],hour[8],hour[9],hour[10],hour[11],hour[12],hour[13],hour[14],hour[15],hour[16],hour[17],hour[18],hour[19],hour[20],hour[21],hour[22],hour[23]]
+								        }]
+								    };  
+			    			                // 为echarts对象加载数据
+						        myChart2.setOption(option_qushi);
+						            }
+						    );
 	 		//外部链接
 	        }else if(opt==3){
+	        	var hour=new Array();
+	        	hour[0] = 0;
+	        	hour[1] = 0;
+	        	hour[2] = 0;
+	        	hour[3] = 0;
+	        	hour[4] = 0;
+	        	hour[5] = 0;
+	        	hour[6] = 0;
+	        	hour[7] = 0;
+	        	hour[8] = 0;
+	        	hour[9] = 0;
+	        	hour[10] = 0;
+	        	hour[11] = 0;
+	        	hour[12] = 0;
+	        	hour[13] = 0;
+	        	hour[14] = 0;
+	        	hour[15] = 0;
+	        	hour[16] = 0;
+	        	hour[17] = 0;
+	        	hour[18] = 0;
+	        	hour[19] = 0;
+	        	hour[20] = 0;
+	        	hour[21] = 0;
+	        	hour[22] = 0;
+	        	hour[23] = 0;
+	        	var max = 2;
 	        	 $("#trend").empty();
 	    		 $("#temp4").val(3);
 	    		 if($("#temp1").val()==0&&$("#temp2").val()==0&&$("#temp3").val()==0){
@@ -9138,127 +11203,214 @@ function first(){
 	 						var myDate = new Date();
 	 						var HH = parseInt(myDate.getHours());
 	 						var ss = parseInt(myDate.getHours());
-	 						if(HH==0){
+	 						if($("#temp1").val()==1){
+	 							var HH = 23;
+	 							var ss = 23;
+	 						}
+	 						if(HH==24){
+	 							var HH = 23;
+	 							var ss = 23;
 	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==1){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==2){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==3){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==4){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==5){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==6){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==7){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==8){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==9){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==10){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==11){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==12){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==13){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==14){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==15){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==16){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==17){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==18){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==19){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==20){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==21){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==22){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
-	 								ss--;
-	 							}
-	 						}else if(HH==23){
-	 							for(var a = 0; a <= HH; a++){
-	 								hour[a] = data.data.body.data[0].result.items[1][ss];
+	 								hour[a] = data.data.body.data[0].result.items[1][ss][0];
+	 								if(max<hour[a]){
+	 									max=hour[a];
+	 								}
 	 								ss--;
 	 							}
 	 						}
+	 						if(HH==0){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==1){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==2){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==3){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==4){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==5){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==6){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==7){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==8){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==9){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==10){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==11){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==12){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==13){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==14){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==15){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==16){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==17){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==18){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==19){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==20){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==21){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==22){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}else if(HH==23){
+								for(var a = 0; a <= HH; a++){
+									hour[a] = data.data.body.data[0].result.items[1][ss][0];
+									if(max<hour[a]){
+										max=hour[a];
+									}
+									ss--;
+								}
+							}
 	 						
 	 						if(hour[0]=='--'){
 	 							hour[0] = 0;
@@ -9332,36 +11484,85 @@ function first(){
 	 						if(hour[23]=='--'){
 	 							hour[23] = 0;
 	 						}
-	 						$("#zero").val(hour[0]);
-	 						$("#one").val(hour[1]);
-	 						$("#two").val(hour[2]);
-	 						$("#three").val(hour[3]);
-	 						$("#four").val(hour[4]);
-	 						$("#five").val(hour[5]);
-	 						$("#six").val(hour[6]);
-	 						$("#seven").val(hour[7]);
-	 						$("#eight").val(hour[8]);
-	 						$("#nine").val(hour[9]);
-	 						$("#ten").val(hour[10]);
-	 						$("#eleven").val(hour[11]);
-	 						$("#twelve").val(hour[12]);
-	 						$("#thirteen").val(hour[13]);
-	 						$("#fourteen").val(hour[14]);
-	 						$("#fifteen").val(hour[15]);
-	 						$("#sixteen").val(hour[16]);
-	 						$("#seventeen").val(hour[17]);
-	 						$("#eighteen").val(hour[18]);
-	 						$("#nineteen").val(hour[19]);
-	 						$("#twenty").val(hour[20]);
-	 						$("#twenty-one").val(hour[21]);
-	 						$("#twenty-two").val(hour[22]);
-	 						$("#twenty-three").val(hour[23]);
 	 					}
 	 				},
 	 				error : function(request) {
 	 					alert("Connection error");
 	 				},
 	 			}); 
+	 			
+				require.config({
+			        paths: {
+			            echarts: 'http://echarts.baidu.com/build/dist'
+			        }
+			    });
+			    // 使用
+			    require(
+			            [
+			                'echarts',
+			                'echarts/chart/bar', // 使用柱状图就加载bar模块，按需加载
+			                'echarts/chart/map', // 使用柱状图就加载bar模块，按需加载
+			                'echarts/chart/pie'
+			            ],
+			            function (ec) {
+			                // 基于准备好的dom，初始化echarts图表
+								    var myChart2 = echarts.init(document.getElementById('earch2'));
+								    // option 里面的内容基本涵盖你要画的图表的所有内容
+								    var option_qushi = {
+								    tooltip : {
+								        trigger: 'axis'
+								    },
+								    legend: {
+								       x: 'center',
+								       y:'bottom',
+								       data:["访问次数"]
+								   },
+								    calculable : true,
+								        xAxis: [{
+								            axisLabel: {
+								                interval: 0
+								            },
+								            axisLine: {
+								
+								                lineStyle: {
+								                    color: '#4FA8F9'
+								                    
+								                }
+								            },
+								            type: 'category',
+								            boundaryGap: false,
+								            data:[0,'',2,'',4,'',6,'',8,'',10,'',12,'',14,'',16,'',18,'',20,'',22,'',],
+								            axisLabel:{
+								                 //X轴刻度配置
+								                 interval:0 //0：表示全部显示不间隔；auto:表示自动根据刻度个数和宽度自动设置间隔个数
+								            }
+								        }],
+								        yAxis: [{
+								            min:0,
+								            max:max,
+								            type: 'value',
+								            axisLine: {
+								                lineStyle: {
+								                    width: 0
+								                }
+								            },
+								            axisTick:{
+								               show:false
+								             }
+								        }],
+								        series: [{
+								            name: '访问次数',
+								            type: 'line',
+								            symbol:'circle',/*折点样式*/
+								            symbolSize: 5,
+								             color: ['#4FA8F9'],
+								            data: [hour[0],hour[1],hour[2],hour[3],hour[4],hour[5],hour[6],hour[7],hour[8],hour[9],hour[10],hour[11],hour[12],hour[13],hour[14],hour[15],hour[16],hour[17],hour[18],hour[19],hour[20],hour[21],hour[22],hour[23]]
+								        }]
+								    };  
+			    			                // 为echarts对象加载数据
+						        myChart2.setOption(option_qushi);
+						            }
+						    );
 	        }
 		});
 

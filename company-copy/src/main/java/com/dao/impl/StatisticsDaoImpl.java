@@ -10,8 +10,6 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Map;
 
 import com.dao.StatisticsDao;
-import com.util.HttpRespons;
-import com.util.HttpUtils;
 import com.util.HttpUtilsLuoCopy;
 
 public class StatisticsDaoImpl implements StatisticsDao {
@@ -24,19 +22,7 @@ public class StatisticsDaoImpl implements StatisticsDao {
 	 */
 	public String include(String url, Map<String, String> params) {
 		// TODO Auto-generated method stub
-		 String s = null;  
-		HttpUtils http = new HttpUtils();
-		try {
-			HttpURLConnection conn= (HttpURLConnection)http.sendPostRequest(url, params, null);
-			int code = conn.getResponseCode();  
-	        InputStream in = conn.getInputStream();  
-	        byte[] data = http.read2Byte(in);
-	        s = new String(data);        
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return  s;
+		return "";
 	}
 	
 	
@@ -49,13 +35,6 @@ public class StatisticsDaoImpl implements StatisticsDao {
 	 */
 	public String keyword(String url, Map<String, String> params) {
 		// TODO Auto-generated method stub
-		HttpUtils http = new HttpUtils();
-		try {
-			http.sendPostRequest(url, params, null);
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		return "ok";
 	}
 
@@ -69,13 +48,6 @@ public class StatisticsDaoImpl implements StatisticsDao {
 	@Override
 	public String weight(String url, Map<String, String> params) {
 		// TODO Auto-generated method stub
-		HttpUtils http = new HttpUtils();
-		try {
-			http.sendPostRequest(url, params, null);
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		return "ok";
 	}
 

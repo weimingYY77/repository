@@ -94,7 +94,7 @@
 		</div>
 	</li>
 	<li>
-		<a href="javascript:;" title="">用户xxx</a>
+		<a href="javascript:;" title="">用户<span id="userId"></a>
 	</li>
 	<span class="search"></span>
 </ul>
@@ -247,24 +247,25 @@
 		         <div class="layout">
 		       	  <span>来源：</span>
 		          <ul class="all dianji">
-		          	  <li class="active ">今天</li>
-		          	  <li>昨天</li>
+		          	  <li class="active " id="today">今天</li>
+		          	  <li id="yesterday">昨天</li>
 		          </ul>  	 	
 		       	  </div>
 		       	  <div class="layout">
-			       	  <span>地域：</span>
-			       	  <select name="">
-			       	  	<option value="">全部</option>
-			       	  	<option value="">全国</option>
-			       	  	<option value="">省自治区</option>
-			       	  </select>      	  	
+			       	 <span>来源：</span>
+			       	  <select name="" id="source">
+			       	  	<option value="0">全部</option>
+			       	  	<option value="1">直接访问</option>
+			       	  	<option value="2">搜索引擎</option>
+			       	  	<option value="3">外部链接</option>
+			       	  </select>      	
 		       	  </div>
 		       	  <div class="layout">
 		       	    <span>设备：</span>
 		            <ul class="all dianji">
-		          	  <li class="active ">全部</li>
-		          	  <li>老访客</li>
-		          	  <li>新访客</li>
+		          	   <li class="active " id="visitor">全部</li>
+		          	  <li id="newV">老访客</li>
+		          	  <li id="oldV">新访客</li>
 		            </ul>  	 	
 		       	  </div>
             </div>
@@ -272,23 +273,23 @@
        	    <ul>
        	    	<li>
        	    		<p>浏览量（PV）</p>
-       	    		<span>16</span>
+       	    		<span id="a">--</span>
        	    	</li>
        	    	<li>
        	    		<p>访客数（UV）</p>
-       	    		<span>16</span>
+       	    		<span id="b">--</span>
        	    	</li>
        	    	<li>
        	    		<p>IP数</p>
-       	    		<span>16</span>
+       	    		<span id="c">--</span>
        	    	</li>
        	    	<li>
        	    		<p>跳出率</p>
-       	    		<span>100%</span>
+       	    		<span id="d">--</span>
        	    	</li>
        	    	<li>
        	    		<p>平均访问时长</p>
-       	    		<span>00:00:00</span>
+       	    		<span id="e">--</span>
        	    	</li>
        	    </ul>
        	    <div class="line"></div>
@@ -307,12 +308,8 @@
 		    				<th>占比</th>
 		    			</tr>
 		    		</thead>
-		    		<tbody>
-		    			<tr>
-		    				<td>百度</td>
-		    				<td>0</td>
-		    				<td>0</td>
-		    			</tr>
+		    		<tbody id="trend">
+		    		
 		    		</tbody>
 		    	</table>
        	 </div>
@@ -334,15 +331,7 @@
 		    				<th>平均访问时长</th>
 		    			</tr>
 		    		</thead>
-		    		<tbody>
-		    			<tr>
-		    				<td>百度</td>
-		    				<td>0</td>
-		    				<td>0</td>
-		    				<td>1</td>
-		    				<td>20%</td>
-		    				<td>00:00:14</td>
-		    			</tr>
+		    		<tbody id="trend1">
 		    		</tbody>
 		    	</table>
 		    </div>
@@ -593,7 +582,7 @@
 	         </div>
 	        <div class="website_two">
 		           <p class="gray">访问来源网站 TOP 5</p>
-		        	<table class="web"  cellspacing="0" cellpadding="0" d
+		        	<table class="web"  cellspacing="0" cellpadding="0" >
 			    		<tbody>
 			    			<tr class="gray_bg">
 			    				<td>排名</td>
@@ -640,7 +629,7 @@
 	         </div>
 	        <div class="website_two">
 		           <p class="gray">访问来源网站 TOP 5</p>
-		        	<table class="web"  cellspacing="0" cellpadding="0" d
+		        	<table class="web"  cellspacing="0" cellpadding="0" >
 			    		<tbody>
 			    			<tr class="gray_bg">
 			    				<td>排名</td>
@@ -695,111 +684,17 @@
 	    </div>
 	</div>
 </div>
+
+<input type="hidden" id="temp1" value="0" />
+<input type="hidden" id="temp2" value="0" />
+<input type="hidden" id="temp3" value="0" />
+
 </body>
 <script type="text/javascript" src="../../js/common-js/jquery.js"></script>
 <script type="text/javascript" src="../../js/common-js/common.js"></script>	
 <script type="text/javascript" src="../../js/echarts.js"></script>
 <script type="text/javascript" src="../../js/echarts.common.min.js"></script>
-<script type="text/javascript">
-	    // 路径配置
-    require.config({
-        paths: {
-            echarts: 'http://echarts.baidu.com/build/dist'
-        }
-    });
-    // 使用
-    require(
-            [
-                'echarts',
-                'echarts/chart/bar', // 使用柱状图就加载bar模块，按需加载
-                'echarts/chart/map', // 使用柱状图就加载bar模块，按需加载
-                'echarts/chart/pie'
-            ],
-            function (ec) {
-                // 基于准备好的dom，初始化echarts图表
-                var myChart_map = ec.init(document.getElementById('main_map'));
-
-                var itemStyle = {
-                    normal:{label:{
-                        show:true,
-                        formatter:'{b}',
-                        textStyle: {fontSize: 10,fontWeight : 'bold'}
-                    }},
-                    emphasis:{label:{show:true}}
-                };
-                var option_map = {
-                    tooltip : {
-                        trigger: 'item'
-                    },
-                    legend: {
-                        orient: 'horizontal',
-                        x:'left',
-                        data:['','']
-                    },
-                    dataRange: {
-                        min: 0,
-                        max: 2500,
-                        x: 'left',
-                        y: 'bottom',
-                        text:['高','低'],           // 文本，默认为数值文本
-                        calculable : true,
-                        itemWidth:10,  
-		                // 图例图形高度  
-		                itemHeight:10,  
-		                orient: 'horizontal',
-		                
-                    },
-                    series : [
-                        {
-                            name: '浏览量',
-                            type: 'map',
-                            mapType: 'china',
-                            roam: false,
-                            itemStyle: itemStyle,
-                            data:[
-                                {name: '北京',value: Math.round(Math.random())},
-                                {name: '天津',value: Math.round(Math.random())},
-                                {name: '上海',value: Math.round(Math.random())},
-                                {name: '重庆',value: Math.round(Math.random())},
-                                {name: '河北',value: Math.round(Math.random())*1000},
-                                {name: '河南',value: Math.round(Math.random())*1000},
-                                {name: '云南',value: Math.round(Math.random())*1000},
-                                {name: '辽宁',value: Math.round(Math.random())*1000},
-                                {name: '黑龙江',value: Math.round(Math.random())*1000},
-                                {name: '湖南',value: Math.round(Math.random())*1000},
-                                {name: '安徽',value: Math.round(Math.random()*1000)},
-                                {name: '山东',value: Math.round(Math.random()*1000)},
-                                {name: '新疆',value: Math.round(Math.random()*1000)},
-                                {name: '江苏',value: Math.round(Math.random()*1000)},
-                                {name: '浙江',value: Math.round(Math.random()*30)},
-                                {name: '江西',value: Math.round(Math.random()*1000)},
-                                {name: '湖北',value: Math.round(Math.random()*1000)},
-                                {name: '广西',value: Math.round(Math.random()*1000)},
-                                {name: '甘肃',value: Math.round(Math.random()*1000)},
-                                {name: '山西',value: Math.round(Math.random()*20)},
-                                {name: '内蒙古',value: Math.round(Math.random()*10)},
-                                {name: '陕西',value: Math.round(Math.random()*1000)},
-                                {name: '吉林',value: Math.round(Math.random()*1000)},
-                                {name: '福建',value: Math.round(Math.random()*1000)},
-                                {name: '贵州',value: Math.round(Math.random()*1000)},
-                                {name: '广东',value: Math.round(Math.random()*1000)},
-                                {name: '青海',value: Math.round(Math.random()*1000)},
-                                {name: '西藏',value: Math.round(Math.random()*1000)},
-                                {name: '四川',value: Math.round(Math.random()*1000)},
-                                {name: '宁夏',value: Math.round(Math.random()*1000)},
-                                {name: '海南',value: Math.round(Math.random()*1000)},
-                                {name: '台湾',value: Math.round(Math.random()*1000)},
-                                {name: '香港',value: Math.round(Math.random()*1000)},
-                                {name: '澳门',value: Math.round(Math.random()*1000)}
-                            ]
-                      },
-                    ]
-                };
-                // 为echarts对象加载数据
-                myChart_map.setOption(option_map);
-            }
-    );
-</script>
+<script type="text/javascript" src="../../js/subpage-js/Guest.js"></script>
 <script type="text/javascript">
 		    // 路径配置
     require.config({
