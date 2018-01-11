@@ -50,9 +50,19 @@
 	text-align: center;
 	border-right: 1px solid #e6e6e6;
 }
+.Day.tab_list li.active{
+	background: #69B5FA;
+    color: #fff!important;
+}
 .Day .bule{
 	background: #00c1de;
 	color: #FFFFFF;
+}
+.box_main{
+	display:none;
+}
+.show_tab {
+    display: block;
 }
 .box_main .layen{
 	width:48%;
@@ -92,25 +102,28 @@
     line-height:25px;
     font-size: 14px;
     color: #646464;
-    padding-top:15px;
+    padding-top:20px;
 }
 .layen .layout1 .main-item3{
     text-align: left;
     display: inline-block;
     width: 100%;
     text-align: center;
+    padding-top: 10px;
 }
 .layen .layout1 .item-a0{
 	float: left;
+	width: 50%;
+	text-align: left;
 	
 }
 .layen .layout1 .item-a1{
 	float: right;	
-	width: 15%;
+	width: 20%;
 }
 .layen .layout1 .item-a2{
 	float: right;
-	width: 20%;
+	width: 25%;
 }
 .layen.six .layout2 ul{
 	display: inline-block;
@@ -118,7 +131,7 @@
 	padding-top:20px;
 }
 .layen.six .layout2 li{
-	width: 33.2%;
+	width: 32.2%;
     float: left;
     display: inline-block;
     text-align: center;

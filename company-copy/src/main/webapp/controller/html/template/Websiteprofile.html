@@ -273,13 +273,144 @@
             </ul>
 		</div>
 		<!--Tab今日昨天-->
-		<div class="Day box_show">
+		<div class="Day box_show tab_list">
 			<ul>
-				<li class="bule" onclick="today()" id="today">今日</li>
-					<li id="yesterday">昨天</li>
+				<li class="active" onclick="today()" id="today">今日</li>
+				<li id="yesterday">昨天</li>
 			</ul>
 		</div>
-	    <!---->
+	    <!--今日数据-->
+        <div class="box_main show_tab">
+        	 <!--折线图-->
+        	<div class="layen box_show left one">
+        		<div class="earch" id="earch"></div>
+        	</div>
+        	<!--top10关键词-->
+        	<div class="layen box_show right two">
+        		<div class="layout1">
+        		  <p class="title-item1">Top10搜索词</p>
+        		  <div class="main-item3 title">
+	        		  	<div class="item-a0">
+	        		  	  	<p>搜索词</p>
+	        		  	</div>
+	        		  	<div class="item-a1">
+	        		  	  	<p>浏览量(pv)</p>
+	        		  	</div>
+	        		  	<div class="item-a2">
+	        		  	  	<p>占比</p>
+	        		  	</div>
+	        		  	
+        		  	</div>
+        		    <div class="main-item2" id="word">
+        		    </div>
+        		</div>
+        	</div>
+        	<!--top10网站来源-->
+        	<div class="layen box_show left three">
+        		<div class="layout1">
+        		  <p class="title-item1">Top10来源网站</p>
+        		  <div class="main-item3 title">
+	        		  	<div class="item-a0">
+	        		  	  	<p>搜索词</p>
+	        		  	</div>
+	        		  	<div class="item-a1">
+	        		  	  	<p>浏览量(pv)</p>
+	        		  	</div>
+	        		  	<div class="item-a2">
+	        		  	  	<p>占比</p>
+	        		  	</div>
+	        		  	
+        		  	</div>
+        		    <div class="main-item2"  id="word1">
+        		    </div>
+        		</div>
+        	</div>
+        	<!--top10入口页面-->
+        	<div class="layen box_show right four">
+        			<div class="layout1">
+	        		  <p class="title-item1">top10入口页面</p>
+	        		  <div class="main-item3 title">
+		        		  	<div class="item-a0">
+		        		  	  	<p>入口页面</p>
+		        		  	</div>
+		        		  	<div class="item-a1">
+		        		  	  	<p>浏览量(pv)</p>
+		        		  	</div>
+		        		  	<div class="item-a2">
+		        		  	  	<p>占比</p>
+		        		  	</div>
+	        		  	</div>
+	        		    <div class="main-item2"  id="word2">
+	        		</div>
+        		</div>
+        	</div>
+        	<!--Top10受访页面-->
+        	<div class="layen box_show left five">
+        			<div class="layout1">
+	        		  <p class="title-item1">Top10受访页面</p>
+	        		  <div class="main-item3 title">
+		        		  	<div class="item-a0">
+		        		  	  	<p>受访页面</p>
+		        		  	</div>
+		        		  	<div class="item-a1">
+		        		  	  	<p>浏览量(pv)</p>
+		        		  	</div>
+		        		  	<div class="item-a2">
+		        		  	  	<p>占比</p>
+		        		  	</div>
+	        		  	</div>
+	        		    <div class="main-item2"  id="word3">
+	        		</div>
+        		</div>
+        	</div>
+        	<!--新老访客-->
+        	<div class="layen box_show right six">
+        			<div class="layout1">
+	        		  <p class="title-item1">新老访客</p>
+	        		  <div class="layout2">
+	        		  	  <ul>
+	        		  	  	<li>
+	        		  	  		<span><img src="../../images/touxiang1.png"/></span>
+	        		  	  	</li>
+	        		  	  	<li>
+	        		  	  		<p class="item-1">新访客</p>
+	        		  	  		<p class="item-2" id="t"></p>
+	        		  	  	</li>
+	        		  	  	<li>
+	        		  	  		<p class="item-1">老访客</p>
+	        		  	  		<p class="item-2 bule" id="u"></p>
+	        		  	  	</li>
+	        		  	  </ul>
+	        		  </div>
+	        		  	  <div class="layout2 Tab">
+	        		  	  <ul>
+	        		  	  	<li>
+	        		  	  		<p>浏览量</p>
+	        		  	  		<p>访客数</p>
+	        		  	  		<p>跳出率</p>
+	        		  	  		<p>平均访问时长</p>
+	        		  	  		<p class="noborder" >平均访问页数</p>
+	        		  	  	</li>
+	        		  	  	<li>
+	        		  	  		<p id="v">--</p>
+	        		  	  		<p id="w">--</p>
+	        		  	  		<p id="x">--</p>
+	        		  	  		<p id="y">--</p>
+	        		  	  		<p class="noborder" id="z">--</p>
+	        		  	  	</li>
+	        		  	  	<li class="noborder">
+	        		  	  		<p id="aa">--</p>
+	        		  	  		<p id="bb">--</p>
+	        		  	  		<p id="cc">--</p>
+	        		  	  		<p id="dd">--</p>
+	        		  	  		<p class="noborder" id="ee">--</p>
+	        		  	  	</li>
+	        		  	  </ul>
+	        		  </div>
+        		    </div>
+        	</div>
+        </div>
+        <!--昨日数据-->
         <div class="box_main">
         	 <!--折线图-->
         	<div class="layen box_show left one">
@@ -410,10 +541,16 @@
         		    </div>
         	</div>
         </div>
-
 		</div>
 		</div>
 	</div>
 	</body>
 <script type="text/javascript" src="../../js/subpage-js/Websiteprofile.js"></script>
-	</html>
+<script type="text/javascript">
+	    $(".Day li").click(function(){
+		    var index = $(".Day li").index(this);
+		        $(this).addClass("active").siblings().removeClass("active");
+		        $(".box_main").eq(index).addClass("show_tab").siblings().removeClass("show_tab");
+		  })
+</script>
+</html>
