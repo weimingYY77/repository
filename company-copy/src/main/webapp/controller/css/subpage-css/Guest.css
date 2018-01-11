@@ -231,7 +231,10 @@
 }
 .main_btn .drop2 li p{
 	color:#646464;
-	font-size: 12px;
+}
+.main_btn .drop2 li>span{
+    font-size: 20px;
+    color: #2b2b2b;
 }
 .Guest-map{
 	width: 100%;
@@ -563,8 +566,13 @@ width: 30%;
 		width: 1100px;
 	}
 }
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1366px){
 	#main_map2,#main_map3{
 		width:900px;
 	}
+}
+@media screen and (max-width: 1025px){
+    #main_map2,#main_map3{
+        width:700px;
+    }
 }

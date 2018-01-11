@@ -23,24 +23,23 @@
 	padding-top: 22px;
 }
 .weblist .website li{
+	border: 1px solid #E1E3E4;
     display: inline-block;
     color: #454444;
-    border: 1px solid #E1E3E4;
     height: 30px;
     line-height: 30px;
     font-size: 18px;
-    padding-left: 33px;
-    padding-right: 33px;
+    width: 140px;
     float: left;
     cursor: pointer;
+    text-align: center;
 }
-.weblist .website>li:last-child{
-	border-left: none;
-}
+ .weblist .website>li:first-child{
+	border-right: none;
+} 
 .bg{
 	background: #00C1DE!important;
 	color: #fff!important;
-	border:1px solid #fff!important;
 }
 /* 自有网站  汇总网站 */
 .weblist .self_total{
