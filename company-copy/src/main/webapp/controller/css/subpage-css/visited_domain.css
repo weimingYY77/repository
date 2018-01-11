@@ -1,0 +1,351 @@
+.main{
+	background: #ebeef2;
+}
+
+.main_conter .title{
+	font-size: 20px;
+	color: #003333;
+}
+.main_conter li a{
+    line-height: 40px;
+    font-size: 16px;
+    color: #a3a3a3;
+    display: inline-block;
+    width: 100%;
+}
+.main_conter li a:hover{
+	color: #00c1de;
+}
+.main_conter li a.active{
+    color: #00c1de;
+}
+/* 实时访客 */
+.main_right1,.main_btn{
+    width: 100%;
+    display: inline-block;
+    background: #ffffff;
+    float: left;
+}
+.main_right1{
+    height: 370px;
+}
+.main_right1>p{
+    padding-top: 27px;
+    color: #2B2B2B;
+}
+.main_right1>p>span{
+    padding-left: 20px;
+    font-size: 14px;
+    color: #646464;
+}
+.main_right1>p>span>span{
+    color: #F05757;
+}
+.main_right1 .date,.main_right1 .charts{
+    display: inline-block;
+    float: left;
+    text-align: center;
+}
+.main_right1 .date{
+    width: 25%;
+    padding-top: 80px;
+}
+.date .number{
+    font-size: 44px;
+    color: #2b2b2b;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.main_right1 .charts{
+    width: 75%;
+}
+/* 明细数据 */
+.main_btn{
+    margin-bottom: 40px;
+}
+.main_btn select{
+    height: 23px;
+    line-height: 23px;
+    outline: none;
+    color: #646464;
+    font-size: 12px;
+}
+.main_btn>p{
+    color: #2B2B2B;
+}
+.main_btn .drop1,.main_btn .drop2{
+    padding-top: 15px;
+    display: inline-block;
+    width: 100%;
+}
+.main_btn .drop1 .layout,.main_btn .drop2 .layout{
+    float: left;
+    padding-left: 2%;
+}
+ .main_btn .drop1 .layout>span,.main_btn .drop2 .layout>span{
+    color: #646464;
+    float: left;
+    line-height: 25px;
+} 
+.main_btn .drop1 .all,.main_btn .drop2 .visitor{
+    display: inline-block;
+    border: 1px solid #AAA;
+    border-radius: 2px;
+}
+.main_btn .drop1 .all li,.main_btn .drop2 .visitor li{
+    display: inline-block;
+    width: 63px;
+    font-size: 12px;
+    color: #646464;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    cursor: pointer;
+    float: left;
+}
+.main_btn .drop2 .visitor li.old{
+    border-left:1px solid #AAA; 
+}
+.border-line{
+	display: block;
+	float: left;
+	width: 1px;
+	height: 23px;
+	background: #AAA;
+}
+.main_btn .drop1 .active,.main_btn .drop2 .active{
+    background: #69B5FA;
+    color: #fff!important;
+}
+.main_btn .drop1 .layout select,.main_btn .drop2 .layout select{
+    width: 115px;
+}
+.drop3{
+    margin-top: 24px;
+    width:100%;
+    background: #F4F4F4;
+    border: 1px solid #E1E3E4;
+    border-left: none;
+    border-right: none;
+    height: 40px;
+    line-height: 40px; 
+    margin-left: -30px;
+    padding-left:30px;
+    padding-right: 30px;
+}
+.drop3 .sea_list>label{
+    font-size: 14px;
+    color: #646464;
+    padding-left: 2%;
+}
+.drop3 .sea_list>input{
+    font-size: 14px;
+    color: #646464;
+    outline: none;
+    border:1px solid #E1E3E4;
+    padding-left: 10px;
+    width: 10%;
+    height: 24px;
+    line-height: 24px;
+}
+.drop3 .query{
+    border:1px solid #E1E3E4;
+    width: 60px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    color: #646464;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+    margin-left: 18px;
+}
+.main_btn .visit .visit_top,.main_btn .visit .visit_con{
+    width:100%;
+    border-bottom: 1px solid #E1E3E4;
+    height: 40px;
+    line-height: 40px; 
+    margin-left: -30px;
+    padding-left:30px;
+    padding-right: 30px;
+}
+.main_btn .visit .visit_top{
+    background: #F4F4F4;
+}
+.main_btn .visit>div>span{
+    display: inline-block;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    color: #646464;
+}
+.main_btn .visit>div>span.access{
+    width: 25%;
+}
+.main_btn .visit>div>span.access>span{
+    margin-right: 35px;
+}
+.main_btn .visit>div>span.source{
+   width: 10%;
+}
+.main_btn .visit>div>span.enter{
+   width: 49%;
+}
+.main_btn .visit>div>span.word{
+   width: 8%;
+}
+.main_btn .visit>div>span.duration{
+  width: 8%;
+}
+.main_btn .visit>div>span.link_color{
+    color: #69B5FA;
+}
+/* 实时访客 */
+/* 趋势分析 */
+.main_right2>p{
+    color: #2B2B2B;
+    padding-right: 30px;
+}
+.main_right2 .drop1,.main_right2 .drop2{
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: inline-block;
+    width: 100%;
+}
+ .main_btn .drop2{
+	line-height: 40px;
+	position: relative;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background: #E1E3E4;
+    bottom: -10px;
+    position: absolute;
+}
+.main_btn .drop2 li{
+	width: 20%;
+	float: left;
+	text-align: center;
+}
+.main_btn .drop2 li p{
+	color:#646464;
+}
+.main_btn .drop2 li>span{
+    font-size: 20px;
+    color: #2b2b2b;
+}
+.Guest-map{
+	width: 100%;
+	padding-bottom: 30px;
+	padding-top: 45px;
+	display: inline-block;
+}
+.Guest-map>div{
+	float: left;
+	width:46%;
+    padding-left: 4%;
+}
+.Guest-bin {
+	width: 100%;
+	display: inline-block;
+}
+.main_right2>.drop1 ul{
+    display: inline-block;
+    border: 1px solid #AAA; 
+    border-radius: 2px;
+}
+.main_right2>.drop1 ul li{
+    display: inline-block;
+    width: 63px;
+    font-size: 12px;
+    color: #646464;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    cursor: pointer;
+    float: left;
+}
+.main_right2 .drop1 .active{
+    background: #69B5FA;
+    color: #fff!important;
+}
+.main_right2 .drop2 select{
+    height: 23px;
+    line-height: 23px;
+    outline: none;
+    color: #646464;
+    font-size: 12px;
+    width: 130px;
+}
+.browse_list{
+    padding-left: 4%;
+    padding-top: 30px;
+    display: flex;
+}
+.browse_list li{
+    display: inline-block;
+    width: 19.5%;
+}
+.browse_list li.cen{
+    text-align: center;
+}
+.browse_list li>p{
+    color: #646464;
+}
+.browse_list li>span{
+    display: block;
+    font-size: 24px;
+    padding-top: 24px;
+    color: #2b2b2b;
+}
+/* 地域表 */
+.source_table{
+    margin-top: 20px;
+    width: 100%;
+    border:1px solid #d7d7d8;
+    color: #646464;
+    border-right: none;
+    border-left: none; 
+    padding-bottom: 70px;
+}
+.source_table th{
+   background: #F4F4F4;
+   font-weight: normal;
+   border-left:1px solid #DEDEDE; 
+   border-bottom:1px solid #DEDEDE;
+   height: 47px;
+   width: 14%;
+}
+.source_table td{
+    border:1px solid #d7d7d8;
+    text-align: center; 
+    height: 37px;
+    border-right: none;
+    border-top: none;
+    width: 14%;
+}
+.source_table td:first-child{
+    border-left: none;
+    width: 30%;
+}
+.source_table th:first-child{
+    border-left: none;
+}
+.source_table tbody>tr:first-child td{
+    border-top: none;
+}
+
+/* 大选项卡和相应padding */
+ 
+.pad{
+    width: 70%;
+    padding:0;
+    padding-top: 35px;
+}
+.pad-lft{
+    padding-left: 30px;
+}
+
+

@@ -19,8 +19,13 @@ Flow_analysis.html 统计- 流量分析（包含实时访客和趋势分析子页面）
 Source_analysis.html  统计- 来源分析-全部来源
 source_Engines.html   统计- 来源分析-搜索引擎
 source_searchword.html   统计- 来源分析-搜索词
+external_link.html    统计- 来源分析-外部链接 
 
 Access-analysis.html - 统计- 访问分析
+pageviews.html 统计- 访问分析-受访页面  
+visited_domain.html   统计- 访问分析-受访域名
+entry_page.html   统计- 访问分析-入口页面
+
 
 Guest.html 统计- 访客分析
 

@@ -1,5 +1,5 @@
 
-/* 全部来源 ---搜索引擎*/
+/* 受访页面 */
 .main_right{
     padding: 0;
     padding-top: 35px;
@@ -57,17 +57,19 @@
     color: #2B2B2B;
 }
 .main_right1 .tab_list li{
-    width: 90px;
+    width: 100px;
     text-align: center;
     height: 100%;
-    line-height: 45px;
     display: inline-block;
     float: left;
     cursor: pointer;
+    font-size: 14px;
+    padding-top: 15px;
 }
  .main_right1 .tab_list li.active{
     background: #fff;
     border-top: 4px solid #4FA8F9;
+    padding-top: 12px;
 } 
 .tab_list span{
     float: left;
@@ -85,6 +87,12 @@
 }
 .browse_list1 li.cen{
     text-align: center;
+}
+.browse_list1 li.wd20{
+    width: 20%;
+}
+.browse_list1 li.wd30{
+    width: 29%;
 }
 .browse_list1 li>p{
     color: #646464;
@@ -111,8 +119,39 @@
     width: 58%;
 }
 /* 来源表 */
+.source_tab{
+    margin-top: 80px;
+}
+.search_block{
+    width: 98%;
+    background: #F4F4F4;
+    height: 55px;
+    line-height: 55px;
+    border-top: 1px solid #dedede;
+    padding-left: 2%;
+    position: relative;
+    overflow: hidden;
+}
+.search_block>input{
+    width: 250px;
+    height: 31px;
+    padding-left: 7px;
+    padding-right: 30px;
+    color: #a3a3a3;
+    outline: none;
+    border: 1px solid #dedede;
+}
+.search_block .magnifier{
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    background: url(../../images/fdj.png) no-repeat;
+    position: absolute;
+    top: 20px;
+    left: 285px;
+    cursor: pointer;
+}
 .source_table{
-    margin-top: 20px;
     width: 100%;
     border:1px solid #d7d7d8;
     color: #646464;

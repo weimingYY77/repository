@@ -1,5 +1,5 @@
 
-/* 全部来源 ---搜索引擎*/
+/* 全部来源 */
 .main_right{
     padding: 0;
     padding-top: 35px;
@@ -25,6 +25,9 @@
     float: left;
     line-height: 25px;
     color: #646464;
+}
+.main_right1 .drop1 .layout span.time{
+    margin-left: 20px;
 }
 .main_right1>.drop1 ul{
     display: inline-block;
@@ -55,19 +58,22 @@
     border-top: 1px solid #DEDEDE;
     border-bottom: 1px solid #DEDEDE;
     color: #2B2B2B;
+    font-size: 14px;
 }
 .main_right1 .tab_list li{
-    width: 90px;
+    width: 100px;
     text-align: center;
     height: 100%;
-    line-height: 45px;
     display: inline-block;
     float: left;
     cursor: pointer;
+    font-size: 14px;
+    padding-top: 15px;
 }
  .main_right1 .tab_list li.active{
     background: #fff;
     border-top: 4px solid #4FA8F9;
+    padding-top: 12px;
 } 
 .tab_list span{
     float: left;
@@ -105,10 +111,11 @@
     height: 350px;
 }
 .tab_charts .chart1{
-    width: 42%;
+    width: 46%;
+    padding-left: 2%;
 }
 .tab_charts .chart2{
-    width: 58%;
+    width: 52%;
 }
 /* 来源表 */
 .source_table{
@@ -160,4 +167,67 @@
 } 
 .wid{
     width: 70%;
+}
+#earch2{
+    width: 100%;
+    height:300px;
+}
+#echart_2{
+    width: 100%;
+    height:300px;
+}
+#earch3,#earch5,#earch7{
+    width: 600px;
+    height:300px;
+}
+#echart_4,#echart_6,#echart_8{
+    width: 700px;
+    height:300px;
+}
+/* 图表响应式 */
+@media screen and (max-width: 1600px) {
+    #earch2{
+    width: 505px;
+     }   
+    #echart_2{
+    width: 465px;
+     }
+    #earch3,#earch5,#earch7{
+            width: 505px;
+        }
+    #echart_4,#echart_6,#echart_8{
+            width: 465px;
+        }
+    .tab_charts .chart1{
+            width: 48%;
+            padding-left: 2%;
+        }
+   .tab_charts .chart2{
+            width: 50%;
+         }    
+}
+@media screen and (max-width: 1366px) {
+   #earch2{
+        width: 350px;
+        height: 255px;
+     }   
+    #echart_2{
+        width: 340px;
+        height: 255px;
+     }
+    #earch3,#earch5,#earch7{
+            width: 390px;
+            height: 255px;
+        }
+    #echart_4,#echart_6,#echart_8{
+           width: 330px;
+           height: 255px;
+        }
+    .tab_charts .chart1{
+            width: 53%;
+            padding-left: 2%;
+        }
+   .tab_charts .chart2{
+            width: 45%;
+         }  
 }
