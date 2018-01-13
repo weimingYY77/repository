@@ -1,0 +1,89 @@
+/* 右边 */
+.main_right{
+    display: inline-block;
+    position: relative;
+    margin: 56px 40px 26px 40px;
+    width: 82%;
+    margin-left: 16%;
+}
+
+ /* 详细消费 */
+ .all_services{
+ 	width: 100%;
+  padding-bottom: 40px;
+ 	margin-top: 35px;
+ }
+.all_services .consume{
+  margin-right: 2%;
+  margin-left: 8%;
+    border: 1px solid #E1E6EB;
+}
+.all_services>p:first-child{
+	padding-top: 20px;
+	padding-left: 35px;
+  padding-bottom: 30px;
+	font-size: 20px;
+	color: #333;
+}
+.all_services .consume .findbox{
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #646464;
+  border-bottom: 1px solid #E1E6EB;
+}
+.consume .findbox label{
+  padding-left: 30px;
+}
+.consume .findbox input{
+  width: 12%;
+  height: 25px;
+  outline: none;
+  padding-left:3px;
+}
+.consume .findbox .select{
+  width: 70px;
+  height: 29px;
+  background: #F3F4F5;
+  border: 1px solid #646464;
+  color: #646464;
+  cursor: pointer;
+  outline: none;
+  margin-left: 10px;
+}
+ .all_services .services_tab{
+ 	width: 100%;
+ 	color: #646464;
+ 	padding-bottom: 150px;
+ }
+.all_services .services_tab tr td{
+  padding-left: 30px;
+  height: 40px;
+}
+.all_services .services_tab tr:first-child{
+  	background: #F1F3F4;
+  }
+.all_services>p:last-child{
+	padding-left: 8%;
+	margin-top: 10px;
+	color: #2B2B2B;
+}
+.all_services .services_tab span.renew{
+	color: #00C1DE;
+	padding-right: 10px;
+}
+.all_services .remind{
+	padding-left: 8%;
+	margin-bottom: 10px;
+	color: #2B2B2B;
+}
+/* 响应式小于1366 大于1024*/
+@media screen and (max-width:1366px) and (min-width:1024px){
+.cloud_promotion>p.ad {
+    margin-right:5%;
+}
+.cloud_promotion .ad>span:last-child {
+    margin-left: 40px;
+}
+}
+

@@ -1,0 +1,68 @@
+/* 右边 */
+.main_right{
+    display: inline-block;
+    position: relative;
+    margin: 56px 40px 26px 40px;
+    width: 82%;
+    margin-left: 16%;
+}
+
+ /* 基本资料 */
+ .all_services{
+ 	width: 100%;
+  padding-bottom: 400px;
+ 	margin-top: 35px;
+ }
+
+.all_services>p:first-child{
+	padding-top: 20px;
+	padding-left: 35px;
+  padding-bottom: 30px;
+	font-size: 20px;
+	color: #333;
+}
+.data{
+  font-size: 20px;
+}
+.data p{
+  line-height: 40px;
+}
+.data p>span:first-child{
+  color: #333;
+}
+.data p>span.color64{
+  color: #646464;
+  padding-left: 10px;
+}
+.data p>span.address{
+  padding-left: 110px;
+  padding-top: 10px;
+}
+.data p>span.fax,.data p>span.area{
+  padding-left: 5%
+}
+.data_lft,.data_rit{
+  display: inline-block;
+}
+.data_lft{
+  float: left;
+  padding-left:5%;
+  width: 45%;
+}
+.data_lft .change{
+  width: 90px;
+  height: 30px;
+  background: #fff;
+  color: #00C1DE;
+  border: 1px solid #00C1DE;
+  text-align: center;
+  margin-top: 35px;
+  outline: none;
+  cursor: pointer;
+}
+.data_rit{
+float: left;
+margin-left:5%;
+width: 45%;
+}
+

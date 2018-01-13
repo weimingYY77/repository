@@ -1,0 +1,61 @@
+/* 右边 */
+.main_right{
+    display: inline-block;
+    position: relative;
+    margin: 56px 40px 26px 40px;
+    width: 82%;
+    margin-left: 16%;
+}
+
+ /* 消费表 工单表 */
+ .all_services{
+ 	width: 100%;
+    padding-bottom: 40px;
+ 	margin-top: 35px;
+ }
+.all_services>p:first-child{
+	padding-top: 20px;
+	padding-left: 35px;
+    padding-bottom: 30px;
+	font-size: 20px;
+	color: #333;
+}
+ .all_services .services_tab{
+ 	border: 1px solid #E1E6EB;
+ 	width: 90%;
+ 	margin-right: 2%;
+ 	margin-left: 8%;
+ 	color: #646464;
+ 	text-align: center;
+ 	padding-bottom: 150px;
+ }
+.all_services .services_tab tr{
+  	height: 40px;
+  }
+.all_services .services_tab tr:first-child{
+  	background: #F1F3F4;
+  }
+.all_services>p:last-child{
+	padding-left: 8%;
+	margin-top: 10px;
+	color: #2B2B2B;
+}
+.all_services .services_tab span.renew{
+	color: #00C1DE;
+	padding-right: 10px;
+}
+.all_services .remind{
+	padding-left: 8%;
+	margin-bottom: 10px;
+	color: #2B2B2B;
+}
+/* 响应式小于1366 大于1024*/
+@media screen and (max-width:1366px) and (min-width:1024px){
+.cloud_promotion>p.ad {
+    margin-right:5%;
+}
+.cloud_promotion .ad>span:last-child {
+    margin-left: 40px;
+}
+}
+

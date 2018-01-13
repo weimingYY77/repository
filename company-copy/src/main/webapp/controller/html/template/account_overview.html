@@ -208,13 +208,13 @@
 						<a href="Source_analysis.html" class="inactive">来源分析</a>
 					</li>
 					<li>
-						<a href="Access-analysis.html">访问分析</a>
+						<a href="pageviews.html">访问分析</a>
 					</li>
 					<li>
 						<a href="Guest.html" class="inactive">访客分析</a>
 					</li>
 					<li>
-						<a href="#" class="inactive">搜索排名</a>
+						<a href="ranking.html" class="inactive">搜索排名</a>
 					</li>
 			    </ul>
 		</li>
@@ -254,18 +254,20 @@
 		<form action="account_overview_submit" method="get" class="voucher_form">
 			<div class="form_group">
 				<label for="">支付金额：</label>
-				<input type="text" name="" value="" placeholder="请选择你要充值的金额……">
+				<input type="text" name="" value="" placeholder="请输入你要充值的金额……" class="price">
 			</div>
-			<div class="form_group">
+			<div class="form_group mg30">
 				<label for="">支付方式：</label>
-				<input type="radio" name="pay" value=""><span></span>支付宝扫码支付<br>
-				<input type="radio" name="pay" value=""><span></span>微信扫码支付
+				<input type="radio" name="pay" value=""><span class="icon zfb"></span>支付宝扫码支付<br>
+				<input type="radio" name="pay" value="" class="mglft"><span class="icon wx"></span>微信扫码支付
+			</div>
+			<div class="form_group mg50">
+				<label for="">服务协议：</label>
+				<input type="radio" name="" value="">&nbsp;&nbsp;我已经阅读并同意<a href="#">《服务协议》</a>
 			</div>
 			<div class="form_group">
-				<label for="">服务协议：</label>
-				<input type="radio" name="" value=""><span></span>我已经阅读并同意<a href="#">《服务协议》</a>
+				<button type="button" class="sure  mglft">确定</button>				
 			</div>
-			<button type="button">确定</button>
 		</form>
 	</div>
 	<div class="voucher_rit">

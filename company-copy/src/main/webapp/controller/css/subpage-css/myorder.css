@@ -1,0 +1,114 @@
+/* 右边 */
+/* 我的订单 */
+.data_table{
+	width: 100%;
+}
+ /* 四张表 */
+ .data_table  .block{
+    display:inline-block;
+    height: 300px;
+    width: 49%;
+    float: left;
+    padding-bottom: 40px;
+    color: #646464;
+ }
+ .data_table .block2, .data_table .block4{
+ 	margin-left: 2%; 
+ }
+ .data_table  .block3,.data_table .block4{
+ 	margin-top: 30px;
+ }
+ .data_table  .block>p{
+ 	padding-top: 33px;
+ 	padding-left: 36px;
+ 	color: #333;
+ 	font-size: 20px;
+ }
+ /* 表格样式 */
+.tab_list{
+	margin-top: 20px;
+  margin-left: 4%;
+  width: 92%;
+ 	border:1px solid #d7d7d8;
+ }
+.tab_list tr{
+  	height: 40px;
+  }
+.tab_list th{
+   background: #F5F5F6;
+   font-weight: normal;
+   border-left:1px solid #d7d7d8; 
+  }
+.tab_list th:first-child{
+	border-left: none;
+}
+.tab_list td{
+	width: 18%;
+  	border:1px solid #d7d7d8;
+  	border-bottom: none;
+  	border-right: none;
+  	text-align: center;
+  }
+.tab_list td:last-child{
+	width: 22%;
+  }
+.tab_list tr>td:first-child{
+	border-left: none;
+}
+.tab_list tr td>span{
+  padding-right: 10px;
+}
+/* 退订记录 */
+.all_services{
+  width: 100%;
+    padding-bottom: 40px;
+  margin-top: 35px;
+ }
+.all_services>p:first-child{
+  padding-top: 20px;
+  padding-left: 35px;
+  padding-bottom: 30px;
+  font-size: 20px;
+  color: #333;
+}
+ .all_services .services_tab{
+  border: 1px solid #E1E6EB;
+  width: 90%;
+  margin-right: 2%;
+  margin-left: 8%;
+  color: #646464;
+  text-align: center;
+  padding-bottom: 100px;
+ }
+.all_services .services_tab tr{
+    height: 40px;
+  }
+.all_services .services_tab tr:first-child{
+    background: #F1F3F4;
+  }
+.all_services>p:last-child{
+  padding-left: 8%;
+  margin-top: 10px;
+  color: #2B2B2B;
+}
+.all_services>p:last-child>a{
+  color: #00C1DE;
+}
+.all_services .services_tab span.renew{
+  color: #00C1DE;
+  padding-right: 10px;
+}
+.all_services .remind{
+  padding-left: 8%;
+  margin-bottom: 10px;
+  color: #2B2B2B;
+}
+/* 响应式小于1366 大于1024*/
+@media screen and (max-width: 1366px) and (min-width: 1024px){
+.network>p.ad {
+    margin-right:5%;
+}
+.network .ad>span:last-child {
+    margin-left: 40px;
+}
+}

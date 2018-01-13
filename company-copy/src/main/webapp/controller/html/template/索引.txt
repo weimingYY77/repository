@@ -7,6 +7,16 @@ network.html -产品与服务统计- 网络外包
 
 2、
 account_overview.html- 费用- 账户总览
+myorder.html  - 费用- 我的订单
+renew.html  - 费用- 续费管理
+
+3、
+my_worklist.html - 工单- 我的工单 
+
+4、
+account_summary.html  - 账户管理 - 账户概括
+account_information.html - 账户管理 - 账户信息
+
 
 
 5、
