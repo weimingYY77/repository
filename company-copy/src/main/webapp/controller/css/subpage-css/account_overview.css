@@ -147,6 +147,7 @@
 	color: #fff;
 	border: none;
 	cursor: pointer;
+	outline: none;
 }
 .form_group .mglft{
 	margin-left: 85px;
