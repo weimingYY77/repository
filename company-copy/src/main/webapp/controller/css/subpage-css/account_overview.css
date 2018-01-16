@@ -54,6 +54,11 @@
 	background: #00C1DE;
 	margin-bottom: 30px;
 }
+.balance_rit a{
+	line-height: 60px;
+    height: 60px;
+    display: block;
+}
 .balance_rit .recharge>a{
     color: #fff;
 }
