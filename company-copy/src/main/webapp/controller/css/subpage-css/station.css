@@ -6,7 +6,7 @@
     width: 82%;
     margin-left: 16%;
 }
-/* 云推广 */
+/* 自主建站 */
 .main_right .station{
 	width: 100%;
 	height: 120px;
@@ -84,14 +84,38 @@
   width: 58.4%;
   float: left;
   margin-left: 2.6%;
+  position: relative;
 }
 .service_progress>p{
  	color: #333333;
  	font-size: 20px;
  	padding-top: 52px;
  	padding-left: 36px;
+ 	display: inline-block;
+ 	float: left;
  }
-
+.service_progress .chart_one,.service_progress .chart_two{
+	display: inline-block;
+	position: absolute;
+	width: 40%;
+	top: -100px;
+}
+.service_progress .chart_two{
+	left:50%;
+}
+#chart1{
+	width: 100%;
+	height: 400px;
+}
+#chart2{
+	width: 100%;
+	height: 400px;
+}
+.service_progress>div>p{
+	text-align: center;
+	color: #646464;
+	margin-top: -35px;
+}
  /* 模版   定制 */
  .data_table .template{
     display:inline-block;
@@ -161,15 +185,10 @@
  	margin-left: 1%;
     width: 24%; 
 }
-/* .customized ul li:before{
-	content: " ";
-	display: block;
-	clear: both;
-} */
  /* 我的站点 */
  .my_site{
  	width: 100%;
- 	height: 156px;
+ 	padding-bottom: 30px;
  }
 .my_site>p:first-child{
 	padding-top: 20px;
@@ -184,6 +203,78 @@
 .my_site>p>a{
 	color: #00C1DE;
 }
+ /* 我的站点 登陆后*/
+ .my_site .item_block{
+ 	display: inline-block;
+ 	float: left;
+ 	margin-left: 2%;
+ }
+ .item_top{
+ 	margin-top: 40px;
+ }
+.equip{
+	width: 15%;
+	text-align: center;
+	color: #333;
+	background: #e5e6e9;
+	padding-top: 35px;
+	padding-bottom: 15px;
+}
+.equip .equipment{
+	font-size: 24px;
+    margin-top: 10px;
+}
+.equip .link{
+	font-size: 14px;
+	height: 27px;
+	line-height: 27px;
+}
+.equip .visited{
+	width: 98px;
+	height: 25px;
+	border:1px solid #00C1DE;
+	border-radius: 4px;
+	outline: none;
+	background: #e5e6e9;
+}
+.equip .visited>a{
+    color:#00C1DE;
+    display: inline-block;
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+}
+.browse{
+	width: 60%;
+}
+.browse .browse_tab{
+	width: 100%;
+	border:1px solid #f3f4f5;
+	color: #2b2b2b;
+}
+.browse .browse_tab tr{
+	height: 50px;
+}
+.browse .browse_tab tr td{
+	text-align: center;
+}
+.browse .browse_tab tr:first-child td{
+	background: #e5e6e9;
+}
+.item_btn{
+	width: 19%;
+}
+.item_btn>button{
+	width: 220px;
+	height: 40px;
+	background: #00c1de;
+	color: #fff;
+	border:none;
+	outline: none;
+	font-size: 22px;
+	margin-top: 80px;
+}
+
 /* 响应式小于1366 大于1024*/
 @media screen and (max-width: 1366px) and (min-width: 1024px){
 .station>p.ad {
@@ -192,5 +283,14 @@
 .station .ad>span:last-child {
     margin-left: 40px;
 }
+}
+@media screen and (max-width: 1600px) {
+.service_progress .chart_one,.service_progress .chart_two{
+	width: 37%;
+}
+}
+@media screen and (max-width: 1300px) {
+.service_progress .chart_one,.service_progress .chart_two{
+	width: 35%;
 }
 

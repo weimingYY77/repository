@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>三千客 | 自主建站</title>
+	<title>三千客 | 消费记录</title>
 	<link rel="stylesheet" href="../../css/common-css/common.css">
-	<link rel="stylesheet" href="../../css/subpage-css/station.css">
+	<link rel="stylesheet" href="../../css/subpage-css/record.css">
 	<link rel="shortcut icon" href="../../../themes/valudio/assets/favicon.ico" tppabs="http://valudio.com/themes/valudio/assets/favicon.ico" type="image/x-icon">
 	<script type="text/javascript" src="../../js/common-js/jquery.js"></script>
 	<script type="text/javascript" src="../../js/common-js/common.js"></script>
@@ -15,8 +15,12 @@
 	<div class="head_top">
 		<div class="nav_head">
 			<div class="nav_lft">
-				<div class="logo"><a href="../../../../../../index.htm">SumChance</a></div>
-				<div class="logo_txt"><a href="#">管理控制台</a></div>
+				<div class="logo">
+					<a href="../../../../../../index.htm">SumChance</a>
+				</div>
+				<div class="logo_txt">
+					<a href="../index.html">管理控制台</a>
+				</div>
 			</div>
 
 			<div class="nav_rit">
@@ -83,6 +87,8 @@
 				<span class="cost"></span>
 				<a href="javascript:;" title="">工单</a>
 				<div class="my_cost">
+					<!--<span class="u123"></span>
+				-->
 				<ul>
 					<li>我的工单</li>
 					<li>提交工单</li>
@@ -115,17 +121,17 @@
 	<ul class="yiji">
 		<li  class="inactive">
 			<a href="#">
-				<span class="bjt"></span>
+				<span class="rjt"></span>
 				产品与服务
 			</a>
-			<ul class="active">
+			<ul>
 				<li>
 					<a href="promotion.html">云推广</a>
 				</li>
 				<li>
 					<a href="network.html">网络外包</a>
 				</li>
-				<li  class="active">
+				<li>
 					<a href="station.html">自主建站</a>
 				</li>
 				<li>
@@ -136,24 +142,24 @@
 
 		<li class="inactive">
 			<a href="#" >
-				<span class="rjt"></span>
+				<span class="bjt"></span>
 				费用
 			</a>
-			<ul>
+			<ul class="active">
 				<li>
-					<a href="account_overview.html">账户总览</a>
+					<a href="account_overview.html" class="inactive">账户总览</a>
 				</li>
 				<li>
 					<a href="myorder.html">我的订单</a>
 				</li>
-				<li>
+				<li class="active">
 					<a href="record.html">消费记录</a>
 				</li>
 				<li>
 					<a href="renew.html">续费管理</a>
 				</li>
 				<li>
-					<a href="javascript:;">退订管理</a>
+					<a href="#">退订管理</a>
 				</li>
 			</ul>
 		</li>
@@ -164,19 +170,19 @@
 			</a>
 			<ul>
 				<li>
-					<a href="my_worklist.html">我的工单</a>
+					<a href="my_worklist.html" class="inactive">我的工单</a>
 				</li>
 				<li>
-					<a href="submit.html">提交工单</a>
+					<a href="submit.html" class="inactive">提交工单</a>
 				</li>
-			</ul>		
+			</ul>
 		</li>
 		<li  class="inactive">
 			<a href="#">
 				<span class="rjt"></span>
 				账户管理
 			</a>
-		<ul>
+		 <ul>
 			<li>
 				<a href="account_summary.html">账户概括</a>
 			</li>
@@ -221,129 +227,106 @@
 </div>
 </div>
 <div class="main_right net">
-<!-- 自主建站 -->
-<div class="station box_show">
-	<p>自主建站</p>
-	<p class="ad">
-		公告：
-		<span>
-			【12-01】
-			<span>我们升级了系统XXXXX。</span>
-		</span>
-		<span>
-			【12-20】
-			<span>XXXXXX是我们的新功能</span>
-		</span>
-	</p>
-	<div style="clear:both"></div>
+<div class="overview box_show">
+	<p>消费总览</p>
+    <div class="chart">
+         <span>一周内</span>
+    	<div id="chart1"></div>
+    </div>
+    <div class="chart">
+        <span>一个月内</span>
+    	<div id="chart2"></div>
+    </div>
+    <div class="chart">
+        <span>所有消费</span>
+    	<div id="chart3"></div>
+    </div>
+    <div style="clear: both"></div>
 </div>
-<div class="block_two">
-	<!-- 热门应用 -->
-	<div class="hotservice box_show">
-		<p>热门服务</p>
-		<ul>
-			<li>
-				<a href="" title="">私人定制</a>
-			</li>
-			<li>
-				<a href="" title="">移动网站</a>
-			</li>
-			<li>
-				<a href="" title="">网站模版</a>
-			</li>
-			<li>
-				<a href="" title="">申请域名</a>
-			</li>
-			<li>
-				<a href="" title="">购买服务器</a>
-			</li>
-			<div style="clear:both"></div>
-		</ul>
-	</div>
-	<!-- 服务进度 -->
-	<div class="service_progress box_show">
-		<p>服务进度</p>
-		<div class="chart_one">
-			<div id="chart1"></div>
-			<p>模板建站</p>
+<!-- 消费明细 -->
+<div class="all_services box_show">
+	<p>消费明细</p>
+	<div class="consume">
+		<div class="findbox">
+		  <div>
+		  <span>产品：</span>
+	       <select name="">
+	       	   <option value="">所有产品</option>
+	       	   <option value="">云推广</option>
+	       	   <option value="">网络外包</option>
+	       	   <option value="">自主建站</option>
+	       	   <option value="">形象策划</option>
+	       </select>  	
+		  </div>
+		  <div>
+		  <span>支付状态：</span>
+	       <select name="">
+	       	   <option value="">所有状态</option>
+	       	   <option value="">已支付</option>
+	       	   <option value="">未结清</option>
+	       	   <option value="">未结算</option>
+	       </select>  	
+		  </div>
+		  <div>
+		  <span>按账单：</span>
+	       <select name="">
+	       	   <option value="">2017年12月</option>
+	       	   <option value="">2017年11月</option>
+	       	   <option value="">2017年10月</option>
+	       	   <option value="">2017年9月</option>
+	       </select>  	
+		  </div>
+	       <button type="button" class="select">查询</button>
 		</div>
-		<div class="chart_two">
-			<div id="chart2"></div>
-			<p>订制服务</p>
-		</div>
-	</div>
-	<div style="clear:both"></div>
-</div>
-<div class="data_table">
-	<div class="template box_show">
-		<p>热门模版</p>
-		<table class="template_tab" cellspacing="0" cellpadding="0">
+		<table cellspacing="0" cellpadding="0" class="services_tab">
 			<tbody>
-			    <tr>
-                     <th>模版名称</th>
-                     <th>人气值</th>
-                     <th>浏览数</th>
-                     <th>报价</th>
-			    </tr>
 				<tr>
-					<td>黑色经典001</td>
-					<td> </td>
-					<td></td>
-					<td> </td>
+					<td>消费时间</td>
+					<td>账期</td>
+					<td>产品</td>
+					<td>账单号</td>
+					<td>应付金额</td>
+					<td>操作</td>
 				</tr>
 				<tr>
-					<td>蓝色梦幻005</td>
-					<td> </td>
-					<td></td>
-					<td> </td>
-				</tr>
-				<tr>
-					<td>深蓝忧郁004</td>
-					<td> </td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>碧蓝天空008</td>
-					<td> </td>
-					<td></td>
-					<td> </td>
-				</tr>
-				<tr>
-					<td>蓝色梦幻006</td>
-					<td> </td>
-					<td></td>
-					<td> </td>
-				</tr>
-				<tr>
-					<td>黑色经典004</td>
-					<td> </td>
-					<td></td>
-					<td> </td>
+					<td>2017/5/11</td>
+					<td>三千客云推广</td>
+					<td>123321111</td>
+					<td>50%</td>
+					<td>已支付</td>
+					<td><span class="renew">查看</span><span>删除</span></td>
 				</tr>
 			</tbody>
-		</table>
+		</table>	
 	</div>
-	<div class="customized box_show">
-		<p>定制展示</p>
-        <ul>
-        	<li></li>
-        	<li></li>
-        	<li></li>
-        	<li></li>
-        	<li></li>
-        	<li></li>
-        	<li></li>
-        	<li></li>
-			<div style="clear:both"></div>
-        </ul>
-	</div>
-	<div style="clear:both"></div>
 </div>
-<div class="my_site box_show">
-	<p>我的站点</p>
-    <p>你没有建立站点，<a href="">点击建立自己的网站吧！</a></p>
+<!-- 最近消费 -->
+<div class="all_services box_show">
+	<p>最近消费</p>
+	<table cellspacing="0" cellpadding="0" class="services_tab  wid">
+		<tbody>
+			<tr>
+				<td>消费时间</td>
+				<td>产品名称</td>
+				<td>支付方式</td>
+				<td>账单号</td>
+				<td>应付金额</td>
+				<td>支付状态</td>
+				<td>操作</td>
+			</tr>
+			<tr>
+				<td>2017/5/11</td>
+				<td>三千客云推广</td>
+				<td>支付宝</td>
+				<td>123321111</td>
+				<td>50%</td>
+				<td>已支付</td>
+				<td><span class="renew">查看</span><span>删除</span></td>
+			</tr>
+		</tbody>
+	</table>
 </div>
+
 </div>
 </div>
 </body>
@@ -376,15 +359,17 @@ option1 = {
     calculable : true,
     series : [
         {
-            name:'访问来源',
+            // name:'访问来源',
             type:'pie',
             radius : '55%',
             center: ['50%', '60%'],
             data:[
-                {value:25, name:'已完成'},
-                {value:75, name:'未完成'}
+                {value:25, name:'网络外包'},
+                {value:25, name:'形象策划'},
+                {value:25, name:'云推广'},
+                {value:25, name:'自主建站'}
             ],
-            color:['#00c1de','#e2e2e4']
+            color:['#8eb5d4','#d6d7d8','#3c80a4','#559cbd']
         }
     ]
 };
@@ -419,18 +404,65 @@ option2 = {
     calculable : true,
     series : [
         {
-            name:'访问来源',
+            // name:'访问来源',
             type:'pie',
             radius : '55%',
             center: ['50%', '60%'],
             data:[
-                {value:25, name:'已完成'},
-                {value:75, name:'未完成'}
+                {value:25, name:'网络外包'},
+                {value:25, name:'形象策划'},
+                {value:25, name:'云推广'},
+                {value:25, name:'自主建站'}
             ],
-            color:['#00c1de','#e2e2e4']
+            color:['#8eb5d4','#d6d7d8','#3c80a4','#559cbd']
         }
     ]
 };
  chart2.setOption(option2);
+</script>
+<script type="text/javascript">
+var chart3 = echarts.init(document.getElementById("chart3"));
+option3 = {
+    tooltip : {
+        trigger: 'item',
+        formatter: "{a} <br/>{b} : {c} ({d}%)"
+    },
+
+    toolbox: {
+        show : true,
+        feature : {
+            mark : {show: true},
+            magicType : {
+                // show: true, 
+                type: ['pie', 'funnel'],
+                option: {
+                    funnel: {
+                        x: '25%',
+                        width: '50%',
+                        funnelAlign: 'left',
+                        max: 1548
+                    }
+                }
+            }
+        }
+    },
+    calculable : true,
+    series : [
+        {
+            // name:'访问来源',
+            type:'pie',
+            radius : '55%',
+            center: ['50%', '60%'],
+            data:[
+                {value:25, name:'网络外包'},
+                {value:25, name:'形象策划'},
+                {value:25, name:'云推广'},
+                {value:25, name:'自主建站'}
+            ],
+            color:['#8eb5d4','#d6d7d8','#3c80a4','#559cbd']
+        }
+    ]
+};
+ chart3.setOption(option3);
 </script>
 </html>

@@ -1,0 +1,73 @@
+/* 右边 */
+.main_right{
+    display: inline-block;
+    position: relative;
+    margin: 56px 40px 26px 40px;
+    width: 82%;
+    margin-left: 16%;
+}
+
+ /* 安全设置 */
+ .all_services{
+ 	width: 95%;
+  padding-bottom: 40px;
+ 	margin-top: 35px;
+  padding-left: 3%;
+  padding-right: 2%;
+ }
+.all_services>p:first-child{
+	padding-top: 20px;
+  padding-bottom: 30px;
+	font-size: 20px;
+	color: #333;
+}
+ .safe_box{
+  padding-top: 20px;
+  height: 180px;
+  width: 100%;
+  border: 1px solid #a3a3a3;
+  margin-top: 20px;
+  color: #646464;
+} 
+.safe_box>p:first-child{
+  font-size: 20px;
+  padding-left: 40px;
+ }
+.safe_box>p.account{
+  font-size: 36px;
+  text-align: center; 
+  margin-top: 20px;
+ }
+ .safe_box .border_btn{
+  width: 200px;
+  height: 40px;
+  outline: none;
+  cursor: pointer;
+ }
+ .safe_box .modify{
+  float: right;
+  margin-right: 90px;
+  margin-top: 30px;
+  background: #fff;
+  color: #00c1de;
+  border: 1px solid #00c1de;
+ }
+ .safe_box .btn_group{
+  text-align: center;
+ }
+.safe_box .cancel{
+  background: #fff;
+  color: #00c1de;
+  border: 1px solid #00c1de;
+  margin-top: 40px;
+  margin-right: 20px;
+ }
+.safe_box .change_login{
+  background: #00c1de;
+  color: #fff;
+  border: 1px solid #00c1de;
+  margin-top: 40px;
+ }
+
+
+

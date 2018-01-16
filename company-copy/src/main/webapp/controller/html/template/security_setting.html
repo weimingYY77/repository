@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>三千客 | 我的工单</title>
+	<title>三千客 | 安全设置</title>
 	<link rel="stylesheet" href="../../css/common-css/common.css">
-	<link rel="stylesheet" href="../../css/subpage-css/my_worklist.css">
+	<link rel="stylesheet" href="../../css/subpage-css/security_setting.css">
 	<link rel="shortcut icon" href="../../../themes/valudio/assets/favicon.ico" tppabs="http://valudio.com/themes/valudio/assets/favicon.ico" type="image/x-icon">
 	<script type="text/javascript" src="../../js/common-js/jquery.js"></script>
 	<script type="text/javascript" src="../../js/common-js/common.js"></script>
@@ -138,31 +138,31 @@
 				<span class="rjt"></span>
 				费用
 			</a>
-		<ul>
-			<li>
-				<a href="account_overview.html">账户总览</a>
-			</li>
-			<li>
-				<a href="myorder.html">我的订单</a>
-			</li>
-			<li>
-				<a href="record.html">消费记录</a>
-			</li>
-			<li>
-				<a href="renew.html">续费管理</a>
-			</li>
-			<li>
-				<a href="javascript:;">退订管理</a>
-			</li>
-		</ul>
+			<ul>
+				<li>
+					<a href="account_overview.html">账户总览</a>
+				</li>
+				<li>
+					<a href="myorder.html">我的订单</a>
+				</li>
+				<li>
+					<a href="record.html">消费记录</a>
+				</li>
+				<li>
+					<a href="renew.html">续费管理</a>
+				</li>
+				<li>
+					<a href="javascript:;">退订管理</a>
+				</li>
+			</ul>
 		</li>
 		<li  class="inactive">
 			<a href="#">
-				<span class="bjt"></span>
+				<span class="rjt"></span>
 				工单
 			</a>
-			<ul class="active">
-				<li class="active">
+			<ul>
+				<li>
 					<a href="my_worklist.html">我的工单</a>
 				</li>
 				<li>
@@ -172,20 +172,20 @@
 		</li>
 		<li  class="inactive">
 			<a href="#">
-				<span class="rjt"></span>
+				<span class="bjt"></span>
 				账户管理
 			</a>
-		<ul>
-			<li>
-				<a href="account_summary.html">账户概括</a>
-			</li>
-			<li>
-				<a href="account_information.html">账户信息</a>
-			</li>
-			<li>
-				<a href="security_setting.html">安全设置</a>
-			</li>
-		</ul>
+			<ul class="active">
+				<li>
+					<a href="account_summary.html" class="inactive">账户概括</a>
+				</li>
+				<li>
+					<a href="account_information.html" class="inactive">账户信息</a>
+				</li>
+				<li class="active">
+					<a href="security_setting.html">安全设置</a>
+				</li>
+			</ul>
 		</li>
 		<li  class="inactive">
 				<a href="#">
@@ -220,37 +220,26 @@
 </div>
 </div>
 <div class="main_right net">
-<!-- 消费详细 -->
+<!-- 安全设置 -->
 <div class="all_services box_show">
-	<p>详细消费</p>
-	<div class="consume">
-		<p class="findbox">
-	       <label for="">工单号：</label><input type="text" name="" value="">
-	       <label for="">时间：</label><input type="date" name="" value="">&nbsp;至&nbsp;<input type="date" name="" value="">
-	       <label for="">关键字：</label><input type="text" name="" value="">
-	       <button type="button" class="select">查询</button>
-		</p>
-		<table cellspacing="0" cellpadding="0" class="services_tab">
-			<tbody>
-				<tr>
-					<td>工单编号</td>
-					<td>问题内容</td>
-					<td>问题分类</td>
-					<td>提交时间</td>
-					<td>状态</td>
-					<td>操作</td>
-				</tr>
-				<tr>
-					<td>2017/5/11</td>
-					<td>三千客云推广</td>
-					<td>123321111</td>
-					<td>50%</td>
-					<td>已支付</td>
-					<td><span class="renew">查看</span><span>删除</span></td>
-				</tr>
-			</tbody>
-		</table>	
-	</div>
+	<p>安全设置</p>
+    <div class="safe_box">
+    	<p>您绑定的邮箱：</p>
+    	<p class="account">3697425XX@qq.com</p>
+    	<button type="button" class="modify border_btn">修改</button>
+    </div>
+    <div class="safe_box">
+    	<p>您绑定的手机号码：</p>
+    	<p class="account">15263582XXXX</p>
+    	<button type="button" class="modify border_btn">修改</button>
+    </div>
+    <div class="safe_box">
+    	<p>其他操作：</p>
+    	<div class="btn_group">
+	    	<button type="button" class="border_btn cancel">注销登录</button>
+	    	<button type="button" class="border_btn change_login">修改登录密码</button>	
+    	</div>
+    </div>
 </div>
 </div>
 </div>

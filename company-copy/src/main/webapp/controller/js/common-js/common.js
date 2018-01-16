@@ -28,7 +28,6 @@ $(".drop-down").mouseenter(function() {
            $(this).children("a").children("span").removeClass("bjt").addClass("rjt");
        }
      })
-})
 
 
 // 大选项卡
@@ -47,4 +46,6 @@ $(".drop-down").mouseenter(function() {
 // 小切换按钮
   $(".dianji li").click(function(){
     $(this).addClass("active").siblings().removeClass("active");
+  })
+
   })

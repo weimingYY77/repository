@@ -1,6 +1,7 @@
 1、
 promotion.html -产品与服务统计- 云推广
 station.html -产品与服务统计- 自主建站
+station_login.html   -产品与服务统计- 自主建站(登录后）
 network.html -产品与服务统计- 网络外包
 
 
@@ -9,14 +10,16 @@ network.html -产品与服务统计- 网络外包
 account_overview.html- 费用- 账户总览
 myorder.html  - 费用- 我的订单
 renew.html  - 费用- 续费管理
+record.html   - 费用- 消费记录
 
 3、
 my_worklist.html - 工单- 我的工单 
+submit.html - 工单- 提交工单 
 
 4、
 account_summary.html  - 账户管理 - 账户概括
 account_information.html - 账户管理 - 账户信息
-
+security_setting.html   - 账户管理 - 安全设置
 
 
 5、
@@ -31,7 +34,7 @@ source_Engines.html   统计- 来源分析-搜索引擎
 source_searchword.html   统计- 来源分析-搜索词
 external_link.html    统计- 来源分析-外部链接 
 
-Access-analysis.html - 统计- 访问分析
+
 pageviews.html 统计- 访问分析-受访页面  
 visited_domain.html   统计- 访问分析-受访域名
 entry_page.html   统计- 访问分析-入口页面

@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>三千客 | 我的工单</title>
+	<title>三千客 | 提交工单</title>
 	<link rel="stylesheet" href="../../css/common-css/common.css">
-	<link rel="stylesheet" href="../../css/subpage-css/my_worklist.css">
+	<link rel="stylesheet" href="../../css/subpage-css/submit.css">
 	<link rel="shortcut icon" href="../../../themes/valudio/assets/favicon.ico" tppabs="http://valudio.com/themes/valudio/assets/favicon.ico" type="image/x-icon">
 	<script type="text/javascript" src="../../js/common-js/jquery.js"></script>
 	<script type="text/javascript" src="../../js/common-js/common.js"></script>
@@ -138,23 +138,23 @@
 				<span class="rjt"></span>
 				费用
 			</a>
-		<ul>
-			<li>
-				<a href="account_overview.html">账户总览</a>
-			</li>
-			<li>
-				<a href="myorder.html">我的订单</a>
-			</li>
-			<li>
-				<a href="record.html">消费记录</a>
-			</li>
-			<li>
-				<a href="renew.html">续费管理</a>
-			</li>
-			<li>
-				<a href="javascript:;">退订管理</a>
-			</li>
-		</ul>
+			<ul>
+				<li>
+					<a href="account_overview.html">账户总览</a>
+				</li>
+				<li>
+					<a href="myorder.html">我的订单</a>
+				</li>
+				<li>
+					<a href="record.html">消费记录</a>
+				</li>
+				<li>
+					<a href="renew.html">续费管理</a>
+				</li>
+				<li>
+					<a href="javascript:;">退订管理</a>
+				</li>
+			</ul>
 		</li>
 		<li  class="inactive">
 			<a href="#">
@@ -162,10 +162,10 @@
 				工单
 			</a>
 			<ul class="active">
-				<li class="active">
+				<li>
 					<a href="my_worklist.html">我的工单</a>
 				</li>
-				<li>
+				<li  class="active">
 					<a href="submit.html">提交工单</a>
 				</li>
 			</ul>
@@ -220,37 +220,58 @@
 </div>
 </div>
 <div class="main_right net">
-<!-- 消费详细 -->
+<!-- 提交工单 -->
 <div class="all_services box_show">
-	<p>详细消费</p>
-	<div class="consume">
-		<p class="findbox">
-	       <label for="">工单号：</label><input type="text" name="" value="">
-	       <label for="">时间：</label><input type="date" name="" value="">&nbsp;至&nbsp;<input type="date" name="" value="">
-	       <label for="">关键字：</label><input type="text" name="" value="">
-	       <button type="button" class="select">查询</button>
-		</p>
-		<table cellspacing="0" cellpadding="0" class="services_tab">
-			<tbody>
-				<tr>
-					<td>工单编号</td>
-					<td>问题内容</td>
-					<td>问题分类</td>
-					<td>提交时间</td>
-					<td>状态</td>
-					<td>操作</td>
-				</tr>
-				<tr>
-					<td>2017/5/11</td>
-					<td>三千客云推广</td>
-					<td>123321111</td>
-					<td>50%</td>
-					<td>已支付</td>
-					<td><span class="renew">查看</span><span>删除</span></td>
-				</tr>
-			</tbody>
-		</table>	
-	</div>
+	<p>我的工单</p>
+    <ul class="work_list dianji">
+    	<li class="active">选择产品</li>
+    	<span></span>
+    	<li>填写需要的服务</li>
+    	<span></span>
+    	<li>推荐解决方案</li>
+    	<span></span>
+    	<li>智能客服/创建工单</li>
+    	<div style="clear: both"></div>
+    </ul>
+    <div class="con">
+    	<div class="work_con">
+    		<ul>
+    			<li>
+                  <div>
+                  	<img src="../../images/cloud.png" alt="">
+                  	<span>云推广</span>
+                  	<button type="button">选择</button>
+                  </div>
+                  <p>什么是云推广，SEO，SEM等相关问题。</p>
+    			</li>
+    			<li>
+                  <div>
+                  	<img src="../../images/network.png" alt="">
+                  	<span>网络外包</span>
+                  	<button type="button">选择</button>
+                  </div>
+                  <p>什么是云推广，SEO，SEM等相关问题。</p>
+    			</li>
+    			<li>
+                  <div>
+                  	<img src="../../images/station.png" alt="">
+                  	<span>自主建站</span>
+                  	<button type="button">选择</button>
+                  </div>
+                  <p>什么是云推广，SEO，SEM等相关问题。</p>
+    			</li>
+    			<li class="no_border">
+                  <div>
+                  	<img src="../../images/play.png" alt="">
+                  	<span>形象策划</span>
+                  	<button type="button">选择</button>
+                  </div>
+                  <p>什么是云推广，SEO，SEM等相关问题。</p>
+    			</li>
+    			<div style="clear: both"></div>
+    		</ul>
+    	</div>
+    </div>
 </div>
 </div>
 </div>
