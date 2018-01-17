@@ -36,10 +36,15 @@
   padding-left: 30px;
 }
 .consume .findbox input{
-  width: 12%;
   height: 25px;
   outline: none;
   padding-left:3px;
+}
+.consume .findbox input[type="text"]{
+  width: 12%;
+}
+.consume .findbox input[type="date"]{
+  width: 12%;
 }
 .consume .findbox .select{
   width: 70px;
@@ -54,7 +59,7 @@
  .all_services .services_tab{
  	width: 100%;
  	color: #646464;
- 	padding-bottom: 150px;
+  padding-bottom: 50px;
  }
 .all_services .services_tab tr td{
   padding-left: 30px;
@@ -77,13 +82,15 @@
 	margin-bottom: 10px;
 	color: #2B2B2B;
 }
-/* 响应式小于1366 大于1024*/
 @media screen and (max-width:1366px) and (min-width:1024px){
-.cloud_promotion>p.ad {
-    margin-right:5%;
+ .consume .findbox label {
+    padding-left: 0px;
+} 
+.consume .findbox input[type="date"]{
+  width: 16%;
 }
-.cloud_promotion .ad>span:last-child {
-    margin-left: 40px;
+.consume .findbox .select{
+  margin-left: 5px;
 }
 }
 

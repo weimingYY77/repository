@@ -122,7 +122,7 @@
 /* 响应式小于1366 大于1024*/
 @media screen and (max-width: 1366px) and (min-width: 1024px){
 .network>p.ad {
-    margin-right:5%;
+   margin-right: 2%;
 }
 .network .ad>span:last-child {
     margin-left: 40px;

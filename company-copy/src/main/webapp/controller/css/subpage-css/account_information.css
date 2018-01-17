@@ -22,7 +22,7 @@
 	color: #333;
 }
 .data{
-  font-size: 20px;
+  font-size: 18px;
 }
 .data p{
   line-height: 40px;
@@ -62,7 +62,32 @@
 }
 .data_rit{
 float: left;
-margin-left:5%;
-width: 45%;
+width: 50%;
+}
+.data_tit,.data_con{
+  display: inline-block;
+  float: left;
+}
+.data_tit{
+  width: 18%;
+}
+.data_tit>p{
+  height: 40px;
+}
+.data_con{
+  width: 82%;
+}
+@media screen and (max-width:1366px) and (min-width:1024px){
+.data_lft{
+  float: left;
+  padding-left:5%;
+  width: 39%;
+  font-size: 16px;
+}
+.data_rit{
+  float: left;
+  width: 56%;
+  font-size: 16px;
+}
 }
 
