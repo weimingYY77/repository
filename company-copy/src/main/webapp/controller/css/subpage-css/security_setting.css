@@ -68,6 +68,13 @@
   border: 1px solid #00c1de;
   margin-top: 40px;
  }
-
+@media screen and (max-width:1366px) and (min-width:1024px){
+.safe_box>p:first-child {
+    font-size: 16px;
+}
+.safe_box>p.account {
+    font-size: 30px;
+}
+}
 
 

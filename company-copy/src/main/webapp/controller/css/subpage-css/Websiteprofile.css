@@ -49,6 +49,7 @@
 	line-height: 40px;
 	text-align: center;
 	border-right: 1px solid #e6e6e6;
+	cursor: pointer;
 }
 .Day.tab_list li.active{
 	background: #69B5FA;

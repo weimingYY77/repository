@@ -180,4 +180,8 @@
 	padding-left: 80px;
 	padding-top: 10px;
 }
-
+@media screen and (max-width:1366px) and (min-width:1024px){
+.notice ul li {
+    font-size: 13px;
+}
+}
