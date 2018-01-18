@@ -93,7 +93,7 @@
 		</div>
 	</li>
 	<li>
-		<a href="javascript:;" title="">用户xxx</a>
+		<a href="javascript:;" title="">用户<span id="userId"></a>
 	</li>
 	<span class="search"></span>
 </ul>
@@ -246,50 +246,52 @@
 	    	<div class="layout one">
 	    		<span>时间：</span>
 		    	<ul class="time dianji">
-		    		<li class="active">今天</li>
+		    		<li class="active" id="today">今天</li>
 		    		<span class="border_line"></span>
-		    		<li>昨天</li>
+		    		<li id="yesterday">昨天</li>
 		    	</ul>
 	    	</div>
 	    	<div class="layout two">
-	    	<span>设备：</span>
-	    	<ul class="equip dianji">
-	    		<li class="active">全部</li>
-	    		<span class="border_line"></span>
-	    		<li>计算机</li>
-	    		<span class="border_line"></span>
-	    		<li>移动设备</li>
-	    	</ul>
+	    	<span>来源：</span>
+	    	<select name="" id="source">
+	    		<option value="0">全部</option>
+	    		<option value="1">直接访问</option>
+	    		<option value="2">搜索引擎</option>
+	    		<option value="3">外部链接</option>
+	    	</select>    	
 	    	</div>
 	    	<div class="layout three">
 	    	<span>访客：</span>
 	    	<ul class="visit dianji">
-	    		<li class="active">全部</li>
+	    		<li class="active" id="visitor">全部</li>
 	    		<span class="border_line"></span>
-	    		<li>新访客</li>
+	    		<li id="newV">新访客</li>
 	    		<span class="border_line"></span>
-	    		<li>老访客</li>
+	    		<li id="oldV">老访客</li>
 	    	</ul>
 	    	</div>
 	    </div>
 	    <ul class="tab_list">
-	    	<li class="active">指数概要</li>
+	    	<li class="active" id="summary">指数概览</li>
 	    	<span></span>
-	    	<li>页面价值分析</li>
+	    	<li id="pageValue">页面价值分析</li>
 	    	<span></span>
-	    	<li>入口页分析</li>
+	    	<li id="entryPage">入口页分析</li>
 	    	<span></span>
-	    	<li>退出页分析</li>
+	    	<li id="exitPage">退出页分析</li>
 	    	<span></span>
 	    </ul>
 	    <!-- 指数概要选项卡 -->
 	    <div class="tab_content show_tab">
 		    <ul class="browse_list1">
-                <li><p>浏览量（PV）</p><span>16</span></li>
-		    	<li><p>访客数（UV）</p><span>16</span></li>
-		    	<li class="cen"><p>贡献下游浏览量</p><span>6</span></li>
-		    	<li class="cen"><p>退出页次数</p><span>100%</span></li>
-		    	<li class="cen"><p>平均停留时长</p><span>00:01:40</span></li>
+                <li class="pv_count"><p>浏览量（PV）</p><span id="a">--</span></li>
+		    	<li class="visitor_count"><p>访客数（UV）</p><span id="b">--</span></li>
+		    	<li class="ip_count"><p>IP数</p><span id="c">--</span></li>
+		    	<li class="visit1_count"><p>入口页次数</p><span id="d">--</span></li>
+		    	<li class="outward_count"><p>贡献下游浏览量</p><span id="e">--</span></li>
+		    	<li class="exit_count"><p>退出页次数</p><span id="f">--</span></li>
+		    	<li class="average_stay_time"><p>平均停留时长</p><span id="g">--</span></li>
+		    	<li class="exit_ratio"><p>退出率</p><span id="h">--</span></li>
 		    </ul>
 		        <!-- 来源表 -->
 		    <div class="source_tab">
@@ -305,141 +307,18 @@
 		    				<th colspan="3">流量质量指标</th>
 		    			</tr>
 		    			<tr>
-		    				<th style="border-left: 1px solid #DEDEDE;">浏览量（PV）</th>
-		    				<th>访客数（UV）</th>
-		    				<th>贡献下游浏览量</th>
-		    				<th>退出页次数</th>
-		    				<th>平均停留时长</th>
+		    				<th style="border-left: 1px solid #DEDEDE;" class="pv_count">浏览量（PV）</th>
+		    				<th class="visitor_count">访客数（UV）</th>
+		    				<th class="ip_count">IP数</th>
+		    				<th class="visit1_count">入口页次数</th>
+		    				<th class="outward_count">贡献下游浏览量</th>
+		    				<th class="exit_count">退出页次数</th>
+		    				<th class="average_stay_time">平均停留时长</th>
+		    				<th class="exit_ratio">退出率</th>
 		    			</tr>
 		    		</thead>
-		    		<tbody>
-		    			<tr>
-		    				<td>1 &nbsp;&nbsp;13:00~13:59</td>
-		    				<td>0</td>
-		    				<td>0</td>
-		    				<td>1</td>
-		    				<td>20%</td>
-		    				<td>00:00:14</td>
-		    			</tr>
-		    		</tbody>
-		    	</table>
-		    </div>  	
-	    </div>
-	    <!-- 页面价值选项卡 -->
-	    <div class="tab_content">
-		    <ul class="browse_list1">
-                <li class="wd20"><p>浏览量（PV）</p><span>16</span></li>
-		    	<li class="wd20"><p>访客数（UV）</p><span>16</span></li>
-		    	<li class="wd20"><p>贡献下游浏览量</p><span>6</span></li>
-		    	<li class="wd20"><p>平均停留时长</p><span>00:01:40</span></li>
-		    </ul>
-		        <!-- 来源表 -->
-		    <div class="source_tab">
-		    	<p class="search_block">
-		           <input type="text" name="" value="" placeholder="关键词、搜索词……">
-		           <span class="magnifier"></span>
-		        </p>
-		    	<table cellspacing="0" cellpadding="0" class="source_table">
-		    		<thead>
-		    			<tr>
-		    				<th rowspan="2" >页面URL</th>
-		    				<th colspan="2">网站基础指标</th>
-		    				<th colspan="3">流量质量指标</th>
-		    			</tr>
-		    			<tr>
-		    				<th style="border-left: 1px solid #DEDEDE;">浏览量（PV）</th>
-		    				<th>访客数（UV）</th>
-		    				<th>贡献下游浏览量</th>
-		    				<th>退出页次数</th>
-		    				<th>平均停留时长</th>
-		    			</tr>
-		    		</thead>
-		    		<tbody>
-		    			<tr>
-		    				<td>1 &nbsp;&nbsp;13:00~13:59</td>
-		    				<td>0</td>
-		    				<td>0</td>
-		    				<td>1</td>
-		    				<td>20%</td>
-		    				<td>00:00:14</td>
-		    			</tr>
-		    		</tbody>
-		    	</table>
-		    </div>  	
-	    </div>
-	    <!-- 入口页选项卡 -->
-	    <div class="tab_content">
-		    <ul class="browse_list1">
-                <li class="wd30"><p>浏览量（PV）</p><span>16</span></li>
-		    	<li class="wd30"><p>访客数（UV）</p><span>16</span></li>
-		    	<li class="wd30"><p>入口页次数</p><span>6</span></li>
-		    </ul>
-		        <!-- 来源表 -->
-		    <div class="source_tab">
-		    	<p class="search_block">
-		           <input type="text" name="" value="" placeholder="关键词、搜索词……">
-		           <span class="magnifier"></span>
-		        </p>
-		    	<table cellspacing="0" cellpadding="0" class="source_table">
-		    		<thead>
-		    			<tr>
-		    				<th rowspan="2" >页面URL</th>
-		    				<th colspan="2">网站基础指标</th>
-		    				<th colspan="3">流量质量指标</th>
-		    			</tr>
-		    			<tr>
-		    				<th style="border-left: 1px solid #DEDEDE;">浏览量（PV）</th>
-		    				<th>访客数（UV）</th>
-		    				<th>贡献下游浏览量</th>
-		    			</tr>
-		    		</thead>
-		    		<tbody>
-		    			<tr>
-		    				<td>1 &nbsp;&nbsp;13:00~13:59</td>
-		    				<td>0</td>
-		    				<td>0</td>
-		    				<td>1</td>
-		    			</tr>
-		    		</tbody>
-		    	</table>
-		    </div>  	
-	    </div>
-	    <!-- 退出页选项卡 -->
-	    <div class="tab_content">
-		    <ul class="browse_list1">
-                <li class="wd20"><p>浏览量（PV）</p><span>16</span></li>
-		    	<li class="wd20"><p>访客数（UV）</p><span>16</span></li>
-		    	<li class="wd20"><p>退出页次数</p><span>6</span></li>
-		    	<li class="wd20"><p>退出率</p><span>00:01:40</span></li>
-		    </ul>
-		        <!-- 来源表 -->
-		    <div class="source_tab">
-		    	<p class="search_block">
-		           <input type="text" name="" value="" placeholder="关键词、搜索词……">
-		           <span class="magnifier"></span>
-		        </p>
-		    	<table cellspacing="0" cellpadding="0" class="source_table">
-		    		<thead>
-		    			<tr>
-		    				<th rowspan="2" >页面URL</th>
-		    				<th colspan="2">网站基础指标</th>
-		    				<th colspan="2">流量质量指标</th>
-		    			</tr>
-		    			<tr>
-		    				<th style="border-left: 1px solid #DEDEDE;">浏览量（PV）</th>
-		    				<th>访客数（UV）</th>
-		    				<th>退出页次数</th>
-		    				<th>退出率</th>
-		    			</tr>
-		    		</thead>
-		    		<tbody>
-		    			<tr>
-		    				<td>1 &nbsp;&nbsp;13:00~13:59</td>
-		    				<td>0</td>
-		    				<td>0</td>
-		    				<td>1</td>
-		    				<td>20%</td>
-		    			</tr>
+		    		<tbody id="trend">
+		    			
 		    		</tbody>
 		    	</table>
 		    </div>  	
@@ -448,8 +327,13 @@
 	</div>	
 </div>
 </div>
+<input type="hidden" id="temp1" value="0" />
+<input type="hidden" id="temp2" value="0" />
+<input type="hidden" id="temp3" value="0" />
+<input type="hidden" id="temp4" value="0" />
 </body>
 <script type="text/javascript" src="../../js/common-js/jquery.js"></script>
 <script type="text/javascript" src="../../js/common-js/common.js"></script>	
 <script type="text/javascript" src="../../js/echarts.common.min.js"></script>
+<script type="text/javascript" src="../../js/subpage-js/pageviews.js"></script>
 </html>

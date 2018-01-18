@@ -94,7 +94,7 @@
 		</div>
 	</li>
 	<li>
-		<a href="javascript:;" title="">用户xxx</a>
+		<a href="javascript:;" title="">用户<span id="userId"></a>
 	</li>
 	<span class="search"></span>
 </ul>
@@ -245,27 +245,28 @@
 		         <div class="layout">
 		       	  <span>来源：</span>
 		          <ul class="all dianji">
-		          	  <li class="active ">今天</li>
+		          	  <li class="active " id="yesterday">昨天</li>
 		          	  <span class="border_line"></span>
-		          	  <li>昨天</li>
+		          	  <li id="daybefore">前天</li>
 		          </ul>  	 	
 		       	  </div>
 		       	  <div class="layout">
-			       	  <span>地域：</span>
-			       	  <select name="">
-			       	  	<option value="">全部</option>
-			       	  	<option value="">全国</option>
-			       	  	<option value="">省自治区</option>
-			       	  </select>      	  	
+			       	 <span>来源：</span>
+			       	  <select name="" id="source">
+			       	  	<option value="0">全部</option>
+			       	  	<option value="1">直接访问</option>
+			       	  	<option value="2">搜索引擎</option>
+			       	  	<option value="3">外部链接</option>
+			       	  </select>      	
 		       	  </div>
 		       	  <div class="layout">
-		       	    <span>设备：</span>
+		       	    <span>访客：</span>
 		            <ul class="all dianji">
-		          	  <li class="active ">全部</li>
+		          	  <li class="active " id="visitor">全部</li>
 		          	   <span class="border_line"></span>
-		          	  <li>老访客</li>
+		          	  <li id="newV">老访客</li>
 		          	   <span class="border_line"></span>
-		          	  <li>新访客</li>
+		          	  <li id="oldV">新访客</li>
 		            </ul>  	 	
 		       	  </div>
             </div>
@@ -273,23 +274,23 @@
        	    <ul>
        	    	<li>
        	    		<p>浏览量（PV）</p>
-       	    		<span>16</span>
+       	    		<span id="a">--</span>
        	    	</li>
        	    	<li>
        	    		<p>访客数（UV）</p>
-       	    		<span>16</span>
+       	    		<span id="b">--</span>
        	    	</li>
        	    	<li>
        	    		<p>IP数</p>
-       	    		<span>16</span>
+       	    		<span id="c">--</span>
        	    	</li>
        	    	<li>
-       	    		<p>跳出率</p>
-       	    		<span>100%</span>
+       	    		<p>平均访问页数</p>
+       	    		<span id="d">--</span>
        	    	</li>
        	    	<li>
        	    		<p>平均访问时长</p>
-       	    		<span>00:00:00</span>
+       	    		<span id="e">--</span>
        	    	</li>
        	    </ul>
        </div>
@@ -305,28 +306,25 @@
 		    				<th style="border-left: 1px solid #DEDEDE;">浏览量（PV）</th>
 		    				<th>访客数（UV）</th>
 		    				<th>IP数</th>
-		    				<th>跳出率</th>
+		    				<th>平均访问页数</th>
 		    				<th>平均访问时长</th>
 		    			</tr>
 		    		</thead>
-		    		<tbody>
-		    			<tr>
-		    				<td>百度</td>
-		    				<td>0</td>
-		    				<td>0</td>
-		    				<td>1</td>
-		    				<td>20%</td>
-		    				<td>00:00:14</td>
-		    			</tr>
+		    		<tbody id="trend">
+		    		
 		    		</tbody>
 		    	</table>
 		    </div>
 </div>
 </div>
 </div>
+<input type="hidden" id="temp1" value="0" />
+<input type="hidden" id="temp2" value="0" />
+<input type="hidden" id="temp3" value="0" />
 </body>
 <script type="text/javascript" src="../../js/common-js/jquery.js"></script>
 <script type="text/javascript" src="../../js/common-js/common.js"></script>	
 <script type="text/javascript" src="../../js/echarts.js"></script>
 <script type="text/javascript" src="../../js/echarts.common.min.js"></script>
+<script type="text/javascript" src="../../js/subpage-js/visited_domain.js"></script>
 </html>
