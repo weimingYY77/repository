@@ -76,22 +76,39 @@
 	border-bottom: 1px solid #E1E3E4;
 	color: #2B2B2B;
 }
-.self_web>div>span,.total_web>div>span,.list_top>span{
+.domain>a{
+	padding-left: 10px;
+}
+.self_web .list_desc>span,.total_web>div>span{
+	display: inline-block;
+    width: 16%;
+    padding-left: 8%;
+}
+.list_top>span{
 	display: inline-block;
 	width: 24%;
-	text-align: center; 
+	text-align: center;
 }
 .self_web .list_desc>span>a,.total_web .list_desc>span>a{
 	color: #00C1DE;
 }
-.self_web .list_desc .domain,.self_web .list_desc .del,.total_web .list_desc .del{
-  	padding-left: 20px;
+.self_web .list_desc .del,.total_web .list_desc .del{
+   padding-left: 20px;
+}
+.self_web .list_desc .modify,.total_web .list_desc .modify{
+   padding-left: 20px;
 }
 .weblist .careful{
 	padding-left: 38px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	color:#979494;
+}
+@media screen and (max-width:1366px) and (min-width:1024px){
+.self_web .list_desc>span, .total_web>div>span {
+    width: 20%;
+    padding-left: 4%;
+}
 }
 
 
