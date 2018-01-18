@@ -87,8 +87,8 @@
 .list_top>span{
 	display: inline-block;
 	width: 24%;
-	text-align: center;
-}
+	text-align: center; 
+} 
 .self_web .list_desc>span>a,.total_web .list_desc>span>a{
 	color: #00C1DE;
 }
@@ -110,5 +110,3 @@
     padding-left: 4%;
 }
 }
-
-
