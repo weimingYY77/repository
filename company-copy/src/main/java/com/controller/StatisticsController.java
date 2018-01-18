@@ -124,7 +124,7 @@ public class StatisticsController {
 	 */
 	@RequestMapping(value="/networkOverview.do")
 	@ResponseBody
-	public Map<String, Object> networkOverview(String url,String siteId,String method,String start_date,String end_date,String metrics,String visitor,String clientDevice,String source) throws Exception{
+	public Map<String, Object> networkOverview(String url,String siteId,String method,String start_date,String end_date,String metrics,String visitor,String clientDevice,String source,String viewType) throws Exception{
 		 Map maps=new HashMap();
 		 JSONObject header = new JSONObject();
          header.put("username", "乐清南田");//用户名
@@ -143,10 +143,43 @@ public class StatisticsController {
          body.put("visitor", visitor);
          body.put("clientDevice", clientDevice);
          body.put("source", source);
+         body.put("viewType", viewType);
          String urlStr = "https://api.baidu.com/json/tongji/v1/ReportService/getData";
          JSONObject params = new JSONObject();
          params.put("header", header);
          params.put("body", body);
+         String result = statisticsService.networkOverview(urlStr, params.toString());
+         JSONObject data = JSON.parseObject(result);
+		 if(result!=null){
+			 maps.put("code", 0000);
+			 maps.put("msg","成功！");
+			 maps.put("data",data);
+		     return maps; 
+		 }else{
+			 maps.put("code", 0010);
+			 maps.put("msg","失败！");
+		     return maps; 
+		 }
+	}	
+	
+	/**
+	 * 百度统计
+	 * @param sysuser
+	 * @return
+	 */
+	@RequestMapping(value="/networkOverviewO.do")
+	@ResponseBody
+	public Map<String, Object> networkOverviewO(String url,String siteId,String method,String start_date,String end_date,String metrics,String visitor,String clientDevice,String source,String viewType) throws Exception{
+		 Map maps=new HashMap();
+		 JSONObject header = new JSONObject();
+         header.put("username", "乐清南田");//用户名
+         header.put("password", "weiming");//用户密码
+         header.put("token", "eee816312f6c9c3cc89e03eed3af0626");//申请到的token
+         header.put("account_type", "1");
+         
+         String urlStr = "https://api.baidu.com/json/tongji/v1/ReportService/getSiteList";
+         JSONObject params = new JSONObject();
+         params.put("header", header);
          String result = statisticsService.networkOverview(urlStr, params.toString());
          JSONObject data = JSON.parseObject(result);
 		 if(result!=null){
