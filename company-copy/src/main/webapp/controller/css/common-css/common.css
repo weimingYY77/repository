@@ -436,3 +436,7 @@ body{
 	width: 1px;
 	background: #aaa;
 }
+#firsttd{
+	text-align:left;
+	padding-left:2%;
+}
