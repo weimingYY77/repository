@@ -434,84 +434,14 @@ $(function(){
 					var HH = 23;
 					var ss = 23;
 					for(var a = 0; a <= HH; a++){
-						hour[a] = data.data.body.data[0].result.items[1][ss];
+						hour[a] = data.data.body.data[0].result.items[1][ss][0];
 						if(max<hour[a]){
 							max=hour[a];
 						}
+						if(hour[a]=='--'){
+							hour[a] = 0;
+						}
 						ss--;
-					}
-					
-					if(hour[0]=='--'){
-						hour[0] = 0;
-					}
-					if(hour[1]=='--'){
-						hour[1] = 0;
-					}
-					if(hour[2]=='--'){
-						hour[2] = 0;
-					}
-					if(hour[3]=='--'){
-						hour[3] = 0;
-					}
-					if(hour[4]=='--'){
-						hour[4] = 0;
-					}
-					if(hour[5]=='--'){
-						hour[5] = 0;
-					}
-					if(hour[6]=='--'){
-						hour[6] = 0;
-					}
-					if(hour[7]=='--'){
-						hour[7] = 0;
-					}
-					if(hour[8]=='--'){
-						hour[8] = 0;
-					}
-					if(hour[9]=='--'){
-						hour[9] = 0;
-					}
-					if(hour[10]=='--'){
-						hour[10] = 0;
-					}
-					if(hour[11]=='--'){
-						hour[11] = 0;
-					}
-					if(hour[12]=='--'){
-						hour[12] = 0;
-					}
-					if(hour[13]=='--'){
-						hour[13] = 0;
-					}
-					if(hour[14]=='--'){
-						hour[14] = 0;
-					}
-					if(hour[15]=='--'){
-						hour[15] = 0;
-					}
-					if(hour[16]=='--'){
-						hour[16] = 0;
-					}
-					if(hour[17]=='--'){
-						hour[17] = 0;
-					}
-					if(hour[18]=='--'){
-						hour[18] = 0;
-					}
-					if(hour[19]=='--'){
-						hour[19] = 0;
-					}
-					if(hour[20]=='--'){
-						hour[20] = 0;
-					}
-					if(hour[21]=='--'){
-						hour[21] = 0;
-					}
-					if(hour[22]=='--'){
-						hour[22] = 0;
-					}
-					if(hour[23]=='--'){
-						hour[23] = 0;
 					}
 					
 				}
@@ -538,282 +468,16 @@ $(function(){
 					var myDate = new Date();
 					var HH = parseInt(myDate.getHours());
 					var ss = parseInt(myDate.getHours());
-					if(HH==24){
-						var HH = 23;
-						var ss = 23;
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
+				
+					for(var a = 0; a <= HH; a++){
+						hours[a] = data.data.body.data[0].result.items[1][ss][0];
+						if(max<hours[a]){
+							max=hours[a];
 						}
-					}
-					if(HH==0){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
+						if(hours[a]=='--'){
+							hours[a] = 0;
 						}
-					}else if(HH==1){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==2){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==3){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==4){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==5){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==6){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==7){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==8){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==9){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==10){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==11){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==12){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==13){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==14){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==15){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==16){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==17){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==18){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==19){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==20){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==21){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==22){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==23){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}
-					
-					if(hours[0]=='--'){
-						hours[0] = 0;
-					}
-					if(hours[1]=='--'){
-						hours[1] = 0;
-					}
-					if(hours[2]=='--'){
-						hours[2] = 0;
-					}
-					if(hours[3]=='--'){
-						hours[3] = 0;
-					}
-					if(hours[4]=='--'){
-						hours[4] = 0;
-					}
-					if(hours[5]=='--'){
-						hours[5] = 0;
-					}
-					if(hours[6]=='--'){
-						hours[6] = 0;
-					}
-					if(hours[7]=='--'){
-						hours[7] = 0;
-					}
-					if(hours[8]=='--'){
-						hours[8] = 0;
-					}
-					if(hours[9]=='--'){
-						hours[9] = 0;
-					}
-					if(hours[10]=='--'){
-						hours[10] = 0;
-					}
-					if(hours[11]=='--'){
-						hours[11] = 0;
-					}
-					if(hours[12]=='--'){
-						hours[12] = 0;
-					}
-					if(hours[13]=='--'){
-						hours[13] = 0;
-					}
-					if(hours[14]=='--'){
-						hours[14] = 0;
-					}
-					if(hours[15]=='--'){
-						hours[15] = 0;
-					}
-					if(hours[16]=='--'){
-						hours[16] = 0;
-					}
-					if(hours[17]=='--'){
-						hours[17] = 0;
-					}
-					if(hours[18]=='--'){
-						hours[18] = 0;
-					}
-					if(hours[19]=='--'){
-						hours[19] = 0;
-					}
-					if(hours[20]=='--'){
-						hours[20] = 0;
-					}
-					if(hours[21]=='--'){
-						hours[21] = 0;
-					}
-					if(hours[22]=='--'){
-						hours[22] = 0;
-					}
-					if(hours[23]=='--'){
-						hours[23] = 0;
+						ss--;
 					}
 				}
 			},
@@ -822,73 +486,73 @@ $(function(){
 			},
 		});
 		
-		    
-		    var myChart = echarts.init(document.getElementById('earch'));
-		    // option 里面的内容基本涵盖你要画的图表的所有内容
-		    var option = {
-		    tooltip : {
-		        trigger: 'axis'
-		    },
-		     legend: {
-		       x: 'center',
-		       y:'bottom',
-		       data:["今天","昨天"]
-		   },
-		    calculable : true,
-		    xAxis: [{
-		            axisLabel: {
-		                interval: 0
-		            },
-		            axisLine: {
 
-		                lineStyle: {
-		                    color: '#646464'                
-		                }
-		            },
-		            axisTick:{
-		               show:false
-		             },
-		            type: 'category',
-		            boundaryGap: false,
-		            data:[0,'','',3,'','',6,'','',9,'','',12,'','',15,'','',18,'','',21,'',''],
-		            axisLabel:{
-		                 //X轴刻度配置
-		                 interval:0 //0：表示全部显示不间隔；auto:表示自动根据刻度个数和宽度自动设置间隔个数
-		            }
-		        }],
-		        yAxis: [{
-		            min:0,
-		            max:8,
-		            type: 'value',
-		            axisLine: {
-		                lineStyle: {
-		                    width: 0
-		                }
-		            },
-		            axisTick:{
-		               show:false
-		             }
-		        }],
-		        series: [
-		        {
-		            name: '今天',
-		            type: 'line',
-		            symbol:'circle',/*折点样式*/
-		            symbolSize: 5,
-		             color: ['#4fa8f9'],
-		            data: [hours[0],hours[1],hours[2],hours[3],hours[4],hours[5],hours[6],hours[7],hours[8],hours[9],hours[10],hours[11],hours[12],hours[13],hours[14],hours[15],hours[16],hours[17],hours[18],hours[19],hours[20],hours[21],hours[22],hours[23]]
-		        },
-		        {
-		            name: '昨天',
-		            type: 'line',
-		            symbol:'circle',/*折点样式*/
-		            symbolSize: 5,
-		            color: ['#6ec71e'],
-		            data: [hour[0],hour[1],hour[2],hour[3],hour[4],hour[5],hour[6],hour[7],hour[8],hour[9],hour[10],hour[11],hour[12],hour[13],hour[14],hour[15],hour[16],hour[17],hour[18],hour[19],hour[20],hour[21],hour[22],hour[23]]
-		        }
-		      ]
-		    };  
-		    myChart.setOption(option);	    
+	    var myChart10 = echarts.init(document.getElementById('earch'));
+	    // option 里面的内容基本涵盖你要画的图表的所有内容
+	    var option_ten = {
+	    tooltip : {
+	        trigger: 'axis'
+	    },
+	     legend: {
+	       x: 'center',
+	       y:'bottom',
+	       data:["今天","昨天"]
+	   },
+	    calculable : true,
+	    xAxis: [{
+	            axisLabel: {
+	                interval: 0
+	            },
+	            axisLine: {
+
+	                lineStyle: {
+	                    color: '#646464'                
+	                }
+	            },
+	            axisTick:{
+	               show:false
+	             },
+	            type: 'category',
+	            boundaryGap: false,
+	            data:[0,'','',3,'','',6,'','',9,'','',12,'','',15,'','',18,'','',21,'',''],
+	            axisLabel:{
+	                 //X轴刻度配置
+	                 interval:0 //0：表示全部显示不间隔；auto:表示自动根据刻度个数和宽度自动设置间隔个数
+	            }
+	        }],
+	        yAxis: [{
+	            min:0,
+	            max:max,
+	            type: 'value',
+	            axisLine: {
+	                lineStyle: {
+	                    width: 0
+	                }
+	            },
+	            axisTick:{
+	               show:false
+	             }
+	        }],
+	        series: [
+	        {
+	            name: '今天',
+	            type: 'line',
+	            symbol:'circle',/*折点样式*/
+	            symbolSize: 5,
+	             color: ['#4fa8f9'],
+	            data: [hours[0],hours[1],hours[2],hours[3],hours[4],hours[5],hours[6],hours[7],hours[8],hours[9],hours[10],hours[11],hours[12],hours[13],hours[14],hours[15],hours[16],hours[17],hours[18],hours[19],hours[20],hours[21],hours[22],hours[23]]
+	        },
+	        {
+	            name: '昨天',
+	            type: 'line',
+	            symbol:'circle',/*折点样式*/
+	            symbolSize: 5,
+	            color: ['#6ec71e'],
+	            data: [hour[0],hour[1],hour[2],hour[3],hour[4],hour[5],hour[6],hour[7],hour[8],hour[9],hour[10],hour[11],hour[12],hour[13],hour[14],hour[15],hour[16],hour[17],hour[18],hour[19],hour[20],hour[21],hour[22],hour[23]]
+	        }
+	      ]
+	    };  
+	    myChart10.setOption(option_ten);
 	}
 	
 		
@@ -899,56 +563,13 @@ $(function(){
 		$("#word2").empty();
 		$("#word3").empty();
 		var hour=new Array();
-    	hour[0] = 0;
-    	hour[1] = 0;
-    	hour[2] = 0;
-    	hour[3] = 0;
-    	hour[4] = 0;
-    	hour[5] = 0;
-    	hour[6] = 0;
-    	hour[7] = 0;
-    	hour[8] = 0;
-    	hour[9] = 0;
-    	hour[10] = 0;
-    	hour[11] = 0;
-    	hour[12] = 0;
-    	hour[13] = 0;
-    	hour[14] = 0;
-    	hour[15] = 0;
-    	hour[16] = 0;
-    	hour[17] = 0;
-    	hour[18] = 0;
-    	hour[19] = 0;
-    	hour[20] = 0;
-    	hour[21] = 0;
-    	hour[22] = 0;
-    	hour[23] = 0;
-    	
-    	var hours=new Array();
-    	hours[0] = 0;
-    	hours[1] = 0;
-    	hours[2] = 0;
-    	hours[3] = 0;
-    	hours[4] = 0;
-    	hours[5] = 0;
-    	hours[6] = 0;
-    	hours[7] = 0;
-    	hours[8] = 0;
-    	hours[9] = 0;
-    	hours[10] = 0;
-    	hours[11] = 0;
-    	hours[12] = 0;
-    	hours[13] = 0;
-    	hours[14] = 0;
-    	hours[15] = 0;
-    	hours[16] = 0;
-    	hours[17] = 0;
-    	hours[18] = 0;
-    	hours[19] = 0;
-    	hours[20] = 0;
-    	hours[21] = 0;
-    	hours[22] = 0;
-    	hours[23] = 0;
+		 for(var a = 0; a <= 23; a++){
+				hour[a] = 0;
+		 }
+		var hours=new Array();
+		 for(var a = 0; a <= 23; a++){
+				hours[a] = 0;
+		 }
     	var max = 2;
 		//展示内容
  		var method = "overview/getCommonTrackRpt";
@@ -1224,84 +845,14 @@ $(function(){
 					var HH = 23;
 					var ss = 23;
 					for(var a = 0; a <= HH; a++){
-						hour[a] = data.data.body.data[0].result.items[1][ss];
+						hour[a] = data.data.body.data[0].result.items[1][ss][0];
 						if(max<hour[a]){
 							max=hour[a];
 						}
+						if(hour[a]=='--'){
+							hour[a] = 0;
+						}
 						ss--;
-					}
-					
-					if(hour[0]=='--'){
-						hour[0] = 0;
-					}
-					if(hour[1]=='--'){
-						hour[1] = 0;
-					}
-					if(hour[2]=='--'){
-						hour[2] = 0;
-					}
-					if(hour[3]=='--'){
-						hour[3] = 0;
-					}
-					if(hour[4]=='--'){
-						hour[4] = 0;
-					}
-					if(hour[5]=='--'){
-						hour[5] = 0;
-					}
-					if(hour[6]=='--'){
-						hour[6] = 0;
-					}
-					if(hour[7]=='--'){
-						hour[7] = 0;
-					}
-					if(hour[8]=='--'){
-						hour[8] = 0;
-					}
-					if(hour[9]=='--'){
-						hour[9] = 0;
-					}
-					if(hour[10]=='--'){
-						hour[10] = 0;
-					}
-					if(hour[11]=='--'){
-						hour[11] = 0;
-					}
-					if(hour[12]=='--'){
-						hour[12] = 0;
-					}
-					if(hour[13]=='--'){
-						hour[13] = 0;
-					}
-					if(hour[14]=='--'){
-						hour[14] = 0;
-					}
-					if(hour[15]=='--'){
-						hour[15] = 0;
-					}
-					if(hour[16]=='--'){
-						hour[16] = 0;
-					}
-					if(hour[17]=='--'){
-						hour[17] = 0;
-					}
-					if(hour[18]=='--'){
-						hour[18] = 0;
-					}
-					if(hour[19]=='--'){
-						hour[19] = 0;
-					}
-					if(hour[20]=='--'){
-						hour[20] = 0;
-					}
-					if(hour[21]=='--'){
-						hour[21] = 0;
-					}
-					if(hour[22]=='--'){
-						hour[22] = 0;
-					}
-					if(hour[23]=='--'){
-						hour[23] = 0;
 					}
 				}
 			},
@@ -1327,282 +878,16 @@ $(function(){
 					var myDate = new Date();
 					var HH = parseInt(myDate.getHours());
 					var ss = parseInt(myDate.getHours());
-					if(HH==24){
-						var HH = 23;
-						var ss = 23;
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}
-					if(HH==0){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==1){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==2){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==3){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==4){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==5){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==6){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==7){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==8){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==9){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==10){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==11){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==12){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==13){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==14){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==15){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==16){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==17){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==18){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==19){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==20){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==21){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==22){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}else if(HH==23){
-						for(var a = 0; a <= HH; a++){
-							hours[a] = data.data.body.data[0].result.items[1][ss][0];
-							if(max<hours[a]){
-								max=hours[a];
-							}
-							ss--;
-						}
-					}
 					
-					if(hours[0]=='--'){
-						hours[0] = 0;
-					}
-					if(hours[1]=='--'){
-						hours[1] = 0;
-					}
-					if(hours[2]=='--'){
-						hours[2] = 0;
-					}
-					if(hours[3]=='--'){
-						hours[3] = 0;
-					}
-					if(hours[4]=='--'){
-						hours[4] = 0;
-					}
-					if(hours[5]=='--'){
-						hours[5] = 0;
-					}
-					if(hours[6]=='--'){
-						hours[6] = 0;
-					}
-					if(hours[7]=='--'){
-						hours[7] = 0;
-					}
-					if(hours[8]=='--'){
-						hours[8] = 0;
-					}
-					if(hours[9]=='--'){
-						hours[9] = 0;
-					}
-					if(hours[10]=='--'){
-						hours[10] = 0;
-					}
-					if(hours[11]=='--'){
-						hours[11] = 0;
-					}
-					if(hours[12]=='--'){
-						hours[12] = 0;
-					}
-					if(hours[13]=='--'){
-						hours[13] = 0;
-					}
-					if(hours[14]=='--'){
-						hours[14] = 0;
-					}
-					if(hours[15]=='--'){
-						hours[15] = 0;
-					}
-					if(hours[16]=='--'){
-						hours[16] = 0;
-					}
-					if(hours[17]=='--'){
-						hours[17] = 0;
-					}
-					if(hours[18]=='--'){
-						hours[18] = 0;
-					}
-					if(hours[19]=='--'){
-						hours[19] = 0;
-					}
-					if(hours[20]=='--'){
-						hours[20] = 0;
-					}
-					if(hours[21]=='--'){
-						hours[21] = 0;
-					}
-					if(hours[22]=='--'){
-						hours[22] = 0;
-					}
-					if(hours[23]=='--'){
-						hours[23] = 0;
+					for(var a = 0; a <= HH; a++){
+						hours[a] = data.data.body.data[0].result.items[1][ss][0];
+						if(max<hours[a]){
+							max=hour[a];
+						}
+						if(hours[a]=='--'){
+							hours[a] = 0;
+						}
+						ss--;
 					}
 				}
 			},
@@ -1611,9 +896,9 @@ $(function(){
 			},
 		});
 		
-	    var myChart = echarts.init(document.getElementById('earch'));
+	    var myChart10 = echarts.init(document.getElementById('earch'));
 	    // option 里面的内容基本涵盖你要画的图表的所有内容
-	    var option = {
+	    var option_ten = {
 	    tooltip : {
 	        trigger: 'axis'
 	    },
@@ -1676,7 +961,7 @@ $(function(){
 	        }
 	      ]
 	    };  
-	    myChart.setOption(option);	    
+	    myChart10.setOption(option_ten);
 		
 	});
 		
@@ -1688,56 +973,13 @@ $("#yesterday").click(function(){
 	$("#word2").empty();
 	$("#word3").empty();
 	var hour=new Array();
-	hour[0] = 0;
-	hour[1] = 0;
-	hour[2] = 0;
-	hour[3] = 0;
-	hour[4] = 0;
-	hour[5] = 0;
-	hour[6] = 0;
-	hour[7] = 0;
-	hour[8] = 0;
-	hour[9] = 0;
-	hour[10] = 0;
-	hour[11] = 0;
-	hour[12] = 0;
-	hour[13] = 0;
-	hour[14] = 0;
-	hour[15] = 0;
-	hour[16] = 0;
-	hour[17] = 0;
-	hour[18] = 0;
-	hour[19] = 0;
-	hour[20] = 0;
-	hour[21] = 0;
-	hour[22] = 0;
-	hour[23] = 0;
-	
+	 for(var a = 0; a <= 23; a++){
+			hour[a] = 0;
+	 }
 	var hours=new Array();
-	hours[0] = 0;
-	hours[1] = 0;
-	hours[2] = 0;
-	hours[3] = 0;
-	hours[4] = 0;
-	hours[5] = 0;
-	hours[6] = 0;
-	hours[7] = 0;
-	hours[8] = 0;
-	hours[9] = 0;
-	hours[10] = 0;
-	hours[11] = 0;
-	hours[12] = 0;
-	hours[13] = 0;
-	hours[14] = 0;
-	hours[15] = 0;
-	hours[16] = 0;
-	hours[17] = 0;
-	hours[18] = 0;
-	hours[19] = 0;
-	hours[20] = 0;
-	hours[21] = 0;
-	hours[22] = 0;
-	hours[23] = 0;
+	 for(var a = 0; a <= 23; a++){
+			hours[a] = 0;
+	 }
 	var max = 2;
 	var myDate = new Date();
 	myDate.setDate(myDate.getDate()-1);
@@ -2042,85 +1284,16 @@ $("#yesterday").click(function(){
 				var HH = 23;
 				var ss = 23;
 				for(var a = 0; a <= HH; a++){
-					hour[a] = data.data.body.data[0].result.items[1][ss];
+					hour[a] = data.data.body.data[0].result.items[1][ss][0];
 					if(max<hour[a]){
 						max=hour[a];
+					}
+					if(hour[a]=='--'){
+						hour[a] = 0;
 					}
 					ss--;
 				}
 				
-				if(hour[0]=='--'){
-					hour[0] = 0;
-				}
-				if(hour[1]=='--'){
-					hour[1] = 0;
-				}
-				if(hour[2]=='--'){
-					hour[2] = 0;
-				}
-				if(hour[3]=='--'){
-					hour[3] = 0;
-				}
-				if(hour[4]=='--'){
-					hour[4] = 0;
-				}
-				if(hour[5]=='--'){
-					hour[5] = 0;
-				}
-				if(hour[6]=='--'){
-					hour[6] = 0;
-				}
-				if(hour[7]=='--'){
-					hour[7] = 0;
-				}
-				if(hour[8]=='--'){
-					hour[8] = 0;
-				}
-				if(hour[9]=='--'){
-					hour[9] = 0;
-				}
-				if(hour[10]=='--'){
-					hour[10] = 0;
-				}
-				if(hour[11]=='--'){
-					hour[11] = 0;
-				}
-				if(hour[12]=='--'){
-					hour[12] = 0;
-				}
-				if(hour[13]=='--'){
-					hour[13] = 0;
-				}
-				if(hour[14]=='--'){
-					hour[14] = 0;
-				}
-				if(hour[15]=='--'){
-					hour[15] = 0;
-				}
-				if(hour[16]=='--'){
-					hour[16] = 0;
-				}
-				if(hour[17]=='--'){
-					hour[17] = 0;
-				}
-				if(hour[18]=='--'){
-					hour[18] = 0;
-				}
-				if(hour[19]=='--'){
-					hour[19] = 0;
-				}
-				if(hour[20]=='--'){
-					hour[20] = 0;
-				}
-				if(hour[21]=='--'){
-					hour[21] = 0;
-				}
-				if(hour[22]=='--'){
-					hour[22] = 0;
-				}
-				if(hour[23]=='--'){
-					hour[23] = 0;
-				}
 			}
 		},
 		error : function(request) {
@@ -2145,84 +1318,14 @@ $("#yesterday").click(function(){
 				var HH = 23;
 				var ss = 23;
 				for(var a = 0; a <= HH; a++){
-					hours[a] = data.data.body.data[0].result.items[1][ss];
+					hours[a] = data.data.body.data[0].result.items[1][ss][0];
 					if(max<hours[a]){
 						max=hours[a];
 					}
+					if(hours[a]=='--'){
+						hours[a] = 0;
+					}
 					ss--;
-				}
-				
-				if(hours[0]=='--'){
-					hours[0] = 0;
-				}
-				if(hours[1]=='--'){
-					hours[1] = 0;
-				}
-				if(hours[2]=='--'){
-					hours[2] = 0;
-				}
-				if(hours[3]=='--'){
-					hours[3] = 0;
-				}
-				if(hours[4]=='--'){
-					hours[4] = 0;
-				}
-				if(hours[5]=='--'){
-					hours[5] = 0;
-				}
-				if(hours[6]=='--'){
-					hours[6] = 0;
-				}
-				if(hours[7]=='--'){
-					hours[7] = 0;
-				}
-				if(hours[8]=='--'){
-					hours[8] = 0;
-				}
-				if(hours[9]=='--'){
-					hours[9] = 0;
-				}
-				if(hours[10]=='--'){
-					hours[10] = 0;
-				}
-				if(hours[11]=='--'){
-					hours[11] = 0;
-				}
-				if(hours[12]=='--'){
-					hours[12] = 0;
-				}
-				if(hours[13]=='--'){
-					hours[13] = 0;
-				}
-				if(hours[14]=='--'){
-					hours[14] = 0;
-				}
-				if(hours[15]=='--'){
-					hours[15] = 0;
-				}
-				if(hours[16]=='--'){
-					hours[16] = 0;
-				}
-				if(hours[17]=='--'){
-					hours[17] = 0;
-				}
-				if(hours[18]=='--'){
-					hours[18] = 0;
-				}
-				if(hours[19]=='--'){
-					hours[19] = 0;
-				}
-				if(hours[20]=='--'){
-					hours[20] = 0;
-				}
-				if(hours[21]=='--'){
-					hours[21] = 0;
-				}
-				if(hours[22]=='--'){
-					hours[22] = 0;
-				}
-				if(hours[23]=='--'){
-					hours[23] = 0;
 				}
 			}
 		},
@@ -2231,9 +1334,9 @@ $("#yesterday").click(function(){
 		},
 	});
 	
-    var myChart = echarts.init(document.getElementById('earch'));
+    var myChart10 = echarts.init(document.getElementById('earch'));
     // option 里面的内容基本涵盖你要画的图表的所有内容
-    var option = {
+    var option_ten = {
     tooltip : {
         trigger: 'axis'
     },
@@ -2296,7 +1399,7 @@ $("#yesterday").click(function(){
         }
       ]
     };  
-    myChart.setOption(option);	    
+    myChart10.setOption(option_ten);
 });
 	
 });

@@ -120,6 +120,46 @@ $(function(){
 			            }
 			            var time = hh+":"+mm+":"+ss;
 			            $("#e").html(time);
+			            
+			            $("#r").html(data.data.body.data[0].result.sum[0][0]);
+						$("#s").html(data.data.body.data[0].result.sum[0][1]);
+						$("#t").html(data.data.body.data[0].result.sum[0][2]);
+						if(data.data.body.data[0].result.sum[0][3]=='--'){
+							$("#u").html(data.data.body.data[0].result.sum[0][3]);
+						}else{
+							$("#u").html(data.data.body.data[0].result.sum[0][3]+"%");
+						}
+						$("#v").html(data.data.body.data[0].result.sum[0][4]);
+					
+						var time = parseInt(data.data.body.data[0].result.sum[0][4]);
+						var hh;
+			            var mm;
+			            var ss;
+			           //传入的时间为空或小于0
+			            if(time==null||time<0){
+			                return;
+			            }
+			            //得到小时
+			            hh=time/3600|0;
+			            time=parseInt(time)-hh*3600;
+			            if(parseInt(hh)<10){
+			                  hh="0"+hh;
+			            }
+			            //得到分
+			            mm=time/60|0;
+			            //得到秒
+			            ss=parseInt(time)-mm*60;
+			            if(parseInt(mm)<10){
+			                 mm="0"+mm;    
+			            }
+			            if(ss<10){
+			                ss="0"+ss;      
+			            }
+			            if(isNaN(ss)){
+			            	ss="00";
+			            }
+			            var time = hh+":"+mm+":"+ss;
+			            $("#v").html(time);
 					}
 				},
 				error : function(request) {
