@@ -76,12 +76,9 @@
 	border-bottom: 1px solid #E1E3E4;
 	color: #2B2B2B;
 }
-
 .domain>a{
 	padding-left: 10px;
 }
-
-
 .self_web .list_desc>span,.total_web>div>span{
 	display: inline-block;
     width: 16%;
@@ -96,10 +93,10 @@
 	color: #00C1DE;
 }
 .self_web .list_desc .del,.total_web .list_desc .del{
-  	padding-left: 20px;
+   padding-left: 20px;
 }
 .self_web .list_desc .modify,.total_web .list_desc .modify{
-  	padding-left: 30px;
+   padding-left: 20px;
 }
 .weblist .careful{
 	padding-left: 38px;
@@ -113,4 +110,3 @@
     padding-left: 4%;
 }
 }
-
