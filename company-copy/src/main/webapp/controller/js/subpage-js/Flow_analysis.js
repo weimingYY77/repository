@@ -1,5 +1,12 @@
 
 $(function(){
+	
+	if(window.sessionStorage.getItem("siteId")==null){
+		var siteId = 10512893;
+	}else{
+		var siteId = window.sessionStorage.getItem("siteId");
+	}
+	
 	var hour=new Array();
 	var max = 2;
 	
@@ -25,7 +32,6 @@ $(function(){
 		dd = "0"+dd;
 	}
 	var time1 = yy.toString()+mm.toString()+dd.toString();
-	var siteId = "10537683";
 	var start_date = time1;
 	var end_date = time;
 	
