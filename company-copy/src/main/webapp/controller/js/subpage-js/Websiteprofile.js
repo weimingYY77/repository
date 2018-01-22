@@ -1,7 +1,12 @@
 $(function(){
+	if(window.sessionStorage.getItem("siteId")==null){
+		var siteId = 10512893;
+	}else{
+		var siteId = window.sessionStorage.getItem("siteId");
+	}
+	
 	var hour = new Array();
 	var hours = new Array();
-	var siteId = "10537683";
 	var myDate = new Date();
 	var y = myDate.getFullYear();
 	var m = myDate.getMonth()+1;
@@ -1005,7 +1010,6 @@ $("#yesterday").click(function(){
 		dd = "0"+dd;
 	}
 	var time1 = yy.toString()+mm.toString()+dd.toString();
-	var siteId = "10537683";
 	var start_date = time1;
 	var end_date = time;
 	var start_date1 = time;

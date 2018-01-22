@@ -1,3 +1,9 @@
+ function myclick(a){
+    	window.location.href="Websiteprofile.html";
+    	
+    	window.sessionStorage.setItem("siteId", a);
+ }
+  
 $(function(){
        // 选项卡切换
     $(".website li").click(function(){
@@ -40,7 +46,7 @@ $(function(){
 			            var div = document.getElementById("trend");  
 			  			var str = "";
 			  			str+="<div class='list_desc'>";
-			  				str+="<span class='domain'><span>"+s+"</span><a href='#' title=''>"+data.data.body.data[0].list[a].domain+"</a></span>"
+			  				str+="<span class='domain'><span>"+s+"</span><a href='javascript:void(0)'  onclick='myclick("+data.data.body.data[0].list[a].site_id+")'>"+data.data.body.data[0].list[a].domain+"</a></span>"
 			  				str+="<span>三千客信息有限公司</span>";
 			  				str+="<span>互联网，计算机</span>";
 			  				str+="<span><a href='#' title='' class='modify'>修改</a>";
@@ -71,4 +77,5 @@ $(function(){
 		});
 		
     }
+    
 })
