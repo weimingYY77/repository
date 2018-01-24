@@ -1,0 +1,17 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family:' MicrosoftYaHei';
+}
+ul li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+/* 框阴影 */
+.box_show{
+	background: #fff;
+	border-radius: 4px;
+	box-shadow:-2px 2px 4px rgba(156, 156, 156, 0.3);
+}
