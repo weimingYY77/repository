@@ -103,20 +103,10 @@ import com.alibaba.fastjson.JSONObject;
 		            header.put("token", "eee816312f6c9c3cc89e03eed3af0626");//申请到的token
 		            header.put("account_type", "1");
 		            
-		            JSONObject body = new JSONObject();
-		            body.put("siteId","10537683");
-		            body.put("method","source/all/a");
-		            SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
-		            String tody = sdf.format(new Date());
-		            body.put("start_date","20180103");
-		            body.put("end_date","20180103");
-		            body.put("visitor","new");
-		            body.put("metrics","pv_count,pv_ratio,visit_count,visitor_count,new_visitor_count,new_visitor_ratio,ip_count,bounce_ratio,avg_visit_time,avg_visit_pages,trans_count,trans_ratio");
-		            String urlStr = "https://api.baidu.com/json/tongji/v1/ReportService/getData";
+		            String urlStr = "https://api.baidu.com/json/tongji/v1/ReportService/getSiteList";
 		            String charset = "utf-8";
 		            JSONObject params = new JSONObject();
 		            params.put("header", header);
-		            params.put("body", body);
 		            byte[] res = HttpUtilsLuoCopy.post(urlStr, params.toString(), charset);
 		            String s = new String(res);
 		            System.out.println(s);    

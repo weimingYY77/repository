@@ -34,7 +34,7 @@ $(function(){
 			type : "post",
 			data : {},
 			dataType : "json",
-			async : false,
+			async : true,
 			success : function(data) {
 				if (data.code==0010) {
 					alert(data.msg);

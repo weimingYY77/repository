@@ -47,5 +47,16 @@ $(".drop-down").mouseenter(function() {
   $(".dianji li").click(function(){
     $(this).addClass("active").siblings().removeClass("active");
   })
-
+  
+  	var ajaxbg = $("#progressBar");
+    var ajaxbgO = $("#background");
+	ajaxbg.hide();
+	ajaxbgO.hide();
+	$(document).ajaxStart(function () { 
+	ajaxbg.show(); 
+	ajaxbgO.show();
+	}).ajaxStop(function () { 
+	ajaxbg.hide(); 
+	ajaxbgO.hide();
+	}); 
   })

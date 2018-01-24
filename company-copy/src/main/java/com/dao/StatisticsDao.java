@@ -10,28 +10,21 @@ import java.util.Map;
 public interface StatisticsDao {
 	
 	/**
-	 * 收录
+	 * 搜索排名
 	 * @param url
 	 * @param params
 	 * @return
 	 */
-	public String include(String url,Map<String,String> params);
+	public String SearchRankings(String url,String params);
 	
 	/**
-	 * 权重
+	 * 关键词
 	 * @param url
 	 * @param params
 	 * @return
 	 */
-	public String weight(String url,Map<String,String> params);
+	public String SearchRankingsO(String url,Map<String,String> param);
 	
-	/**
-	 * 关键词排名
-	 * @param url
-	 * @param params
-	 * @return
-	 */
-	public String keyword(String url,Map<String,String> params);
 	
 	/**
 	 * 网络概述
