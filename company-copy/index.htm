@@ -1,4 +1,4 @@
-﻿<html><!DOCTYPE html>
+<html><!DOCTYPE html>
 <html>
 <head>
     <title>三千客 | 信息技术有限公司</title>
@@ -7,7 +7,7 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
 <meta name="format-detection" content="telephone=no">
-<link rel="shortcut icon" href="src/main/webapp/themes/valudio/assets/favicon.ico" tppabs="http://valudio.com/themes/valudio/assets/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="themes/valudio/assets/favicon.ico" tppabs="http://valudio.com/themes/valudio/assets/favicon.ico" type="image/x-icon">
 <!-- Twitter Card data -->
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@valudio_it" />
@@ -19,10 +19,10 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://valudio.com/en" />
 <meta property="og:description" content="Valudio" />
-<link href="src/main/webapp/themes/valudio/assets/lib/font-awesome-4.7.0/css/font-awesome.min.css" tppabs="http://valudio.com/themes/valudio/assets/lib/font-awesome-4.7.0/css/font-awesome.min.css"  rel="stylesheet">
+<link href="themes/valudio/assets/lib/font-awesome-4.7.0/css/font-awesome.min.css" tppabs="http://valudio.com/themes/valudio/assets/lib/font-awesome-4.7.0/css/font-awesome.min.css"  rel="stylesheet">
 
-<link href="src/main/webapp/themes/valudio/assets/css/common.css" tppabs="http://valudio.com/themes/valudio/assets/css/styles.css"  rel="stylesheet">
-<link href="src/main/webapp/themes/valudio/assets/css/styles.css" tppabs="http://valudio.com/themes/valudio/assets/css/styles.css"  rel="stylesheet">
+<link href="src/main/webapp/themes/valudio/assets/css/common.css"  rel="stylesheet">
+<link href="src/main/webapp/themes/valudio/assets/css/styles.css"  rel="stylesheet">
 </head>
 <body class="home">
     <!--/ header -->  
@@ -30,9 +30,9 @@
     <div class="bg-nav">
         <!--/ logo -->
         <div class="logo">
-            <a href="http://www.sumchance.com/" >
-                <img src="src/main/webapp/themes/valudio/assets/images/logo_w.png" tppabs="http://valudio.com/themes/valudio/assets/images/logo.svg" class="white">
-                <img src="src/main/webapp/themes/valudio/assets/images/logo_b.png" tppabs="http://valudio.com/themes/valudio/assets/images/logo_b.svg" class="black">
+            <a href="index.htm" >
+                    <img src="src/main/webapp/themes/valudio/assets/images/logo_w.png"  class="white">
+                <img src="src/main/webapp/themes/valudio/assets/images/logo_b.png"  class="black">
             </a>
         </div>
         <!--/ logo -->
@@ -72,11 +72,10 @@
                  <!--登录框-->
         	<!-- 登录后 -->
         	    <div class="login-left">
-            		 <div class="login-left">
             			<div class="login_after" id="login_after">
             			<span class="after_icon"></span>
             			<span class="login_name">用户<span id="userId"></span></span>&nbsp;&nbsp;
-            			<a href="information.html" title="" id="M_infomation">(完善资料)</a>
+            			<a href="en/information.html" title="" id="M_infomation">(完善资料)</a>
             		</div>
             		<!-- 登录框 -->
             		<div class="login_box active" id="login_box active">
@@ -87,7 +86,7 @@
 	            			<input type="password" name="u_passWord" value="" placeholder="你的密码" class="pwd_box">
 	            			<span class="pwd">密码错误！！！</span>
             				<a href="javascript:;" title="" class="reg">注册</a>
-            				<a href="find.html" title="" class="forget">忘记密码</a>
+            				<a href="en/find.html" title="" class="forget">忘记密码</a>
             				<button type="button" id="loginSubmit" class="login_btn"><a href="javascript:;" title="">登录</a></button>
             			</form>
             		</div>
@@ -99,8 +98,7 @@
 	            			<input type="tel" name="u_phoneNum" id="phone" value="" placeholder="手机号码" class="format reg_tel">
 	            			<span class="error_tel">手机号码输入有误</span>
 	            			<span class="empty_tel">手机号码不能为空</span>
-                            <span class="have_tel">手机用户已存在</span>
-	            			<input type="text" name="" value="" placeholder="验证码" class="format reg_code">
+	            			<input type="text" name="v_code" value="" placeholder="验证码"  class="format reg_code">
 	            			<span class="error_code">验证码错误</span>
 	            			<span class="empty_code">验证码不能为空</span>
 	            			<button type="button" class="btn btn-small get-code" onclick="getCode(this)" id="J_getCode">获取验证码</button>
@@ -215,7 +213,7 @@
     <div class="header-wrap">
         <div id="video-wrap" class="video-wrap demo-css" style="background-image: url(http://valudio.com/themes/valudio/assets/images/home-header.jpg);" >
             <video id="video" autoplay loop>
-                <source src="src/main/webapp/themes/valudio/assets/videos/home-header-def.mp4" tppabs="http://valudio.com/themes/valudio/assets/videos/home-header-def.mp4" type="video/mp4">
+                <source src="themes/valudio/assets/videos/home-header-def.mp4" tppabs="http://valudio.com/themes/valudio/assets/videos/home-header-def.mp4" type="video/mp4">
             </video>
         </div>
         <div class="content">
@@ -265,7 +263,7 @@
         <div class="bg no-visible"></div>
         <div class="container maxwidth">
             <div class="img reveal" data-color="#3C39CD" data-delay="0" data-direction=''>
-                <img src="src/main/webapp/themes/valudio/assets/images/home-team.jpg" tppabs="http://valudio.com/themes/valudio/assets/images/home-team.jpg" class="content__image scroll-parallax" data-speed='0.1'>
+                   <img src="src/main/webapp/themes/valudio/assets/images/home-team.jpg" tppabs="http://valudio.com/themes/valudio/assets/images/home-team.jpg" class="content__image scroll-parallax" data-speed='0.1'>
             </div>
             <div class="txt">
                 <h3 class="title--header2">
@@ -276,7 +274,7 @@
                 <div class="txt--p1 no-visible">
                     <p>我们是一只非常有创造力和效率的小团队，我们专注于帮助客户减少人工成本，为客户省钱省事是我们的第一要点。</p>
                     <div class="button">
-                        <a href="src/main/webapp/en/about.htm" tppabs="http://valudio.com/en/about" class="readMore">了解更多</a>
+                        <a href="en/about.htm" tppabs="http://valudio.com/en/about" class="readMore">LEARN more</a>
                     </div>
                 </div>
 
@@ -306,7 +304,7 @@
             <div class="txt--p1 no-visible">
                 <p>sumchance是一个专业的互联网推广与建站的公司，拥有独立自主的推广手段与科技，并能够结合每一位   客户自身的特点，为客户量身打造解决方案。</p>
                 <div class="button">
-                    <a href="src/main/webapp/en/services.htm" tppabs="http://valudio.com/en/services" class="readMore">业务更多</a>
+                    <a href="en/services.htm" tppabs="http://valudio.com/en/services" class="readMore">LEARN more</a>
                 </div>
             </div>
         </div>
@@ -508,7 +506,7 @@
                 <div class="txt--p1 no-visible">
                     <p>我们是一只非常有创造力和效率的小团队，我们专注于帮助客户减少人工成本，为客户省钱省事是我们的第一要点。</p>
                     <div class="button">
-                        <a href="src/main/webapp/en/services.htm" tppabs="http://valudio.com/en/services" class="readMore">查询更多</a>
+                        <a href="en/services.htm" tppabs="http://valudio.com/en/services" class="readMore">查看更多</a>
                     </div>
                 </div>
 
@@ -525,7 +523,7 @@
         <h3 class="title--header1 white">xiao de</h3>
         <h4  class="title--header3 white">该项目，一步步</h4>
         <div class="button">
-            <a href="javascript:;" tppabs="http://valudio.com/en/case-study/phonio" class="readMore white">学到更多</a>
+            <a href="en/case-study/phonio.htm" tppabs="http://valudio.com/en/case-study/phonio" class="readMore white">学习更多</a>
         </div>
     </div>
 </div>
@@ -535,7 +533,7 @@
 <div class="prefooter "  data-nav-color="black" data-logo-color="black">
     <div class="container maxwidth2">
         <div class="no-visible"></div>
-        <a href="src/main/webapp/en/contact.htm" tppabs="http://valudio.com/en/contact?s=1" class="no-visible">
+        <a href="en/contact-s=1.htm" tppabs="http://valudio.com/en/contact?s=1" class="no-visible">
             <div>
                 <div class="bg"></div>
                 <div class="bg-hover"></div>
@@ -545,7 +543,7 @@
                 </div>
             </div>
         </a>
-        <a href="src/main/webapp/en/contact.htm" tppabs="http://valudio.com/en/contact?s=2" class="no-visible">
+        <a href="en/contact-s=2.htm" tppabs="http://valudio.com/en/contact?s=2" class="no-visible">
             <div>
                 <div class="bg"></div>
                 <div class="bg-hover"></div>
