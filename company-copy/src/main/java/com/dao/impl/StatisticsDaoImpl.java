@@ -1,57 +1,47 @@
 package com.dao.impl;
 
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.ObjectInputStream;
-import java.net.HttpURLConnection;
-import java.security.KeyManagementException;
-import java.security.NoSuchAlgorithmException;
 import java.util.Map;
 
 import com.dao.StatisticsDao;
+import com.util.HttpUtils;
 import com.util.HttpUtilsLuoCopy;
 
 public class StatisticsDaoImpl implements StatisticsDao {
 
 	/**
-	 * 收录
+	 * 搜索排名
 	 * @param url
 	 * @param params
 	 * @return
 	 */
-	public String include(String url, Map<String, String> params) {
+	public String SearchRankings(String url,String params) {
 		// TODO Auto-generated method stub
-		return "";
+		String s = null;
+		try {
+			HttpUtils http = new HttpUtils();
+			s = http.sendGet(url, params);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return s;
 	}
 	
-	
-
-	/**
-	 * 关键词排名
-	 * @param url
-	 * @param params
-	 * @return
-	 */
-	public String keyword(String url, Map<String, String> params) {
-		// TODO Auto-generated method stub
-		return "ok";
-	}
-
-
-	/**
-	 * 权重
-	 * @param url
-	 * @param params
-	 * @return
-	 */
+	//关键词
 	@Override
-	public String weight(String url, Map<String, String> params) {
+	public String SearchRankingsO(String url, Map<String, String> param) {
 		// TODO Auto-generated method stub
-		return "ok";
+		String s = null;
+		try {
+			HttpUtils http = new HttpUtils();
+			s = http.sendPost(url, param, "utf-8");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return s;
 	}
-
-
+	
 	/**
 	 * 网络概述
 	 * @param url
@@ -60,10 +50,18 @@ public class StatisticsDaoImpl implements StatisticsDao {
 	@Override
 	public String networkOverview(String url,String content) throws Exception{
 		// TODO Auto-generated method stub
-		HttpUtilsLuoCopy http = new HttpUtilsLuoCopy();
-		byte[] res = http.post(url, content, "utf-8");
-		String s = new String(res);
+		String s = null;
+		try {
+			HttpUtilsLuoCopy http = new HttpUtilsLuoCopy();
+			byte[] res = http.post(url, content, "utf-8");
+			s = new String(res);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return s;
 	}
+
+	
 
 }

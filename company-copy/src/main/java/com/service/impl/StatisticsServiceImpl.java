@@ -21,34 +21,18 @@ public class StatisticsServiceImpl implements StatisticsService {
 	 * @param params
 	 * @return
 	 */
-	public String include(String url, Map<String, String> params) {
+	public String SearchRankings(String url,String params) {
 		// TODO Auto-generated method stub
-		return statisticsDao.include(url, params);
+		return statisticsDao.SearchRankings(url,params);
 	}
 
-	/**
-	 * 关键词排名
-	 * @param url
-	 * @param params
-	 * @return
-	 */
-	public String keyword(String url, Map<String, String> params) {
-		// TODO Auto-generated method stub
-		return statisticsDao.keyword(url, params);
-	}
-
-	/**
-	 * 权重
-	 * @param url
-	 * @param params
-	 * @return
-	 */
+	//关键词
 	@Override
-	public String weight(String url, Map<String, String> params) {
+	public String SearchRankingsO(String url, Map<String, String> param) {
 		// TODO Auto-generated method stub
-		return statisticsDao.weight(url, params);
+		return statisticsDao.SearchRankingsO(url, param);
 	}
-
+	
 	/**
 	 * 网络概述
 	 * @param url
@@ -59,5 +43,7 @@ public class StatisticsServiceImpl implements StatisticsService {
 		// TODO Auto-generated method stub
 		return statisticsDao.networkOverview(url,content);
 	}
+
+
 
 }

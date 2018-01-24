@@ -16,10 +16,10 @@
 		<div class="nav_head">
 			<div class="nav_lft">
 				<div class="logo">
-					<a href="../../../../../index.htm">SumChance</a>
+					<a href="../../index.htm">SumChance</a>
 				</div>
 				<div class="logo_txt">
-					<a href="#">管理控制台</a>
+					<a href="index.html">管理控制台</a>
 				</div>
 			</div>
 
@@ -94,7 +94,7 @@
 			</div>
 		</li>
 		<li>
-			<a href="javascript:;" title="">用户xxx</a>
+			<a href="javascript:;" title="">用户<span id="userId"></a>
 		</li>
 		<span class="search"></span>
 	</ul>
@@ -369,4 +369,31 @@
 </div>
 </div>
 </body>
+<script type="text/javascript">
+//用户
+var userName = window.sessionStorage.getItem("userName");
+if(userName==null){
+	 var userId = window.sessionStorage.getItem("userId");
+	 if(userId!=null){
+		var code = userId;
+		var leng=code.length;  //定义长度
+		if(leng==1){
+		code="00000"+code;
+		}else if(leng==2){
+		code="0000"+code;
+		}else if(leng==3){
+		code="000"+code;
+		}else if(leng==4){
+		code="00"+code;
+		}else if(leng==5){
+		code="0"+code;
+		}
+		$("#userId").html(code);
+	 }else{
+		 window.location.href="../../index.htm";
+	 }
+}else{
+	 $("#userId").html(userName);
+}
+</script>
 </html>

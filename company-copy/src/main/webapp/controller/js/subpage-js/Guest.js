@@ -82,7 +82,7 @@ $(function(){
 				type : "post",
 				data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics,"source":source,"visitor":visitor,"clientDevice":clientDevice},
 				dataType : "json",
-				async : false,
+				async : true,
 				success : function(data) {
 					if (data.code==0010) {
 						alert(data.msg);
@@ -182,7 +182,7 @@ $(function(){
 				type : "post",
 				data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics},
 				dataType : "json",
-				async : false,
+				async : true,
 				success : function(data) {
 					if (data.code==0010) {
 						alert(data.msg);
@@ -225,7 +225,7 @@ $(function(){
 				type : "post",
 				data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics},
 				dataType : "json",
-				async : false,
+				async : true,
 				success : function(data) {
 					if (data.code==0010) {
 						alert(data.msg);
@@ -553,7 +553,7 @@ $(function(){
 			}
 			$("#userId").html(code);
 		 }else{
-			 //window.location.href="../../../index.htm";
+			 window.location.href="../../../index.htm";
 		 }
 	 }else{
 		 $("#userId").html(userName);
@@ -641,7 +641,7 @@ $(function(){
 				type : "post",
 				data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics,"source":source,"visitor":visitor,"clientDevice":clientDevice},
 				dataType : "json",
-				async : false,
+				async : true,
 				success : function(data) {
 					if (data.code==0010) {
 						alert(data.msg);
@@ -701,7 +701,7 @@ $(function(){
 				type : "post",
 				data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics,"source":source,"visitor":visitor,"clientDevice":clientDevice},
 				dataType : "json",
-				async : false,
+				async : true,
 				success : function(data) {
 					if (data.code==0010) {
 						alert(data.msg);
@@ -744,7 +744,7 @@ $(function(){
 				type : "post",
 				data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics,"source":source,"visitor":visitor,"clientDevice":clientDevice},
 				dataType : "json",
-				async : false,
+				async : true,
 				success : function(data) {
 					if (data.code==0010) {
 						alert(data.msg);
@@ -1160,7 +1160,7 @@ $(function(){
 				type : "post",
 				data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics,"source":source,"visitor":visitor,"clientDevice":clientDevice},
 				dataType : "json",
-				async : false,
+				async : true,
 				success : function(data) {
 					if (data.code==0010) {
 						alert(data.msg);
@@ -1220,7 +1220,7 @@ $(function(){
 				type : "post",
 				data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics,"source":source,"visitor":visitor,"clientDevice":clientDevice},
 				dataType : "json",
-				async : false,
+				async : true,
 				success : function(data) {
 					if (data.code==0010) {
 						alert(data.msg);
@@ -1263,7 +1263,7 @@ $(function(){
 				type : "post",
 				data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics,"source":source,"visitor":visitor,"clientDevice":clientDevice},
 				dataType : "json",
-				async : false,
+				async : true,
 				success : function(data) {
 					if (data.code==0010) {
 						alert(data.msg);
@@ -1713,7 +1713,7 @@ $(function(){
 						type : "post",
 						data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics,"source":source,"visitor":visitor,"clientDevice":clientDevice},
 						dataType : "json",
-						async : false,
+						async : true,
 						success : function(data) {
 							if (data.code==0010) {
 								alert(data.msg);
@@ -1773,7 +1773,7 @@ $(function(){
 						type : "post",
 						data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics,"source":source,"visitor":visitor,"clientDevice":clientDevice},
 						dataType : "json",
-						async : false,
+						async : true,
 						success : function(data) {
 							if (data.code==0010) {
 								alert(data.msg);
@@ -1816,7 +1816,7 @@ $(function(){
 						type : "post",
 						data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics,"source":source,"visitor":visitor,"clientDevice":clientDevice},
 						dataType : "json",
-						async : false,
+						async : true,
 						success : function(data) {
 							if (data.code==0010) {
 								alert(data.msg);
@@ -2266,7 +2266,7 @@ $(function(){
 						type : "post",
 						data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics,"source":source,"visitor":visitor,"clientDevice":clientDevice},
 						dataType : "json",
-						async : false,
+						async : true,
 						success : function(data) {
 							if (data.code==0010) {
 								alert(data.msg);
@@ -2326,7 +2326,7 @@ $(function(){
 						type : "post",
 						data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics,"source":source,"visitor":visitor,"clientDevice":clientDevice},
 						dataType : "json",
-						async : false,
+						async : true,
 						success : function(data) {
 							if (data.code==0010) {
 								alert(data.msg);
@@ -2369,7 +2369,7 @@ $(function(){
 						type : "post",
 						data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics,"source":source,"visitor":visitor,"clientDevice":clientDevice},
 						dataType : "json",
-						async : false,
+						async : true,
 						success : function(data) {
 							if (data.code==0010) {
 								alert(data.msg);
@@ -2819,7 +2819,7 @@ $(function(){
 						type : "post",
 						data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics,"source":source,"visitor":visitor,"clientDevice":clientDevice},
 						dataType : "json",
-						async : false,
+						async : true,
 						success : function(data) {
 							if (data.code==0010) {
 								alert(data.msg);
@@ -2879,7 +2879,7 @@ $(function(){
 						type : "post",
 						data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics,"source":source,"visitor":visitor,"clientDevice":clientDevice},
 						dataType : "json",
-						async : false,
+						async : true,
 						success : function(data) {
 							if (data.code==0010) {
 								alert(data.msg);
@@ -2922,7 +2922,7 @@ $(function(){
 						type : "post",
 						data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics,"source":source,"visitor":visitor,"clientDevice":clientDevice},
 						dataType : "json",
-						async : false,
+						async : true,
 						success : function(data) {
 							if (data.code==0010) {
 								alert(data.msg);
@@ -3372,7 +3372,7 @@ $(function(){
 						type : "post",
 						data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics,"source":source,"visitor":visitor,"clientDevice":clientDevice},
 						dataType : "json",
-						async : false,
+						async : true,
 						success : function(data) {
 							if (data.code==0010) {
 								alert(data.msg);
@@ -3432,7 +3432,7 @@ $(function(){
 						type : "post",
 						data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics,"source":source,"visitor":visitor,"clientDevice":clientDevice},
 						dataType : "json",
-						async : false,
+						async : true,
 						success : function(data) {
 							if (data.code==0010) {
 								alert(data.msg);
@@ -3475,7 +3475,7 @@ $(function(){
 						type : "post",
 						data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics,"source":source,"visitor":visitor,"clientDevice":clientDevice},
 						dataType : "json",
-						async : false,
+						async : true,
 						success : function(data) {
 							if (data.code==0010) {
 								alert(data.msg);
@@ -3954,7 +3954,7 @@ $(function(){
 				type : "post",
 				data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics,"source":source,"visitor":visitor,"clientDevice":clientDevice},
 				dataType : "json",
-				async : false,
+				async : true,
 				success : function(data) {
 					if (data.code==0010) {
 						alert(data.msg);
@@ -4014,7 +4014,7 @@ $(function(){
 				type : "post",
 				data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics,"source":source,"visitor":visitor,"clientDevice":clientDevice},
 				dataType : "json",
-				async : false,
+				async : true,
 				success : function(data) {
 					if (data.code==0010) {
 						alert(data.msg);
@@ -4057,7 +4057,7 @@ $(function(){
 				type : "post",
 				data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics,"source":source,"visitor":visitor,"clientDevice":clientDevice},
 				dataType : "json",
-				async : false,
+				async : true,
 				success : function(data) {
 					if (data.code==0010) {
 						alert(data.msg);
@@ -4542,7 +4542,7 @@ $(function(){
 				type : "post",
 				data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics,"source":source,"visitor":visitor,"clientDevice":clientDevice},
 				dataType : "json",
-				async : false,
+				async : true,
 				success : function(data) {
 					if (data.code==0010) {
 						alert(data.msg);
@@ -4602,7 +4602,7 @@ $(function(){
 				type : "post",
 				data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics,"source":source,"visitor":visitor,"clientDevice":clientDevice},
 				dataType : "json",
-				async : false,
+				async : true,
 				success : function(data) {
 					if (data.code==0010) {
 						alert(data.msg);
@@ -4645,7 +4645,7 @@ $(function(){
 				type : "post",
 				data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics,"source":source,"visitor":visitor,"clientDevice":clientDevice},
 				dataType : "json",
-				async : false,
+				async : true,
 				success : function(data) {
 					if (data.code==0010) {
 						alert(data.msg);
@@ -5130,7 +5130,7 @@ $(function(){
 				type : "post",
 				data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics,"source":source,"visitor":visitor,"clientDevice":clientDevice},
 				dataType : "json",
-				async : false,
+				async : true,
 				success : function(data) {
 					if (data.code==0010) {
 						alert(data.msg);
@@ -5190,7 +5190,7 @@ $(function(){
 				type : "post",
 				data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics,"source":source,"visitor":visitor,"clientDevice":clientDevice},
 				dataType : "json",
-				async : false,
+				async : true,
 				success : function(data) {
 					if (data.code==0010) {
 						alert(data.msg);
@@ -5233,7 +5233,7 @@ $(function(){
 				type : "post",
 				data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics,"source":source,"visitor":visitor,"clientDevice":clientDevice},
 				dataType : "json",
-				async : false,
+				async : true,
 				success : function(data) {
 					if (data.code==0010) {
 						alert(data.msg);

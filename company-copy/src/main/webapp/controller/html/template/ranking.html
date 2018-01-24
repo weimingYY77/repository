@@ -13,7 +13,7 @@
 	<div class="nav_head">
 		<div class="nav_lft">
 			<div class="logo">
-				<a href="../../../../../../index.htm">SumChance</a>
+				<a href="../../../index.htm">SumChance</a>
 			</div>
 			<div class="logo_txt">
 				<a href="../index.html">管理控制台</a>
@@ -93,7 +93,7 @@
 		</div>
 	</li>
 	<li>
-		<a href="javascript:;" title="">用户xxx</a>
+		<a href="javascript:;" title="">用户<span id="userId"></a>
 	</li>
 	<span class="search"></span>
 </ul>
@@ -227,8 +227,8 @@
 	<div class="main_right1 box_show">
 		<p>搜索排名</p>
         <div class="sou">
-        	<input type="text" name="" value="" placeholder="请输入网址……" class="search_bar">
-        	<button class="view_analysis">查看分析</button>
+        	<input type="text" name="" value="" placeholder="请输入网址……" id="host" class="search_bar">
+        	<button class="view_analysis" id="ViewAnalysis">查看分析</button>
         	<div style="clear:both"></div>
         </div>
 	</div>
@@ -245,10 +245,10 @@
 	      		<tr>
 	      			<td class="bluetxt">SE0信息</td>
 	      			<td>
-	      			    <span>百度权重：<span class="bluetxt">0</span> </span>
+	      			    <span>百度权重：<span class="bluetxt" id="seo">0</span> </span>
 	      			    <span>360权重： <span class="bluetxt">0</span></span>
 	      			    <span>Google： <span class="bluetxt">0</span></span>
-	      			    <span>反链数：<span class="redtxt">0</span></span>
+	      			    <span>反链数：<span class="redtxt" id="anti-chain">0</span></span>
 	      			    <span>出站链数： <span class="redtxt">1</span></span>
 	      			    <span>站内链接： <span class="redtxt">103</span></span>
 	      		     </td>
@@ -256,24 +256,35 @@
 	      		<tr>
 	      			<td class="bluetxt">域名解析</td>
 	      			<td>
-                      	<span>同IP网站： <span class="bluetxt">0</span></span>
+                      	<span>同IP网站： <span class="bluetxt" id="WithIP">0</span></span>
 	      			    <span>响应时间： <span class="bluetxt">85毫秒</span></span>
-	      			    <span class="bluetxt">IP：<span>123.56.44.16</span></span>
+	      			    <span class="bluetxt">IP：<span id="WithIPN"></span></span>
 
 	      			</td>
 	      		</tr>
 	      		<tr>
 	      			<td class="bluetxt">域名备案</td>
-	      			<td>
-                      	<span>备案号： <span class="bluetxt">浙ICP备15007163号-3</span></span>
-	      			    <span>性质：企业</span>
-	      			    <span>名称：<span>乐清南田自动化设备有限公司</span></span>
-	      			    <span>审核时间：<span>2017-03-17</span></span>
+	      			<td id="DomainFiling">
+                      	<span>备案号： <span class="bluetxt" id="RecordNumber"></span></span>
+	      			    <span>性质：<span id="nature"></span></span>
+	      			    <span>名称：<span id="company"></span></span>
+	      			    <span>审核时间：<span id="AuditTime"></span></span>
+	      			</td>
+	      			<td id="Notput">
+	      				<span class="bluetxt">域名未备案</span>
 	      			</td>
 	      		</tr>
 	      		<tr>
-	      			<td class="bluetxt">域名年龄</td>
-	      			<td><span class="bluetxt">4年5月2天（创建于2013年7月19日，过期时间为2018年7月19日）</span></td>
+	      			<td class="bluetxt">域名注册时间</td>
+	      			<td>
+	      				<span class="bluetxt" id="register"></span>
+	      			</td>
+	      		</tr>
+	      		<tr>
+	      			<td class="bluetxt">域名过期时间</td>
+	      			<td>
+	      				<span class="bluetxt" id="overdue"></span>
+	      			</td>
 	      		</tr>
 	      	</tbody>
 	      </table> 
@@ -290,14 +301,14 @@
           			<td>最近一月</td>
           		</tr>
           		<tr>
-          			<td class="greentxt">data</td>
-          			<td class="greentxt">data</td>
-          			<td>data</td>
-          			<td class="greentxt">data</td>
-          			<td class="greentxt">data</td>
-          			<td class="greentxt">data</td>
-          			<td class="greentxt">data</td>
-          			<td class="greentxt">data</td>
+          			<td class="greentxt" id="Baiduflow">data</td>
+          			<td class="greentxt" id="keyword">data</td>
+          			<td id="Snapshot">data</td>
+          			<td class="greentxt" id="Homepage">data</td>
+          			<td class="greentxt" id="indexQuantity">data</td>
+          			<td class="greentxt" id="collection">data</td>
+          			<td class="greentxt" id="Aweek">data</td>
+          			<td class="greentxt" id="month">data</td>
           		</tr>
           	</tbody>
           </table>
@@ -314,20 +325,20 @@
           		</tr>
           		<tr>
           			<td>收录</td>
-          			<td class="greentxt">data</td>
-          			<td class="greentxt">data</td>
-          			<td class="greentxt">data</td>
+          			<td class="greentxt" id="baidu">0</td>
+          			<td class="greentxt" id="sougou">0</td>
+          			<td class="greentxt" id="qihu">0</td>
           		</tr>
           		<tr>
           			<td>反链</td>
-          			<td class="greentxt">data</td>
-          			<td class="greentxt">data</td>
-          			<td class="greentxt">data</td>
+          			<td class="greentxt" id="baiduO">0</td>
+          			<td class="greentxt" id="sougouO">0</td>
+          			<td class="greentxt" id="qihuO">0</td>
           		</tr>
           	</tbody>
           </table>
           <table class="table_four" cellspacing="0" cellpadding="0">
-          	<tbody>
+          	<thead>
           	    <tr>
           			<td colspan="8" class="bluebg">关键词排名 <a href="javascript:;" class="addword">添加关键词</a></td>
           		</tr>
@@ -337,30 +348,10 @@
           			<td>移动指数</td>
           			<td>360指数</td>
           			<td>本地排名</td>
-          			<td>异地排名</td>
-          			<td>排名变化</td>
-          			<td>预估带来的流量（IP）</td>
           		</tr>
-          		<tr>
-          			<td class="greentxt">全自动钻孔机</td>
-          			<td class="greentxt">data</td>
-          			<td class="greentxt">data</td>
-          			<td class="greentxt">data</td>
-          			<td class="greentxt">data</td>
-          			<td class="greentxt">data</td>
-          			<td class="greentxt"><span class="rank1"></span>data</td>
-          			<td class="greentxt">data</td>
-          		</tr>
-          		<tr>
-          			<td class="greentxt">全自动攻牙机</td>
-          			<td class="greentxt">data</td>
-          			<td class="greentxt">data</td>
-          			<td class="greentxt">data</td>
-          			<td class="greentxt">data</td>
-          			<td class="greentxt">data</td>
-          			<td class="redtxt"><span class="rank2"></span>data</td>
-          			<td class="redtxt">data</td>
-          		</tr>
+          	</thead>
+          	<tbody id="trend">
+          	
           	</tbody>
           </table>
 	</div>
@@ -370,22 +361,20 @@
 	<div class="mask_box">
 		<p>添加关键词</p>
 		<div class="mask_con">
-			<div class="con1"> 
-				<span>说明</span>
-				<div>该站点还可以添加<span class="red">18</span>个，每个站上限为<span class="red">20</span>个</div>
-			</div>
 			<div class="con2">
 				<span>说明</span>
-				<div><textarea name=""></textarea></div>
+				<div><textarea name="" id="illustrate"></textarea></div>
 			</div>
 		</div>
-		<p class="con3">多个关键词请用逗号或换行隔开</p>
+		<p class="con3">多个关键词请用英文逗号隔开</p>
 		<div class="btn_group">
-           <button  type="button" class="ensure btn">确定</button>
+           <button  type="button" class="ensure btn" id="addKeyword">确定</button>
            <button  type="button" class="cancel btn">取消</button>
 		</div>
 	</div>
 </div>
+<div id="progressBar" class="progressBar" style="display: block; ">正在加载，请稍等......</div> 
+<div id="background" class="background"></div> 
 </body>
 <script type="text/javascript" src="../../js/common-js/jquery.js"></script>
 <script type="text/javascript" src="../../js/common-js/common.js"></script>	

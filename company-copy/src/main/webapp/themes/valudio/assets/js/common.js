@@ -9,6 +9,19 @@ $(function(){
            $(".close").click(function(){
               $(".zhezhao").removeClass("is-open");
           });
+         //控制器
+         $("#kongzhi").click(function(){
+        	//用户
+        	 var userName = window.sessionStorage.getItem("userName");
+        	 var userId = window.sessionStorage.getItem("userId");
+        	 if(userName==null&&userId==null){
+        		 $(".nav").addClass("is-open");
+        		 $(".toggle").addClass("is-open");
+        			 
+        	 }else{
+        		 window.location.href="controller/html/index.html";
+        	 }
+         });
         $(".reg").click(function(){
         $(".login_box").removeClass("active");
         $(".login_box").hide();

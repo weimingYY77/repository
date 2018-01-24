@@ -53,7 +53,7 @@ $(function(){
 			}
 			$("#userId").html(code);
 		 }else{
-			 //window.location.href="../../../index.htm";
+			 window.location.href="../../../index.htm";
 		 }
 	 }else{
 		 $("#userId").html(userName);
@@ -72,7 +72,7 @@ $(function(){
 			type : "post",
 			data : {"siteId":siteId,"method":method,"start_date":start_date,"end_date":end_date,"metrics":metrics},
 			dataType : "json",
-			async : false,
+			async : true,
 			success : function(data) {
 				if (data.code==0010) {
 					alert(data.msg);
@@ -174,7 +174,7 @@ $(function(){
 			type : "post",
 			data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics},
 			dataType : "json",
-			async : false,
+			async : true,
 			success : function(data) {
 				if (data.code==0010) {
 					alert(data.msg);
@@ -283,7 +283,7 @@ $(function(){
 			type : "post",
 			data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics,"visitor":visitor},
 			dataType : "json",
-			async : false,
+			async : true,
 			success : function(data) {
 				if (data.code==0010) {
 					alert(data.msg);
@@ -345,12 +345,11 @@ $(function(){
 			type : "post",
 			data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics,"visitor":visitor},
 			dataType : "json",
-			async : false,
+			async : true,
 			success : function(data) {
 				if (data.code==0010) {
 					alert(data.msg);
 				}else if(data.code==0000){
-					$("#u").html(data.data.body.data[0].result.sum[0][5]);
 					$("#aa").html(data.data.body.data[0].result.sum[0][0]);
 					$("#bb").html(data.data.body.data[0].result.sum[0][3]);
 					if(data.data.body.data[0].result.sum[0][7]=='--'){
@@ -407,14 +406,21 @@ $(function(){
 			type : "post",
 			data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics,"visitor":visitor},
 			dataType : "json",
-			async : false,
+			async : true,
 			success : function(data) {
 				if (data.code==0010) {
 					alert(data.msg);
 				}else if(data.code==0000){
-					$("#t").html(data.data.body.data[0].result.sum[0][5]+"%");
+					if(data.data.body.data[0].result.sum[0][5]=='--'){
+						$("#t").html("0%");
+					}else{
+						$("#t").html(data.data.body.data[0].result.sum[0][5]+"%");
+					}
 					var u = (100 -  parseFloat(data.data.body.data[0].result.sum[0][5])).toFixed(2);
 					$("#u").html(u+"%");
+					if(isNaN(u)){
+						$("#u").html("0%");
+			        }
 				}
 			},
 			error : function(request) {
@@ -585,7 +591,7 @@ $(function(){
 			type : "post",
 			data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics},
 			dataType : "json",
-			async : false,
+			async : true,
 			success : function(data) {
 				if (data.code==0010) {
 					alert(data.msg);
@@ -694,7 +700,7 @@ $(function(){
 			type : "post",
 			data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics,"visitor":visitor},
 			dataType : "json",
-			async : false,
+			async : true,
 			success : function(data) {
 				if (data.code==0010) {
 					alert(data.msg);
@@ -756,12 +762,11 @@ $(function(){
 			type : "post",
 			data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics,"visitor":visitor},
 			dataType : "json",
-			async : false,
+			async : true,
 			success : function(data) {
 				if (data.code==0010) {
 					alert(data.msg);
 				}else if(data.code==0000){
-					$("#u").html(data.data.body.data[0].result.sum[0][5]);
 					$("#aa").html(data.data.body.data[0].result.sum[0][0]);
 					$("#bb").html(data.data.body.data[0].result.sum[0][3]);
 					if(data.data.body.data[0].result.sum[0][7]=='--'){
@@ -818,14 +823,21 @@ $(function(){
 			type : "post",
 			data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics,"visitor":visitor},
 			dataType : "json",
-			async : false,
+			async : true,
 			success : function(data) {
 				if (data.code==0010) {
 					alert(data.msg);
 				}else if(data.code==0000){
-					$("#t").html(data.data.body.data[0].result.sum[0][5]+"%");
+					if(data.data.body.data[0].result.sum[0][5]=='--'){
+						$("#t").html("0%");
+					}else{
+						$("#t").html(data.data.body.data[0].result.sum[0][5]+"%");
+					}
 					var u = (100 -  parseFloat(data.data.body.data[0].result.sum[0][5])).toFixed(2);
 					$("#u").html(u+"%");
+					if(isNaN(u)){
+						$("#u").html("0%");
+			        }
 				}
 			},
 			error : function(request) {
@@ -1023,7 +1035,7 @@ $("#yesterday").click(function(){
 		type : "post",
 		data : {"siteId":siteId,"method":method,"start_date":start_date1,"end_date":end_date,"metrics":metrics},
 		dataType : "json",
-		async : false,
+		async : true,
 		success : function(data) {
 			if (data.code==0010) {
 				alert(data.msg);
@@ -1132,7 +1144,7 @@ $("#yesterday").click(function(){
 		type : "post",
 		data : {"siteId":siteId,"method":method,"start_date":start_date1,"end_date":end_date,"metrics":metrics,"visitor":visitor},
 		dataType : "json",
-		async : false,
+		async : true,
 		success : function(data) {
 			if (data.code==0010) {
 				alert(data.msg);
@@ -1193,12 +1205,11 @@ $("#yesterday").click(function(){
 		type : "post",
 		data : {"siteId":siteId,"method":method,"start_date":start_date1,"end_date":end_date,"metrics":metrics,"visitor":visitor},
 		dataType : "json",
-		async : false,
+		async : true,
 		success : function(data) {
 			if (data.code==0010) {
 				alert(data.msg);
 			}else if(data.code==0000){
-				$("#u").html(data.data.body.data[0].result.sum[0][5]);
 				$("#aa").html(data.data.body.data[0].result.sum[0][0]);
 				$("#bb").html(data.data.body.data[0].result.sum[0][3]);
 				if(data.data.body.data[0].result.sum[0][7]=='--'){
@@ -1256,14 +1267,21 @@ $("#yesterday").click(function(){
 		type : "post",
 		data : {"siteId":siteId,"method":method,"start_date":start_date1,"end_date":end_date,"metrics":metrics,"visitor":visitor},
 		dataType : "json",
-		async : false,
+		async : true,
 		success : function(data) {
 			if (data.code==0010) {
 				alert(data.msg);
 			}else if(data.code==0000){
-				$("#t").html(data.data.body.data[0].result.sum[0][5]+"%");
+				if(data.data.body.data[0].result.sum[0][5]=='--'){
+					$("#t").html("0%");
+				}else{
+					$("#t").html(data.data.body.data[0].result.sum[0][5]+"%");
+				}
 				var u = (100 -  parseFloat(data.data.body.data[0].result.sum[0][5])).toFixed(2);
 				$("#u").html(u+"%");
+				if(isNaN(u)){
+					$("#u").html("0%");
+		        }
 			}
 		},
 		error : function(request) {

@@ -31,23 +31,17 @@ public class StatisticsController {
 	private StatisticsService statisticsService;
 	
 	/**
-	 * 收录
+	 * 搜索排名
 	 * @param sysuser
 	 * @return
 	 */
-	@RequestMapping(value="/include.do")
+	@RequestMapping(value="/SearchRankings.do")
 	@ResponseBody
-	public Map<String, Object> include(String url,Map<String, String> params) throws Exception{
-		 Map maps=new HashMap();
-		 String urll = "http://api.k780.com:88";
-		 Map<String, String> paramss = new LinkedHashMap<String, String>();
-    	 paramss.put("app","entry.baidu");
-    	 paramss.put("appkey","10003");
-    	 paramss.put("sign","b59bc3ef6191eb9f747dd4e83c99f2a4");
-    	 paramss.put("website","qzdzzj.com");
-    	 paramss.put("format","json");
-		 String result =  statisticsService.include(urll, paramss);
+	public Map<String, Object> SearchRankings(String params) throws Exception{
+		 String url = "http://api.k780.com/";
+		 String result = statisticsService.SearchRankings(url,params);
 		 JSONObject data = JSON.parseObject(result);
+		 Map maps=new HashMap();
 		 if(result!=null){
 			 maps.put("code", 0000);
 			 maps.put("msg","成功！");
@@ -61,57 +55,152 @@ public class StatisticsController {
 	}	
 	
 	/**
-	 * 权重
+	 * 百度权重
 	 * @param sysuser
 	 * @return
 	 */
-	@RequestMapping(value="/weight.do")
+	@RequestMapping(value="/seo.do")
 	@ResponseBody
-	public Map<String, Object> weight(String url,Map<String, String> params) throws Exception{
+	public Map<String, Object> seo(String params) throws Exception{
+		 String url = "http://api.91cha.com/br";
+		 String result = statisticsService.SearchRankings(url,params);
+		 JSONObject data = JSON.parseObject(result);
 		 Map maps=new HashMap();
-		 String urll = "http://api.k780.com:88";
-		 Map<String, String> paramss = new LinkedHashMap<String, String>();
-    	 params.put("app","entry.baidu");
-    	 params.put("appkey","10003");
-    	 params.put("sign","b59bc3ef6191eb9f747dd4e83c99f2a4");
-    	 params.put("website","qzdzzj.com");
-    	 params.put("format","json");
-		 String result =  "";
-		 if("ok".equals(result)){
-			 maps.put("code", 0000);//密码错误
+		 if(result!=null){
+			 maps.put("code", 0000);
 			 maps.put("msg","成功！");
+			 maps.put("data",data);
 		     return maps; 
 		 }else{
-			 maps.put("code", 0010);//密码错误
+			 maps.put("code", 0010);
 			 maps.put("msg","失败！");
 		     return maps; 
 		 }
 	}	
 	
+	/**
+	 * 同ip域名
+	 * @param sysuser
+	 * @return
+	 */
+	@RequestMapping(value="/WithIP.do")
+	@ResponseBody
+	public Map<String, Object> WithIP(String params) throws Exception{
+		 String url = "http://api.91cha.com/ipsame";
+		 String result = statisticsService.SearchRankings(url,params);
+		 JSONObject data = JSON.parseObject(result);
+		 Map maps=new HashMap();
+		 if(result!=null){
+			 maps.put("code", 0000);
+			 maps.put("msg","成功！");
+			 maps.put("data",data);
+		     return maps; 
+		 }else{
+			 maps.put("code", 0010);
+			 maps.put("msg","失败！");
+		     return maps; 
+		 }
+	}	
+	
+	/**
+	 * 域名注册和过期时间
+	 * @param sysuser
+	 * @return
+	 */
+	@RequestMapping(value="/register.do")
+	@ResponseBody
+	public Map<String, Object> register(String params) throws Exception{
+		 String url = "http://api.91cha.com/whois";
+		 String result = statisticsService.SearchRankings(url,params);
+		 JSONObject data = JSON.parseObject(result);
+		 Map maps=new HashMap();
+		 if(result!=null){
+			 maps.put("code", 0000);
+			 maps.put("msg","成功！");
+			 maps.put("data",data);
+		     return maps; 
+		 }else{
+			 maps.put("code", 0010);
+			 maps.put("msg","失败！");
+		     return maps; 
+		 }
+	}	
+	
+	/**
+	 * alexa
+	 * @param sysuser
+	 * @return
+	 */
+	@RequestMapping(value="/alexa.do")
+	@ResponseBody
+	public Map<String, Object> alexa(String params) throws Exception{
+		 String url = "http://api.91cha.com/alexa";
+		 String result = statisticsService.SearchRankings(url,params);
+		 JSONObject data = JSON.parseObject(result);
+		 Map maps=new HashMap();
+		 if(result!=null){
+			 maps.put("code", 0000);
+			 maps.put("msg","成功！");
+			 maps.put("data",data);
+		     return maps; 
+		 }else{
+			 maps.put("code", 0010);
+			 maps.put("msg","失败！");
+		     return maps; 
+		 }
+	}	
+	
+	/**
+	 * 添加关键词
+	 * @param sysuser
+	 * @return
+	 */
+	@RequestMapping(value="/addKeyword.do")
+	@ResponseBody
+	public Map<String, Object> addKeyword(String params) throws Exception{
+		 String url = "http://api.91cha.com/index";
+		 Map<String,String> header = new HashMap<String, String>();
+	     header.put("key", "0105b8caa8234079aed55106eb15477d");//用户名
+	     header.put("kws", params);//用户密码
+	        
+		 String result = statisticsService.SearchRankingsO(url,header);
+		 JSONObject data = JSON.parseObject(result);
+		 Map maps=new HashMap();
+		 if(result!=null){
+			 maps.put("code", 0000);
+			 maps.put("msg","成功！");
+			 maps.put("data",data);
+		     return maps; 
+		 }else{
+			 maps.put("code", 0010);
+			 maps.put("msg","失败！");
+		     return maps; 
+		 }
+	}	
 	
 	/**
 	 * 关键词排名
 	 * @param sysuser
 	 * @return
 	 */
-	@RequestMapping(value="/keyword词排名.do")
+	@RequestMapping(value="/keyTop.do")
 	@ResponseBody
-	public Map<String, Object> keyword(String url,Map<String, String> params) throws Exception{
+	public Map<String, Object> keyTop(String host,String params) throws Exception{
+		 String url = "http://api.91cha.com/bdsort";
+		 Map<String,String> header = new HashMap<String, String>();
+	     header.put("key", "23ce818388ad4f35b60391c92e734676");//用户名
+	     header.put("host", host);//用户密码
+	     header.put("wd", params);//用户密码
+		 String result = statisticsService.SearchRankingsO(url,header);
+		 JSONObject data = JSON.parseObject(result);
 		 Map maps=new HashMap();
-		 String urll = "http://api.k780.com:88";
-		 Map<String, String> paramss = new LinkedHashMap<String, String>();
-    	 params.put("app","entry.baidu");
-    	 params.put("appkey","10003");
-    	 params.put("sign","b59bc3ef6191eb9f747dd4e83c99f2a4");
-    	 params.put("website","qzdzzj.com");
-    	 params.put("format","json");
-		 String result =  "";
-		 if("ok".equals(result)){
-			 maps.put("code", 0000);//密码错误
+		 if(result!=null){
+			 maps.put("code", 0000);
 			 maps.put("msg","成功！");
+			 maps.put("data",data);
 		     return maps; 
 		 }else{
-			 maps.put("code", 0010);//密码错误
+			 maps.put("code", 0010);
 			 maps.put("msg","失败！");
 		     return maps; 
 		 }
@@ -135,8 +224,6 @@ public class StatisticsController {
          JSONObject body = new JSONObject();
          body.put("siteId",siteId);
          body.put("method",method);
-         SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
-         String tody = sdf.format(new Date());
          body.put("start_date",start_date);
          body.put("end_date",end_date);
          body.put("metrics",metrics);
