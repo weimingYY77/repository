@@ -72,6 +72,163 @@ $(function(){
 			var appkey = 31245;
 			var sign = "9449971c961c11912b8eb50fb4fe00da";
 			
+			//百度收录
+			var params = "appkey="+appkey+"&sign="+sign+"&app=entry.baidu&domain="+host+"&format=json";
+			$.ajax({
+				cache : false,
+				url : "../../../StatisticsController/SearchRankings.do",
+				type : "post",
+				data : {"params":params},
+				dataType : "json",
+				async : false,
+				success : function(data) {
+					if (data.code==0010) {
+						alert(data.msg);
+					}else if(data.code==0000){
+						$("#baidu").html(data.data.result.entry);
+					}
+				},
+				error : function(request) {
+					alert("Connection error");
+				},
+			});
+			
+			//搜狗收录
+			var params = "appkey="+appkey+"&sign="+sign+"&app=entry.sogou&domain="+host+"&format=json";
+			$.ajax({
+				cache : false,
+				url : "../../../StatisticsController/SearchRankings.do",
+				type : "post",
+				data : {"params":params},
+				dataType : "json",
+				async : false,
+				success : function(data) {
+					if (data.code==0010) {
+						alert(data.msg);
+					}else if(data.code==0000){
+						$("#sougou").html(data.data.result.entry);
+					}
+				},
+				error : function(request) {
+					alert("Connection error");
+				},
+			});
+			
+			//360收录
+			var params = "appkey="+appkey+"&sign="+sign+"&app=entry.qihu&domain="+host+"&format=json";
+			$.ajax({
+				cache : false,
+				url : "../../../StatisticsController/SearchRankings.do",
+				type : "post",
+				data : {"params":params},
+				dataType : "json",
+				async : false,
+				success : function(data) {
+					if (data.code==0010) {
+						alert(data.msg);
+					}else if(data.code==0000){
+						$("#qihu").html(data.data.result.entry);
+					}
+				},
+				error : function(request) {
+					alert("Connection error");
+				},
+			});
+			
+			//百度反链
+			var params = "appkey="+appkey+"&sign="+sign+"&app=backlink.baidu&website="+host+"&format=json";
+			$.ajax({
+				cache : false,
+				url : "../../../StatisticsController/SearchRankings.do",
+				type : "post",
+				data : {"params":params},
+				dataType : "json",
+				async : false,
+				success : function(data) {
+					if (data.code==0010) {
+						alert(data.msg);
+					}else if(data.code==0000){
+						$("#baiduO").html(data.data.result.backlink);
+					}
+				},
+				error : function(request) {
+					alert("Connection error");
+				},
+			});
+			
+			//搜狗反链
+			var params = "appkey="+appkey+"&sign="+sign+"&app=backlink.sogou&website="+host+"&format=json";
+			$.ajax({
+				cache : false,
+				url : "../../../StatisticsController/SearchRankings.do",
+				type : "post",
+				data : {"params":params},
+				dataType : "json",
+				async : false,
+				success : function(data) {
+					if (data.code==0010) {
+						alert(data.msg);
+					}else if(data.code==0000){
+						$("#sougouO").html(data.data.result.backlink);
+					}
+				},
+				error : function(request) {
+					alert("Connection error");
+				},
+			});
+			
+			//360反链
+			var params = "appkey="+appkey+"&sign="+sign+"&app=backlink.qihu&website="+host+"&format=json";
+			$.ajax({
+				cache : false,
+				url : "../../../StatisticsController/SearchRankings.do",
+				type : "post",
+				data : {"params":params},
+				dataType : "json",
+				async : false,
+				success : function(data) {
+					if (data.code==0010) {
+						alert(data.msg);
+					}else if(data.code==0000){
+						$("#qihuO").html(data.data.result.backlink);
+					}
+				},
+				error : function(request) {
+					alert("Connection error");
+				},
+			});
+			
+			//备案号
+			var params = "appkey="+appkey+"&sign="+sign+"&app=domain.beian&domain="+host+"&format=json";
+			$.ajax({
+				cache : false,
+				url : "../../../StatisticsController/SearchRankings.do",
+				type : "post",
+				data : {"params":params},
+				dataType : "json",
+				async : false,
+				success : function(data) {
+					if (data.code==0010) {
+						alert(data.msg);
+					}else if(data.code==0000){
+						if(data.data.result.msg=='域名未备案'){
+							$("#DomainFiling").hide();
+							$("#Notput").show();
+						}else{
+							$("#Notput").hide();
+							$("#RecordNumber").html(data.data.result.icpno);
+							$("#nature").html(data.data.result.organizers_type);
+							$("#company").html(data.data.result.organizers);
+							$("#AuditTime").html(data.data.result.exadate);
+							$("#Homepage").html(data.data.result.webhome);
+						}
+					}
+				},
+				error : function(request) {
+					alert("Connection error");
+				},
+			});
+			
 			//百度权重
 			var key= "0f4128e687c449a39de351b721e6dc18";
 			var params = "key="+key+"&host="+host+"";
