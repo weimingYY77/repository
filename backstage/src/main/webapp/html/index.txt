@@ -1,4 +1,13 @@
 login.html ----后台登录
 homepage.html----后台主页
+account_info.html  ----主页---帐号信息
+account_security.html ----主页---帐号安全
+
+
 
 add_order.html   --订单管理--增加订单
+order_details     --订单管理--订单详情
+order_modification.html  --订单管理--订单修改
+
+
+add_account.html    --人员管理--增加帐号

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>三千客 | 增加帐号</title>
+	<link rel="icon" href="../../image/favicon.ico">
+	<link rel="stylesheet" href="../../css/common-css/common.css">
+	<link rel="stylesheet" href="../../css/sub-css/add_account.css">
+	<script src="../../js/common-js/jquery-3.2.1.min.js" type="text/javascript"></script>
+	<script src="../../js/common-js/common.js" type="text/javascript"></script>
+	<script src="../../js/sub-js/add_account.js" type="text/javascript"></script>
+
+</head>
+<body>
+	<div class="head_nav">
+		<div class="logo">
+			<img src="../../image/logo_w.png" alt="">
+		</div>
+		<div class="nav_rit">
+			<span class="company">三千客信息后台</span>
+			<div class="user">
+			    <span  class="user_icon"></span>
+				<span class="user_name">李小璐</span>
+				<span class="drop"></span>
+			        <ul class="drop_list">
+				        <li><a href="#" title="">帐号信息</a></li>
+				        <li><a href="#" title="">帐号安全</a></li>
+				        <li><a href="#" title="">工作笔记</a></li>
+				        <li><a href="#" title="">安全退出</a></li>
+			        </ul>
+			</div>
+		 
+		</div>
+	</div>
+	<div class="main">
+		<div class="main_lft">
+			<ul class="menu">
+				<li><span class="icon1"></span>订单管理</li>
+				<li><span class="icon2"></span>客户管理</li>
+				<li  class="active"><span class="icon33"></span>人员管理</li>
+				<li><span class="icon4"></span>工作管理</li>
+				<li><span class="icon5"></span>公司统计</li>
+			</ul>
+		</div>
+		<!-- 增加订单 -->
+		<div class="main_rit">
+			<div class="account_box box_show">
+				<p>增加帐号
+                  <button type="button" class="cancel">取消</button>
+                  <button type="submit" class="save">保存</button>
+                </p>
+                <form action="add_order_submit" method="get" class="add_order">
+					<!-- 基本信息 -->
+					<div class="information">
+	                    <p class="msg">基本信息</p>
+	                    <div class="inform_lft">
+	                    		<div class="from_group">
+	                    			<label for="">登录帐号(手机)：</label>
+	                    			<input type="text" name="" value="" class="userId" required="required">
+	                    		</div>
+	                    		<div class="from_group">
+	                    			<label for="">密码：</label>
+	                    			<input type="password" name="" value="" class="pwd1" required="required">
+	                    			<span class="pwd_error1">密码不能为空</span>
+	                    		</div>
+	                    		<div class="from_group">
+	                    			<label for="">确认密码：</label>
+	                    			<input type="password" name="" value="" class="pwd2">
+	                    			<span class="pwd_error2">两次密码输入不一致</span>
+	                    		</div>
+	                    		<div class="from_group">
+	                    			<label for="">姓名：</label>
+	                    			<input type="text" name="" value="" class="userName" required="required">
+	                    		</div>
+	                     </div>
+	                    <div class="inform_rit">
+	                    	    <div class="from_group one_select">
+	                    			<label for="">部门：</label>
+	                    			<select name="">
+	                    				<option value=""></option>
+	                    			</select>
+	                    		</div>
+	                            <div class="from_group">
+	                    			<label for="">职位：</label>
+	                    			<input type="text" name="" value="" class="position" required="required">
+	                    		</div>
+	                           	 <div class="from_group">
+	                    			<label for="">邮箱：</label>
+	                    			<input type="text" name="" value="" class="email" required="required">
+	                    		</div>
+	                            <div class="from_group">
+	                    			<label for="">订单总额：</label>
+	                    			<input type="text" name="" value="" class="order" required="required">
+	                    		</div>
+	                    </div>
+	                    <div style="clear: both"></div>
+					</div>
+					<!-- 权限设置 -->
+					<div class="service">
+						<p class="msg">权限设置<span>(权限与角色关联，选择该账号的角色可完成权限设置)</span></p>
+						<div class="power">
+							<span>帐号权限:</span>
+							<input type="checkbox" name="" value="">全部权限
+							<input type="checkbox" name="" value="">订单管理权限
+							<input type="checkbox" name="" value="">客户管理权限
+							<input type="checkbox" name="" value="">人员管理权限
+							<input type="checkbox" name="" value="">工作管理权限
+						</div>
+					</div> 
+					<!-- 备注信息 -->
+					<div class="remark">
+					    <p class="msg">备注信息</p> 
+					    <div class="remark_box">
+					       <textarea name="" id="remark_txt" placeholder="输入备注，不多于300字"></textarea>   		
+					    </div>      	
+					</div>           
+                </form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

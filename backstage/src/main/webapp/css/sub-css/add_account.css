@@ -1,3 +1,4 @@
+
 /* 增加订单 */
 .main_rit .account_box{
 	width: 100%;
@@ -44,6 +45,9 @@
 	padding-left: 40px;
 }
 /* 基本信息 */
+.information{
+	margin-top: 20px;
+}
 .information .inform_lft,.information .inform_rit{
    display: inline-block;
    width: 42%;
@@ -59,92 +63,62 @@
 }
 .information .from_group{
 	margin-top: 15px;
+	position: relative;
 }
 .information .from_group label{
 	font-size: 18px;
 	color: #8A94A4;
 	display: inline-block;
-	width: 90px;
+	width: 140px;
+	text-align: right;
 }
 .information .from_group input,.information .from_group select{
 	height: 30px;
 	outline: none;
-	font-size: 16px;
 }
 .information .from_group input{
 	border-width: 0;
 	border: 1px solid #dcdcdc;
 	padding-left: 1%;
-    width: 59%;
+    width: 56%;
 }
-.information .from_group select{
+.information .one_select select{
+	width: 57%;
 	color: #8A94A4;
 	border: 1px solid #dcdcdc;
 }
-.information .one_select select{
-	width: 60%;
+.information .from_group span{
+	color: red;
+	position: absolute;
+	left: 170px;
+    top: 5px;
+    display: none;
 }
- .information .three_select select{
-    width: 19.6%;
-}
- /*服务信息  */
+ /*权限设置  */
  .service{
  	margin-top: 20px;
  }
- .service .service_demo{
- 	height: 50px;
- 	line-height: 50px;
- 	margin-left: 1.5%;
- 	padding-left: 0.5%;
- 	margin-right: 2%;
- 	width: 96%;
- }
- .service .service_demo span{
-    display: inline-block;
-    float: left;
-    width: 33.3%;
- }
- .service .service_demo .demo{
-    width: 40%;
- }
-.service .service_demo .people{
-    width: 40%;
- }
-.service .service_demo .option{
-    width: 20%;
-    text-align: center;
- }
- .service .gary{
- 	background: #EFF2F5;
- 	margin-top: 20px;
- }
- .service .service_demo input{
-  	height: 30px;
-  	outline: none;
-  	padding-left: 1%;
-  	width: 45%;
-  	border: 1px solid #d2d2d2;
-  }
-.service .service_demo .option i{
-   	display: inline-block;
-   	cursor: pointer;
-   	vertical-align: middle;
+.service .msg>span{
+	color: #8A94A4;
+	font-size: 14px;
+	padding-left: 10px;
 }
-.service .service_demo .option i.add{
-   	background: url(../../image/add.png) no-repeat;
-   	width: 24px;
-   	height: 24px;
-   	margin-left: 20%;
+.service .power{
+	margin-top: 30px;
+	margin-left: 50px;
 }
-.service .service_demo .option i.reduce{
-    background: url(../../image/reduce.png) no-repeat center;
-    height: 30px;
-    width: 40px;
+.service .power>span{
+	color: #8A94A4;
+}
+.service .power input{
+	margin-left: 15px;
+	margin-right: 15px;
+	display: inline-block;
 }
 /* 备注信息 */
 .remark{
 	margin-top: 20px;
-	padding-bottom: 20px;
+	padding-bottom: 169px;
 }
 .remark_box{
     margin-left: 2%;
