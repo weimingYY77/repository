@@ -198,13 +198,28 @@ body{
  	left:5%;
   	display: none;  
 }
-.my_order ul li{
+.function_list>li .my_user{
+	position: absolute;
+	width: 125px;
+	border: 1px solid #999;
+	border-top: none;
+	background: #fff;
+ 	top: 46px;
+ 	right: 0px;
+   	display: none;  
+}
+.my_order ul li,.my_user ul li{
 	font-size: 14px;
 	padding-top: 10px;
 	padding-bottom: 10px;
     text-align: center;
 }
-.my_order ul li:hover{
+.my_order ul li,.my_user ul li a{
+	color: #2b2b2b;
+	display: inline-block;
+	width: 100%;
+}
+.my_order ul li:hover,.my_user ul li:hover{
 	background: #f9f9f9;
 }
 .my_order ul li>a{
@@ -233,10 +248,10 @@ body{
 .my_cost ul li:hover{
 	background: #f9f9f9;
 }
-.my_cost ul li:last-child{
+.my_cost ul li:last-child,.my_user ul li:last-child{
     border-top: 1px solid #999;
 }
-.function_list>li .station_msg:after,.function_list>li .my_order:after,.function_list>li .my_cost:after{
+.function_list>li .station_msg:after,.function_list>li .my_order:after,.function_list>li .my_cost:after,.function_list>li .my_user:after{
 	content: "";
 	display: block;
 	width: 14px;
@@ -246,6 +261,7 @@ body{
 	top: -13px;
     left: 50%;
 }
+
 /* 主体 */
 .main{
 	position: relative;
