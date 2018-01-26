@@ -25,7 +25,7 @@
 				   	<option value="">手机验证</option>
 				   </select>
 			    </div>
-			    <div class="yz_group">
+			    <div class="yz_group no_border">
 				   <input type="tel" name="u_phoneNum" id="phone" value="" placeholder="请输入绑定手机号码">
 			       <button type="button" class="get_yz" onclick="getCode(this)" id="J_getCode">获取验证码</button>
 			       <button type="button" class="get_yz" id="J_resetCode" style="display:none;"><span id="J_second">120</span>秒后重发</button>
@@ -34,12 +34,12 @@
 				   <input type="text" name="v_code" value="" placeholder="请输入你收到的验证码" class="yz_code">
 				   <span class="error_yz">验证码错误!!!</span>
 			    </div>
-			    <div class="yz_group">
+			    <div class="yz_group no_border">
 				   <button type="button" id="next" class="next">下一步，修改密码</button>
 			    </div>
 			</div>
 			<!-- 修改框 -->
-			<div class="xg_box" style="display: none">
+			<div class="xg_box"  style="display: none">
 			   <p>修改密码：</p>
 			    <input type="hidden" id="u_id" name="u_id" value=""/>
 			    <div class="xg_group">
@@ -49,13 +49,13 @@
 				   <input type="password" name="" value="" class="new_again" placeholder="再次输入">
 				   <span class="error_again">两次密码不一致!!!</span>
 			    </div>
-			    <div class="xg_group">
+			    <div class="xg_group no_border">
 				   <button type="button" id="updatePw" class="next_log">确认修改并登录</button>
 			    </div>
 			</div>
 		</form>	
 		<!-- 保存 -->
-		<div class="bc_box" style="display: none">
+		<div class="bc_box"    style="display: none">
 		   <p>您已经成功保存，现在正在为您登录……</p>
 		</div>
 	</div>
