@@ -248,37 +248,15 @@
 }
 .browse_list li>p{
     color: #646464;
+    font-size: 14px;
 }
 .browse_list li>span{
     display: block;
     font-size: 24px;
     padding-top: 24px;
     color: #2b2b2b;
+    font-weight: bold;
 }
-.than{
-    text-align: center;
-    font-size: 12px;
-    color: #646464;
-    font-size: 14px;
-    height: 50px;
-    line-height: 50px;
-    color: #646464;
-    margin-top: 10px;
-}
-.than>span{
-    padding-left: 15px;
-    padding-right: 15px;
-}
-.than>span>input{
-    vertical-align: middle;
-}
-    padding-right: 10px;
-    padding-left: 10px;
-}
-.than input{
-    vertical-align: middle;
-}
-
 /* 访客趋势表 */
 .trend_table{
     margin-top: 20px;
@@ -288,6 +266,7 @@
     border-right: none;
     border-left: none; 
     padding-bottom: 70px;
+    font-size: 14px;
 }
 .trend_table th{
    background: #F4F4F4;
