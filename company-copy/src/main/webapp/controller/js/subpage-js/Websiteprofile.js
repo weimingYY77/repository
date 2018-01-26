@@ -59,9 +59,6 @@ $(function(){
 		 $("#userId").html(userName);
 	 }	  
 	
-	//第一次
-	 first();
-	 
 	function first(){
 		
 		var method = "overview/getTimeTrendRpt";
@@ -165,9 +162,10 @@ $(function(){
 				alert("Connection error");
 			},
 		});
+		
  		//展示内容
  		var method = "overview/getCommonTrackRpt";
- 		var metrics = "pv_count,visitor_count,ip_count,bounce_ratio,avg_visit_time,trans_count";
+ 		var metrics = "pv_count";
  		$.ajax({
 			cache : false,
 			url : "../../../StatisticsController/networkOverview.do",
@@ -566,7 +564,9 @@ $(function(){
 	    myChart10.setOption(option_ten);
 	}
 	
-		
+	//第一次
+	 first();
+	
 		//今天
 		$("#today").click(function(){
 		$("#word").empty();
@@ -584,7 +584,7 @@ $(function(){
     	var max = 2;
 		//展示内容
  		var method = "overview/getCommonTrackRpt";
- 		var metrics = "pv_count,visitor_count,ip_count,bounce_ratio,avg_visit_time,trans_count";
+ 		var metrics = "pv_count";
  		$.ajax({
 			cache : false,
 			url : "../../../StatisticsController/networkOverview.do",
@@ -1028,7 +1028,7 @@ $("#yesterday").click(function(){
 	
 	//展示內容
 	var method = "overview/getCommonTrackRpt";
-	var metrics = "pv_count,visitor_count,ip_count,bounce_ratio,avg_visit_time,trans_count";
+	var metrics = "pv_count";
 	$.ajax({
 		cache : false,
 		url : "../../../StatisticsController/networkOverview.do",
