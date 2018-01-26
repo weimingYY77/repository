@@ -96,12 +96,14 @@
 }
 .browse_list1 li>p{
     color: #646464;
+    font-size: 14px;
 }
 .browse_list1 li>span{
     display: block;
     font-size: 24px;
     padding-top: 24px;
     color: #2b2b2b;
+    font-weight: bold;
 }
 /* 两张数据表 */
 .tab_charts{
@@ -121,6 +123,7 @@
 /* 来源表 */
 .source_tab{
     margin-top: 80px;
+    font-size: 14px;
 }
 .search_block{
     width: 98%;

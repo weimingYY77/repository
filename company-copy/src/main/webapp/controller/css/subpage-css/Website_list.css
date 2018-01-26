@@ -45,6 +45,7 @@
 .weblist .self_total{
 	display: none;
 	position: relative;
+	font-size: 18px;
 }
 .weblist .active{
 	display: inline-block;
@@ -62,7 +63,7 @@
 }
 .list_top{
 	height: 50px;
-	background: #E1E3E4;
+	background: #f4f4f4;
 	line-height: 50px;
 	margin-left: 3%;
 	margin-right: 3%;
