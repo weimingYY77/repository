@@ -191,6 +191,9 @@
     top: 91px;
     cursor: pointer;
 }
+#userId{
+	display: block;
+}
 /*zhezhao结束*/
 /* 登录后 */
 .login_after{
@@ -199,7 +202,16 @@
     right: -135px;
     font-size: 20px;
     color: #fff;
-    visibility: hidden; 
+    /*visibility: hidden; */
+}
+.zhuxiao{
+	font-size: 15px;
+    cursor: pointer;
+    padding-left: 30px;
+    line-height: 22px;
+}
+.login_after>a:hover{
+	color: #008DFF;
 }
 .after_icon{
     display: inline-block;
@@ -211,7 +223,8 @@
     margin-right: 20px;
 }
 .login_after>a{
-  color: #A2D2EA;  
+  color: #FFFFFF;  
+  float: left;
 }
 /* 登录框 */
 .login-left{
@@ -475,4 +488,12 @@ input[type="checkbox"]{
     z-index: 999;
     opacity: 0.5;
     display: none;
+}
+@media only screen and (max-width: 1600px) {
+	.login_after {
+    position: absolute;
+    top: 70px;
+    right: 70px;
+    /* visibility: hidden; */
+}
 }
