@@ -452,11 +452,16 @@ $(function(){
 		                var myChart_map = ec.init(document.getElementById('main_map'));
 
 		                var itemStyle = {
-		                    normal:{label:{
+		                    normal:{
+		                    	label:{
 		                        show:true,
 		                        formatter:'{b}',
-		                        textStyle: {fontSize: 10,fontWeight : 'bold'}
-		                    }},
+		                        textStyle: {fontSize: 10,fontWeight : 'bold'},
+		                        color: "#eeeeee"
+		                    },
+		                    	labelLine :{show:false}
+	                            
+		                    },
 		                    emphasis:{label:{show:true}}
 		                };
 		                var option_map = {
@@ -488,6 +493,14 @@ $(function(){
 		                            mapType: 'china',
 		                            roam: false,
 		                            itemStyle: itemStyle,
+		                            label: {
+										normal: {
+										show: true
+										},
+										emphasis: {
+										show: true
+										}
+										},
 		                            data:[
 		                                {name: '北京',value: maps[0]},
 		                                {name: '天津',value: maps[1]},
