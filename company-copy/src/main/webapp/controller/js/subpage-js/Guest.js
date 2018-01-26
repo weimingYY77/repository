@@ -473,19 +473,6 @@ $(function(){
 		                        x:'left',
 		                        data:['','']
 		                    },
-		                    dataRange: {
-		                        min: 0,
-		                        max: 2500,
-		                        x: 'left',
-		                        y: 'bottom',
-		                        text:['高','低'],           // 文本，默认为数值文本
-		                        calculable : true,
-		                        itemWidth:10,  
-				                // 图例图形高度  
-				                itemHeight:10,  
-				                orient: 'horizontal',
-				                
-		                    },
 		                    series : [
 		                        {
 		                            name: '浏览量',
@@ -1000,19 +987,6 @@ $(function(){
 		                        x:'left',
 		                        data:['','']
 		                    },
-		                    dataRange: {
-		                        min: 0,
-		                        max: 2500,
-		                        x: 'left',
-		                        y: 'bottom',
-		                        text:['高','低'],           // 文本，默认为数值文本
-		                        calculable : true,
-		                        itemWidth:10,  
-				                // 图例图形高度  
-				                itemHeight:10,  
-				                orient: 'horizontal',
-				                
-		                    },
 		                    series : [
 		                        {
 		                            name: '浏览量',
@@ -1518,19 +1492,6 @@ $(function(){
 		                        orient: 'horizontal',
 		                        x:'left',
 		                        data:['','']
-		                    },
-		                    dataRange: {
-		                        min: 0,
-		                        max: 2500,
-		                        x: 'left',
-		                        y: 'bottom',
-		                        text:['高','低'],           // 文本，默认为数值文本
-		                        calculable : true,
-		                        itemWidth:10,  
-				                // 图例图形高度  
-				                itemHeight:10,  
-				                orient: 'horizontal',
-				                
 		                    },
 		                    series : [
 		                        {
@@ -2072,19 +2033,6 @@ $(function(){
 				                        x:'left',
 				                        data:['','']
 				                    },
-				                    dataRange: {
-				                        min: 0,
-				                        max: 2500,
-				                        x: 'left',
-				                        y: 'bottom',
-				                        text:['高','低'],           // 文本，默认为数值文本
-				                        calculable : true,
-				                        itemWidth:10,  
-						                // 图例图形高度  
-						                itemHeight:10,  
-						                orient: 'horizontal',
-						                
-				                    },
 				                    series : [
 				                        {
 				                            name: '浏览量',
@@ -2624,19 +2572,6 @@ $(function(){
 				                        orient: 'horizontal',
 				                        x:'left',
 				                        data:['','']
-				                    },
-				                    dataRange: {
-				                        min: 0,
-				                        max: 2500,
-				                        x: 'left',
-				                        y: 'bottom',
-				                        text:['高','低'],           // 文本，默认为数值文本
-				                        calculable : true,
-				                        itemWidth:10,  
-						                // 图例图形高度  
-						                itemHeight:10,  
-						                orient: 'horizontal',
-						                
 				                    },
 				                    series : [
 				                        {
@@ -3178,19 +3113,6 @@ $(function(){
 				                        x:'left',
 				                        data:['','']
 				                    },
-				                    dataRange: {
-				                        min: 0,
-				                        max: 2500,
-				                        x: 'left',
-				                        y: 'bottom',
-				                        text:['高','低'],           // 文本，默认为数值文本
-				                        calculable : true,
-				                        itemWidth:10,  
-						                // 图例图形高度  
-						                itemHeight:10,  
-						                orient: 'horizontal',
-						                
-				                    },
 				                    series : [
 				                        {
 				                            name: '浏览量',
@@ -3730,19 +3652,6 @@ $(function(){
 				                        orient: 'horizontal',
 				                        x:'left',
 				                        data:['','']
-				                    },
-				                    dataRange: {
-				                        min: 0,
-				                        max: 2500,
-				                        x: 'left',
-				                        y: 'bottom',
-				                        text:['高','低'],           // 文本，默认为数值文本
-				                        calculable : true,
-				                        itemWidth:10,  
-						                // 图例图形高度  
-						                itemHeight:10,  
-						                orient: 'horizontal',
-						                
 				                    },
 				                    series : [
 				                        {
@@ -4312,19 +4221,6 @@ $(function(){
 		                        orient: 'horizontal',
 		                        x:'left',
 		                        data:['','']
-		                    },
-		                    dataRange: {
-		                        min: 0,
-		                        max: 2500,
-		                        x: 'left',
-		                        y: 'bottom',
-		                        text:['高','低'],           // 文本，默认为数值文本
-		                        calculable : true,
-		                        itemWidth:10,  
-				                // 图例图形高度  
-				                itemHeight:10,  
-				                orient: 'horizontal',
-				                
 		                    },
 		                    series : [
 		                        {
@@ -4901,19 +4797,6 @@ $(function(){
 		                        x:'left',
 		                        data:['','']
 		                    },
-		                    dataRange: {
-		                        min: 0,
-		                        max: 2500,
-		                        x: 'left',
-		                        y: 'bottom',
-		                        text:['高','低'],           // 文本，默认为数值文本
-		                        calculable : true,
-		                        itemWidth:10,  
-				                // 图例图形高度  
-				                itemHeight:10,  
-				                orient: 'horizontal',
-				                
-		                    },
 		                    series : [
 		                        {
 		                            name: '浏览量',
@@ -5488,19 +5371,6 @@ $(function(){
 		                        orient: 'horizontal',
 		                        x:'left',
 		                        data:['','']
-		                    },
-		                    dataRange: {
-		                        min: 0,
-		                        max: 2500,
-		                        x: 'left',
-		                        y: 'bottom',
-		                        text:['高','低'],           // 文本，默认为数值文本
-		                        calculable : true,
-		                        itemWidth:10,  
-				                // 图例图形高度  
-				                itemHeight:10,  
-				                orient: 'horizontal',
-				                
 		                    },
 		                    series : [
 		                        {
