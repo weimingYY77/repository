@@ -473,6 +473,18 @@ $(function(){
 		                        x:'left',
 		                        data:['','']
 		                    },
+		                    dataRange: {
+		                    	x: 'left',
+						        y: 'bottom',
+						        splitList: [
+						            {start: 100},
+						            {start: 50, end: 100},
+						            {start: 10, end: 50,},
+						            {start: 0, end: 10, },
+						            {end: 0}
+						        ],
+		                        color: ['#0365d5 ', '#3385e3 ','#5b9ce9 ','#90bcf0', '#eff3f7']
+		                    },
 		                    series : [
 		                        {
 		                            name: '浏览量',
@@ -480,14 +492,13 @@ $(function(){
 		                            mapType: 'china',
 		                            roam: false,
 		                            itemStyle: itemStyle,
-		                            label: {
-										normal: {
-										show: true
-										},
-										emphasis: {
-										show: true
-										}
-										},
+		                            itemStyle:{
+						                normal:{
+						                    label:{
+						                        show:false,
+						                    }
+						                }
+						                },
 		                            data:[
 		                                {name: '北京',value: maps[0]},
 		                                {name: '天津',value: maps[1]},
@@ -987,6 +998,18 @@ $(function(){
 		                        x:'left',
 		                        data:['','']
 		                    },
+		                    dataRange: {
+		                        x: 'left',
+						        y: 'bottom',
+						        splitList: [
+						            {start: 200},
+						            {start: 100, end: 200},
+						            {start: 50, end: 100,},
+						            {start: 10, end: 50, },
+						            {end: 10}
+						        ],
+		                        color: ['#0365d5 ', '#3385e3 ','#5b9ce9 ','#90bcf0', '#eff3f7']
+		                    },
 		                    series : [
 		                        {
 		                            name: '浏览量',
@@ -994,6 +1017,13 @@ $(function(){
 		                            mapType: 'china',
 		                            roam: false,
 		                            itemStyle: itemStyle,
+		                            itemStyle:{
+						                normal:{
+						                    label:{
+						                        show:false,
+						                    }
+						                }
+						                },
 		                            data:[
 		                                {name: '北京',value: maps[0]},
 		                                {name: '天津',value: maps[1]},
@@ -1493,6 +1523,18 @@ $(function(){
 		                        x:'left',
 		                        data:['','']
 		                    },
+		                    dataRange: {
+		                    	x: 'left',
+						        y: 'bottom',
+						        splitList: [
+						            {start: 100},
+						            {start: 50, end: 100},
+						            {start: 10, end: 50,},
+						            {start: 0, end: 10, },
+						            {end: 0}
+						        ],
+		                        color: ['#0365d5 ', '#3385e3 ','#5b9ce9 ','#90bcf0', '#eff3f7']
+		                    },
 		                    series : [
 		                        {
 		                            name: '浏览量',
@@ -1500,6 +1542,13 @@ $(function(){
 		                            mapType: 'china',
 		                            roam: false,
 		                            itemStyle: itemStyle,
+		                            itemStyle:{
+						                normal:{
+						                    label:{
+						                        show:false,
+						                    }
+						                }
+						                },
 		                            data:[
 		                                {name: '北京',value: maps[0]},
 		                                {name: '天津',value: maps[1]},
@@ -2033,6 +2082,18 @@ $(function(){
 				                        x:'left',
 				                        data:['','']
 				                    },
+				                    dataRange: {
+				                    	x: 'left',
+								        y: 'bottom',
+								        splitList: [
+								            {start: 100},
+								            {start: 50, end: 100},
+								            {start: 10, end: 50,},
+								            {start: 0, end: 10, },
+								            {end: 0}
+								        ],
+				                        color: ['#0365d5 ', '#3385e3 ','#5b9ce9 ','#90bcf0', '#eff3f7']
+				                    },
 				                    series : [
 				                        {
 				                            name: '浏览量',
@@ -2040,6 +2101,13 @@ $(function(){
 				                            mapType: 'china',
 				                            roam: false,
 				                            itemStyle: itemStyle,
+				                            itemStyle:{
+								                normal:{
+								                    label:{
+								                        show:false,
+								                    }
+								                }
+								                },
 				                            data:[
 				                                {name: '北京',value: maps[0]},
 				                                {name: '天津',value: maps[1]},
@@ -2573,6 +2641,18 @@ $(function(){
 				                        x:'left',
 				                        data:['','']
 				                    },
+				                    dataRange: {
+				                    	x: 'left',
+								        y: 'bottom',
+								        splitList: [
+								            {start: 100},
+								            {start: 50, end: 100},
+								            {start: 10, end: 50,},
+								            {start: 0, end: 10, },
+								            {end: 0}
+								        ],
+				                        color: ['#0365d5 ', '#3385e3 ','#5b9ce9 ','#90bcf0', '#eff3f7']
+				                    },
 				                    series : [
 				                        {
 				                            name: '浏览量',
@@ -2580,6 +2660,13 @@ $(function(){
 				                            mapType: 'china',
 				                            roam: false,
 				                            itemStyle: itemStyle,
+				                            itemStyle:{
+								                normal:{
+								                    label:{
+								                        show:false,
+								                    }
+								                }
+								                },
 				                            data:[
 				                                {name: '北京',value: maps[0]},
 				                                {name: '天津',value: maps[1]},
@@ -3113,6 +3200,18 @@ $(function(){
 				                        x:'left',
 				                        data:['','']
 				                    },
+				                    dataRange: {
+				                    	x: 'left',
+								        y: 'bottom',
+								        splitList: [
+								            {start: 100},
+								            {start: 50, end: 100},
+								            {start: 10, end: 50,},
+								            {start: 0, end: 10, },
+								            {end: 0}
+								        ],
+				                        color: ['#0365d5 ', '#3385e3 ','#5b9ce9 ','#90bcf0', '#eff3f7']
+				                    },
 				                    series : [
 				                        {
 				                            name: '浏览量',
@@ -3120,6 +3219,13 @@ $(function(){
 				                            mapType: 'china',
 				                            roam: false,
 				                            itemStyle: itemStyle,
+				                            itemStyle:{
+								                normal:{
+								                    label:{
+								                        show:false,
+								                    }
+								                }
+								                },
 				                            data:[
 				                                {name: '北京',value: maps[0]},
 				                                {name: '天津',value: maps[1]},
@@ -3653,6 +3759,18 @@ $(function(){
 				                        x:'left',
 				                        data:['','']
 				                    },
+				                    dataRange: {
+				                    	x: 'left',
+								        y: 'bottom',
+								        splitList: [
+								            {start: 100},
+								            {start: 50, end: 100},
+								            {start: 10, end: 50,},
+								            {start: 0, end: 10, },
+								            {end: 0}
+								        ],
+				                        color: ['#0365d5 ', '#3385e3 ','#5b9ce9 ','#90bcf0', '#eff3f7']
+				                    },
 				                    series : [
 				                        {
 				                            name: '浏览量',
@@ -3660,6 +3778,13 @@ $(function(){
 				                            mapType: 'china',
 				                            roam: false,
 				                            itemStyle: itemStyle,
+				                            itemStyle:{
+								                normal:{
+								                    label:{
+								                        show:false,
+								                    }
+								                }
+								                },
 				                            data:[
 				                                {name: '北京',value: maps[0]},
 				                                {name: '天津',value: maps[1]},
@@ -4222,6 +4347,18 @@ $(function(){
 		                        x:'left',
 		                        data:['','']
 		                    },
+		                    dataRange: {
+		                    	x: 'left',
+						        y: 'bottom',
+						        splitList: [
+						            {start: 100},
+						            {start: 50, end: 100},
+						            {start: 10, end: 50,},
+						            {start: 0, end: 10, },
+						            {end: 0}
+						        ],
+		                        color: ['#0365d5 ', '#3385e3 ','#5b9ce9 ','#90bcf0', '#eff3f7']
+		                    },
 		                    series : [
 		                        {
 		                            name: '浏览量',
@@ -4229,6 +4366,13 @@ $(function(){
 		                            mapType: 'china',
 		                            roam: false,
 		                            itemStyle: itemStyle,
+		                            itemStyle:{
+						                normal:{
+						                    label:{
+						                        show:false,
+						                    }
+						                }
+						                },
 		                            data:[
 		                                {name: '北京',value: maps[0]},
 		                                {name: '天津',value: maps[1]},
@@ -4797,6 +4941,18 @@ $(function(){
 		                        x:'left',
 		                        data:['','']
 		                    },
+		                    dataRange: {
+		                    	x: 'left',
+						        y: 'bottom',
+						        splitList: [
+						            {start: 100},
+						            {start: 50, end: 100},
+						            {start: 10, end: 50,},
+						            {start: 0, end: 10, },
+						            {end: 0}
+						        ],
+		                        color: ['#0365d5 ', '#3385e3 ','#5b9ce9 ','#90bcf0', '#eff3f7']
+		                    },
 		                    series : [
 		                        {
 		                            name: '浏览量',
@@ -4804,6 +4960,13 @@ $(function(){
 		                            mapType: 'china',
 		                            roam: false,
 		                            itemStyle: itemStyle,
+		                            itemStyle:{
+						                normal:{
+						                    label:{
+						                        show:false,
+						                    }
+						                }
+						                },
 		                            data:[
 		                                {name: '北京',value: maps[0]},
 		                                {name: '天津',value: maps[1]},
@@ -5372,6 +5535,18 @@ $(function(){
 		                        x:'left',
 		                        data:['','']
 		                    },
+		                    dataRange: {
+		                    	x: 'left',
+						        y: 'bottom',
+						        splitList: [
+						            {start: 100},
+						            {start: 50, end: 100},
+						            {start: 10, end: 50,},
+						            {start: 0, end: 10, },
+						            {end: 0}
+						        ],
+		                        color: ['#0365d5 ', '#3385e3 ','#5b9ce9 ','#90bcf0', '#eff3f7']
+		                    },
 		                    series : [
 		                        {
 		                            name: '浏览量',
@@ -5379,6 +5554,13 @@ $(function(){
 		                            mapType: 'china',
 		                            roam: false,
 		                            itemStyle: itemStyle,
+		                            itemStyle:{
+						                normal:{
+						                    label:{
+						                        show:false,
+						                    }
+						                }
+						                },
 		                            data:[
 		                                {name: '北京',value: maps[0]},
 		                                {name: '天津',value: maps[1]},
