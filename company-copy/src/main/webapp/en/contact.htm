@@ -60,7 +60,7 @@
                 <div class="navigation">
 		            <ul>           
 			            <li class="is-current transition">
-			            <a href="http://www.sumchance.com/" tppabs="http://www.sumchance.com/">主页</a>
+			            <a href="../index.htm" tppabs="http://www.sumchance.com/">主页</a>
 				        </li>
 				            <li class=" transition">
 				            <a href="about.htm" tppabs="http://valudio.com/en/about">关于</a>
@@ -77,8 +77,8 @@
         	<!-- 登录后 -->
         	      <div class="login-left">
             		    <div class="login_after" id="login_after">
-	            			<a class="login_name" href="en/information.html" title="">用户  <a  id="userId" id="M_infomation" ></a></a>&nbsp;&nbsp;
-	            			<a class="zhuxiao"> 注销  </a>
+	            			<a class="login_name" href="information.html" title="">用户 <span id="userId"></span></a>&nbsp;&nbsp;
+	            			<a class="zhuxiao" onclick="zhuxiao()"> 注销  </a>
             		    </div>
             		<!-- 登录框 -->
             		<div class="login_box active" id="login_box active">
@@ -448,19 +448,24 @@ function resetCode(){
 		}
 	},1000);
 }
-		
+	
+function zhuxiao(){
+	window.sessionStorage.setItem("userName", "");
+	window.sessionStorage.setItem("userId", "");
+	window.location.reload();
+}		
+
 		//页面加载
-		$(function(){
+	$(function(){
 	       var userName = window.sessionStorage.getItem("userName");
-	       if(userName!=null){//判断用户是否已登录
+	       if(userName!=null&&userName!=""){//判断是否有用户昵称
 	    	   document.getElementById("login_after").style.visibility="visible";
 	    	   document.getElementById("login_box active").style.display="none";
 	    	   document.getElementById("regist_box").style.display="none";
-	    	   document.getElementById("M_infomation").style.display="none";
 	    	   $("#userId").html(userName);
 	       }else{
 		       var userId = window.sessionStorage.getItem("userId");
-		       if(userId!=null){//判断用户是否已登录
+		       if(userId!=null&&userId!=""){//判断用户是否已登录
 		    	   document.getElementById("login_after").style.visibility="visible";
 		    	   document.getElementById("login_box active").style.display="none";
 		    	   document.getElementById("regist_box").style.display="none";
@@ -480,6 +485,7 @@ function resetCode(){
 						$("#userId").html(code);
 		    	}else{
 		    	//登录验证
+		    	 document.getElementById("login_after").style.visibility="hidden";
 		         $("#loginSubmit").click(function() {
 						$.ajax({
 							cache : false,
@@ -517,7 +523,6 @@ function resetCode(){
 										}
 										$("#userId").html(code);
 									}else{
-										document.getElementById("M_infomation").style.display="none";
 										window.sessionStorage.setItem("userName", data.data.u_name);
 										$("#userId").html(data.data.u_name);
 									}
@@ -546,6 +551,8 @@ function resetCode(){
 							alert('两次密码不相同！');
 						}else if($(".reg_yq").val() == ""){
 							alert('邀请码不能为空！');
+						}else if(!$('.check_box').is(":checked")){
+							alert('请同意用户协议！');
 						}else{
 							$.ajax({
 								cache : false,
