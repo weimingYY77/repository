@@ -1,3 +1,9 @@
+function zhuxiao(){
+	window.sessionStorage.setItem("userName", "");
+	window.sessionStorage.setItem("userId", "");
+	window.location.reload();
+}	
+
 $(function(){
 	if(window.sessionStorage.getItem("siteId")==null){
 		var siteId = 10512893;
@@ -35,29 +41,29 @@ $(function(){
 	
 	 //用户
 	 var userName = window.sessionStorage.getItem("userName");
-	 if(userName==null){
-		 var userId = window.sessionStorage.getItem("userId");
-		 if(userId!=null){
-			var code = userId;
-			var leng=code.length;  //定义长度
-			if(leng==1){
-			code="00000"+code;
-			}else if(leng==2){
-			code="0000"+code;
-			}else if(leng==3){
-			code="000"+code;
-			}else if(leng==4){
-			code="00"+code;
-			}else if(leng==5){
-			code="0"+code;
-			}
-			$("#userId").html(code);
-		 }else{
-			 window.location.href="../../../index.htm";
-		 }
-	 }else{
-		 $("#userId").html(userName);
-	 }	  
+     if(userName!=null&&userName!=""){//判断是否有用户昵称
+  	   $("#userId").html(userName);
+     }else{
+       var userId = window.sessionStorage.getItem("userId");
+       if(userId!=null&&userId!=""){//判断用户是否已登录
+	    	   	var code = userId;
+				var leng=code.length;  //定义长度
+				if(leng==1){
+				code="00000"+code;
+				}else if(leng==2){
+				code="0000"+code;
+				}else if(leng==3){
+				code="000"+code;
+				}else if(leng==4){
+				code="00"+code;
+				}else if(leng==5){
+				code="0"+code;
+				}
+				$("#userId").html(code);
+    	}else{
+    		window.location.href="../../../index.htm";
+    	}
+    }
 	
 	function first(){
 		
@@ -172,7 +178,7 @@ $(function(){
 			type : "post",
 			data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics},
 			dataType : "json",
-			async : true,
+			async : false,
 			success : function(data) {
 				if (data.code==0010) {
 					alert(data.msg);
@@ -591,7 +597,7 @@ $(function(){
 			type : "post",
 			data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics},
 			dataType : "json",
-			async : true,
+			async : false,
 			success : function(data) {
 				if (data.code==0010) {
 					alert(data.msg);
@@ -1026,7 +1032,7 @@ $("#yesterday").click(function(){
 	var end_date = time;
 	var start_date1 = time;
 	
-	//展示內容
+	//展示内容
 	var method = "overview/getCommonTrackRpt";
 	var metrics = "pv_count";
 	$.ajax({
@@ -1035,7 +1041,7 @@ $("#yesterday").click(function(){
 		type : "post",
 		data : {"siteId":siteId,"method":method,"start_date":start_date1,"end_date":end_date,"metrics":metrics},
 		dataType : "json",
-		async : true,
+		async : false,
 		success : function(data) {
 			if (data.code==0010) {
 				alert(data.msg);

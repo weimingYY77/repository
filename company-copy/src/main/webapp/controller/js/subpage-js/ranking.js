@@ -22,6 +22,11 @@ function illustrate(a,b){
 	});
 }
 
+function zhuxiao(){
+	window.sessionStorage.setItem("userName", "");
+	window.sessionStorage.setItem("userId", "");
+	window.location.reload();
+}	
 
 $(function(){
 	$(".addword").click(function(){	
@@ -39,29 +44,29 @@ $(function(){
 	
 	//用户
 	 var userName = window.sessionStorage.getItem("userName");
-	 if(userName==null){
-		 var userId = window.sessionStorage.getItem("userId");
-		 if(userId!=null){
-			var code = userId;
-			var leng=code.length;  //定义长度
-			if(leng==1){
-			code="00000"+code;
-			}else if(leng==2){
-			code="0000"+code;
-			}else if(leng==3){
-			code="000"+code;
-			}else if(leng==4){
-			code="00"+code;
-			}else if(leng==5){
-			code="0"+code;
-			}
-			$("#userId").html(code);
-		 }else{
-			 window.location.href="../../../index.htm";
-		 }
-	 }else{
-		 $("#userId").html(userName);
-	 }
+     if(userName!=null&&userName!=""){//判断是否有用户昵称
+  	   $("#userId").html(userName);
+     }else{
+       var userId = window.sessionStorage.getItem("userId");
+       if(userId!=null&&userId!=""){//判断用户是否已登录
+	    	   	var code = userId;
+				var leng=code.length;  //定义长度
+				if(leng==1){
+				code="00000"+code;
+				}else if(leng==2){
+				code="0000"+code;
+				}else if(leng==3){
+				code="000"+code;
+				}else if(leng==4){
+				code="00"+code;
+				}else if(leng==5){
+				code="0"+code;
+				}
+				$("#userId").html(code);
+    	}else{
+    		window.location.href="../../../index.htm";
+    	}
+    }
 	// 遮罩层的显示和隐藏
 	//查看分析
 	$("#ViewAnalysis").click(function(){

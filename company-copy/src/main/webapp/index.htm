@@ -797,6 +797,8 @@ function zhuxiao(){
 							alert('两次密码不相同！');
 						}else if($(".reg_yq").val() == ""){
 							alert('邀请码不能为空！');
+						}else if(!$('.check_box').is(":checked")){
+							alert('请同意用户协议！');
 						}else{
 							$.ajax({
 								cache : false,
