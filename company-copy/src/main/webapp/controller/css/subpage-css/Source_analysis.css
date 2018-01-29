@@ -4,6 +4,7 @@
     padding: 0;
     padding-top: 35px;
     padding-bottom: 65px;
+        margin-bottom: 2%;
 }
 .main_right1>p{
     color: #2B2B2B;
@@ -164,8 +165,9 @@
 .show_tab{
    display: block;
 } 
-.wid{
+.main_right.wid{
     width: 70%;
+    margin-bottom: 2%;
 }
 #earch2{
 	width: 100%;

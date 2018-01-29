@@ -190,3 +190,7 @@
 .layen.six .layout2.Tab p.noborder{
 	border-bottom:none ;
 }
+.main_right.notop{
+	margin-top:0;
+	padding-bottom: 0;
+}

@@ -193,7 +193,7 @@ body{
 .function_list>li .my_order{
 	position: absolute;
 	width: 125px;
-	border: 1px solid #999;
+	border: 1px solid #ccc;
 	border-top: none;
 	background: #fff;
  	top: 46px;
@@ -203,7 +203,7 @@ body{
 .function_list>li .my_user{
 	position: absolute;
 	width: 125px;
-	border: 1px solid #999;
+	border: 1px solid #ccc
 	border-top: none;
 	background: #fff;
  	top: 46px;
@@ -251,7 +251,7 @@ body{
 	background: #f9f9f9;
 }
 .my_cost ul li:last-child,.my_user ul li:last-child{
-    border-top: 1px solid #999;
+    border-top: 1px solid #ccc;
 }
 .function_list>li .station_msg:after,.function_list>li .my_order:after,.function_list>li .my_cost:after,.function_list>li .my_user:after{
 	content: "";
@@ -422,7 +422,8 @@ body{
     display: inline-block;
     float: left;
     margin-top: 2%;
-    padding: 35px 30px 65px 30px;
+    margin-bottom: 2%;
+    padding: 35px 30px 0px 30px;
 }
 .main_right.net {
     margin-left: 14.5%;

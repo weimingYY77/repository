@@ -12,6 +12,7 @@
 	height: 120px;
 	line-height: 120px;
 	margin-bottom: 35px;
+	padding-bottom: 0;
 }
 .cloud_promotion>p{
 	display: inline-block;
