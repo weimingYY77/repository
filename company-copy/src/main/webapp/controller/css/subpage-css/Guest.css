@@ -363,7 +363,8 @@
 }
 .map_list tr td:first-child{
     border-left: none;
-    width: 50%;
+    width: 33.33%;
+    text-align: center;
 }
 .map_list th:first-child{
     border-left: none;
