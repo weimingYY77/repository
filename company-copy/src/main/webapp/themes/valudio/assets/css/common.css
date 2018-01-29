@@ -193,6 +193,8 @@
 }
 #userId{
 	display: block;
+    float: right;
+    padding-left: 10px;
 }
 /*zhezhao结束*/
 /* 登录后 */
