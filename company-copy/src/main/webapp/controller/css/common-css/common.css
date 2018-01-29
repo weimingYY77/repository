@@ -102,7 +102,7 @@ body{
    position: relative;
 }
 .function_list li>span{
-	margin-right: 18px;
+	margin-right:5px;
 	display: inline-block;
 	vertical-align: bottom;
 }
@@ -115,12 +115,14 @@ body{
     top: 2px;
 }
 .function_list li .msg{
-	width: 25px;
-	height: 25px;
-	background: #FF9900;
-	font-size: 18px;
-	border-radius: 4px;
-	color: #fff;
+    width: 22px;
+    height: 26px;
+    background: #FF9900;
+    font-size: 14px;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
 }
 .function_list li .order{
     height: 26px;
