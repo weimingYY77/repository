@@ -34,13 +34,19 @@ $(".drop-down").mouseenter(function() {
   $(".main_conter ul li").click(function(event) {
     var index = $(".main_conter ul li").index(this);
     $(this).children("a").addClass("active").parent().siblings().children("a").removeClass("active");
-    $(".tab").eq(index).addClass("show_tab").siblings().removeClass("show_tab");
  }) 
+    $(".main_conter ul li").click(function(event) {
+    var index = $(".main_conter ul li").index(this);
+    $(".tab").eq(index).addClass("show_tab").siblings().removeClass("show_tab");
+ })
 
   // 小选项卡
     $(".tab_list li").click(function(){
     var index = $(".tab_list li").index(this);
         $(this).addClass("active").siblings().removeClass("active");
+  })
+   $(".tab_list li").click(function(){
+    var index = $(".tab_list li").index(this);
         $(".tab_content").eq(index).addClass("show_tab").siblings().removeClass("show_tab");
   })
 // 小切换按钮
