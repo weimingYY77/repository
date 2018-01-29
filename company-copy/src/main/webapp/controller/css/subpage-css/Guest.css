@@ -306,7 +306,7 @@
 .source_table{
     margin-top: 20px;
     width: 100%;
-    border:1px solid #d7d7d8;
+    border-top:1px solid #d7d7d8;
     color: #646464;
     border-right: none;
     border-left: none; 
@@ -531,7 +531,7 @@
 .source_table{
     margin-top: 20px;
     width: 100%;
-    border:1px solid #d7d7d8;
+    border-top:1px solid #d7d7d8;
     color: #646464;
     border-right: none;
     border-left: none; 

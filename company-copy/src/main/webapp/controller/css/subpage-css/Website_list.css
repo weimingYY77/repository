@@ -2,7 +2,7 @@
 .main_right{
     display: inline-block;
     position: relative;
-    margin: 56px 40px 26px 40px;
+    margin: 56px 40px 0px 40px;
     width: 82%;
     margin-left: 16%;
 }
@@ -38,7 +38,7 @@
 	border-right: none;
 } 
 .bg{
-	background: #00C1DE!important;
+	background:#69B5FA!important;
 	color: #fff!important;
 }
 /* 自有网站  汇总网站 */
@@ -58,7 +58,7 @@
 	border: 1px solid #E1E3E4;
 	position: relative;
 	z-index: 10;
-    height: 541px;
+    height: 560px;
     overflow: auto;
 }
 .list_top{
@@ -78,7 +78,7 @@
 	color: #2B2B2B;
 }
 .domain>a{
-	padding-left: 10px;
+	padding-left: 25px;
 }
 .self_web .list_desc>span,.total_web>div>span{
 	display: inline-block;
@@ -91,7 +91,7 @@
 	text-align: center; 
 } 
 .self_web .list_desc>span>a,.total_web .list_desc>span>a{
-	color: #00C1DE;
+	color:#69B5FA;
 }
 .self_web .list_desc .del,.total_web .list_desc .del{
    padding-left: 20px;
@@ -110,4 +110,10 @@
     width: 20%;
     padding-left: 4%;
 }
+}
+
+a.add {
+    display: block;
+    text-align: left;
+    padding-left: 14%;
 }
