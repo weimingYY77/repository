@@ -343,10 +343,19 @@
 <input type="hidden" id="temp4" value="0" />
 </body>
 <script type="text/javascript" src="../../js/common-js/jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".main_conter ul li").click(function(event) {
+    var index = $(".main_conter ul li").index(this);
+    $(this).children("a").addClass("active").parent().siblings().children("a").removeClass("active");
+ })
+})  
+</script>
 <script type="text/javascript" src="../../js/common-js/common.js"></script>	
 <script type="text/javascript" src="../../js/echarts.common.min.js"></script>
 <script type="text/javascript" src="../../js/echarts.js"></script>
 <script type="text/javascript">
  document.write("<scr"+"ipt src=\"../../js/subpage-js/Source_analysis.js\"></sc"+"ript>")
  </script>
+
 </html>
