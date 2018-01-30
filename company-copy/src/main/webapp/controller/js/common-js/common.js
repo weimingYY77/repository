@@ -31,7 +31,10 @@ $(".drop-down").mouseenter(function() {
 
 
 // 大选项卡
-
+  $(".main_conter ul li").click(function(event) {
+    var index = $(".main_conter ul li").index(this);
+    $(this).children("a").addClass("active").parent().siblings().children("a").removeClass("active");
+ }) 
     $(".main_conter ul li").click(function(event) {
     var index = $(".main_conter ul li").index(this);
     $(".tab").eq(index).addClass("show_tab").siblings().removeClass("show_tab");
