@@ -89,8 +89,10 @@
 .browse_list1 li>p{
     color: #646464;
     font-size: 14px;
+    text-align: center;
 }
 .browse_list1 li>span{
+	text-align: center;
     display: block;
     font-size: 24px;
     padding-top: 24px;

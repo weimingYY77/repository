@@ -149,7 +149,9 @@
 }
 .source_table th:first-child{
     border-left: none;
+    display: flex;
 }
+
 .source_table tbody>tr:first-child td{
     border-top: none;
 }
