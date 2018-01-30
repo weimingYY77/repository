@@ -203,7 +203,7 @@ body{
 .function_list>li .my_user{
 	position: absolute;
 	width: 125px;
-	border: 1px solid #ccc
+	border: 1px solid #ccc;
 	border-top: none;
 	background: #fff;
  	top: 46px;

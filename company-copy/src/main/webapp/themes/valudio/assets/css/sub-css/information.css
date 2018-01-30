@@ -22,6 +22,7 @@ a{
 .user_group{
 	width: 100%;
 	margin-top: 27px;
+	position: relative;
 }
 .user_group>label{
 	color: #333;
@@ -30,16 +31,21 @@ a{
 	float: left;
     line-height: 45px;
 }
-.user_group>input[type="text"],.user_group>input[type="tel"]{
+.user_group div{
+	display: inline-block;
 	height: 31px;
-	width: 192px;
+	width: 212px;
+	border-bottom: 1px solid #ccc;
 	margin-left: 58px;
-	margin-right: 18px;
-	padding-left: 50px;
+	padding-left: 30px;
+}
+.user_group div>input{
+	height: 25px;
+	width: 85%;
 	outline: none;
+	font-size: 16px;
 	border: none;
-	border-bottom: 1px solid #2B2B2B;
-	font-size: 18px;
+	text-align: center;
 }
 .user_group .area{
 	display: inline-block;
@@ -49,22 +55,21 @@ a{
 	margin-right: 18px;
 	padding-left: 10px;
 	outline: none;
-	border: 1px solid #2B2B2B;
+	border: 1px solid #ccc;
 }
 .user_group .city{
 	margin-top: 13px;
 	margin-left: 158px;
 }
-.user_group .have{
+.user_group .have,.user_group .error_name,.user_group .error_tel,.user_group .error_add,.user_group .error_company{
 	display: inline-block;
 	color: red;
 	font-size: 14px;
-    float: right;
-    margin-right: 135px;
-    margin-top: -25px;
-    display: inline;
     z-index: 100;
-    position: relative;
+    position: absolute;
+    width: 190px;
+    left: 215px;
+    top:0; 
     display: none;
 }
 .user_group>span{

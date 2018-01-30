@@ -40,7 +40,6 @@
     <!--/ top -->
 
     <!--/ toggle -->
-    <div class="kongzhi" id="kongzhi">控制器</div>
     <div class="toggle" id="toggle">
         <div>
             <div></div>
@@ -72,9 +71,14 @@
                  <!--登录框-->
         	<!-- 登录后 -->
         	    <div class="login-left">
-            			<div class="login_after" id="login_after">
-	            			<a class="login_name" href="en/information.html" title="">用户 <span id="userId"></span></a>&nbsp;&nbsp;
-	            			<a class="zhuxiao" onclick="zhuxiao()"> 注销  </a>
+            			<div class="login_after" ><!--id="login_after"-->
+            				<span id="userId">0001</span>
+            				<p>欢迎登陆</p>
+	            			
+	            			<div class="BTN-login">
+	            				<a class="login_name" href="en/information.html" title="">进入控制台</a>
+	            				<a class="zhuxiao" onclick="zhuxiao()"> 注销  </a>
+	            			</div>
             		    </div>
             		<!-- 登录框 -->
             		<div class="login_box active" id="login_box active">
@@ -624,7 +628,6 @@
 <script src="themes/valudio/assets/js/common.js" tppabs="http://valudio.com/themes/valudio/assets/js/main.js"></script>
 <script src="modules/system/assets/js/framework.js" tppabs="http://valudio.com/modules/system/assets/js/framework.js"></script>
 <script src="modules/system/assets/js/framework.extras.js" tppabs="http://valudio.com/modules/system/assets/js/framework.extras.js"></script>
-<script src="controller/js/index.js"></script>
 <link rel="stylesheet" property="stylesheet" href="modules/system/assets/css/framework.extras.css" tppabs="http://valudio.com/modules/system/assets/css/framework.extras.css">
 </body>
 <script type="text/javascript">
