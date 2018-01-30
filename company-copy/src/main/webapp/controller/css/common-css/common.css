@@ -10,7 +10,7 @@ ul li{
 }
 body{
 	background: #ebeef2;
-	overflow: hidden;
+	overflow: scroll;
 }
 /* 框阴影 */
 .box_show{
