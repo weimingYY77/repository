@@ -12,49 +12,60 @@
 			<input type="hidden" name="u_id" id="u_id" value="" />
 			<div class="user_group">
 				<label for="user_name">用户昵称&nbsp;&nbsp;:</label>
-				<input type="text" name="u_name" value="" id="user_name" required="required">
+				<div>
+				   <input type="text" name="u_name" value="" id="user_name" required="required" mixlength="1" maxlength="9" placeholder="长度为1-9个字符以内">	
+				</div>
 				<span class="red">* 必填</span>
-				<p class="have">该用户昵称已存在!!!</p>
+				<span class="have hide_span">该用户昵称已存在!!!</span>
+				<span class="error_name hide_span">用户昵称输入有误!!!</span>
+
 			</div>
 			<div class="user_group">
 				<label for="user_company">单位名称&nbsp;&nbsp;:</label>
-				<input type="text" name="u_unit" value="" id="user_company" required="required">
+				<div>
+					<input type="text" name="u_unit" value="" id="user_company" required="required" maxlength="20" placeholder="请输入单位名称">	
+				</div>
 				<span class="red">* 必填</span>
+				<span class="error_company hide_span">不能为空或不能有非法字符</span>
 			</div>
 			<div class="user_group">
 				<label for="company_add">公司地址&nbsp;&nbsp;:</label>
-				<input type="text" name="u_address" value="" id="company_add" required="required">
+				<div>
+					<input type="text" name="u_address" value="" id="company_add" required="required" maxlength="20"placeholder="请输入公司地址">	
+				</div>
 				<span class="red">* 必填</span>
+				<span class="error_add hide_span">不能为空或不能有非法字符</span>
 			</div>
 			<div class="user_group">
 				<label for="company_tel">公司电话&nbsp;&nbsp;:</label>
-				<input type="tel" name="u_tel" value="" id="company_tel" required="required">
+				<div>
+					<input type="tel" name="u_tel" value="" id="company_tel" required="required" maxlength="11" placeholder="请输入正确的手机号码">	
+				</div>
 				<span class="red">* 必填</span>
+				<span class="error_tel hide_span">手机号码输入有误!!!</span>
 			</div>
 			<div class="user_group">
 				<label for="industry">主要行业&nbsp;&nbsp;:</label>
-				<input type="text" name="u_industry" value="" id="industry">
+				<div>
+					<input type="text" name="u_industry" value="" id="industry">
+				</div>
 				<span class="green">* 选填</span>
 			</div>
 			<div class="user_group">
 				<label for="business">主营业务&nbsp;&nbsp;:</label>
-				<input type="text" name="u_business" value="" id="business">
+				<div>
+					<input type="text" name="u_business" value="" id="business">	
+				</div>
 				<span class="green">* 选填</span>
 			</div>
 			<div class="user_group">
 				<label>所属地区&nbsp;&nbsp;:</label>
-				<select name="u_area" id="u_area" class="area" placeholder="">
+				<select name="u_area" id="u_area" class="area pro" placeholder="">
 					<option value="">省份：</option>
-					<option value="">湖南</option>
-					<option value="">北京</option>
-					<option value="">上海</option>
 				</select>
 				<span class="green">* 选填</span>
 				<select  class="area city">
 					<option value="">城市：</option>
-					<option value="">长沙</option>
-					<option value="">株洲</option>
-					<option value="">湘潭</option>
 				</select>
 				<span class="green last">* 选填</span>
 			</div>
@@ -72,6 +83,7 @@
 	</div>
 </body>
 <script src="../themes/valudio/assets/lib/jquery/1.12.2/jquery-1.12.2.js" tppabs="http://valudio.com/themes/valudio/assets/lib/jquery/1.12.2/jquery-1.12.2.js"></script>
+<script src="../themes/valudio/assets/js/information.js" type="text/javascript"></script>
 <script type="text/javascript">
 		function returnMain(){
 			if(confirm("是否返回？若返回数据不会保存！"))

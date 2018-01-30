@@ -82,12 +82,12 @@
 }
 .self_web .list_desc>span,.total_web>div>span{
 	display: inline-block;
-    width:25%;
+    width: 16%;
     padding-left: 8%;
 }
 .list_top>span{
 	display: inline-block;
-	width: 24.5%;
+	width: 23.5%;
 	text-align: center; 
 } 
 .self_web .list_desc>span>a,.total_web .list_desc>span>a{
