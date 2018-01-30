@@ -192,25 +192,25 @@
     cursor: pointer;
 }
 #userId{
+	padding-bottom: 30px;
 	display: block;
-    float: right;
-    padding-left: 10px;
+	font-size:24px;
 }
 /*zhezhao结束*/
 /* 登录后 */
 .login_after{
     position: absolute;
-    top: 90px;
-    right: -135px;
+    top: 0;
+    left: 0;
     font-size: 20px;
     color: #fff;
-    /*visibility: hidden; */
+    visibility:visible; 
+    padding: 100px 45px;
+    background: #2b2996;
 }
 .zhuxiao{
-	font-size: 15px;
     cursor: pointer;
-    padding-left: 30px;
-    line-height: 22px;
+    margin-left: 35px;
 }
 .login_after>a:hover{
 	color: #008DFF;
@@ -226,12 +226,30 @@
 }
 .login_after>a{
   color: #FFFFFF;  
-  float: left;
+}
+.BTN-login a{
+	color: #FFFFFF;
+	font-size: 16px;
+	width: 135px;
+	height: 42px;
+	background: #3c39cd;
+	display: block;
+	text-align: center;
+	line-height: 42px;
+	transition: 0.5s all ease;
+}
+.BTN-login a:hover{
+	background: #6461cf;
+}
+.BTN-login {
+    display: -webkit-inline-box;
+        padding-top: 85px;
 }
 /* 登录框 */
 .login-left{
 	float: left;
 	width:35%;
+	position: relative;
 }
 .active{
     display: block;
@@ -241,7 +259,7 @@
     text-align: center;
     z-index: 1000;
     padding: 35px;
-/*      display: none;  */
+      display: none;  
 }
 .login_box>p{
     font-size: 30px;
@@ -493,9 +511,9 @@ input[type="checkbox"]{
 }
 @media only screen and (max-width: 1600px) {
 	.login_after {
-    position: absolute;
-    top: 70px;
-    right: 70px;
+     position: absolute;
+    top: 0;
+    left: 0;
     /* visibility: hidden; */
 }
 }
