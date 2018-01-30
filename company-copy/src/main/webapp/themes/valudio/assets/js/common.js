@@ -14,13 +14,16 @@ $(function(){
         	//用户
         	 var userName = window.sessionStorage.getItem("userName");
         	 var userId = window.sessionStorage.getItem("userId");
-        	 if(userName==null&&userId==null){
-        		 $(".nav").addClass("is-open");
-        		 $(".toggle").addClass("is-open");
-        			 
-        	 }else{
+        	 if(userName!=null&&userName!=""){
         		 window.location.href="controller/html/index.html";
-        	 }
+        	 }else{
+    	       if(userId!=null&&userId!=""){
+    	    	  window.location.href="controller/html/index.html";
+    	       }else{
+    	    	  $(".nav").addClass("is-open");
+          		  $(".toggle").addClass("is-open");
+    	       }
+    	    }
          });
         $(".reg").click(function(){
         $(".login_box").removeClass("active");
