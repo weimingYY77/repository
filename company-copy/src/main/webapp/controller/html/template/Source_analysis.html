@@ -345,10 +345,10 @@
 <script type="text/javascript" src="../../js/common-js/jquery.js"></script>
 <script type="text/javascript">
 $(function(){
-	$(".main_conter ul li").click(function(event) {
-    var index = $(".main_conter ul li").index(this);
-    $(this).children("a").addClass("active").parent().siblings().children("a").removeClass("active");
- })
+    $(".tab_list li").click(function(){
+    var index = $(".tab_list li").index(this);
+        $(this).addClass("active").siblings().removeClass("active");
+  })
 })  
 </script>
 <script type="text/javascript" src="../../js/common-js/common.js"></script>	
