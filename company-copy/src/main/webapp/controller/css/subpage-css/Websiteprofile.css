@@ -52,9 +52,10 @@
 	text-align: center;
 	border-right: 1px solid #e6e6e6;
 	cursor: pointer;
+	font-size: 18px;
 }
 .Day.tab_list li.active{
-	background: #69B5FA;
+	background: #00c1de;
     color: #fff!important;
 }
 .Day .bule{
