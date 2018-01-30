@@ -68,15 +68,11 @@ $(function(){
 	    	   	var code = userId;
 				var leng=code.length;  //定义长度
 				if(leng==1){
-				code="00000"+code;
-				}else if(leng==2){
-				code="0000"+code;
-				}else if(leng==3){
-				code="000"+code;
-				}else if(leng==4){
-				code="00"+code;
-				}else if(leng==5){
-				code="0"+code;
+					code="000"+code;
+					}else if(leng==2){
+					code="00"+code;
+					}else if(leng==3){
+					code="0"+code;
 				}
 				$("#userId").html(code);
     	}else{
@@ -95,7 +91,7 @@ $(function(){
 				type : "post",
 				data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics,"source":source,"visitor":visitor,"clientDevice":clientDevice,"viewType":viewType},
 				dataType : "json",
-				async : false,
+				async : true,
 				success : function(data) {
 					if (data.code==0010) {
 						alert(data.msg);
@@ -154,7 +150,7 @@ $(function(){
 				type : "post",
 				data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics,"visitor":visitor,"clientDevice":clientDevice,"viewType":viewType},
 				dataType : "json",
-				async : false,
+				async : true,
 				success : function(data) {
 					if (data.code==0010) {
 						alert(data.msg);
@@ -277,7 +273,7 @@ $(function(){
 					type : "post",
 					data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics,"visitor":visitor,"clientDevice":clientDevice,"viewType":viewType},
 					dataType : "json",
-					async : false,
+					async : true,
 					success : function(data) {
 						if (data.code==0010) {
 							alert(data.msg);
@@ -308,7 +304,7 @@ $(function(){
 					type : "post",
 					data : {"siteId":siteId,"method":method,"start_date":end_date,"end_date":end_date,"metrics":metrics,"source":source,"visitor":visitor,"clientDevice":clientDevice,"viewType":viewType},
 					dataType : "json",
-					async : false,
+					async : true,
 					success : function(data) {
 						if (data.code==0010) {
 							alert(data.msg);

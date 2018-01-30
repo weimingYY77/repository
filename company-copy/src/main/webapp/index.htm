@@ -40,7 +40,6 @@
     <!--/ top -->
 
     <!--/ toggle -->
-    <div class="kongzhi" id="kongzhi">控制器</div>
     <div class="toggle" id="toggle">
         <div>
             <div></div>
@@ -72,12 +71,12 @@
                  <!--登录框-->
         	<!-- 登录后 -->
         	    <div class="login-left">
-            			<div class="login_after" ><!--id="login_after"-->
-            				<span id="userId">0001</span>
+            			<div class="login_after" id="login_after">
+            				<span id="userId"></span>
             				<p>欢迎登陆</p>
 	            			
 	            			<div class="BTN-login">
-	            				<a class="login_name" href="en/information.html" title="">进入控制台</a>
+	            				<a class="login_name" href="controller/html/index.html" title="">进入控制台</a>
 	            				<a class="zhuxiao" onclick="zhuxiao()"> 注销  </a>
 	            			</div>
             		    </div>
@@ -629,7 +628,6 @@
 <script src="themes/valudio/assets/js/common.js" tppabs="http://valudio.com/themes/valudio/assets/js/main.js"></script>
 <script src="modules/system/assets/js/framework.js" tppabs="http://valudio.com/modules/system/assets/js/framework.js"></script>
 <script src="modules/system/assets/js/framework.extras.js" tppabs="http://valudio.com/modules/system/assets/js/framework.extras.js"></script>
-<script src="controller/js/index.js"></script>
 <link rel="stylesheet" property="stylesheet" href="modules/system/assets/css/framework.extras.css" tppabs="http://valudio.com/modules/system/assets/css/framework.extras.css">
 </body>
 <script type="text/javascript">
@@ -723,14 +721,10 @@ function zhuxiao(){
 			    	   	var code = userId;
 						var leng=code.length;  //定义长度
 						if(leng==1){
-						code="00000"+code;
-						}else if(leng==2){
-						code="0000"+code;
-						}else if(leng==3){
 						code="000"+code;
-						}else if(leng==4){
+						}else if(leng==2){
 						code="00"+code;
-						}else if(leng==5){
+						}else if(leng==3){
 						code="0"+code;
 						}
 						$("#userId").html(code);
@@ -762,15 +756,11 @@ function zhuxiao(){
 									if(data.data.u_name==null){
 										var leng= code.length;  //定义长度
 										if(leng==1){
-										code="00000"+code;
-										}else if(leng==2){
-										code="0000"+code;
-										}else if(leng==3){
-										code="000"+code;
-										}else if(leng==4){
-										code="00"+code;
-										}else if(leng==5){
-										code="0"+code;
+											code="000"+code;
+											}else if(leng==2){
+											code="00"+code;
+											}else if(leng==3){
+											code="0"+code;
 										}
 										$("#userId").html(code);
 									}else{
@@ -831,15 +821,11 @@ function zhuxiao(){
 										window.sessionStorage.setItem("userId",code);
 										var leng= code.length;  //定义长度
 										if(leng==1){
-										code="00000"+code;
-										}else if(leng==2){
-										code="0000"+code;
-										}else if(leng==3){
-										code="000"+code;
-										}else if(leng==4){
-										code="00"+code;
-										}else if(leng==5){
-										code="0"+code;
+											code="000"+code;
+											}else if(leng==2){
+											code="00"+code;
+											}else if(leng==3){
+											code="0"+code;
 										}
 										$("#userId").html(code);
 									} 

@@ -29,7 +29,7 @@
     <div class="bg-nav">
         <!--/ logo -->
         <div class="logo">
-            <a href="http://www.sumchance.com/" >
+            <a href="../index.htm" >
                 <img src="../themes/valudio/assets/images/logo_w.png" tppabs="http://valudio.com/themes/valudio/assets/images/logo.svg" class="white">
                 <img src="../themes/valudio/assets/images/logo_b.png" tppabs="http://valudio.com/themes/valudio/assets/images/logo_b.svg" class="black">
             </a>
@@ -71,8 +71,13 @@
         	<!-- 登录后 -->
         	     <div class="login-left">
             		    <div class="login_after" id="login_after">
-	            			<a class="login_name" href="information.html" title="">用户 <span id="userId"></span></a>&nbsp;&nbsp;
-	            			<a class="zhuxiao" onclick="zhuxiao()"> 注销  </a>
+	            			<span id="userId"></span>
+            				<p>欢迎登陆</p>
+	            			
+	            			<div class="BTN-login">
+	            				<a class="login_name" href="../controller/html/index.html" title="">进入控制台</a>
+	            				<a class="zhuxiao" onclick="zhuxiao()"> 注销  </a>
+	            			</div>
             		    </div>
             		<!-- 登录框 -->
             		<div class="login_box active" id="login_box active">
@@ -622,15 +627,11 @@ function zhuxiao(){
 			    	   	var code = userId;
 						var leng=code.length;  //定义长度
 						if(leng==1){
-						code="00000"+code;
-						}else if(leng==2){
-						code="0000"+code;
-						}else if(leng==3){
-						code="000"+code;
-						}else if(leng==4){
-						code="00"+code;
-						}else if(leng==5){
-						code="0"+code;
+							code="000"+code;
+							}else if(leng==2){
+							code="00"+code;
+							}else if(leng==3){
+							code="0"+code;
 						}
 						$("#userId").html(code);
 		    	}else{
@@ -661,15 +662,11 @@ function zhuxiao(){
 									if(data.data.u_name==null){
 										var leng= code.length;  //定义长度
 										if(leng==1){
-										code="00000"+code;
-										}else if(leng==2){
-										code="0000"+code;
-										}else if(leng==3){
-										code="000"+code;
-										}else if(leng==4){
-										code="00"+code;
-										}else if(leng==5){
-										code="0"+code;
+											code="000"+code;
+											}else if(leng==2){
+											code="00"+code;
+											}else if(leng==3){
+											code="0"+code;
 										}
 										$("#userId").html(code);
 									}else{
@@ -730,15 +727,11 @@ function zhuxiao(){
 										window.sessionStorage.setItem("userId",code);
 										var leng= code.length;  //定义长度
 										if(leng==1){
-										code="00000"+code;
-										}else if(leng==2){
-										code="0000"+code;
-										}else if(leng==3){
-										code="000"+code;
-										}else if(leng==4){
-										code="00"+code;
-										}else if(leng==5){
-										code="0"+code;
+											code="000"+code;
+											}else if(leng==2){
+											code="00"+code;
+											}else if(leng==3){
+											code="0"+code;
 										}
 										$("#userId").html(code);
 									} 
