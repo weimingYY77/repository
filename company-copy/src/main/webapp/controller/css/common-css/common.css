@@ -94,6 +94,7 @@ body{
 .function_list{
 	display: inline-block;
 	position: relative;
+	text-align: center;
 }
 .function_list>li{
    display: inline-block;
