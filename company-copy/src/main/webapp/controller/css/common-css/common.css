@@ -10,6 +10,7 @@ ul li{
 }
 body{
 	background: #ebeef2;
+	overflow: hidden;
 }
 /* 框阴影 */
 .box_show{
@@ -100,6 +101,7 @@ body{
    padding-right: 30px;
    cursor: pointer;
    position: relative;
+   text-align: center;
 }
 .function_list li>span{
 	margin-right:5px;
