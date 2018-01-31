@@ -41,8 +41,8 @@ $(".drop-down").mouseenter(function() {
  })
 
   // 小选项卡
-   $(".tab_list li").click(function(){
-    var index = $(".tab_list li").index(this);
+$(".tab_list .li").click(function(){
+    var index = $(".tab_list .li").index(this);
         $(this).addClass("active").siblings().removeClass("active");
   })
    $(".tab_list li").click(function(){
