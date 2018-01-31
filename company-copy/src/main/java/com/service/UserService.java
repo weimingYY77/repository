@@ -3,6 +3,11 @@ package com.service;
 import com.entity.UserInfo;
 import com.entity.Validate;
 
+/**
+ * 用户service类
+ * @author Administrator
+ *
+ */
 public interface UserService {
 
 	/**
