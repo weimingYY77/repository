@@ -42,15 +42,17 @@
 }
 .consume .findbox input[type="text"]{
   width: 12%;
+      border: 1px solid #cccccc;
 }
 .consume .findbox input[type="date"]{
   width: 12%;
+  border: 1px solid #cccccc;
 }
 .consume .findbox .select{
   width: 70px;
   height: 29px;
   background: #F3F4F5;
-  border: 1px solid #646464;
+  border: 1px solid #CCCCCC;
   color: #646464;
   cursor: pointer;
   outline: none;
