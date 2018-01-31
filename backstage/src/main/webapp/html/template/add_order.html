@@ -48,115 +48,117 @@
                   <button type="button" class="cancel">取消</button>
                   <button type="submit" class="save">保存</button>
                 </p>
-                <form action="add_order_submit" method="get" class="add_order">
-					<p class="order_num">订单编号：DT-201800001</p>
-					<!-- 基本信息 -->
-					<div class="information">
-	                    <p class="msg">基本信息</p>
-	                    <div class="inform_lft">
-	                    		<div class="from_group">
-	                    			<label for="">客户公司：</label>
-	                    			<input type="text" name="" value="" placeholder="请输入公司名称">
-	                    		</div>
-	                    		<div class="from_group">
-	                    			<label for="">公司地址：</label>
-	                    			<input type="text" name="" value="" placeholder="">
-	                    		</div>
-	                    		<div class="from_group three_select">
-	                    		    <label for=""></label>
-	                    			<select name="province">
-	                    				<option value="">省份</option>
-	                    				<option value="">湖南</option>
-	                    				<option value="">浙江</option>
-	                    			</select>
-	                    			<select name="city">
-	                    				<option value="">城市</option>
-	                    				<option value="">长沙</option>
-	                    				<option value="">株洲</option>
-	                    			</select>
-	                    			<select name="area">
-	                    				<option value="">区域</option>
-	                    				<option value="">岳麓区</option>
-	                    				<option value="">芙蓉区</option>
-	                    			</select>
-	                    		</div>
-	                    		<div class="from_group">
-	                    			<label for="">公司电话：</label>
-	                    			<input type="text" name="" value="" placeholder="请输入公司常用电话">
-	                    		</div>
-	                    		<div class="from_group">
-	                    			<label for="">公司域名：</label>
-	                    			<input type="text" name="" value="" placeholder="需要运营的公司域名">
-	                    		</div>
-	                     </div>
-	                    <div class="inform_rit">
-	                    		<div class="from_group one_select">
-	                    			<label for="">服务类型：</label>
-	                    			<select name="">
-	                    				<option value="">请选择服务类型</option>
-	                    			</select>
-	                    		</div>
-	                    		<div class="from_group three_select">
-	                    			<label for="">到期时间：</label>
-	                    			<select name="">
-	                    				<option value="">年</option>
-	                    			</select>
-	                    			<select name="">
-	                    				<option value="">月</option>
-	                    			</select>
-	                    			<select name="">
-	                    				<option value="">日</option>
-	                    			</select>
-	                    		</div>
-	                            <div class="from_group one_select">
-	                    			<label for="">付款方式：</label>
-	                    			<select name="">
-	                    				<option value="">请选择付款方式</option>
-	                    			</select>
-	                    		</div>
-	                            <div class="from_group">
-	                    			<label for="">订单总额：</label>
-	                    			<input type="text" name="" value="" placeholder="请输入订单金额">
-	                    		</div>
-	                    </div>
-	                    <div style="clear: both"></div>
-					</div>
-					<!-- 服务信息 -->
-					<div class="service">
-						<p class="msg">服务信息</p>
-						<div class="one_off">
-							<div class="service_demo gary">
-								<span class="demo">一次性服务项目</span>
-							    <span class="people">负责人</span>
-							    <span class="option">操作<i class="add add_one"></i></span>
-							</div>
-							<div class="service_demo">
-								<span class="demo"><input type="text" name="" value=""></span>
-							    <span class="people"><input type="text" name="" value=""></span>
-							    <span class="option"><i class='reduce'></i></span>
-							</div>
+                <div class="scroll">
+	                <form action="add_order_submit" method="get" class="add_order">
+						<p class="order_num">订单编号：DT-201800001</p>
+						<!-- 基本信息 -->
+						<div class="information">
+		                    <p class="msg">基本信息</p>
+		                    <div class="inform_lft">
+		                    		<div class="from_group">
+		                    			<label for="">客户公司：</label>
+		                    			<input type="text" name="" value="" placeholder="请输入公司名称">
+		                    		</div>
+		                    		<div class="from_group">
+		                    			<label for="">公司地址：</label>
+		                    			<input type="text" name="" value="" placeholder="">
+		                    		</div>
+		                    		<div class="from_group three_select">
+		                    		    <label for=""></label>
+		                    			<select name="province">
+		                    				<option value="">省份</option>
+		                    				<option value="">湖南</option>
+		                    				<option value="">浙江</option>
+		                    			</select>
+		                    			<select name="city">
+		                    				<option value="">城市</option>
+		                    				<option value="">长沙</option>
+		                    				<option value="">株洲</option>
+		                    			</select>
+		                    			<select name="area">
+		                    				<option value="">区域</option>
+		                    				<option value="">岳麓区</option>
+		                    				<option value="">芙蓉区</option>
+		                    			</select>
+		                    		</div>
+		                    		<div class="from_group">
+		                    			<label for="">公司电话：</label>
+		                    			<input type="text" name="" value="" placeholder="请输入公司常用电话">
+		                    		</div>
+		                    		<div class="from_group">
+		                    			<label for="">公司域名：</label>
+		                    			<input type="text" name="" value="" placeholder="需要运营的公司域名">
+		                    		</div>
+		                     </div>
+		                    <div class="inform_rit">
+		                    		<div class="from_group one_select">
+		                    			<label for="">服务类型：</label>
+		                    			<select name="">
+		                    				<option value="">请选择服务类型</option>
+		                    			</select>
+		                    		</div>
+		                    		<div class="from_group three_select">
+		                    			<label for="">到期时间：</label>
+		                    			<select name="">
+		                    				<option value="">年</option>
+		                    			</select>
+		                    			<select name="">
+		                    				<option value="">月</option>
+		                    			</select>
+		                    			<select name="">
+		                    				<option value="">日</option>
+		                    			</select>
+		                    		</div>
+		                            <div class="from_group one_select">
+		                    			<label for="">付款方式：</label>
+		                    			<select name="">
+		                    				<option value="">请选择付款方式</option>
+		                    			</select>
+		                    		</div>
+		                            <div class="from_group">
+		                    			<label for="">订单总额：</label>
+		                    			<input type="text" name="" value="" placeholder="请输入订单金额">
+		                    		</div>
+		                    </div>
+		                    <div style="clear: both"></div>
 						</div>
-						<div class="two_off">
-							<div class="service_demo gary">
-								<span class="demo">日常维护项目</span>
-							    <span class="people">负责人</span>
-							    <span class="option">操作<i class="add add_two"></i></span>
+						<!-- 服务信息 -->
+						<div class="service">
+							<p class="msg">服务信息</p>
+							<div class="one_off">
+								<div class="service_demo gary">
+									<span class="demo">一次性服务项目</span>
+								    <span class="people">负责人</span>
+								    <span class="option">操作<i class="add add_one"></i></span>
+								</div>
+								<div class="service_demo">
+									<span class="demo"><input type="text" name="" value=""></span>
+								    <span class="people"><input type="text" name="" value=""></span>
+								    <span class="option"><i class='reduce'></i></span>
+								</div>
 							</div>
-							<div class="service_demo">
-								<span class="demo"><input type="text" name="" value=""></span>
-							    <span class="people"><input type="text" name="" value=""></span>
-							    <span class="option"><i class='reduce'></i></span>
+							<div class="two_off">
+								<div class="service_demo gary">
+									<span class="demo">日常维护项目</span>
+								    <span class="people">负责人</span>
+								    <span class="option">操作<i class="add add_two"></i></span>
+								</div>
+								<div class="service_demo">
+									<span class="demo"><input type="text" name="" value=""></span>
+								    <span class="people"><input type="text" name="" value=""></span>
+								    <span class="option"><i class='reduce'></i></span>
+								</div>
 							</div>
-						</div>
-					</div> 
-					<!-- 备注信息 -->
-					<div class="remark">
-					    <p class="msg">备注信息</p> 
-					    <div class="remark_box">
-					       <textarea name="" id="remark_txt" placeholder="输入备注，不多于300字"></textarea>   		
-					    </div>      	
-					</div>           
-                </form>
+						</div> 
+						<!-- 备注信息 -->
+						<div class="remark">
+						    <p class="msg">备注信息</p> 
+						    <div class="remark_box">
+						       <textarea name="" id="remark_txt" placeholder="输入备注，不多于300字"></textarea>   		
+						    </div>      	
+						</div>           
+	                </form>	
+                </div>
 			</div>
 		</div>
 	</div>
